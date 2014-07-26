@@ -70,7 +70,7 @@ textarea:focus,input:focus { border: 1px solid #71b643; }
  */
 .u-arrow { position: fixed; bottom: 150px; left:50%; z-index: 150; width: 84px; height: 56px; margin-left: -42px; /*background: rgba(160,160,160,0.6); border-radius: 50%;*/ }
 .u-arrow p {
-background:url(http://mat1.gtimg.com/news/2014/zt/mh17/you/images/upslide.png) no-repeat;
+background:url(../images/upslide.png) no-repeat;
 position: absolute; top: 50%; left: 50%; margin: -28px 0 0 -42px; width: 84px; height: 56px; 
 	-webkit-animation: start 1.5s infinite ease-in-out;
 	   -moz-animation: start 1.5s infinite ease-in-out;
@@ -90,11 +90,11 @@ position: absolute; top: 50%; left: 50%; margin: -28px 0 0 -42px; width: 84px; h
 .u-audio .btn_audio .audio_open { display: inline-block; height: 50px; line-height: 50px; vertical-align: middle; }
 .u-audio .btn_audio strong { width: 57px; font-size: 24px; color: #fff; opacity: 1; }
 .u-audio .btn_audio .audio_open {
-	background:url(http://mat1.gtimg.com/news/2014/zt/mh17/you/images/music_open.png) no-repeat;
+	background:url(../images/music_open.png) no-repeat;
 	position: absolute; bottom: 0; left: 56px; width: 50px; 
 }
 .u-audio .btn_audio .audio_close {
-	background:url(http://mat1.gtimg.com/news/2014/zt/mh17/you/images/music_close.png) no-repeat;
+	background:url(../images/music_close.png) no-repeat;
 	position: absolute; bottom: 0; left: 56px; width: 50px; 
 }
 .u-audio .btn_audio strong.z-hide { opacity: 0; }
@@ -422,34 +422,20 @@ position: absolute; top: 50%; left: 50%; margin: -28px 0 0 -42px; width: 84px; h
 .s1_logo img,.s2_t img{
 	display:inline-block;
 }
-.s1_logo .s1_mh17{
+.s1_logo .s1_txt{
 	display:inline-block;
-	width: 358px;
-	height: 94px;
-	background:url(http://mat1.gtimg.com/news/2014/zt/mh17/you/images/mh17.png) no-repeat;
+	width: 391px;
+	height: 357px;
+	background:url(../images/lisa-text.png) no-repeat;
 }
-.s1_logo .s1_t{
-	margin-top: 20px;
-	display:inline-block;
-	width: 328px;
-	height: 130px;
-	background:url(http://mat1.gtimg.com/news/2014/zt/mh17/you/images/s1_t.png) no-repeat;
-}
-.s1_txnews{
-	width: 188px;
-	height: 44px;
-	background:url(http://mat1.gtimg.com/news/2014/zt/mh17/you/images/txnews.png) no-repeat;
-	position:absolute;
-	bottom: 80px;
-	left: 50%;
-	margin-left: -94px;
-}
+
+
 .last_txnews{
 	margin-top: 40px;
 	display:inline-block;
 	width: 190px;
 	height: 38px;
-	background:url(http://mat1.gtimg.com/news/2014/zt/mh17/you/images/txnews2.png) no-repeat;
+	background:url(../images/txnews2.png) no-repeat;
 }
 .details {
 	padding: 20% 16% 0;
