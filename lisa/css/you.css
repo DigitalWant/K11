@@ -417,7 +417,7 @@ position: absolute; top: 50%; left: 50%; margin: -28px 0 0 -42px; width: 84px; h
 /*s1*/
 .s1_logo,.s2_t{
 	padding-top: 20%;
-	text-align:left;
+	text-align:center;
 }
 .s1_logo img,.s2_t img{
 	display:inline-block;
