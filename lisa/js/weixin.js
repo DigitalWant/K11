@@ -235,7 +235,7 @@
         title : '', 
         con : '',
         link : document.URL, 
-        img  : 'http://mat1.gtimg.com/news/2014/zt/mh17/you/images/share180.png'
+        img  : 'http://iamike.github.io/lisa/images/lisa-icon-wechat.png'
     };
 
 $.fn.wx.version = '1.0.0';
