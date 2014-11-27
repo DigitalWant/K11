@@ -38,6 +38,8 @@ function touchstarted() {
   pageY0 = pageYOffset;
   d3.event.preventDefault();
   body.interrupt();
+    console.log('touchstarted');
+
 }
 
 function touchmoved() {
@@ -53,6 +55,9 @@ function touchmoved() {
     scrollTo(0, pageY1);
   }
   if (dragSamples.push({y: pageY1, t: Date.now()}) > 8) dragSamples.shift();
+
+  console.log('touchmoved');
+
 }
 
 function touchended() {
@@ -86,6 +91,8 @@ function touchended() {
         var i = d3.interpolateNumber(pageYOffset, y);
         return function(t) { scrollTo(0, i(t)); };
       });
+
+      console.log('end');
 }
 
 }()
