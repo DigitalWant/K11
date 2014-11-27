@@ -68,6 +68,36 @@ textarea {
 
 
 
+body {
+  background: #ccc;
+  margin: 0;
+}
+
+.page {
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+.page--light {
+  background: -moz-radial-gradient(center, ellipse cover, #fff 0%, #7db9e8 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fff), color-stop(100%, #7db9e8));
+  background: -webkit-radial-gradient(center, ellipse cover, #fff 0%, #7db9e8 100%);
+  background: -o-radial-gradient(center, ellipse cover, #fff 0%, #7db9e8 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #fff 0%, #7db9e8 100%);
+  background: radial-gradient(ellipse at center, #fff 0%, #7db9e8 100%);
+  color: #000;
+}
+
+.page--dark {
+  background: -moz-radial-gradient(center, ellipse cover, #444 0%, #111 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #444), color-stop(100%, #111));
+  background: -webkit-radial-gradient(center, ellipse cover, #444 0%, #111 100%);
+  background: -o-radial-gradient(center, ellipse cover, #444 0%, #111 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #444 0%, #111 100%);
+  background: radial-gradient(ellipse at center, #444 0%, #111 100%);
+  color: #fff;
+}
 
 
 
