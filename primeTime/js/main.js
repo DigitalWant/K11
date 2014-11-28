@@ -12,6 +12,7 @@ var page = d3.selectAll(".page");
 
 var animatePage =[
   [
+  //page1
     { 
       selector:'header-logo',
       behavior:function(){ 
@@ -26,6 +27,7 @@ var animatePage =[
     }
 
   ],[
+  //page2
     {
       selector:'header-logo',
       behavior:function(){ 
@@ -38,13 +40,13 @@ var animatePage =[
         alert('4');}
     }
   ],[
+  //page3
     {
-      selector:'somestring'
+      selector:'somestring',
       behavior:function(){
         alert('5')
       }
     }
-
   ]
 ];
 
