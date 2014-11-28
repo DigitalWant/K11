@@ -136,7 +136,7 @@ function touchended() {
 }
 
 
-$(".brand").addClass('rollIn animated ');
+$(".brand").addClass('fadeInDown animated ');
 
 $('.page').waypoint(function(direction) {
   // do stuff
