@@ -92,7 +92,7 @@ function touchended() {
         return function(t) { scrollTo(0, i(t));console.log(i);console.log(t); };
       });
 
-      //console.log('end');
+      console.log('end');
 }
 
 }()
