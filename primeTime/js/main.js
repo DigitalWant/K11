@@ -8,7 +8,7 @@ var body = d3.select("body"),
     pageYMax,
     dragSamples;
 
-var page = d3.selectAll(".page")
+var page = d3.selectAll(".page").append("")
     //.text(function(d, i) { return i; })
 
 d3.select(window)
@@ -84,12 +84,12 @@ function touchended() {
           var i;
           if (s1.y < pageYMin) i = d3.interpolateNumber(-(s1.y - pageYMin) / 3, 0);
           if (s1.y > pageYMax) i = d3.interpolateNumber(-(s1.y - pageYMax) / 3, 0);
-          return i && function(t) { return "translate3d(0," + i(t) + "px,0)"; };
+          return i && function(t) { return "translate3d(0," + i(t) + "px,0)"; console.log(i);console.log(t); };
         }
       })
       .tween("scroll", function() {
         var i = d3.interpolateNumber(pageYOffset, y);
-        return function(t) { scrollTo(0, i(t)); };
+        return function(t) { scrollTo(0, i(t));console.log(i);console.log(t); };
       });
 
       //console.log('end');
