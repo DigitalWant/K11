@@ -8,7 +8,7 @@ var body = d3.select("body"),
     pageYMax,
     dragSamples;
 
-var page = d3.selectAll(".page").append("")
+var page = d3.selectAll(".page");
     //.text(function(d, i) { return i; })
 
 d3.select(window)
