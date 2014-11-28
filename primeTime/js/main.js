@@ -96,6 +96,6 @@ function touchended() {
 }
 
 
-$(".brnad").addClass('rollIn animated ');
+$(".brand").addClass('rollIn animated ');
 
 }()
