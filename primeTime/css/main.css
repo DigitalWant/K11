@@ -122,6 +122,7 @@ body {
   text-align: center;
   top: 0;
   width: 100%;
+  position: relative;
 }
 
 .page--light {
@@ -147,6 +148,9 @@ body {
 
 .brand {
   font-size: 0.5em;
+  position: absolute;
+  left: 50%;
+  top:50%;
 }
 
 
