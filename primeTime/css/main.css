@@ -144,13 +144,8 @@ body {
   color: #fff;
 }
 
-.logo{
-  position: fixed;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-}
-.logo .brand {
+
+.brand {
   font-size: 0.5em;
 }
 
