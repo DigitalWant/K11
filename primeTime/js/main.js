@@ -7,8 +7,8 @@ var body = d3.select("body"),
     pageYMax,
     dragSamples;
 
-var page = d3.selectAll(".page");
-    //.text(function(d, i) { return i; })
+var page = d3.selectAll(".page")
+    .text(function(d, i) { return i; });
 
 var animatePage =[
   [
@@ -137,8 +137,3 @@ function touchended() {
 
 
 $(".brand").addClass('fadeInDown animated ');
-
-$('.page').waypoint(function(direction) {
-  // do stuff
-  console.log('hello'+direction);
-});
