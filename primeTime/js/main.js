@@ -11,6 +11,20 @@ var body = d3.select("body"),
 var page = d3.selectAll(".page");
     //.text(function(d, i) { return i; })
 
+var animatePage =[
+  {
+    'selector':'',
+    'animate':function(){
+
+
+    }
+  },{
+
+  },
+
+  }    
+];
+
 d3.select(window)
     .on("resize", resized)
     .on("touchstart", touchstarted)
