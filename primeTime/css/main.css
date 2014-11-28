@@ -151,6 +151,8 @@ body {
   position: absolute;
   left: 50%;
   top:50%;
+  margin-left: -1em;
+  margin-top: -1em;
 }
 
 
