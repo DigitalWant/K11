@@ -150,7 +150,9 @@ body {
   top: 0px;
   left: 0px;
 }
-
+.logo .brand {
+  font-size: 0.5em;
+}
 
 
 
