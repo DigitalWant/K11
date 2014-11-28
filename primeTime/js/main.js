@@ -38,7 +38,7 @@ function touchstarted() {
   pageY0 = pageYOffset;
   d3.event.preventDefault();
   body.interrupt();
-    console.log('touchstarted');
+   // console.log('touchstarted');
 
 }
 
@@ -56,7 +56,7 @@ function touchmoved() {
   }
   if (dragSamples.push({y: pageY1, t: Date.now()}) > 8) dragSamples.shift();
 
-  console.log('touchmoved');
+  //console.log('touchmoved');
 
 }
 
@@ -92,7 +92,7 @@ function touchended() {
         return function(t) { scrollTo(0, i(t)); };
       });
 
-      console.log('end');
+      //console.log('end');
 }
 
 }()
