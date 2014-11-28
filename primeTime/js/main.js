@@ -23,6 +23,7 @@ d3.timer(function() {
   return true;
 });
 
+
 function resized() {
   var height0 = height;
   height = innerHeight;
@@ -97,5 +98,10 @@ function touchended() {
 
 
 $(".brand").addClass('rollIn animated ');
+
+$('.page').waypoint(function(direction) {
+  // do stuff
+  console.log('hello'+direction);
+});
 
 }()
