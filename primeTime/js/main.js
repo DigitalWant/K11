@@ -95,4 +95,7 @@ function touchended() {
       console.log('end');
 }
 
+
+$(".brnad").addClass('rollIn animated ');
+
 }()
