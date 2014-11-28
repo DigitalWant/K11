@@ -1,4 +1,3 @@
-!function() {
 
 var body = d3.select("body"),
     height,
@@ -12,17 +11,41 @@ var page = d3.selectAll(".page");
     //.text(function(d, i) { return i; })
 
 var animatePage =[
-  {
-    'selector':'',
-    'animate':function(){
+  [
+    { 
+      selector:'header-logo',
+      behavior:function(){ 
 
+        alert('1');}
+    },
+    { 
+      selector:'header-logo',
+      behavior:function(){ 
 
+        alert('2');}
     }
-  },{
 
-  },
+  ],[
+    {
+      selector:'header-logo',
+      behavior:function(){ 
 
-  }    
+        alert('3');}
+    },
+    { 
+      selector:'header-logo',
+      behavior:function(){ 
+        alert('4');}
+    }
+  ],[
+    {
+      selector:'somestring'
+      behavior:function(){
+        alert('5')
+      }
+    }
+
+  ]
 ];
 
 d3.select(window)
@@ -117,5 +140,3 @@ $('.page').waypoint(function(direction) {
   // do stuff
   console.log('hello'+direction);
 });
-
-}()
