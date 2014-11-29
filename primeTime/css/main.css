@@ -19,8 +19,8 @@ textarea {
 }
 
 body {
-    font-size: 1em;
-    line-height: 1.4;
+    font-size: 1em!important;
+    line-height: 1.4!important;
 }
 
 a {
@@ -132,6 +132,7 @@ textarea {
 
 body {
   margin: 0;
+
 }
 body.landscape{
     background:url(../img/tip.jpg) 0px 0px no-repeat;
@@ -189,8 +190,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1affffff', e
   height: 100%;
 }
 .brand {
-  font-size: 0.5em;
+  font-size: 6em;
   position: absolute;
+  left: 50%;
+  top: 60%;
+  margin-left: -1.2em;
+  margin-top: -0.5em;
+}
+.abtext{
+  position: absolute;  
 }
 .brand .tshadow-glow:before{
   text-shadow: 0 0 14px rgba(255,255,255,1);
