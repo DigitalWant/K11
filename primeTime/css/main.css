@@ -213,6 +213,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1affffff', e
   background: transparent repeat left top;
   background-size: cover;
 }
+.opening .abtext .fadeInUp {
+  line-height: 1em!important;
+  margin: 0px;
+  padding: 0px;
+}
 .set1{
   background-image: url(../img/brandRow1.jpg);
 }

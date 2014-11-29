@@ -144,6 +144,8 @@ function touchended() {
               scrollCompleteCallback();
               //wow.init();
               pageNow = i(t);
+              new WOW().init();
+
 
             }
           }
