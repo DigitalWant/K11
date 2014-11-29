@@ -183,12 +183,12 @@ $('.content').onScreen({
    direction: 'vertical',
    doIn: function() {
      // Do something to the matched elements as they come in
-    new WOW().init();
 
    },
    doOut: function() {
      // Do something to the matched elements as they get off scren
       wowEl.filter('.animated').removeClass('animated').removeAttr('style');
+    new WOW().init();
 
 
    },
