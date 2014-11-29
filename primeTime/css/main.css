@@ -61,8 +61,21 @@ fieldset {
 textarea {
     resize: vertical;
 }
-
-
+/*
+  brand color
+*/
+.brandRed {
+  color: #9D1E2F;
+}
+.brandGold{
+  color: #B89758;
+}
+.brandBgRed{
+  background: #9D1E2F;
+}
+.brandBgGold{
+  background: #B89758;
+}
 /*
  * special ../fonts.
  */
@@ -90,19 +103,23 @@ textarea {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+/* ball*/
 .icon-logo-part-a:before {
   content: "\e600";
 }
+/* chinese */
 .icon-logo-part-b:before {
   content: "\e601";
 }
+/* english */
 .icon-logo-part-c:before {
   content: "\e602";
 }
+/* full logo*/
 .icon-logo-part-d:before {
   content: "\e603";
 }
+/* text */
 .icon-logo-part-e:before {
   content: "\e604";
 }
@@ -114,7 +131,6 @@ textarea {
 
 
 body {
-  background: #ccc;
   margin: 0;
 }
 
@@ -145,19 +161,23 @@ body {
   background: radial-gradient(ellipse at center, #444 0%, #111 100%);
   color: #fff;
 }
-
+.page--gold {
+  background: -moz-radial-gradient(center, ellipse cover, #B89758 0%, #111 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #B89758), color-stop(100%, #111));
+  background: -webkit-radial-gradient(center, ellipse cover, #B89758 0%, #111 100%);
+  background: -o-radial-gradient(center, ellipse cover, #B89758 0%, #111 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #B89758 0%, #111 100%);
+  background: radial-gradient(ellipse at center, #B89758 0%, #111 100%);
+  color: #fff;
+}
 
 .brand {
   font-size: 0.5em;
-  position: absolute;
-  left: 50%;
-  top:50%;
-  margin-left: -1em;
-  margin-top: -1em;
 }
 
+.brand span{
 
-
+}
 
 
 
