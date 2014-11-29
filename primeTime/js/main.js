@@ -5,7 +5,10 @@ var body = d3.select("body"),
     pageY0,
     pageYMin = 0,
     pageYMax,
-    dragSamples;
+    dragSamples,
+    pageNow=0,
+    wowEl = $('.wow');
+
 
 var page = d3.selectAll(".page");
     //.text(function(d, i) { return i; });
@@ -62,6 +65,8 @@ d3.timer(function() {
   return true;
 });
 
+window.addEventListener("resize", showTips, true);
+showTips();
 
 function resized() {
   var height0 = height;
@@ -96,7 +101,7 @@ function touchmoved() {
   }
   if (dragSamples.push({y: pageY1, t: Date.now()}) > 8) dragSamples.shift();
 
-  //console.log('touchmoved');
+  console.log('touchmoved');
 
 }
 
@@ -124,16 +129,49 @@ function touchended() {
           var i;
           if (s1.y < pageYMin) i = d3.interpolateNumber(-(s1.y - pageYMin) / 3, 0);
           if (s1.y > pageYMax) i = d3.interpolateNumber(-(s1.y - pageYMax) / 3, 0);
-          return i && function(t) { return "translate3d(0," + i(t) + "px,0)"; console.log(i);console.log(t); };
+          return i && function(t) { return "translate3d(0," + i(t) + "px,0)"; };
         }
       })
       .tween("scroll", function() {
         var i = d3.interpolateNumber(pageYOffset, y);
-        return function(t) { scrollTo(0, i(t));console.log(i);console.log(t); };
+        return function(t) { 
+          scrollTo(0, i(t)); 
+
+          if (t===1){
+            console.log('pageNow',pageNow,t)
+            if (pageNow != i(t)){
+              console.log('different page set new pageNow');
+              scrollCompleteCallback();
+              //wow.init();
+              pageNow = i(t);
+
+            }
+          }
+
+        };
       });
 
-      console.log('end');
+}
+function scrollCompleteCallback(){
+  //wowEl.removeAttr('style');
+}
+function animateLoder(target,behavior){
+
+  target.removeClass().addClass(behavior);
+
 }
 
+function showTips() {
+    if ($(window).width() <= $(window).height()) {
+        $("body").removeClass('landscape');
+        $(".pages").show();
 
-$(".brand").addClass('fadeInDown animated ');
+    } else {
+
+        $("body").addClass('landscape');
+        $(".pages").hide();
+    }
+}
+
+new WOW().init();
+
