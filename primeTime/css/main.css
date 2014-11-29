@@ -265,6 +265,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1affffff', e
 #ceo{
   float: left;
   margin: 1em;
+  margin-left: 0em;
 
 }
 #story2 .abtext {

@@ -101,7 +101,7 @@ function touchmoved() {
   }
   if (dragSamples.push({y: pageY1, t: Date.now()}) > 8) dragSamples.shift();
 
-  console.log('touchmoved');
+  //console.log('touchmoved');
 
 }
 
@@ -141,8 +141,7 @@ function touchended() {
             console.log('pageNow',pageNow,t)
             if (pageNow != i(t)){
               console.log('different page set new pageNow');
-              scrollCompleteCallback();
-              //wow.init();
+              //animatedCallback();
               pageNow = i(t);
             }
           }
@@ -151,9 +150,15 @@ function touchended() {
       });
 
 }
-function scrollCompleteCallback(){
+
+/*
+function animatedCallback(){
   //wowEl.removeAttr('style');
-}
+      wowEl.filter('.animated').removeClass('animated').removeAttr('style');
+
+      new WOW().init();
+  }
+*/
 function animateLoder(target,behavior){
 
   target.removeClass().addClass(behavior);
@@ -171,14 +176,30 @@ function showTips() {
         $(".pages").hide();
     }
 }
-var wow = new WOW(
-  {
-    boxClass:     'wow',      // animated element css class (default is wow)
-    animateClass: 'animated', // animation css class (default is animated)
-    offset:       0,          // distance to the element when triggering the animation (default is 0)
-    mobile:       true,       // trigger animations on mobile devices (default is true)
-    live:         true        // act on asynchronously loaded content (default is true)
-  }
-);
-wow.init();
+
+//onscreen test 
+$('.page').onScreen({
+   container: window,
+   direction: 'vertical',
+   doIn: function() {
+     // Do something to the matched elements as they come in
+    new WOW().init();
+
+   },
+   doOut: function() {
+     // Do something to the matched elements as they get off scren
+      wowEl.filter('.animated').removeClass('animated').removeAttr('style');
+
+
+   },
+   tolerance: 0,
+   throttle: 50,
+   toggleClass: 'onScreen',
+   lazyAttr: null,
+   lazyPlaceholder: 'someImage.jpg',
+   debug: false
+});
+
+
+new WOW().init();
 
