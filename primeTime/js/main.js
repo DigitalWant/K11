@@ -178,7 +178,7 @@ function showTips() {
 }
 
 //onscreen test 
-$('.page').onScreen({
+$('.content').onScreen({
    container: window,
    direction: 'vertical',
    doIn: function() {

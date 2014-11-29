@@ -146,7 +146,9 @@ body.landscape{
   position: relative;
   overflow: hidden;
 }
-
+.content{
+  margin: 1em;
+}
 .page--light {
   background: -moz-radial-gradient(center, ellipse cover, #fff 0%, #7db9e8 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fff), color-stop(100%, #7db9e8));
@@ -268,7 +270,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1affffff', e
   margin-left: 0em;
 
 }
-#story2 .abtext {
+#story2 .content {
   text-align: left;
   font-size: 0.7em;
   padding: 1em;
