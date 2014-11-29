@@ -213,11 +213,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1affffff', e
   background: transparent repeat left top;
   background-size: cover;
 }
-.opening .abtext .fadeInUp {
-  line-height: 1em!important;
-  margin: 0px;
-  padding: 0px;
-}
+
 .set1{
   background-image: url(../img/brandRow1.jpg);
 }
@@ -266,7 +262,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1affffff', e
    }
 }
 
+#ceo{
+  float: left;
+  margin: 1em;
 
+}
+#story2 .abtext {
+  text-align: left;
+  font-size: 0.7em;
+  padding: 1em;
+}
 
 /* ==========================================================================
    Helper classes
