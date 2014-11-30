@@ -999,10 +999,9 @@ body.landscape .pages{
 }
 .article{
   font-size: 0.8em;
-  padding: 1em;
+  padding:0em 1em;
   display: table-cell;
   vertical-align: middle;
-  width: 100%;
 }
 
 /* scroll hint */

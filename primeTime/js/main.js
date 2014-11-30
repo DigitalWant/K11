@@ -80,9 +80,8 @@ function touchended() {
     var vy = (s1.y - s0.y) / (s1.t - s0.t);
     if (vy > .5) y = Math.ceil(y / height) * height;
     else if (vy < -.5) y = Math.floor(y / height) * height;
-    console.log('what is this?s1',s1);
-    new WOW().init();
 
+    
   }
 
   y = Math.max(0, Math.min(page.size() - 1, Math.round(y / height))) * height;
@@ -101,17 +100,16 @@ function touchended() {
       .tween("scroll", function() {
         var i = d3.interpolateNumber(pageYOffset, y);
         return function(t) { 
+          var index = i(t)/height;
+
           scrollTo(0, i(t)); 
+          //console.log(index);
+            //when it stable
+              if (t==1 ){
+                //$pageContent.eq(index).find('.wow').removeClass('animated');
 
-          if (t===1){
-            //console.log('pageNow',pageNow,t)
-            if (pageNow != i(t)){
-              console.log('different page set new pageNow');
-              //animatedCallback();
-              pageNow = i(t);
             }
-          }
-
+          
         };
       });
       //touching =false;
@@ -119,11 +117,7 @@ function touchended() {
 }
 
 
-function animateLoder(target,behavior){
 
-  target.removeClass().addClass(behavior);
-
-}
 
 function showTips() {
     if ($(window).width() <= $(window).height()) {
