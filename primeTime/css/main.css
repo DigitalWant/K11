@@ -507,6 +507,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   background: #4c91d6 url(../img/bgSkyEnd.jpg) no-repeat scroll left bottom;
   background-size: contain;
 }
+.wow{
+ visibility: hidden;
+}
 .skyBegin .icon-chevron-down,.bgSky .icon-chevron-down,.skyEnd .icon-chevron-down,.brandBgRed .icon-chevron-down{
 
   color: #fff;
