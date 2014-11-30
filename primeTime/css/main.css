@@ -142,59 +142,43 @@ a.badge:focus {
   text-decoration: none;
   cursor: pointer;
 }
-.list-group-item.active > .badge,
-.nav-pills > .active > a > .badge {
-  color: #337ab7;
-  background-color: #fff;
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
-.list-group-item > .badge {
-  float: right;
+.pull-right {
+  float: right !important;
 }
-.list-group-item > .badge + .badge {
-  margin-right: 5px;
+.pull-left {
+  float: left !important;
 }
-.nav-pills > li > a > .badge {
-  margin-left: 3px;
+.hide {
+  display: none !important;
 }
-.jumbotron {
-  padding: 30px 15px;
-  margin-bottom: 30px;
-  color: inherit;
-  background-color: #eee;
+.show {
+  display: block !important;
 }
-.jumbotron h1,
-.jumbotron .h1 {
-  color: inherit;
+.invisible {
+  visibility: hidden;
 }
-.jumbotron p {
-  margin-bottom: 15px;
-  font-size: 21px;
-  font-weight: 200;
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
 }
-.jumbotron > hr {
-  border-top-color: #d5d5d5;
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
 }
-.container .jumbotron,
-.container-fluid .jumbotron {
-  border-radius: 6px;
+.affix {
+  position: fixed;
 }
-.jumbotron .container {
-  max-width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .jumbotron {
-    padding: 48px 0;
-  }
-  .container .jumbotron,
-  .container-fluid .jumbotron {
-    padding-right: 60px;
-    padding-left: 60px;
-  }
-  .jumbotron h1,
-  .jumbotron .h1 {
-    font-size: 63px;
-  }
-}
+
+
 .thumbnail {
   display: block;
   padding: 4px;
