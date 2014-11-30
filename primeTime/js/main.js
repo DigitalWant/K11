@@ -6,7 +6,6 @@ var body = d3.select("body"),
     pageYMin = 0,
     pageYMax,
     dragSamples,
-    pageNow=0,
     wowEl = $('.wow'),
     firstAppear=true;
     //touching = false;
@@ -29,7 +28,6 @@ d3.timer(function() {
 });
 
 window.addEventListener("resize", showTips, true);
-showTips();
 
 function resized() {
   var height0 = height;
