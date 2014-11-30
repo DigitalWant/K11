@@ -313,8 +313,9 @@ textarea {
   content: "\e607";
 }
 
-
-
+.brandBgRed .icon-slogan-journey,.brandBgRed .icon-slogan-Time{
+  opacity: 0.5;
+}
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
