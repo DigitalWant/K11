@@ -7,51 +7,13 @@ var body = d3.select("body"),
     pageYMax,
     dragSamples,
     pageNow=0,
-    wowEl = $('.wow');
+    wowEl = $('.wow'),
+    firstAppear=true;
+    //touching = false;
 
 
 var page = d3.selectAll(".page");
     //.text(function(d, i) { return i; });
-
-var animatePage =[
-  [
-  //page1
-    { 
-      selector:'header-logo',
-      behavior:function(){ 
-
-        alert('1');}
-    },
-    { 
-      selector:'header-logo',
-      behavior:function(){ 
-
-        alert('2');}
-    }
-
-  ],[
-  //page2
-    {
-      selector:'header-logo',
-      behavior:function(){ 
-
-        alert('3');}
-    },
-    { 
-      selector:'header-logo',
-      behavior:function(){ 
-        alert('4');}
-    }
-  ],[
-  //page3
-    {
-      selector:'somestring',
-      behavior:function(){
-        alert('5')
-      }
-    }
-  ]
-];
 
 d3.select(window)
     .on("resize", resized)
@@ -83,8 +45,8 @@ function touchstarted() {
   pageY0 = pageYOffset;
   d3.event.preventDefault();
   body.interrupt();
-   // console.log('touchstarted');
-
+   //console.log('touchstarted');
+    //touching=true;
 }
 
 function touchmoved() {
@@ -102,7 +64,7 @@ function touchmoved() {
   if (dragSamples.push({y: pageY1, t: Date.now()}) > 8) dragSamples.shift();
 
   //console.log('touchmoved');
-
+  //touching==true;
 }
 
 function touchended() {
@@ -117,6 +79,9 @@ function touchended() {
     var vy = (s1.y - s0.y) / (s1.t - s0.t);
     if (vy > .5) y = Math.ceil(y / height) * height;
     else if (vy < -.5) y = Math.floor(y / height) * height;
+    console.log('what is this?');
+   new WOW().init();
+
   }
 
   y = Math.max(0, Math.min(page.size() - 1, Math.round(y / height))) * height;
@@ -138,7 +103,7 @@ function touchended() {
           scrollTo(0, i(t)); 
 
           if (t===1){
-            console.log('pageNow',pageNow,t)
+            //console.log('pageNow',pageNow,t)
             if (pageNow != i(t)){
               console.log('different page set new pageNow');
               //animatedCallback();
@@ -148,17 +113,11 @@ function touchended() {
 
         };
       });
-
+      //touching =false;
+      //console.log('//touching end');
 }
 
-/*
-function animatedCallback(){
-  //wowEl.removeAttr('style');
-      wowEl.filter('.animated').removeClass('animated').removeAttr('style');
 
-      new WOW().init();
-  }
-*/
 function animateLoder(target,behavior){
 
   target.removeClass().addClass(behavior);
@@ -178,17 +137,22 @@ function showTips() {
 }
 
 //onscreen test 
+/*
 $('.content').onScreen({
    container: window,
    direction: 'vertical',
    doIn: function() {
      // Do something to the matched elements as they come in
+     console.log('doIn',dragSamples);
+         new WOW().init();
+
 
    },
    doOut: function() {
+    //wowEl.filter('.animated').removeClass('animated').removeAttr('style');
+      //console.log('doOut')
      // Do something to the matched elements as they get off scren
-      wowEl.filter('.animated').removeClass('animated').removeAttr('style');
-    new WOW().init();
+    ////touching ==true && 
 
 
    },
@@ -199,7 +163,7 @@ $('.content').onScreen({
    lazyPlaceholder: 'someImage.jpg',
    debug: false
 });
-
+*/
 
 new WOW().init();
 
