@@ -14,7 +14,7 @@ var body = d3.select("body"),
 
 var page = d3.selectAll(".page");
 var $pageContent = $('.content');
-$pageContent.append("<i class='icon-chevron-down'></i>");
+$pageContent.append("<i class='icon-chevron-down brandGold'></i>");
 
 d3.select(window)
     .on("resize", resized)
