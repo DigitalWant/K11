@@ -498,11 +498,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 }
 .skyBegin{
-  background: transparent url(../img/bgSkyBegin.jpg) no-repeat scroll left bottom;
+  background: #fff url(../img/bgSkyBegin.jpg) no-repeat scroll left bottom;
   background-size: contain;
 }
 .bgSky{
   background-color: #4c91d6;
+}
+.skyEnd{
+  background: #4c91d6 url(../img/bgSkyEnd.jpg) no-repeat scroll left bottom;
+  background-size: contain;
 }
 /* ==========================================================================
    Helper classes
