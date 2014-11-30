@@ -427,8 +427,8 @@ th {
 }
 h1,h2,h3,h4,h5,p {
 display: block;
--webkit-margin-before: 0.2em;
--webkit-margin-after: 0.2em;
+-webkit-margin-before: 0.5em;
+-webkit-margin-after: 0.5em;
 -webkit-margin-start: 0px;
 -webkit-margin-end: 0px;
 }

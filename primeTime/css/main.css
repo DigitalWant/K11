@@ -169,6 +169,7 @@ body.landscape{
 .article{
   text-align: left;
   font-size: 0.8em;
+  padding: 1em;
 }
 .text-center{
   text-align: center;
@@ -226,7 +227,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1affffff', e
   line-height: 1em;
   position: absolute;
   left: 50%;
-  top: 65%;
+  top: 40%;
   margin-left: -1.2em;
   margin-top: -0.5em;
 }
