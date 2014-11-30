@@ -80,8 +80,8 @@ function touchended() {
     var vy = (s1.y - s0.y) / (s1.t - s0.t);
     if (vy > .5) y = Math.ceil(y / height) * height;
     else if (vy < -.5) y = Math.floor(y / height) * height;
-    console.log('what is this?');
-   new WOW().init();
+    console.log('what is this?s1',s1);
+    new WOW().init();
 
   }
 

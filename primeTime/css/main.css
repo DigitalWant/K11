@@ -34,7 +34,12 @@ a:visited {
 a:hover {
     color: #06e;
 }
-
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
 /*
  * Remove the gap between images and the bottom of their containers
  * https://github.com/h5bp/html5-boilerplate/issues/440
@@ -70,12 +75,23 @@ textarea {
 .brandGold{
   color: #B89758;
 }
+.brandGrey{
+  color: #9E9E9E;
+
+}
 .brandBgRed{
+  color:#fff;
   background: #9D1E2F;
 }
 .brandBgGold{
+  color:#fff;
   background: #B89758;
 }
+.brandBgGrey{
+  color:#fff;
+  background: #9E9E9E;
+}
+
 /*
  * special ../fonts.
  */
@@ -148,6 +164,9 @@ body.landscape{
     background-size: cover;
     background-color: #ffffff;
 }
+body.landscape .pages{
+  display: none;
+}
 .page {
   text-align: center;
   top: 0;
@@ -160,8 +179,12 @@ body.landscape{
   width: 100%;
   height: 100%;
 }
+
+/* scroll hint */
 .content .icon-chevron-down {
   position: absolute;
+  left: 50%;
+  margin-left: -0.5em;
   color: rgba(157, 30, 47, 0.54);
   -webkit-animation: scrollHint 1s infinite  normal ease-out;
   animation: scrollHint 1s infinite  normal ease-out;
@@ -281,46 +304,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1affffff', e
   -webkit-animation-duration: 100s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes scrollHint {
-  0% {
-    bottom: 10px;
-  }
-  50% {
-    bottom: 20px;
-  }
-  100% {
-    bottom: 10px;
-  }
-}
-@keyframes scrollHint {
-  0% {
-    bottom: 10px;
-  }
-  50% {
-    bottom: 20px;
-  }
-  100% {
-    bottom: 10px;
-  }
-}
-
-@-webkit-keyframes MOVE-BG-LEFT-TO-RIGHT {
-   from {
-     background-position: 652px top;
-   }
-   to { 
-     background-position: 1956px top;
-   }
-}
-@-webkit-keyframes MOVE-BG-RIGHT-TO-LEFT {
-   from {
-     background-position: 1956px top;
-   }
-   to { 
-     background-position: 652px top;
-   }
 }
 
 #ceo{
@@ -463,3 +446,44 @@ textarea[contenteditable] {
        only screen and (min-resolution: 144dpi) {
     /* Style adjustments for viewports that meet the condition */
 }
+
+@-webkit-keyframes scrollHint {
+  0% {
+    bottom: 10px;
+  }
+  50% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 10px;
+  }
+}
+@keyframes scrollHint {
+  0% {
+    bottom: 10px;
+  }
+  50% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 10px;
+  }
+}
+
+@-webkit-keyframes MOVE-BG-LEFT-TO-RIGHT {
+   from {
+     background-position: 652px top;
+   }
+   to { 
+     background-position: 1956px top;
+   }
+}
+@-webkit-keyframes MOVE-BG-RIGHT-TO-LEFT {
+   from {
+     background-position: 1956px top;
+   }
+   to { 
+     background-position: 652px top;
+   }
+}
+

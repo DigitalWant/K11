@@ -208,12 +208,13 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-}
 
+hr {
+  height: 0;
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
 /**
  * Contain overflow in all browsers.
  */
