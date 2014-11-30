@@ -13,7 +13,8 @@ var body = d3.select("body"),
 
 
 var page = d3.selectAll(".page");
-    //.text(function(d, i) { return i; });
+var $pageContent = $('.content');
+$pageContent.append("<i class='icon-chevron-down'></i>");
 
 d3.select(window)
     .on("resize", resized)
