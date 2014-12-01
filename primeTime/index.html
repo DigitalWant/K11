@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js loading" lang="">
+<html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
         <title>盛时表行</title>
@@ -11,14 +11,20 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/animate.min.css">
+        <script type="text/javascript">
+            window.addEventListener('touchmove', function(e) {
+              e.preventDefault();
+            }, false);
+        </script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="js/vendor/jquery-2.1.1.min.js"></script>
+         <script src="js/vendor/d3.v3.min.js"></script>
         <script src="js/vendor/jquery.imgpreload.min.js"></script>
         <script src="js/vendor/loader.js"></script>
     </head>
     <body >
-      <progress max="1" value="0"></progress>
-        <div class="pages">
+
+       <div class="pages">
           <div class="page" id='opening'>
               <div class="content">
               <div id="brand"  >
@@ -287,13 +293,13 @@
           </div>
         </div>
 
+      <div class="loading">
+        <progress max="1" value="0"></progress>
+      </div>
 
-        <!--loader screen -->
-        <div id="loadingObj" class="loadingv"></div>
 
         <script src="js/vendor/wow.js"></script>
         <!--<script src="js/vendor/move.min.js"></script>-->
-        <script src="js/vendor/d3.v3.min.js"></script>
        <!--<script src="js/vendor/jquery.onscreen.js"></script> -->
         <script src="js/helper.js"></script>
         <script src="js/main.js"></script>     

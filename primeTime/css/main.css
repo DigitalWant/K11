@@ -268,10 +268,16 @@ body {
   margin: 0;
 }
 /**/
-progress{
-  display: none;
+.loading{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 9999;
+  background-color: #fff;
 }
-html.loading progress {
+.loading progress {
   display: block;
   position: absolute;
   left: 50%;
@@ -279,8 +285,6 @@ html.loading progress {
   width: 50%;
   margin-left: -25%;
 }
-html.loading .pages{
-visibility: hidden;}
 body.landscape{
     background:url(../img/tip.jpg) 0px 0px no-repeat;
     background-size: cover;

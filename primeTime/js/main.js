@@ -1,6 +1,3 @@
-
-
-
 var body = d3.select("body"),
     height,
     clientY0,
@@ -21,12 +18,6 @@ var $pageContent = $('.content');
 $(".content").append("<i class='icon-chevron-down brandGold'></i>");
 var allAnimateItems= $('.icon-chevron-down,.iconRow,.wow');
 
-
-d3.select(window)
-    .on("resize", resized)
-    .on("touchstart", touchstarted)
-    .on("touchmove", touchmoved)
-    .on("touchend", touchended);
 
 // iOS reports the wrong innerHeight on load!
 d3.timer(function() {
@@ -58,8 +49,6 @@ function touchstarted() {
    //console.log('touchstarted');
     //touching=true;
 
-
-      
     //$('body').toggleClass('paused', $(this).css(playState) === 'paused'); 
 }
 

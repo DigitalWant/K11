@@ -28,6 +28,7 @@ var imgSrc = [
 './img/tip.jpg'
 ]
 var currentStatus = 0;
+
 $.imgpreload(imgSrc,
 {
     each: function()
@@ -35,7 +36,7 @@ $.imgpreload(imgSrc,
     	currentStatus++
 
 		$("progress").val(currentStatus/imgSrc.length);
-
+		//console.log(currentStatus/imgSrc.length)
         // callback invoked when each image is loaded
         // this = dom image object
         // check for success with: $(this).data('loaded')
@@ -43,10 +44,17 @@ $.imgpreload(imgSrc,
     },
     all: function()
     {
-    	console.log('complete..');
-    	$("html").removeClass('loading');
+    	//console.log('complete..');
+    	$(".loading").remove();
+
+      d3.select(window)
+        .on("resize", resized)
+        .on("touchstart", touchstarted)
+        .on("touchmove", touchmoved)
+        .on("touchend", touchended);
         // callback invoked when all images have loaded
         // this = array of dom image objects
         // check for success with: $(this[i]).data('loaded')
+
     }
 });
