@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js loading" lang="">
     <head>
         <meta charset="utf-8">
         <title>盛时表行</title>
@@ -13,10 +13,11 @@
         <link rel="stylesheet" href="css/animate.min.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="js/vendor/jquery-2.1.1.min.js"></script>
+        <script src="js/vendor/jquery.imgpreload.min.js"></script>
         <script src="js/vendor/loader.js"></script>
     </head>
     <body >
-
+      <progress max="1" value="0"></progress>
         <div class="pages">
           <div class="page" id='opening'>
               <div class="content">
@@ -184,7 +185,6 @@
           </div>
           <div class="page" >
               <div class="content ">
-                  
 
                   <div class="photo" >
                     <div class="wow fadeIn img" data-wow-delay=".3s" style="background-image:url(./img/staff3.png);"></div>
@@ -213,7 +213,7 @@
 
           <div class="page" >
               <div class="content ">
-                     <div class="photo"    >
+                     <div class="photo" >
                         <div class="wow fadeIn img" data-wow-delay=".5s" style="background-image:url(./img/staff2.png);"></div>
                         <div class="caption gradientCaptionRight  wow fadeInRight" data-wow-delay="1s" style="right:0px;top:40%;">
                         <h3 class="brandRed">北京员工</h3>
@@ -221,7 +221,7 @@
                    </div>
                     <div class="photo" >
                         <div class="wow fadeIn img" style="background-image:url(./img/staff1.png);"></div>
-                        <div class="caption gradientCaptionLeft wow fadeInLeft" data-wow-delay="2s" style="left:0px;top:80%;">
+                        <div class="caption gradientCaptionLeft wow fadeInLeft" data-wow-delay="2s" style="left:0px;top:85%;">
                         <h3 class="brandRed">石家庄新宇三宝星空店</h3>
                      </div>
                  </div>
@@ -292,7 +292,6 @@
         <div id="loadingObj" class="loadingv"></div>
 
         <script src="js/vendor/wow.js"></script>
-
         <!--<script src="js/vendor/move.min.js"></script>-->
         <script src="js/vendor/d3.v3.min.js"></script>
        <!--<script src="js/vendor/jquery.onscreen.js"></script> -->
