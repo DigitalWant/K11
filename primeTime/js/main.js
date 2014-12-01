@@ -119,7 +119,9 @@ function touchended() {
           //console.log(index);
             //when it stable
               if (t==1 ){
-                $pageContent.eq(index).find('.wow').css(playState,"running");
+
+                allAnimateItems.css(playState,"running");
+
             }
           
         };
