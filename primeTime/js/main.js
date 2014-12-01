@@ -40,12 +40,12 @@ function resized() {
 
 function touchstarted() {
    
-  allAnimateItems.css(playState,'paused'); 
   dragSamples = [];
   clientY0 = d3.event.changedTouches[0].clientY;
   pageY0 = pageYOffset;
   d3.event.preventDefault();
   body.interrupt();
+  allAnimateItems.css(playState,'paused'); 
    //console.log('touchstarted');
     //touching=true;
 
@@ -53,12 +53,17 @@ function touchstarted() {
 }
 
 function touchmoved() {
+
   var clientY1 = d3.event.changedTouches[0].clientY,
       pageY1 = pageY0 + clientY0 - clientY1;
   if (pageY1 < pageYMin) {
+      //prevent touch again
+
     if (pageYOffset > pageYMin) scrollTo(0, pageYMin);
     body.style("-webkit-transform", "translate3d(0," + -(pageY1 - pageYMin) / 3 + "px,0)");
   } else if (pageY1 > pageYMax) {
+      //prevent touch again
+
     if (pageYOffset < pageYMax) scrollTo(0, pageYMax);
     body.style("-webkit-transform", "translate3d(0," + -(pageY1 - pageYMax) / 3 + "px,0)");
   } else {

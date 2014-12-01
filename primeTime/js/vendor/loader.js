@@ -45,13 +45,18 @@ $.imgpreload(imgSrc,
     all: function()
     {
     	//console.log('complete..');
-    	$(".loading").remove();
 
       d3.select(window)
         .on("resize", resized)
         .on("touchstart", touchstarted)
         .on("touchmove", touchmoved)
         .on("touchend", touchended);
+    	
+    	$(".loading").remove()
+
+
+
+
         // callback invoked when all images have loaded
         // this = array of dom image objects
         // check for success with: $(this[i]).data('loaded')
