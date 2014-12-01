@@ -267,6 +267,7 @@ textarea {
 body {
   margin: 0;
 }
+/**/
 progress{
   display: none;
 }
@@ -279,8 +280,7 @@ html.loading progress {
   margin-left: -25%;
 }
 html.loading .pages{
-  display: none;
-}
+visibility: hidden;}
 body.landscape{
     background:url(../img/tip.jpg) 0px 0px no-repeat;
     background-size: cover;

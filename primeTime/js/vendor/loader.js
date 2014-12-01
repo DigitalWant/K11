@@ -44,7 +44,7 @@ $.imgpreload(imgSrc,
     all: function()
     {
     	console.log('complete..');
-    	$("html").removeClass('loading')
+    	$("html").removeClass('loading');
         // callback invoked when all images have loaded
         // this = array of dom image objects
         // check for success with: $(this[i]).data('loaded')
