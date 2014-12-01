@@ -32,6 +32,7 @@ d3.timer(function() {
 });
 
 window.addEventListener("resize", showTips, true);
+showTips();
 
 function resized() {
   var height0 = height;
@@ -64,12 +65,19 @@ function touchmoved() {
   var clientY1 = d3.event.changedTouches[0].clientY,
       pageY1 = pageY0 + clientY0 - clientY1;
   if (pageY1 < pageYMin) {
+    console.log('1');
     if (pageYOffset > pageYMin) scrollTo(0, pageYMin);
+
     body.style("-webkit-transform", "translate3d(0," + -(pageY1 - pageYMin) / 3 + "px,0)");
   } else if (pageY1 > pageYMax) {
+
+        console.log('2');
+
     if (pageYOffset < pageYMax) scrollTo(0, pageYMax);
     body.style("-webkit-transform", "translate3d(0," + -(pageY1 - pageYMax) / 3 + "px,0)");
   } else {
+        console.log('3');
+
     scrollTo(0, pageY1);
   }
   if (dragSamples.push({y: pageY1, t: Date.now()}) > 8) dragSamples.shift();
