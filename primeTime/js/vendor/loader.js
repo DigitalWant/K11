@@ -46,11 +46,7 @@ $.imgpreload(imgSrc,
     {
     	//console.log('complete..');
 
-      d3.select(window)
-        .on("resize", resized)
-        .on("touchstart", touchstarted)
-        .on("touchmove", touchmoved)
-        .on("touchend", touchended);
+
     	
     	$(".loading").remove()
 
