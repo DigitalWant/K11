@@ -1,4 +1,6 @@
 
+
+
 var body = d3.select("body"),
     height,
     clientY0,
@@ -9,11 +11,15 @@ var body = d3.select("body"),
     wowEl = $('.wow'),
     firstAppear=true;
     //touching = false;
+ var playState = '-webkit-animation-play-state';
+var iconRow = $('.iconRow');
 
 
 var page = d3.selectAll(".page");
 var $pageContent = $('.content');
 $pageContent.append("<i class='icon-chevron-down brandGold'></i>");
+var allAnimateItems= $('.icon-chevron-down,.iconRow,.wow');
+
 
 d3.select(window)
     .on("resize", resized)
@@ -39,6 +45,8 @@ function resized() {
 }
 
 function touchstarted() {
+   
+  allAnimateItems.css(playState,'paused'); 
   dragSamples = [];
   clientY0 = d3.event.changedTouches[0].clientY;
   pageY0 = pageYOffset;
@@ -46,6 +54,10 @@ function touchstarted() {
   body.interrupt();
    //console.log('touchstarted');
     //touching=true;
+
+
+      
+    //$('body').toggleClass('paused', $(this).css(playState) === 'paused'); 
 }
 
 function touchmoved() {
@@ -67,10 +79,13 @@ function touchmoved() {
 }
 
 function touchended() {
-  var s0 = dragSamples.shift(),
+    //allAnimateItems.css(playState,'running'); 
+
+      var s0 = dragSamples.shift(),
       s1 = dragSamples.pop(),
       t1 = Date.now(),
       y = pageYOffset;
+
 
   while (s0 && (t1 - s0.t > 350)) s0 = dragSamples.shift();
 
@@ -104,7 +119,7 @@ function touchended() {
           //console.log(index);
             //when it stable
               if (t==1 ){
-                //$pageContent.eq(index).find('.wow').removeClass('animated');
+                $pageContent.eq(index).find('.wow').css(playState,"running");
 
             }
           
@@ -159,4 +174,3 @@ $('.content').onScreen({
 */
 
 new WOW().init();
-
