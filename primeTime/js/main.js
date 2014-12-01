@@ -16,8 +16,9 @@ var iconRow = $('.iconRow');
 
 
 var page = d3.selectAll(".page");
+var article = d3.selectAll(".article");
 var $pageContent = $('.content');
-$pageContent.append("<i class='icon-chevron-down brandGold'></i>");
+$(".content").append("<i class='icon-chevron-down brandGold'></i>");
 var allAnimateItems= $('.icon-chevron-down,.iconRow,.wow');
 
 
@@ -38,7 +39,9 @@ window.addEventListener("resize", showTips, true);
 function resized() {
   var height0 = height;
   height = innerHeight;
+
   page.style("height", height + "px");
+  //article.style("margin-top",-innerHeight/2 +"px").style("margin-left",-innerWidth/2 +"px");
   body.style("font", (height * .4) + "px/" + (height * .9) + "px sans-serif");
   pageYMax = (page.size() - 1) * height;
   if (height0) scrollTo(0, Math.max(0, Math.min(page.size() - 1, Math.round(pageYOffset / height0))) * height);
@@ -119,7 +122,6 @@ function touchended() {
           //console.log(index);
             //when it stable
               if (t==1 ){
-
                 allAnimateItems.css(playState,"running");
 
             }

@@ -76,16 +76,16 @@ img {
 }
 
 .text-left {
-  text-align: left;
+  text-align: left !important;
 }
 .text-right {
-  text-align: right;
+  text-align: right !important;
 }
 .text-center {
-  text-align: center;
+  text-align: center !important;
 }
 .text-justify {
-  text-align: justify;
+  text-align: justify !important;
 }
 .text-nowrap {
   white-space: nowrap;
@@ -111,37 +111,8 @@ caption {
   color: #777;
   text-align: left;
 }
-.badge {
-  display: inline-block;
-  min-width: 10px;
-  padding: 3px 7px;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 1;
-  color: #fff;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  background-color: #777;
-  border-radius: 10px;
-}
-.badge:empty {
-  display: none;
-}
-.btn .badge {
-  position: relative;
-  top: -1px;
-}
-.btn-xs .badge {
-  top: 0;
-  padding: 1px 5px;
-}
-a.badge:hover,
-a.badge:focus {
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer;
-}
+
+
 
 .center-block {
   display: block;
@@ -170,41 +141,12 @@ a.badge:focus {
   background-color: transparent;
   border: 0;
 }
-.hidden {
-  display: none !important;
-  visibility: hidden !important;
-}
+
 .affix {
   position: fixed;
 }
 
 
-.thumbnail {
-  display: block;
-  padding: 4px;
-  margin-bottom: 20px;
-  line-height: 1.42857143;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  -webkit-transition: border .2s ease-in-out;
-       -o-transition: border .2s ease-in-out;
-          transition: border .2s ease-in-out;
-}
-.thumbnail > img,
-.thumbnail a > img {
-  margin-right: auto;
-  margin-left: auto;
-}
-a.thumbnail:hover,
-a.thumbnail:focus,
-a.thumbnail.active {
-  border-color: #337ab7;
-}
-.thumbnail .caption {
-  padding: 9px;
-  color: #333;
-}
 /*
  * Remove the gap between images and the bottom of their containers
  * https://github.com/h5bp/html5-boilerplate/issues/440
@@ -334,29 +276,34 @@ body.landscape{
 body.landscape .pages{
   display: none;
 }
+.wow{
+  visibility: hidden;
+}
 .page {
-  text-align: center;
   top: 0;
   width: 100%;
-  position: relative;
-  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+  display: table;
+
 }
 .content{
   position: relative;
-  width: 100%;
-  height: 100%;
-  display: table;
-}
-.article{
-  font-size: 0.8em;
-  padding:0em 1em;
   display: table-cell;
   vertical-align: middle;
+  width: 100%;
+}
+.article{
+  font-size: 80%;
+  padding:0em 1em;
+  text-align: center;
 }
 
+
 /* scroll hint */
-.content .icon-chevron-down {
+.page .icon-chevron-down {
   position: absolute;
+  z-index: 99;
   left: 50%;
   margin-left: -0.5em;
   opacity: 0.5;
@@ -393,14 +340,14 @@ body.landscape .pages{
   color: #fff;
 }
 .page--white {
-background: rgba(255,255,255,0);
-background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.78) 51%, rgba(255,255,255,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(51%, rgba(255,255,255,0.78)), color-stop(100%, rgba(255,255,255,1)));
-background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.78) 51%, rgba(255,255,255,1) 100%);
-background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.78) 51%, rgba(255,255,255,1) 100%);
-background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.78) 51%, rgba(255,255,255,1) 100%);
-background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.78) 51%, rgba(255,255,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+background: rgba(226,226,226,0);
+background: -moz-linear-gradient(left, rgba(226,226,226,0) 0%, rgba(255,255,255,0.8) 50%, rgba(254,254,254,0) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(226,226,226,0)), color-stop(50%, rgba(255,255,255,0.8)), color-stop(100%, rgba(254,254,254,0)));
+background: -webkit-linear-gradient(left, rgba(226,226,226,0) 0%, rgba(255,255,255,0.8) 50%, rgba(254,254,254,0) 100%);
+background: -o-linear-gradient(left, rgba(226,226,226,0) 0%, rgba(255,255,255,0.8) 50%, rgba(254,254,254,0) 100%);
+background: -ms-linear-gradient(left, rgba(226,226,226,0) 0%, rgba(255,255,255,0.8) 50%, rgba(254,254,254,0) 100%);
+background: linear-gradient(to right, rgba(226,226,226,0) 0%, rgba(255,255,255,0.8) 50%, rgba(254,254,254,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1 );
 }
 
 
@@ -450,19 +397,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -30%;
-  margin-top: -1em;
+
+  margin-left: -35%;
+  margin-top: -30%;
   z-index: 2;
+
 }
 #brand i{
-  font-size: 6em;
+  font-size: 600%;
 }
-#brand p{
-  font-size: 1em;
-}
-#brandcover{
-    margin: 0px -1em;
-    z-index: 1;
+
+#brandcover {
+  padding: 0em;
 }
 #brandcover:after{
   content:" ";
@@ -471,15 +417,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   top: 0px;
   width: 100%;
   height: 100%;
-  background: rgba(255,255,255,0);
-  background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.78) 51%, rgba(255,255,255,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(51%, rgba(255,255,255,0.78)), color-stop(100%, rgba(255,255,255,1)));
-  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.78) 51%, rgba(255,255,255,1) 100%);
-  background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.78) 51%, rgba(255,255,255,1) 100%);
-  background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.78) 51%, rgba(255,255,255,1) 100%);
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.78) 51%, rgba(255,255,255,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
-
+  z-index: 1;
+background: rgba(239,239,239,1);
+background: -moz-linear-gradient(top, rgba(239,239,239,1) 0%, rgba(252,252,252,0.8) 40%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 60%, rgba(254,254,254,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(239,239,239,1)), color-stop(40%, rgba(252,252,252,0.8)), color-stop(50%, rgba(255,255,255,0.8)), color-stop(60%, rgba(255,255,255,0.8)), color-stop(100%, rgba(254,254,254,1)));
+background: -webkit-linear-gradient(top, rgba(239,239,239,1) 0%, rgba(252,252,252,0.8) 40%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 60%, rgba(254,254,254,1) 100%);
+background: -o-linear-gradient(top, rgba(239,239,239,1) 0%, rgba(252,252,252,0.8) 40%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 60%, rgba(254,254,254,1) 100%);
+background: -ms-linear-gradient(top, rgba(239,239,239,1) 0%, rgba(252,252,252,0.8) 40%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 60%, rgba(254,254,254,1) 100%);
+background: linear-gradient(to bottom, rgba(239,239,239,1) 0%, rgba(252,252,252,0.8) 40%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 60%, rgba(254,254,254,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#fefefe', GradientType=0 );
 }
 #ceo{
   float: left;
@@ -488,13 +434,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 }
 #famous {
-  font-size: 14em;
-  line-height: 1em;
+  font-size: 1400%;
 }
 #logo{
   position: relative;
   z-index: 2;
 
+}
+.staff hr{
+  margin: 0px 0px 0px;
+}
+.slogan {
+  font-size: 400%;
+  text-align: center;
+}
+.page.brandBgRed h1 {
+  text-align: center;
 }
 .skyBegin{
   background: #fff url(../img/bgSkyBegin.jpg) no-repeat scroll left bottom;
@@ -507,9 +462,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   background: #4c91d6 url(../img/bgSkyEnd.jpg) no-repeat scroll left bottom;
   background-size: contain;
 }
-.wow{
- visibility: hidden;
-}
+
 .skyBegin .icon-chevron-down,.bgSky .icon-chevron-down,.skyEnd .icon-chevron-down,.brandBgRed .icon-chevron-down{
 
   color: #fff;
