@@ -52,7 +52,6 @@ $.imgpreload(imgSrc,
     	//TODO:add fadeout effect
     	$(".loading").addClass('animated fadeOut');
 
-    	new WOW().init();
 
 
         // callback invoked when all images have loaded

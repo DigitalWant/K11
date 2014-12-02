@@ -45,7 +45,13 @@ function resized() {
 //when loading complete display bind touch events
 $('.loading').one(animateEnd, function(){
   $(this).remove();
+    console.log('loading complete');
+    //alert('hello');
+
   $('#brandcover').removeClass('invisible').addClass('animated fadeIn');
+
+
+
 });
 $("#brandcover").one(animateEnd,function(){
   $("#brandcover .cover").removeClass('invisible').addClass('animated fadeIn');
@@ -63,10 +69,9 @@ $('#OpeningEnd').one(animateEnd,function(){
     .on("touchmove", touchmoved)
     .on("touchend", touchended);
     console.log('opening complete');
-          new WOW().init();
+    new WOW().init();
 
 });
-
 function touchstarted() {
    
   allAnimateItems.css(playState,'paused'); 
