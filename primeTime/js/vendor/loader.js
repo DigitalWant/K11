@@ -82,6 +82,7 @@ $.imgpreload(imgSrc,
 				  .on("touchstart", touchstarted)
 				  .on("touchmove", touchmoved)
 				  .on("touchend", touchended);
+				  $('.icon-chevron-down:eq(0)').show();
 
 		}
 

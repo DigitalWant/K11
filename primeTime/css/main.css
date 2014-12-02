@@ -460,13 +460,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
   width: 100%;
   height: 100%;
   z-index: 3;
-background: rgba(255,255,255,0.6);
-background: -moz-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.6) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0.6)), color-stop(50%, rgba(255,255,255,0.8)), color-stop(100%, rgba(255,255,255,0.6)));
-background: -webkit-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.6) 100%);
-background: -o-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.6) 100%);
-background: -ms-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.6) 100%);
-background: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.6) 100%);
+background: rgba(255,255,255,0.75);
+background: -moz-linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.88) 50%, rgba(255,255,255,0.75) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0.75)), color-stop(50%, rgba(255,255,255,0.88)), color-stop(100%, rgba(255,255,255,0.75)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.88) 50%, rgba(255,255,255,0.75) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.88) 50%, rgba(255,255,255,0.75) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.88) 50%, rgba(255,255,255,0.75) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.88) 50%, rgba(255,255,255,0.75) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
 }
 #logo{
@@ -558,7 +558,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
 .photo .caption {
   position: absolute;
   z-index: 2;
-  font-size: 75%;
+  font-size: 85%;
 }
 .photo .caption h3 {
   padding:0em ;
