@@ -138,7 +138,11 @@ function touchended() {
 }
 
 
+function checkCurentPage(index){
 
+  console.log(index);
+  
+}
 
 function showTips() {
     if ($(window).width() <= $(window).height()) {
