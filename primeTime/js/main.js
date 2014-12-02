@@ -48,20 +48,20 @@ $('.loading').one(animateEnd, function(){
     console.log('loading complete');
     //alert('hello');
 
-  $('#brandcover').addClass('animated fadeIn');
+  $('#brandcover').removeClass('invisible').addClass('animated fadeIn');
 
 
 
 });
 $("#brandcover").one(animateEnd,function(){
-  $("#brandcover .cover").addClass('animated fadeIn');
+  $("#brandcover .cover").removeClass('invisible').addClass('animated fadeIn');
 alert('2');
 });
 $("#brandcover .cover").one(animateEnd,function(){
-  $("#logo").addClass('animated fadeInDown');
+  $("#logo").removeClass('invisible').addClass('animated fadeInDown');
 });
 $("#logo").one(animateEnd,function(){
-  $("#brand p").addClass('animated fadeInUp');
+  $("#brand p").removeClass('invisible').addClass('animated fadeInUp');
 });
 $('#OpeningEnd').one(animateEnd,function(){
   d3.select(window)
