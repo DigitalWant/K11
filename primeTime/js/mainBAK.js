@@ -63,8 +63,6 @@ $('#OpeningEnd').one(animateEnd,function(){
     .on("touchmove", touchmoved)
     .on("touchend", touchended);
     console.log('opening complete');
-          new WOW().init();
-
 });
 
 function touchstarted() {
