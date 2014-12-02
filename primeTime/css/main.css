@@ -600,12 +600,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
 }
 /**/
 #boat {
-  -webkit-animation-duration: 6s;
-  -webkit-animation-delay: 2s;
+  display: none;
+  -webkit-animation-duration: 4s;
 }
 .updown {
-  -webkit-animation-duration: 6s;
-  -webkit-animation-delay: 2s;
+  -webkit-animation-duration: 10s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-name: updown;
 }

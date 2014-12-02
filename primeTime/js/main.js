@@ -21,7 +21,7 @@ $(".content").append("<i class='icon-chevron-down brandGold'></i>");
 $('.icon-chevron-down:eq(0)').hide();
 var allAnimateItems= $('.icon-chevron-down,.wow');
 
-//$("#boat").addClass('animated slideInLeft');
+//
 
 $("#boat").one(animateEnd,function(){
   console.log('hhe');
@@ -127,7 +127,10 @@ function touchended() {
           scrollTo(0, i(t)); 
           //console.log(index);
             //when it stable
-              if (t==1 ){
+              console.log(index);
+
+              if (t==1 && index==13){
+                $("#boat").show().addClass('animated slideInLeft');
                 //allAnimateItems.css(playState,"running");
 
             }
