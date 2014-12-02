@@ -55,7 +55,6 @@ $('.loading').one(animateEnd, function(){
 });
 $("#brandcover").one(animateEnd,function(){
   $("#brandcover .cover").removeClass('invisible').addClass('animated fadeIn');
-alert('2');
 });
 $("#brandcover .cover").one(animateEnd,function(){
   $("#logo").removeClass('invisible').addClass('animated fadeInDown');
