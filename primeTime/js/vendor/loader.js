@@ -67,7 +67,7 @@ $.imgpreload(imgSrc,
 			  .on("touchstart", touchstarted)
 			  .on("touchmove", touchmoved)
 			  .on("touchend", touchended);
-    	},11000);
+    	},12000);
 
 
     	
