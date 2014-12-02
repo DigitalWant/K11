@@ -180,7 +180,7 @@ textarea {
   color: #9D1E2F;
 }
 .brandGold{
-  color: #a3854b;
+  color: #8e7139;
 }
 .brandGrey{
   color: #9E9E9E;
@@ -192,7 +192,7 @@ textarea {
 }
 .brandBgGold{
   color:#fff;
-  background: #a3854b;
+  background: #8e7139;
 }
 .brandBgGrey{
   color:#fff;
@@ -365,12 +365,12 @@ body.landscape .pages{
   color: #fff;
 }
 .page--gold {
-  background: -moz-radial-gradient(center, ellipse cover, #a3854b 0%, #111 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #a3854b), color-stop(100%, #111));
-  background: -webkit-radial-gradient(center, ellipse cover, #a3854b 0%, #111 100%);
-  background: -o-radial-gradient(center, ellipse cover, #a3854b 0%, #111 100%);
-  background: -ms-radial-gradient(center, ellipse cover, #a3854b 0%, #111 100%);
-  background: radial-gradient(ellipse at center, #a3854b 0%, #111 100%);
+  background: -moz-radial-gradient(center, ellipse cover, #8e7139 0%, #111 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #8e7139), color-stop(100%, #111));
+  background: -webkit-radial-gradient(center, ellipse cover, #8e7139 0%, #111 100%);
+  background: -o-radial-gradient(center, ellipse cover, #8e7139 0%, #111 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #8e7139 0%, #111 100%);
+  background: radial-gradient(ellipse at center, #8e7139 0%, #111 100%);
   color: #fff;
 }
 .page--white {
