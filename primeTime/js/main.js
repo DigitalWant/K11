@@ -9,6 +9,7 @@ var body = d3.select("body"),
     firstAppear=true;
     //touching = false;
  var playState = '-webkit-animation-play-state';
+ var animateEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 var iconRow = $('.iconRow');
 
 
@@ -19,16 +20,13 @@ $(".content").append("<i class='icon-chevron-down brandGold'></i>");
 var allAnimateItems= $('.icon-chevron-down,.iconRow,.wow');
 
 
-      d3.select(window)
-        .on("resize", resized)
-        .on("touchstart", touchstarted)
-        .on("touchmove", touchmoved)
-        .on("touchend", touchended);
+
 
 // iOS reports the wrong innerHeight on load!
 d3.timer(function() {
   resized();
   return true;
+
 });
 
 window.addEventListener("resize", showTips, true);
@@ -43,6 +41,14 @@ function resized() {
   body.style("font", (height * .4) + "px/" + (height * .9) + "px sans-serif");
   pageYMax = (page.size() - 1) * height;
   if (height0) scrollTo(0, Math.max(0, Math.min(page.size() - 1, Math.round(pageYOffset / height0))) * height);
+  //alert('resized');
+    d3.select(window)
+      .on("resize", resized)
+      .on("touchstart", touchstarted)
+      .on("touchmove", touchmoved)
+      .on("touchend", touchended);
+  new WOW().init();
+
 }
 
 function touchstarted() {
@@ -141,7 +147,7 @@ function touchended() {
 function checkCurentPage(index){
 
   console.log(index);
-  
+
 }
 
 function showTips() {
@@ -153,6 +159,11 @@ function showTips() {
 
         $("body").addClass('landscape');
         $(".pages").hide();
+            window.addEventListener('touchmove', function(e) {
+              e.preventDefault();
+            }, false);
+
+
     }
 }
 
@@ -185,4 +196,3 @@ $('.content').onScreen({
 });
 */
 
-new WOW().init();

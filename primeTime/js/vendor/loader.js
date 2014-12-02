@@ -48,9 +48,9 @@ $.imgpreload(imgSrc,
 
 
     	
+    	$(".pages").removeClass('invisible');
+    	//TODO:add fadeout effect
     	$(".loading").remove()
-
-
 
 
         // callback invoked when all images have loaded
