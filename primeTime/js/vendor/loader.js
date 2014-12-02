@@ -13,7 +13,7 @@ var imgSrc = [
 './img/staff3.png',
 './img/staff4.png',
 './img/staff5.png',
-'./img/store-0.png',
+'./img/store0.jpg',
 './img/store1-1.png',
 './img/store1-2.png',
 './img/store1-3.png',
@@ -61,15 +61,30 @@ $.imgpreload(imgSrc,
 
 			$(".loading").fadeOut();
 			new WOW().init();
+		if (pageYOffset==0){
 
-			//console.log('complete..');
-    	setTimeout(function(){
-		d3.select(window)
-			  .on("resize", resized)
-			  .on("touchstart", touchstarted)
-			  .on("touchmove", touchmoved)
-			  .on("touchend", touchended);
-    	},12000);
+				//console.log('complete..');
+	    	setTimeout(function(){
+			d3.select(window)
+				  .on("resize", resized)
+				  .on("touchstart", touchstarted)
+				  .on("touchmove", touchmoved)
+				  .on("touchend", touchended);
+
+				  $('.icon-chevron-down:eq(0)').show();
+
+	    	},13000);
+
+
+		} else {
+			d3.select(window)
+				  .on("resize", resized)
+				  .on("touchstart", touchstarted)
+				  .on("touchmove", touchmoved)
+				  .on("touchend", touchended);
+
+		}
+
 
 
     	

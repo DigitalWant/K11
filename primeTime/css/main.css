@@ -198,7 +198,9 @@ textarea {
   color:#fff;
   background: #9E9E9E;
 }
-
+.wow{
+  visibility: hidden;
+}
 /*
  * special ../fonts.
  */

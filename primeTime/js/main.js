@@ -10,14 +10,16 @@ var body = d3.select("body"),
     //touching = false;
  var playState = '-webkit-animation-play-state';
  var animateEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-var iconRow = $('.iconRow');
+//var iconRow = $('.iconRow');
 
 
 var page = d3.selectAll(".page");
 var article = d3.selectAll(".article");
 var $pageContent = $('.content');
 $(".content").append("<i class='icon-chevron-down brandGold'></i>");
-var allAnimateItems= $('.icon-chevron-down,.iconRow,.wow');
+
+$('.icon-chevron-down:eq(0)').hide();
+var allAnimateItems= $('.icon-chevron-down,.wow');
 
 
 
@@ -47,7 +49,7 @@ function resized() {
 
 function touchstarted() {
    
-  allAnimateItems.css(playState,'paused'); 
+  //allAnimateItems.css(playState,'paused'); 
   dragSamples = [];
   clientY0 = d3.event.changedTouches[0].clientY;
   pageY0 = pageYOffset;
@@ -123,7 +125,7 @@ function touchended() {
           //console.log(index);
             //when it stable
               if (t==1 ){
-                allAnimateItems.css(playState,"running");
+                //allAnimateItems.css(playState,"running");
 
             }
           
