@@ -50,8 +50,8 @@ $.imgpreload(imgSrc,
     	
     	$(".pages").removeClass('invisible');
     	//TODO:add fadeout effect
-    	$(".loading").remove()
-    	
+    	$(".loading").addClass('animated fadeOut');
+
     	new WOW().init();
 
 

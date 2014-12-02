@@ -276,6 +276,8 @@ body {
   top: 0px;
   z-index: 9999;
   background-color: #fff;
+  -vendor-animation-duration: 3s;
+  -vendor-animation-delay: 2s;
 }
 .loading progress,.loading .brand  {
   display: block;
@@ -400,6 +402,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 .set6{
   background-image: url(../img/brandRow6.jpg);
 }
+
 
 
 .left-ToRight {

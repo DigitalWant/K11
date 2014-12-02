@@ -42,13 +42,18 @@ function resized() {
   pageYMax = (page.size() - 1) * height;
   if (height0) scrollTo(0, Math.max(0, Math.min(page.size() - 1, Math.round(pageYOffset / height0))) * height);
   //alert('resized');
-    d3.select(window)
-      .on("resize", resized)
-      .on("touchstart", touchstarted)
-      .on("touchmove", touchmoved)
-      .on("touchend", touchended);
+
 
 }
+
+$('.loading').one(animateEnd, function(){
+  d3.select(window)
+    .on("resize", resized)
+    .on("touchstart", touchstarted)
+    .on("touchmove", touchmoved)
+    .on("touchend", touchended);
+    $(this).remove();
+});
 
 function touchstarted() {
    
