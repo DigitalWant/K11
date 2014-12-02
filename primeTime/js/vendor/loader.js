@@ -32,6 +32,8 @@ var imgSrc = [
 './img/store5-2.png',
 './img/store5-3.png',
 './img/store5-4.png',
+'./img/repair0.png',
+'./img/repair00.png',
 './img/repair1.png',
 './img/repair2.png',
 './img/repair3.png',
