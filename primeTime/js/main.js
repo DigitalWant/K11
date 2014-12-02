@@ -47,7 +47,6 @@ function resized() {
       .on("touchstart", touchstarted)
       .on("touchmove", touchmoved)
       .on("touchend", touchended);
-    new WOW().init();
 
 }
 

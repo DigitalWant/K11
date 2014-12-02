@@ -51,6 +51,8 @@ $.imgpreload(imgSrc,
     	$(".pages").removeClass('invisible');
     	//TODO:add fadeout effect
     	$(".loading").remove()
+    	
+    	new WOW().init();
 
 
         // callback invoked when all images have loaded
