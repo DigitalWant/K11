@@ -12,9 +12,10 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/animate.min.css">
         <script type="text/javascript">
+        /*
             window.addEventListener('touchmove', function(e) {
               e.preventDefault();
-            }, false);
+            }, false);*/
         </script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="js/vendor/jquery-2.1.1.min.js"></script>
@@ -24,17 +25,20 @@
     </head>
     <body >
 
-       <div class="pages invisible">
+       <div class="pages">
           <div class="page" id='opening'>
               <div class="content">
-              <div id="brand"  >
-                <div id="logo" class="invisible">
+              <div id="brand" class="wow" >
+                <div id="logo" >
                     <i class="icon-logo-part-ball brandRed tshadow-glow"></i><i class="icon-logo-part-text brandGold tshadow-glow"></i>
                 </div>
-                <p class="brandGold text-center invisible" >全球最大国际名表零售集团</p>
-                <p id="OpeningEnd" class="brandGold text-center invisible">大陆零售商号</p>
+                <p class="brandGold text-center wow" >全球最大国际名表零售集团</p>
+                <p id="OpeningEnd" class="brandGold text-center wow">大陆零售商号</p>
+                <p class="wow rollIn text-center" ><i class="icon-brand brandRed" id="famous"></i></p>
               </div>
-                <div id="brandcover" class="article invisible" >
+
+              <!--
+                <div id="brandcover" class="article animated fadeIn" >
                   <div class="wrapper">
                     <div class="iconRow left-ToRight set3"></div>
                     <div class="iconRow right-ToLeft set2"></div>
@@ -46,22 +50,122 @@
                     <div class="iconRow right-ToLeft set2"></div>
                     <div class="iconRow left-ToRight set5"></div>                   
                   </div>
-                  <div class="cover invisible" ></div>
+                  <div class="cover wow" ></div>
+                </div>-->
+              </div>
+          </div>
+          <div class="page" >
+              <div class="content">
+                <div class="photo" >
+                    <div class="wow fadeIn img" data-wow-delay="1s" style="background-image:url(./img/store1-1.png);"></div>
+                      <div class="caption gradientCaptionRight  wow fadeInRight" data-wow-delay="1s" style="right:0px;top:35%;">
+                        <h3 class="brandRed">成都新宇三宝航天店宝格丽</h3>
+                     </div> 
+
+                </div>
+                <div class="photo" >
+                    <div class="wow fadeIn img" data-wow-delay="2s" style="background-image:url(./img/store1-2.png);"></div>
+                      <div class="caption gradientCaptionLeft  wow fadeInLeft" data-wow-delay="4s" style="left:0px;top:85%;">
+                        <h3 class="brandRed">成都新宇三宝航天店宝玑</h3>
+                     </div> 
+                </div>
+                <div class="photo" >
+                    <div class="wow fadeIn img" data-wow-delay="3s" style="background-image:url(./img/store1-3.png);"></div>
+                </div>
+                <div class="photo" >
+                    <div class="wow fadeIn img" data-wow-delay="4s" style="background-image:url(./img/store1-4.png);"></div>
                 </div>
               </div>
           </div>
           <div class="page" >
-               <div class="content">
-                    <div class="article text-center" >
-                      <p class="wow rollIn" ><i class="icon-brand brandRed" id="famous"></i></p>
-                      <hr style="margin-top:-2em;" />
-                      <h3 class="wow fadeInLeft brandGold" data-wow-delay=".5s">策略股东</h3>
-                      <h4 class="wow fadeInLeft brandGold" data-wow-delay="1s">全球最大手表制造及分销商</h4>
-                      <p class="wow fadeInRight brandGold" data-wow-delay="1.2s">Swatch Group（斯沃琪集团）</p>
-                      <h4 class="wow fadeInLeft brandGold" data-wow-delay="1.4s">全球最大奢侈品集团</h4>
-                      <p class="wow fadeInRight brandGold" data-wow-delay="1.6s">LVMH Group（路威酩轩集团)</p>
-                    </div>
-               </div>
+              <div class="content">
+                <div class="photo" >
+                    <div class="wow fadeInDown img" data-wow-delay="1s" style="background-image:url(./img/store2-1.png);"></div>
+                      <div class="caption gradientCaptionRight  wow fadeInRight" data-wow-delay="1s" style="right:0px;top:25%;">
+                        <h3 class="brandRed">合肥银泰积家</h3>
+                     </div> 
+
+                </div>
+                <div class="photo" >
+                    <div class="wow fadeIn img" data-wow-delay="2s" style="background-image:url(./img/store2-2.png);"></div>
+                      <div class="caption gradientCaptionLeft  wow fadeInLeft" data-wow-delay="3s" style="left:0px;top:55%;">
+                        <h3 class="brandRed">合肥银泰劳力士</h3>
+                     </div> 
+                </div>
+                <div class="photo" >
+                    <div class="wow fadeInUp img" data-wow-delay="3s" style="background-image:url(./img/store2-3.png);"></div>
+                      <div class="caption gradientCaptionRight  wow fadeInRight" data-wow-delay="4s" style="right:0px;top:85%;">
+                        <h3 class="brandRed">合肥银泰雷达店</h3>
+                     </div> 
+                </div>
+              </div>
+          </div>
+           <div class="page" >
+              <div class="content">
+                <div class="photo" >
+                    <div class="wow fadeInLeft img" data-wow-delay="1s" style="background-image:url(./img/store3-1.png);"></div>
+                      <div class="caption gradientCaptionCenter wow fadeInLeft" data-wow-delay="5s" style="left:0px;top:20%;">
+                        <h3 class="brandRed">上海百联中环店</h3>
+                     </div> 
+                </div>
+                <div class="photo" >
+                    <div class="wow fadeInRight img" data-wow-delay="2s" style="background-image:url(./img/store3-2.png);"></div>
+                      <div class="caption gradientCaptionCenter wow fadeInLeft" data-wow-delay="5s" style="left:0px;top:55%;">
+                        <h3 class="brandRed">上海钟表商店</h3>
+                     </div> 
+                </div>
+                <div class="photo" >
+                    <div class="wow fadeInLeft img" data-wow-delay="3s" style="background-image:url(./img/store3-3.png);"></div>
+
+                </div>
+                <div class="photo" >
+                    <div class="wow fadeInRight img" data-wow-delay="4s" style="background-image:url(./img/store3-4.png);"></div>
+                      <div class="caption gradientCaptionCenter wow fadeInLeft" data-wow-delay="5s" style="left:0px;top:90%;">
+                        <h3 class="brandRed">上海百联中环店</h3>
+                     </div> 
+                </div>
+              </div>
+          </div>
+          <div class="page" >
+              <div class="content">
+                <div class="photo" >
+                    <div class="wow fadeInLeft img" data-wow-delay="1s" style="background-image:url(./img/store4-1.png);"></div>
+                      <div class="caption gradientCaptionLeft wow fadeInLeft" data-wow-delay="5s" style="left:0px;top:5%;">
+                        <h3 class="brandRed">盛时成都王府井浪琴</h3>
+                     </div> 
+                </div>
+                <div class="photo" >
+                    <div class="wow fadeInRight img" data-wow-delay="2s" style="background-image:url(./img/store4-2.png);"></div>
+                      <div class="caption gradientCaptionRight wow fadeInRight" data-wow-delay="5s" style="right:0px;top:40%;">
+                        <h3 class="brandRed">盛时成都王府井中心欧米茄</h3>
+                     </div> 
+                </div>
+                <div class="photo" >
+                    <div class="wow fadeInUp img" data-wow-delay="3s" style="background-image:url(./img/store4-3.png);"></div>
+                      <div class="caption gradientCaptionCenter wow fadeInLeft" data-wow-delay="5s" style="left:0px;top:90%;">
+                        <h3 class="brandRed">石家庄新宇三宝星空店IWC 与 宝珀</h3>
+                     </div> 
+                </div>
+              </div>
+          </div>
+          <div class="page" >
+              <div class="content">
+                <div class="photo" >
+                    <div class="wow fadeInLeft img" data-wow-delay="1s" style="background-image:url(./img/store5-1.png);"></div>
+                      <div class="caption gradientCaptionCenter wow fadeInLeft" data-wow-delay="5s" style="left:0px;top:5%;">
+                        <h3 class="brandRed">武汉新宇三宝</h3>
+                     </div> 
+                </div>
+                <div class="photo" >
+                    <div class="wow fadeInLeft img" data-wow-delay="2s" style="background-image:url(./img/store5-2.png);"></div>
+                </div>
+                <div class="photo" >
+                    <div class="wow fadeInRight img" data-wow-delay="3s" style="background-image:url(./img/store5-3.png);"></div>
+                </div>
+                <div class="photo" >
+                    <div class="wow fadeInUp img" data-wow-delay="3s" style="background-image:url(./img/store5-4.png);"></div>
+                </div>
+              </div>
           </div>
           <div class="page brandBgRed" >
               <div class="content">
@@ -305,13 +409,13 @@
               </div>
           </div>
         </div>
-
+<!--
       <div class="loading ">
           <div class="brand" >
             <i class="icon-logo-part-ball brandRed tshadow-glow"></i><i class="icon-logo-part-text brandGold tshadow-glow"></i>
         </div>
       </div>
-
+-->
 
         <script src="js/vendor/wow.js"></script>
         <!--<script src="js/vendor/move.min.js"></script>-->

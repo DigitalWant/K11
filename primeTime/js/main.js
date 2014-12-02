@@ -42,16 +42,12 @@ function resized() {
   if (height0) scrollTo(0, Math.max(0, Math.min(page.size() - 1, Math.round(pageYOffset / height0))) * height);
   //alert('resized');
 }
+new WOW().init();
 //when loading complete display bind touch events
+/*
 $('.loading').one(animateEnd, function(){
   $(this).remove();
-    console.log('loading complete');
-    //alert('hello');
-
   $('#brandcover').removeClass('invisible').addClass('animated fadeIn');
-
-
-
 });
 $("#brandcover").one(animateEnd,function(){
   $("#brandcover .cover").removeClass('invisible').addClass('animated fadeIn');
@@ -63,15 +59,15 @@ $("#logo").one(animateEnd,function(){
   $("#brand p").removeClass('invisible').addClass('animated fadeInUp');
 });
 $('#OpeningEnd').one(animateEnd,function(){
-  d3.select(window)
-    .on("resize", resized)
-    .on("touchstart", touchstarted)
-    .on("touchmove", touchmoved)
-    .on("touchend", touchended);
-    console.log('opening complete');
-    new WOW().init();
 
-});
+    console.log('opening complete');
+});*/
+d3.select(window)
+  .on("resize", resized)
+  .on("touchstart", touchstarted)
+  .on("touchmove", touchmoved)
+  .on("touchend", touchended);
+
 function touchstarted() {
    
   allAnimateItems.css(playState,'paused'); 
