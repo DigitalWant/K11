@@ -226,13 +226,16 @@ textarea {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-chevron-down {
 
-.icon-chevron-down:before {
-  content: "\e608";
-  -webkit-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
 -moz-transform: rotate(180deg);
 -o-transform: rotate(180deg);
 writing-mode: bt-rl;
+}
+.icon-chevron-down:before {
+  content: "\e608";
+
 }
 .icon-logo-part-ball:before {
   content: "\e600";
