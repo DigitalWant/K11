@@ -229,6 +229,10 @@ textarea {
 
 .icon-chevron-down:before {
   content: "\e608";
+  -webkit-transform: rotate(180deg);
+-moz-transform: rotate(180deg);
+-o-transform: rotate(180deg);
+writing-mode: bt-rl;
 }
 .icon-logo-part-ball:before {
   content: "\e600";
@@ -276,8 +280,8 @@ body {
   top: 0px;
   z-index: 9999;
   background-color: #fff;
-  -vendor-animation-duration: 3s;
-  -vendor-animation-delay: 2s;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
 }
 .loading progress,.loading .brand  {
   display: block;
@@ -315,6 +319,7 @@ body.landscape .pages{
   display: table-cell;
   vertical-align: middle;
   width: 100%;
+  overflow: hidden;
 }
 .article{
   font-size: 80%;
@@ -377,9 +382,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 
 
 /* opening */
+
 .iconRow{
   width: 100%;
-  height: 60px;
+  height: 50px;
   background: transparent repeat left top;
   background-size: cover;
 }
@@ -402,8 +408,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 .set6{
   background-image: url(../img/brandRow6.jpg);
 }
-
-
 
 .left-ToRight {
    -webkit-animation-name: MOVE-BG-LEFT-TO-RIGHT;
@@ -432,8 +436,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
   font-size: 600%;
 }
 
+
+/* START opening animate elements */
 #brandcover {
   padding: 0em;
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  animation-duration: 4s;
 }
 #brandcover .cover{
   content:" ";
@@ -443,15 +452,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
   width: 100%;
   height: 100%;
   z-index: 1;
-background: rgba(239,239,239,1);
-background: -moz-linear-gradient(top, rgba(239,239,239,1) 0%, rgba(252,252,252,0.8) 40%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 60%, rgba(254,254,254,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(239,239,239,1)), color-stop(40%, rgba(252,252,252,0.8)), color-stop(50%, rgba(255,255,255,0.8)), color-stop(60%, rgba(255,255,255,0.8)), color-stop(100%, rgba(254,254,254,1)));
-background: -webkit-linear-gradient(top, rgba(239,239,239,1) 0%, rgba(252,252,252,0.8) 40%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 60%, rgba(254,254,254,1) 100%);
-background: -o-linear-gradient(top, rgba(239,239,239,1) 0%, rgba(252,252,252,0.8) 40%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 60%, rgba(254,254,254,1) 100%);
-background: -ms-linear-gradient(top, rgba(239,239,239,1) 0%, rgba(252,252,252,0.8) 40%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 60%, rgba(254,254,254,1) 100%);
-background: linear-gradient(to bottom, rgba(239,239,239,1) 0%, rgba(252,252,252,0.8) 40%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 60%, rgba(254,254,254,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#fefefe', GradientType=0 );
+  background: rgba(239,239,239,1);
+  background: -moz-linear-gradient(top, rgba(239,239,239,1) 0%, rgba(252,252,252,0.8) 40%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 60%, rgba(254,254,254,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(239,239,239,1)), color-stop(40%, rgba(252,252,252,0.8)), color-stop(50%, rgba(255,255,255,0.8)), color-stop(60%, rgba(255,255,255,0.8)), color-stop(100%, rgba(254,254,254,1)));
+  background: -webkit-linear-gradient(top, rgba(239,239,239,1) 0%, rgba(252,252,252,0.8) 40%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 60%, rgba(254,254,254,1) 100%);
+  background: -o-linear-gradient(top, rgba(239,239,239,1) 0%, rgba(252,252,252,0.8) 40%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 60%, rgba(254,254,254,1) 100%);
+  background: -ms-linear-gradient(top, rgba(239,239,239,1) 0%, rgba(252,252,252,0.8) 40%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 60%, rgba(254,254,254,1) 100%);
+  background: linear-gradient(to bottom, rgba(239,239,239,1) 0%, rgba(252,252,252,0.8) 40%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 60%, rgba(254,254,254,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#fefefe', GradientType=0 );
 }
+#logo{
+  position: relative;
+  z-index: 2;
+  -webkit-animation-duration: 3s;
+}
+#opening p {
+  -webkit-animation-duration: 3s;
+}
+#opening .icon-chevron-down {
+  top: 70%
+}
+/* END opening animate elements */
+
+
+
+
 .gradientCaptionCenter{
   text-align: center;
   background: rgba(254,254,254,0);
@@ -496,11 +521,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
 #famous {
   font-size: 1400%;
 }
-#logo{
-  position: relative;
-  z-index: 2;
 
-}
 .staff hr{
   margin: 0px 0px 0px;
 }

@@ -35,24 +35,34 @@ showTips();
 function resized() {
   var height0 = height;
   height = innerHeight;
-
   page.style("height", height + "px");
   //article.style("margin-top",-innerHeight/2 +"px").style("margin-left",-innerWidth/2 +"px");
   body.style("font", (height * .4) + "px/" + (height * .9) + "px sans-serif");
   pageYMax = (page.size() - 1) * height;
   if (height0) scrollTo(0, Math.max(0, Math.min(page.size() - 1, Math.round(pageYOffset / height0))) * height);
   //alert('resized');
-
-
 }
-
+//when loading complete display bind touch events
 $('.loading').one(animateEnd, function(){
+  $(this).remove();
+  $('#brandcover').removeClass('invisible').addClass('animated fadeIn');
+});
+$("#brandcover").one(animateEnd,function(){
+  $("#brandcover .cover").removeClass('invisible').addClass('animated fadeIn');
+});
+$("#brandcover .cover").one(animateEnd,function(){
+  $("#logo").removeClass('invisible').addClass('animated fadeInDown');
+});
+$("#logo").one(animateEnd,function(){
+  $("#brand p").removeClass('invisible').addClass('animated fadeInUp');
+});
+$('#OpeningEnd').one(animateEnd,function(){
   d3.select(window)
     .on("resize", resized)
     .on("touchstart", touchstarted)
     .on("touchmove", touchmoved)
     .on("touchend", touchended);
-    $(this).remove();
+    console.log('opening complete');
 });
 
 function touchstarted() {
@@ -63,12 +73,8 @@ function touchstarted() {
   pageY0 = pageYOffset;
   d3.event.preventDefault();
   body.interrupt();
-   //console.log('touchstarted');
-    //touching=true;
-
-
-      
-    //$('body').toggleClass('paused', $(this).css(playState) === 'paused'); 
+  //console.log('touchstarted');      
+  //$('body').toggleClass('paused', $(this).css(playState) === 'paused'); 
 }
 
 function touchmoved() {
@@ -99,10 +105,10 @@ function touchmoved() {
 function touchended() {
     //allAnimateItems.css(playState,'running'); 
 
-      var s0 = dragSamples.shift(),
-      s1 = dragSamples.pop(),
-      t1 = Date.now(),
-      y = pageYOffset;
+    var s0 = dragSamples.shift(),
+    s1 = dragSamples.pop(),
+    t1 = Date.now(),
+    y = pageYOffset;
 
 
   while (s0 && (t1 - s0.t > 350)) s0 = dragSamples.shift();
