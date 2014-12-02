@@ -1,30 +1,42 @@
 var imgSrc = [
-'./img/bgSkyBegin.jpg',
-'./img/bgSkyEnd.jpg',
-'./img/brandRow1.jpg',
-'./img/brandRow2.jpg',
-'./img/brandRow3.jpg',
-'./img/brandRow4.jpg',
-'./img/brandRow5.jpg',
-'./img/brandRow6.jpg',
+
+'./img/ceo.jpg',
+'./img/cover-1.png',
+'./img/cover-2.png',
+'./img/cover-3.png',
+'./img/cover-4.png',
+'./img/cover-5.png',
+'./img/cover-6.png',
 './img/ceo.jpg',
 './img/staff1.png',
 './img/staff2.png',
 './img/staff3.png',
 './img/staff4.png',
 './img/staff5.png',
-'./img/store1.jpg',
-'./img/store2.jpg',
-'./img/store3.jpg',
-'./img/store4.jpg',
-'./img/store5.jpg',
-'./img/store6.jpg',
-'./img/store7.jpg',
-'./img/store8.jpg',
-'./img/store9.jpg',
-'./img/store10.jpg',
-'./img/store11.jpg',
-'./img/store12.jpg',
+'./img/store-0.png',
+'./img/store1-1.png',
+'./img/store1-2.png',
+'./img/store1-3.png',
+'./img/store1-4.png',
+'./img/store2-1.png',
+'./img/store2-2.png',
+'./img/store2-3.png',
+'./img/store3-1.png',
+'./img/store3-2.png',
+'./img/store3-3.png',
+'./img/store3-4.png',
+'./img/store4-1.png',
+'./img/store4-2.png',
+'./img/store4-3.png',
+'./img/store5-1.png',
+'./img/store5-2.png',
+'./img/store5-3.png',
+'./img/store5-4.png',
+'./img/repair1.png',
+'./img/repair2.png',
+'./img/repair3.png',
+'./img/repair4.png',
+'./img/repair5.png',
 './img/tip.jpg'
 ]
 var currentStatus = 0;
@@ -44,7 +56,18 @@ $.imgpreload(imgSrc,
     },
     all: function()
     {
-    	//console.log('complete..');
+
+			$(".loading").fadeOut();
+			new WOW().init();
+
+			//console.log('complete..');
+    	setTimeout(function(){
+		d3.select(window)
+			  .on("resize", resized)
+			  .on("touchstart", touchstarted)
+			  .on("touchmove", touchmoved)
+			  .on("touchend", touchended);
+    	},11000);
 
 
     	

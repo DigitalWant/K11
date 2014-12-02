@@ -42,31 +42,8 @@ function resized() {
   if (height0) scrollTo(0, Math.max(0, Math.min(page.size() - 1, Math.round(pageYOffset / height0))) * height);
   //alert('resized');
 }
-new WOW().init();
 //when loading complete display bind touch events
-/*
-$('.loading').one(animateEnd, function(){
-  $(this).remove();
-  $('#brandcover').removeClass('invisible').addClass('animated fadeIn');
-});
-$("#brandcover").one(animateEnd,function(){
-  $("#brandcover .cover").removeClass('invisible').addClass('animated fadeIn');
-});
-$("#brandcover .cover").one(animateEnd,function(){
-  $("#logo").removeClass('invisible').addClass('animated fadeInDown');
-});
-$("#logo").one(animateEnd,function(){
-  $("#brand p").removeClass('invisible').addClass('animated fadeInUp');
-});
-$('#OpeningEnd').one(animateEnd,function(){
 
-    console.log('opening complete');
-});*/
-d3.select(window)
-  .on("resize", resized)
-  .on("touchstart", touchstarted)
-  .on("touchmove", touchmoved)
-  .on("touchend", touchended);
 
 function touchstarted() {
    
@@ -156,12 +133,6 @@ function touchended() {
       //console.log('//touching end');
 }
 
-
-function checkCurentPage(index){
-
-  console.log(index);
-
-}
 
 function showTips() {
     if ($(window).width() <= $(window).height()) {

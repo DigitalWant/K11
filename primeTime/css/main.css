@@ -297,7 +297,7 @@ body {
 .loading .brand {
   margin-top: -20%;
   margin-left: -20%;
-  font-size: 300%;
+  font-size:400%;
 }
 body.landscape{
     background:url(../img/tip.jpg) 0px 0px no-repeat;
