@@ -39,7 +39,9 @@ var imgSrc = [
 './img/repair3.png',
 './img/repair4.png',
 './img/repair5.png',
-'./img/tip.jpg'
+'./img/tip.jpg',
+'./img/boat.png'
+
 ]
 var currentStatus = 0;
 

@@ -21,9 +21,12 @@ $(".content").append("<i class='icon-chevron-down brandGold'></i>");
 $('.icon-chevron-down:eq(0)').hide();
 var allAnimateItems= $('.icon-chevron-down,.wow');
 
+//$("#boat").addClass('animated slideInLeft');
 
-
-
+$("#boat").one(animateEnd,function(){
+  console.log('hhe');
+  $(this).removeClass('animated slideInLeft').addClass('updown')
+})
 // iOS reports the wrong innerHeight on load!
 d3.timer(function() {
   resized();
