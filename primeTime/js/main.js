@@ -21,7 +21,6 @@ $(".content").append("<i class='icon-chevron-down brandGold'></i>");
 $('.icon-chevron-down:eq(0)').hide();
 var allAnimateItems= $('.icon-chevron-down,.wow');
 
-//
 
 $("#boat").one(animateEnd,function(){
   $(this).removeClass('animated slideInLeft').addClass('updown')
