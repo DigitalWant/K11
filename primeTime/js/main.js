@@ -11,14 +11,14 @@ var body = d3.select("body"),
  var playState = '-webkit-animation-play-state';
  var animateEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 //var iconRow = $('.iconRow');
-var fistBoatIn= true;
+var firstBoatIn= true;
 
 var page = d3.selectAll(".page");
 var article = d3.selectAll(".article");
 var $pageContent = $('.content');
 $(".content").append("<i class='icon-chevron-down brandGold'></i>");
 
-$('.icon-chevron-down:eq(0)').hide();
+$('.icon-chevron-down:eq(0),.icon-chevron-down:last').hide();
 var allAnimateItems= $('.icon-chevron-down,.wow');
 
 
@@ -127,8 +127,10 @@ function touchended() {
             //when it stable
               //console.log(index,$pageContent.length);
 
-              if (t==1 && index==$pageContent.length && fistBoatIn ==true){
-                $("#boat").removeClass('updown').addClass('animated slideInLeft');
+              if (t==1 && index==$pageContent.length && firstBoatIn ==true){
+                //console.log('true')
+                $("#boat").show().removeClass('updown').addClass('animated slideInLeft');
+                firstBoatIn =false;
                 //allAnimateItems.css(playState,"running");
 
             }
