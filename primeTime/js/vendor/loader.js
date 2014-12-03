@@ -86,7 +86,10 @@ $.imgpreload(imgSrc,
 
 		}
 
+		if (pageYOffset==pageYMax) {
+			                $("#boat").fadeIn().addClass('animated slideInLeft');
 
+		}
 
     	
     	//$(".pages").removeClass('invisible');

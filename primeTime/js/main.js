@@ -23,7 +23,7 @@ var allAnimateItems= $('.icon-chevron-down,.wow');
 
 
 $("#boat").one(animateEnd,function(){
-  $(this).removeClass('animated slideInLeft').addClass('updown')
+  $(this).removeClass('animated slideInLeft ').addClass('updown')
 })
 // iOS reports the wrong innerHeight on load!
 d3.timer(function() {
@@ -120,15 +120,15 @@ function touchended() {
       .tween("scroll", function() {
         var i = d3.interpolateNumber(pageYOffset, y);
         return function(t) { 
-          var index = i(t)/height;
+          var index = i(t)/height+1;
 
           scrollTo(0, i(t)); 
           //console.log(index);
             //when it stable
-              console.log(index);
+              //console.log(index,$pageContent.length);
 
-              if (t==1 && index==13){
-                $("#boat").fadeIn().addClass('animated slideInLeft');
+              if (t==1 && index==$pageContent.length){
+                $("#boat").removeClass('updown').addClass('animated slideInLeft');
                 //allAnimateItems.css(playState,"running");
 
             }
