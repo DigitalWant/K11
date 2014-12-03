@@ -24,7 +24,6 @@ var allAnimateItems= $('.icon-chevron-down,.wow');
 //
 
 $("#boat").one(animateEnd,function(){
-  console.log('hhe');
   $(this).removeClass('animated slideInLeft').addClass('updown')
 })
 // iOS reports the wrong innerHeight on load!
