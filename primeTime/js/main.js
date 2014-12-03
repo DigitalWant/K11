@@ -11,7 +11,7 @@ var body = d3.select("body"),
  var playState = '-webkit-animation-play-state';
  var animateEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 //var iconRow = $('.iconRow');
-
+var fistBoatIn= true;
 
 var page = d3.selectAll(".page");
 var article = d3.selectAll(".article");
@@ -127,7 +127,7 @@ function touchended() {
             //when it stable
               //console.log(index,$pageContent.length);
 
-              if (t==1 && index==$pageContent.length){
+              if (t==1 && index==$pageContent.length && fistBoatIn ==true){
                 $("#boat").removeClass('updown').addClass('animated slideInLeft');
                 //allAnimateItems.css(playState,"running");
 
