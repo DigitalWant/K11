@@ -166,7 +166,7 @@ function showTips() {
     };*/
         var dataForWeixin={
           appId:  "",
-          img:  '../img/wechat.jpg',
+          img:  'http://iamike.github.io/primeTime/img/wechat.jpg',
           url:  document.URL,
           title:  "盛时钟表",
           desc:"人生起航，有我相伴",
