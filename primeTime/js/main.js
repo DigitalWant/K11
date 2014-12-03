@@ -130,7 +130,7 @@ function touchended() {
               console.log(index);
 
               if (t==1 && index==13){
-                $("#boat").show().addClass('animated slideInLeft');
+                $("#boat").fadeIn().addClass('animated slideInLeft');
                 //allAnimateItems.css(playState,"running");
 
             }
