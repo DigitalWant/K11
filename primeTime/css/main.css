@@ -112,7 +112,13 @@ caption {
   text-align: left;
 }
 
-
+audio{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  left: -99px;
+  top: -99px;
+}
 
 .center-block {
   display: block;
