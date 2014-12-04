@@ -225,7 +225,7 @@ function showTips() {
             document.attachEvent('onWeixinJSBridgeReady' , onBridgeReady);
           }
         })();
-/*
+/**/
 var player = {
 
 
@@ -278,8 +278,8 @@ var player = {
   
 };
 // media初始化
-player.audio_init();
-*/
+//player.audio_init();
+
 /*
 
     var imgUrl = '../img/wechat.jpg';
