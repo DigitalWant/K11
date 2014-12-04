@@ -42,7 +42,7 @@ var imgSrc = [
 
 ]
 var currentStatus = 0;
-
+/*
 var player = {
 
 
@@ -97,7 +97,7 @@ var player = {
 // media初始化
 player.audio_init();
 
-
+*/
 $.imgpreload(imgSrc,
 {
     each: function()
@@ -113,7 +113,7 @@ $.imgpreload(imgSrc,
     },
     all: function()
     {
-player.audio_contorl();
+//player.audio_contorl();
 			$(".loading").fadeOut();
 			new WOW().init();
 		if (pageYOffset==0){
