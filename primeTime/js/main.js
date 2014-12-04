@@ -130,6 +130,7 @@ function touchended() {
               if (t==1 && index==$pageContent.length && firstBoatIn ==true){
                 //console.log('true')
                 $("#boat").show().removeClass('updown').addClass('animated slideInLeft');
+                
                 firstBoatIn =false;
                 //allAnimateItems.css(playState,"running");
 
