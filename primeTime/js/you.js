@@ -1342,6 +1342,7 @@ var car2 = {
 				$('.m-page').height($(window).height());
 				$('#j-mengban').height($(window).height());
 				$('.translate-back').height($(window).height());*/
+				console.log(time);
 			},time)
 		})
 /*
