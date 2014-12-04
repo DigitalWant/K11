@@ -42,62 +42,7 @@ var imgSrc = [
 
 ]
 var currentStatus = 0;
-/*
-var player = {
 
-
-
-  _audioNode    : $('.u-audio'),            // 声音模块
-  _audio      : null,                 // 声音对象
-  _audio_val    : true,                 // 声音是否开启控制
-
-  audio_init : function(){
-    // media资源的加载
-    var options_audio = {
-      loop: true,
-            preload: "auto",
-            src: player._audioNode.attr('data-src')
-    }
-    
-        player._audio = new Audio(); 
-
-        for(var key in options_audio){
-            if(options_audio.hasOwnProperty(key) && (key in player._audio)){
-                player._audio[key] = options_audio[key];
-            }
-        }
-        player._audio.load();
-  },
-
- 
-
-  // 声音控制函数
-  audio_contorl : function(){
-    if(!player._audio_val){
-      player.audio_stop();
-    }else{
-      player.audio_play();
-    }
-  },  
-
-  // 声音播放
-  audio_play : function(){
-    player._audio_val = false;
-    if(player._audio) player._audio.play();
-  },
-
-  // 声音停止
-  audio_stop  : function(){
-    player._audio_val = true;
-    if(player._audio) player._audio.pause(); 
-  },
-
-  
-};
-// media初始化
-player.audio_init();
-
-*/
 $.imgpreload(imgSrc,
 {
     each: function()
@@ -113,7 +58,7 @@ $.imgpreload(imgSrc,
     },
     all: function()
     {
-//player.audio_contorl();
+
 			$(".loading").fadeOut();
 			new WOW().init();
 		if (pageYOffset==0){
@@ -142,6 +87,7 @@ $.imgpreload(imgSrc,
 		}
 
 		if (pageYOffset==pageYMax) {
+			 firstBoatIn==false;
 
 			 $("#boat").fadeIn().addClass('animated slideInLeft');
 		}
