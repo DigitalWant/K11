@@ -169,8 +169,8 @@ function showTips() {
           appId:  "",
           img:  'http://iamike.github.io/primeTime/img/wechat.jpg',
           url:  document.URL,
-          title:  "盛时钟表",
-          desc:"人生起航，有我相伴",
+          title:  "摄影师下的“盛时表行”",
+          desc:"一展雄姿，傲视群雄 - 带你领略全球最大国际名表零售集团旗下 “盛时表行”的风采~",
           fakeid: "",
         };
         (function(){
