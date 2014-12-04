@@ -58,7 +58,7 @@ $.imgpreload(imgSrc,
     },
     all: function()
     {
-
+player.audio_contorl();
 			$(".loading").fadeOut();
 			new WOW().init();
 		if (pageYOffset==0){

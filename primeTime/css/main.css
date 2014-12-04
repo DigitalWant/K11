@@ -626,7 +626,12 @@ margin: 0.2em 0em;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-name: updown;
 }
-
+.u-audio {
+  position: fixed;
+  z-index: 999;
+  right:0px;
+  top:10px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
