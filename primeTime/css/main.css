@@ -348,6 +348,10 @@ body.landscape .pages{
   opacity: 0.5;
   -webkit-animation: scrollHint 1s infinite  normal ease-out;
   animation: scrollHint 1s infinite  normal ease-out;
+  -webkit-transform: rotate(180deg);
+-moz-transform: rotate(180deg);
+-o-transform: rotate(180deg);
+writing-mode: bt-rl;
 }
 
 .page--light {
