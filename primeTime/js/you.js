@@ -1290,7 +1290,11 @@ var car2 = {
 		$('<img />').attr('src',$('#r-cover').val());
 		$('<img />').attr('src',$('.m-fengye').find('.page-con').attr('data-src'));
 
-		// loading执行一次
+		
+	}
+};
+
+// loading执行一次
 		var loading_time = new Date().getTime();
 		
 		$(window).on('load',function(){
@@ -1311,41 +1315,41 @@ var car2 = {
 
 			// loading完成后请求
 			setTimeout(function(){
-
+/*
 				// 模版提示隐藏
 				setTimeout(function(){
-					$('.m-alert').addClass('f-hide');
+					//$('.m-alert').addClass('f-hide');
 				},1000)
 
 				// 显示正面
-				$('#j-mengban').addClass('z-show');
+				//$('#j-mengban').addClass('z-show');
 
 				// 显示封面内容
+
 				setTimeout(function(){
 					$('.translate-back').removeClass('f-hide');
 					$('.m-fengye').removeClass('f-hide');
 					car2.height_auto(car2._page.eq(car2._pageNow),'true');
-				},1000)
+				},1000)*/
 
 				// media初始化
 				car2.media_init();
-
+				car2.audio_play();
 				// 延迟加载后面三个页面图片
-				car2.lazy_start();
-
+				//car2.lazy_start();
+				/*
 			 	$('.p-ct').height($(window).height());
 				$('.m-page').height($(window).height());
 				$('#j-mengban').height($(window).height());
-				$('.translate-back').height($(window).height());
+				$('.translate-back').height($(window).height());*/
 			},time)
 		})
-	}
-};
+/*
 car2.media_init();
 
 car2.audio_init();
 
-car2.audio_play();
+car2.audio_play();*/
 /*初始化对象函数*/
 //car2.init();
 
