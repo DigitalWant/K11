@@ -567,7 +567,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
 .photo .caption {
   position: absolute;
   z-index: 2;
-  font-size: 70%;
   
 }
 .photo .caption h3 {
