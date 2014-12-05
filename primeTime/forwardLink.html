@@ -14,7 +14,12 @@
         <script type="text/javascript">
             window.addEventListener('touchmove', function(e) {
               e.preventDefault();
+
+                media.audio_init();
+                media.audio_play();
+
             }, false);
+
         </script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="js/vendor/jquery-2.1.1.min.js"></script>
@@ -128,12 +133,14 @@ var media = {
     }
 
 }
+
+/*
 setTimeout(function(){
 media.audio_init();
 media.audio_play();
 
 },5000)
-
+*/
 
         </script>
 
