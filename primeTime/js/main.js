@@ -168,7 +168,7 @@ function showTips() {
     };*/
         var dataForWeixin={
           appId:  "",
-          img:  '../img/wechat.jpg',
+          img:  'http://iamike.github.io/primeTime/img/wechat.jpg',
           url:  document.URL,
           title:  "摄影师下的“盛时表行”",
           desc:"看，我们的风采~",
