@@ -171,7 +171,7 @@ function showTips() {
           img:  'http://iamike.github.io/primeTime/img/wechat.jpg',
           url:  document.URL,
           title:  "摄影师下的“盛时表行”",
-          desc:"看，我们的风采~",
+          desc:"一展雄姿，傲视群雄！看，我们的风采>>>",
           fakeid: "",
         };
         (function(){
