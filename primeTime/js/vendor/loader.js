@@ -63,8 +63,10 @@ $.imgpreload(imgSrc,
 
 
 
-    		$('.loading').on('click',function(){
-    			$(this).fadeOut();
+    		$('.loading').on('click touchmove touchstart touchend',function(){
+    			$(this).fadeOut().queue(function(){
+    				$('.loading').remove();
+    			});
 
 
     			if (musicPlayFlag!=true){
@@ -79,7 +81,7 @@ $.imgpreload(imgSrc,
 
 
 
-
+			//if the first screen 
 		if (pageYOffset==0){
 
 				//console.log('complete..');
@@ -104,6 +106,7 @@ $.imgpreload(imgSrc,
 				  $('.icon-chevron-down:eq(0)').show();
 
 		}
+		//if reach the last screen
 
 		if (pageYOffset==pageYMax) {
 			 firstBoatIn==false;
