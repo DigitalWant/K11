@@ -62,19 +62,15 @@ $.imgpreload(imgSrc,
 
 
     	function start(){
-    		$('.loading').fadeOut();
+
+
+    		$('.loading').fadeout();
 			new WOW().init();
-			   if (musicPlayFlag!=true){
-      musicTrack();
-      musicPlayFlag = true;
-    }
+
+
+
     	}
 
-		d3.select(window)
-			  .on("resize", start)
-			  .on("touchstart", start)
-			  .on("touchmove", start)
-			  .on("touchend", start);
 
 
 

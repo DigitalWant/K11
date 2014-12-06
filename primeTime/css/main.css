@@ -632,11 +632,17 @@ margin: 0.2em 0em;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-name: updown;
 }
-.u-audio {
-  position: fixed;
-  z-index: 999;
-  right:0px;
-  top:10px;
+#audio {
+position:fixed;
+z-index:99999;
+width:25px;
+height:25px;
+right:20px;
+top:20px; 
+left:auto;
+background: transparent url(../img/music_open.png) no-repeat left top;
+background-size: contain;
+
 }
 /* ==========================================================================
    Helper classes
