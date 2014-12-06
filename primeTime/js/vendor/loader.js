@@ -59,9 +59,9 @@ $.imgpreload(imgSrc,
     all: function()
     {
 
-		$(".loading .loading-text").html("<p class='brandBgGold text-center'>点击展开我们的旅程！</p>");
-		$(".loading .spinner").remove();
-
+		$(".loading .waiting-text").remove();
+		$(".loading .start-text").show();
+		
 
 
     		$("#audio").on('click touchmove touchstart touchend',function(){

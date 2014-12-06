@@ -321,6 +321,10 @@ body {
 .loading .brand p {
   font-size: 20%;
 }
+
+.start-text {
+display: none;
+}
 body.landscape{
     background:url(../img/tip.jpg) 0px 0px no-repeat;
     background-size: cover;
