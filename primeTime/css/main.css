@@ -259,7 +259,7 @@ textarea {
 .icon-slogan-Time:before {
   content: "\e606";
 }
-.icon-brand:before {
+.icon-icon-brand:before {
   content: "\e607";
 }
 .icon-chevron-down:before {
@@ -267,6 +267,9 @@ textarea {
 }
 .icon-home:before {
   content: "\e609";
+}
+.icon-point-up:before {
+  content: "\e60b";
 }
 
 .brandBgRed .icon-slogan-journey,.brandBgRed .icon-slogan-Time{
@@ -305,6 +308,9 @@ body {
   margin-top: -20%;
   margin-left: -20%;
   font-size:400%;
+}
+.loading .brand p {
+  font-size: 20%;
 }
 body.landscape{
     background:url(../img/tip.jpg) 0px 0px no-repeat;

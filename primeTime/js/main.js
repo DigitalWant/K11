@@ -31,6 +31,97 @@ d3.timer(function() {
   return true;
 
 });
+var media = {
+
+    _audioNode      : $('#audio'),                        // 声音模块
+    _audio          : null,                                 // 声音对象
+    _audio_val      : true,                                 // 声音是否开启控制
+
+// 声音初始化
+    audio_init : function(){
+        // media资源的加载
+        var options_audio = {
+            loop: true,
+            preload: "auto",
+            src: media._audioNode.attr('data-src')
+        }
+        
+        media._audio = new Audio(); 
+
+        for(var key in options_audio){
+            if(options_audio.hasOwnProperty(key) && (key in media._audio)){
+                media._audio[key] = options_audio[key];
+            }
+        }
+        media._audio.load();
+    },
+
+    // 声音事件绑定
+    audio_addEvent : function(){
+        if(media._audioNode.length<=0) return;
+
+        // 声音按钮点击事件
+        var txt = media._audioNode.find('.txt_audio'),
+            time_txt = null;
+        media._audioNode.find('.btn_audio').on('click',media.audio_contorl);
+
+        // 声音打开事件
+        $(media._audio).on('play',function(){
+            media._audio_val = false;
+
+            audio_txt(txt,true,time_txt);
+            $('.audio_open').removeClass('audio_close');
+            
+            // 开启音符冒泡
+            //$.fn.coffee.start();
+            //$('.coffee-steam-box').show(500);
+        })
+
+        // 声音关闭事件
+        $(media._audio).on('pause',function(){
+            audio_txt(txt,false,time_txt)
+            $('.audio_open').addClass('audio_close');
+            
+            // 关闭音符冒泡
+            //$.fn.coffee.stop();
+            //$('.coffee-steam-box').hide(500);
+        })
+
+        function audio_txt(txt,val,time_txt){
+            if(val) txt.text('打开');
+            else txt.text('关闭');
+
+            if(time_txt) clearTimeout(time_txt);
+
+            txt.removeClass('z-move z-hide');
+            time_txt = setTimeout(function(){
+                txt.addClass('z-move').addClass('z-hide');
+            },1000)
+        }
+    },
+
+    // 声音控制函数
+    audio_contorl : function(){
+        if(!media._audio_val){
+            media.audio_stop();
+        }else{
+            media.audio_play();
+        }
+    },  
+
+    // 声音播放
+    audio_play : function(){
+        media._audio_val = false;
+        if(media._audio) media._audio.play();
+    },
+
+    // 声音停止
+    audio_stop  : function(){
+        media._audio_val = true;
+        if(media._audio) media._audio.pause(); 
+    }
+
+}
 
 window.addEventListener("resize", showTips, true);
 showTips();
@@ -49,7 +140,7 @@ function resized() {
 
 
 function touchstarted() {
-   
+
   //allAnimateItems.css(playState,'paused'); 
   dragSamples = [];
   clientY0 = d3.event.changedTouches[0].clientY;

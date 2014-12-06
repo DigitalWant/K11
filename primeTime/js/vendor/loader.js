@@ -59,8 +59,25 @@ $.imgpreload(imgSrc,
     all: function()
     {
 
-			$(".loading").fadeOut();
+
+
+    	function start(){
+    		$('.loading').fadeOut();
 			new WOW().init();
+			   if (musicPlayFlag!=true){
+      musicTrack();
+      musicPlayFlag = true;
+    }
+    	}
+
+		d3.select(window)
+			  .on("resize", start)
+			  .on("touchstart", start)
+			  .on("touchmove", start)
+			  .on("touchend", start);
+
+
+
 		if (pageYOffset==0){
 
 				//console.log('complete..');
