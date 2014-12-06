@@ -59,8 +59,8 @@ $.imgpreload(imgSrc,
     all: function()
     {
 
-		$(".loading .loading-text").html("<p class='brandBgGold text-center'>点击展开我们的旅程！</p>");
-		$(".loading .spinner").remove();
+		//$(".loading .loading-text").html("<p class='brandBgGold text-center'>点击展开我们的旅程！</p>");
+		//$(".loading .spinner").remove();
 
 
 
