@@ -84,8 +84,8 @@ $.imgpreload(imgSrc,
 
 
     			if (musicPlayFlag!=true){
-			      musicTrack();
-			      musicPlayFlag = true;
+            		media.audio_play();
+			     	musicPlayFlag = true;
 			    }
     		});
 			new WOW().init();

@@ -122,6 +122,8 @@ var media = {
     }
 
 }
+ 
+ media.audio_init();
 
 window.addEventListener("resize", showTips, true);
 showTips();
