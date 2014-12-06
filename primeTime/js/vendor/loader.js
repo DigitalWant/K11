@@ -78,9 +78,7 @@ $.imgpreload(imgSrc,
 
     		});
     		$('.loading').on('click touchmove touchstart touchend',function(){
-    			$('.loading').fadeOut().queue(function(){
-    				$('.loading').remove();
-    			});
+    			$('.loading').remove();
 
 
     			if (musicPlayFlag!=true){
