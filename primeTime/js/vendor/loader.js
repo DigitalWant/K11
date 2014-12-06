@@ -78,8 +78,8 @@ $.imgpreload(imgSrc,
 
     		});
     		$('.loading').on('click touchmove touchstart touchend',function(){
-    			$(this).fadeOut().queue(function(){
-    				$('.loading').fadeout();
+    			$('.loading').fadeOut().queue(function(){
+    				$('.loading').remove();
     			});
 
 
