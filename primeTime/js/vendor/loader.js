@@ -61,15 +61,15 @@ $.imgpreload(imgSrc,
 
 
 
-    	function start(){
 
 
-    		$('.loading').fadeout();
+    		$('.loading').on('click',function(){
+    			$(this).fadeout();
+    		})
 			new WOW().init();
 
 
 
-    	}
 
 
 
