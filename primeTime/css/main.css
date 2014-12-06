@@ -210,6 +210,9 @@ textarea {
 /*
  * special ../fonts.
  */
+/*
+ * special ../fonts.
+ */
 @font-face {
   font-family: 'icomoon';
   src:url('../fonts/icomoon.eot?-c6xn8k');
@@ -259,7 +262,7 @@ textarea {
 .icon-slogan-Time:before {
   content: "\e606";
 }
-.icon-icon-brand:before {
+.icon-brand:before {
   content: "\e607";
 }
 .icon-chevron-down:before {
@@ -268,9 +271,7 @@ textarea {
 .icon-home:before {
   content: "\e609";
 }
-.icon-point-up:before {
-  content: "\e60b";
-}
+
 
 .brandBgRed .icon-slogan-journey,.brandBgRed .icon-slogan-Time{
   opacity: 0.5;
