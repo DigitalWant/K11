@@ -49,7 +49,7 @@ $.imgpreload(imgSrc,
     {
     	currentStatus++
 
-		$("progress").val(currentStatus/imgSrc.length);
+		$(".loading i.progress").text(Math.round(currentStatus/imgSrc.length*100));
 		//console.log(currentStatus/imgSrc.length)
         // callback invoked when each image is loaded
         // this = dom image object
