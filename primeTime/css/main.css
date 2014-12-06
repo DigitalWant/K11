@@ -658,6 +658,13 @@ background-size: contain;
 
 }
 #audio.close{
+  position:fixed;
+z-index:99999;
+width:25px;
+height:25px;
+right:20px;
+top:20px; 
+left:auto;
 background: transparent url(../img/music_close.png) no-repeat left top;
 background-size: contain;
 
