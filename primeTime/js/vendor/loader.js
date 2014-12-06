@@ -64,7 +64,7 @@ $.imgpreload(imgSrc,
 		
 
 
-    		$("#audio").on('click ',function(){
+    		$("#audio").on('click touchstart ',function(){
 
     			if ($(this).hasClass('open') == true){
     			
