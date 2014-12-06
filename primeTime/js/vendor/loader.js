@@ -59,7 +59,7 @@ $.imgpreload(imgSrc,
     all: function()
     {
 
-		$(".loading .waiting-text").fadeout();
+		$(".loading .waiting-text").fadeOut();
 		$(".loading .start-text").fadeIn();
 		
 
