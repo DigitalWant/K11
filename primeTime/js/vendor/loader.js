@@ -78,15 +78,16 @@ $.imgpreload(imgSrc,
 
     		});
     		$('.loading').on('click touchmove touchstart touchend',function(){
-    			$('.loading').fadeOut();
+    			$('.loading').fadeOut().queue(function(){
+	  				new WOW().init();
+    			});
 
 
     			if (musicPlayFlag!=true){
             		media.audio_play();
 			     	musicPlayFlag = true;
 			    }
- 				new WOW().init();
-   			});
+   		});
 
 
 
