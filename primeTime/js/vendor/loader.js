@@ -59,8 +59,8 @@ $.imgpreload(imgSrc,
     all: function()
     {
 
-		$(".loading .waiting-text").remove();
-		$(".loading .start-text").show();
+		$(".loading .waiting-text").fadeout();
+		$(".loading .start-text").fadeIn();
 		
 
 
@@ -78,7 +78,7 @@ $.imgpreload(imgSrc,
 
     		});
     		$('.loading').on('click touchmove touchstart touchend',function(){
-    			$('.loading').remove();
+    			$('.loading').fadeOut();
 
 
     			if (musicPlayFlag!=true){
