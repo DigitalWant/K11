@@ -293,9 +293,16 @@ body {
   left: 0px;
   top: 0px;
   z-index: 9999;
-  background-color: #fff;
+  background: #fff url(../img/loadingBg.jpg) no-repeat scroll left top;
+  background-size: contain;
+  display: table;
   -webkit-animation-duration: 3s;
   -webkit-animation-delay: 2s;
+}
+.loading .loading-text{
+  display: table-cell;
+  vertical-align: middle;
+  padding-top:  25%;
 }
 .loading progress,.loading .brand  {
   display: block;
@@ -305,9 +312,10 @@ body {
   width: 50%;
   margin-left: -25%;
 }
+
 .loading .brand {
-  margin-top: -20%;
-  margin-left: -20%;
+  margin-top: 0%;
+  margin-left:0 %;
   font-size:400%;
 }
 .loading .brand p {
