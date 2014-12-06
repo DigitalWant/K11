@@ -140,10 +140,7 @@ function resized() {
 
 
 function touchstarted() {
-   if (musicPlayFlag!=true){
-      musicTrack();
-      musicPlayFlag = true;
-    }
+
   //allAnimateItems.css(playState,'paused'); 
   dragSamples = [];
   clientY0 = d3.event.changedTouches[0].clientY;

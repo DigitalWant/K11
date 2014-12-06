@@ -65,6 +65,12 @@ $.imgpreload(imgSrc,
 
     		$('.loading').on('click',function(){
     			$(this).fadeOut();
+
+
+    			if (musicPlayFlag!=true){
+			      musicTrack();
+			      musicPlayFlag = true;
+			    }
     		})
 			new WOW().init();
 
