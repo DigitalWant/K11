@@ -644,6 +644,12 @@ background: transparent url(../img/music_open.png) no-repeat left top;
 background-size: contain;
 
 }
+#audio.close{
+background: transparent url(../img/music_close.png) no-repeat left top;
+background-size: contain;
+
+
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

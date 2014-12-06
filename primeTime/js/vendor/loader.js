@@ -62,7 +62,19 @@ $.imgpreload(imgSrc,
 
 
 
+    		$("#audio").on('click touchmove touchstart touchend',function(){
 
+    			if ($(this).hasClass('open') == true){
+    			
+    				media.audio_stop();
+					$(this).removeClass('open').addClass('close');
+
+    			}else{
+    				media.audio_play();
+					$(this).removeClass('close').addClass('open')
+    			}
+
+    		});
     		$('.loading').on('click touchmove touchstart touchend',function(){
     			$(this).fadeOut().queue(function(){
     				$('.loading').remove();
@@ -73,7 +85,7 @@ $.imgpreload(imgSrc,
 			      musicTrack();
 			      musicPlayFlag = true;
 			    }
-    		})
+    		});
 			new WOW().init();
 
 
