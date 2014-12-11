@@ -5,7 +5,7 @@ tagline: 高德地图API
 ---
 {% include JB/setup %}
 <div class="row">
-  <div class="col-md-6 col-md-offset-3"><div id="map"></div></div>
+  <div class="col-md-6 col-md-offset-3"><div id="map" style="height:500px;"></div></div>
 </div>
 
 
