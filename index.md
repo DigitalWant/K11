@@ -7,4 +7,4 @@ tagline: Supporting tagline
 
 [Prime time](/primeTime)
 
-[锦江](/jinjiang)
+[jinjiang](/jinjiang)
