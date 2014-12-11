@@ -43,26 +43,74 @@
   </head>
 
   <body>
-  
-<div id="mapDiv" style="width:800px; height:600px"></div>
-<script type="text/javascript">
-function init() {
-  var d = new Date();
-  var map = new AMap.Map(mapDiv, {
-  view:new AMap.View2D({
-    center: new AMap.LngLat(116.39, 39.9),
-    zoom:15
-   })
-  });
-}
-function loadScript() {
-  var script = document.createElement("script");
-  script.type = "text/javascript";
-  script.src = "http://webapi.amap.com/maps?v=1.3&key=6669421058d71f9bf8983a89cd11f5b8&callback=init";
-  document.body.appendChild(script);
-}
-window.onload = loadScript;
-</script>
+  <div id="wrap">
+      <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Mike's Project</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+          <ul class="nav navbar-nav">
+          <li><a href="/archive.html">Archive</a></li>     	
+      <li><a href="/categories.html">Categories</a></li>      	
+      	<li><a href="/pages.html">Pages</a></li>    	
+      	<li><a href="/tags.html">Tags</a></li>
+      	 </ul>
+          <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+
+      <div class="container">
+        
+		<div class="page-header">
+		  <h1>锦江<small>高德API</small></h1>
+		</div>
+
+			<div class="row">
+			  <div class="col-xs-12">
+
+					<div id="mapDiv" style="width:800px; height:600px"></div>
+
+			  </div>
+			</div>
+
+
+      </div>
+
+    </div>
+
+
+		<script type="text/javascript">
+		function init() {
+		  var d = new Date();
+		  var map = new AMap.Map(mapDiv, {
+		  view:new AMap.View2D({
+		    center: new AMap.LngLat(116.39, 39.9),
+		    zoom:15
+		   })
+		  });
+		}
+		function loadScript() {
+		  var script = document.createElement("script");
+		  script.type = "text/javascript";
+		  script.src = "http://webapi.amap.com/maps?v=1.3&key=6669421058d71f9bf8983a89cd11f5b8&callback=init";
+		  document.body.appendChild(script);
+		}
+		window.onload = loadScript;
+		</script>
 
     <div id="footer">
       <div class="container">
@@ -88,11 +136,7 @@ window.onload = loadScript;
   })();
 </script>
 
-
-
-
-
-    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+ <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="/assets/themes/bootstrap-3/bootstrap/js/bootstrap.min.js"></script>
