@@ -4,23 +4,17 @@ title: 锦江
 tagline: 高德地图API
 ---
 {% include JB/setup %}
+<div class="row">
+  <div class="col-md-6 col-md-offset-3"><div id="map"></div></div>
+</div>
 
-<div id="container"></div>
 
-
-
-
-<style type="text/css">
-html{height:100%}
-body{height:100%;margin:0px;padding:0px}
-#container{height:100%}
-</style>
 
 <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=6669421058d71f9bf8983a89cd11f5b8"></script>
 <script type="text/javascript">
 function initialize(){
   var position=new AMap.LngLat(116.397428,39.90923);
-  var mapObj=new AMap.Map("container",{
+  var mapObj=new AMap.Map("map",{
   view: new AMap.View2D({//创建地图二维视口
   center:position,//创建中心点坐标
   zoom:14, //设置地图缩放级别
