@@ -1,33 +1,100 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta name="viewport" content="initial-scale=1.0,user-scalable=no">
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-<title>Hello,world</title>
-<style type="text/css">
-html{height:100%}
-body{height:100%;margin:0px;padding:0px}
-#container{height:100%}
-</style>
-<script type="text/javascript"
-src="http://webapi.amap.com/maps?v=1.3&key=6669421058d71f9bf8983a89cd11f5b8">
-</script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Mike's jobs!</title>
+    
+    <meta name="author" content="Dai">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap styles -->
+    <link href="/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Optional theme -->
+    <link href="/assets/themes/bootstrap-3/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Sticky Footer -->
+    <link href="/assets/themes/bootstrap-3/bootstrap/css/bs-sticky-footer.css" rel="stylesheet">
+    
+    <!-- Custom styles -->
+    <link href="/assets/themes/bootstrap-3/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+  
+<div id="mapDiv" style="width:800px; height:600px"></div>
 <script type="text/javascript">
-function initialize(){
-  var position=new AMap.LngLat(116.397428,39.90923);
-  var mapObj=new AMap.Map("container",{
-  view: new AMap.View2D({//创建地图二维视口
-  center:position,//创建中心点坐标
-  zoom:14, //设置地图缩放级别
-  rotation:0 //设置地图旋转角度
- }),
- lang:"zh_cn"//设置地图语言类型，默认：中文简体
-});//创建地图实例
+function init() {
+  var d = new Date();
+  var map = new AMap.Map(mapDiv, {
+  view:new AMap.View2D({
+    center: new AMap.LngLat(116.39, 39.9),
+    zoom:15
+   })
+  });
 }
+function loadScript() {
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = "http://webapi.amap.com/maps?v=1.3&key=6669421058d71f9bf8983a89cd11f5b8&callback=init";
+  document.body.appendChild(script);
+}
+window.onload = loadScript;
 </script>
-</head>
- 
-<body onload="initialize()">
-<div id="container"></div>
-</body>
+
+    <div id="footer">
+      <div class="container">
+        <p>&copy; 2014 Dai
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </div>
+    </div id="footer">
+
+    
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-123-12']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/assets/themes/bootstrap-3/bootstrap/js/bootstrap.min.js"></script>
+  </body>
 </html>
