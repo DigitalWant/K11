@@ -6,14 +6,17 @@ tagline: 高德地图API
 {% include JB/setup %}
 
 <div id="container"></div>
+
+
+
+
 <style type="text/css">
 html{height:100%}
 body{height:100%;margin:0px;padding:0px}
 #container{height:100%}
 </style>
-<script type="text/javascript"
-src="http://webapi.amap.com/maps?v=1.3&key=yourkey">
-</script>
+
+<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=6669421058d71f9bf8983a89cd11f5b8"></script>
 <script type="text/javascript">
 function initialize(){
   var position=new AMap.LngLat(116.397428,39.90923);
@@ -26,4 +29,5 @@ function initialize(){
  lang:"zh_cn"//设置地图语言类型，默认：中文简体
 });//创建地图实例
 }
+initialize();
 </script>
