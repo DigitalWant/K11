@@ -1,0 +1,174 @@
+@charset "utf-8";
+.wrapper{margin:0 auto;background-color:#F3F3F3;z-index:1;}
+.hotel_screen{width:100%;position:relative;height:540px;margin:0 auto;z-index:1;}
+.search_bar{height:120px; z-index:30; position:absolute; bottom:28px; width:100%;}
+.search_bar .search_bar_head_background{height:30px;opacity:0.6;filter:alpha(opacity=60);-khtml-opacity:0.6;position:relative;}
+.search_bar .search_tab_box{position:absolute;top:1px; height:30px;}
+.search_tab_box li{width:144px;height:14px;line-height:14px;text-align:center;padding:8px 0;font-size:14px;cursor:pointer;float:left;color:#AAA;}
+.search_tab_box li.tab_selected{height:16px;line-height:16px;background-color:#000;padding:5px 0;color:#FFF;cursor:default;font-size:16px;}
+.search_tab_box li.tab_hover{color:#DEDEDE;}
+.search_bar .hotel_results_box,.search_bar .records_results_box{height:90px;background-color:#000;color:#DEDEDE;position:absolute;*left:0; width:100%;}
+.search_bar .records_results_box{display:none;}
+.records_results_box ul{height:61px;padding:16px 0 13px 27px;}
+.records_results_box li{width:159px;height:40px;margin:0 44px 0 0;padding:10px 12px 9px;border:1px solid #000;cursor:pointer;float:left;}
+.records_results_box li:hover{text-decoration:underline;border:1px solid #FFF;}
+.records_results_box .close_btn{width:8px;height:8px;background:url(../sprite/icon_hotel_home.png) no-repeat -968px -33px;position:relative;float:right; cursor:pointer;display:none;}
+.records_results_box .hotel_name{width:151px;height:14px;line-height:14px;float:left;padding-bottom:12px;}
+.records_results_box .text_hover{text-decoration:underline;}
+.records_results_box .checkIn_date,.records_results_box .checkOut_date{float:left;height:14px;line-height:14px;}
+.records_results_box .checkOut_date{padding-left:8px;}
+.search_bar .label_text{color:#DEDEDE;}
+.hotel_results_box .hotel_logo{width:79px;height:61px;display:block;float:left;background:url(../sprite/icon_hotel_home.png) no-repeat; margin:9px 0 20px 33px;}
+.hotel_results_box .city,.hotel_results_box .date_box{width:120px;height:51px;float:left;padding:16px 0 23px 36px;}
+.hotel_results_box .keyword{width:186px;height:51px;float:left;padding:16px 48px 23px 36px;}
+.search_bar .input_box,.search_bar .kw,.search_bar .city_box{padding-top:8px;position:relative;}
+.search_bar input{width:109px;height:23px;border:1px solid #DEDEDE;}
+.search_bar .tipTxt{height:21px;line-height:21px;}
+.search_bar .kw_input{width:175px;}
+.search_bar .search_btn{width:64px;height:26px;text-align:center;color:#FFF;border:none;cursor:pointer;margin:40px 23px 24px 0;float:left; padding:0;}
+.search_bar .check_map_page{width:105px;float:left;margin:44px 0 28px;color:#DEDEDE;cursor:pointer;}
+.search_bar .check_map_page:hover{text-decoration:underline;}
+.search_bar .check_map_page .map_page_logo{width:21px;height:18px;background:url(../sprite/icon_hotel_home.png) no-repeat -797px -54px; display:block;float:left;}
+.kerword_box{width:370px;padding:6px 12px;text-indent:0;border:1px solid #e7e7e7;box-shadow:#e7e7e7 0px 0px 5px;position:absolute;top:27px;left:5px;font-size:12px;background:#fff;color:#333;z-index:9;font-family:\5b8b\4f53;}
+.kerword_box,.word_slide{width:370px;padding:6px 12px;text-indent:0;border:1px solid #e7e7e7;box-shadow:#e7e7e7 0px 0px 5px;font-size:12px;position:relative;top:0;left:0;background:#fff;color:#333;z-index:9;font-family:\5b8b\4f53;}
+.word_slide{width:220px;padding:0;display:none;}
+.word_slide a{display:block;list-style:none;overflow:hidden;height:16px;padding:4px 5px;cursor:pointer;color:#777;}
+.word_slide a:hover{background:#1d7ad9;color:#fff;}
+.word_slide a:hover b{font-weight:normal;}
+.kerword_box p{border-bottom:1px solid #ececec;padding-bottom:5px;margin-bottom:5px;line-height:24px;text-align:left;}
+.kerword_box .hot_head{float:left;width:100%;}
+.kerword_box p a{margin-right:10px;display:inline-block;}
+.kerword_box p a:hover{color:#ff7300;}
+.kerword_box p.last{padding:0;margin:0;border:0;}
+.kw .tipTxt{position:absolute;top:10px;}
+.carousel_box{height:540px;}
+.com_1200{width:1200px;margin:0 auto;}
+.carousel_inner{position:relative;height:540px;}
+.loading span{ background:url(../images/loading.gif) no-repeat; padding-left:24px;}
+.carousel_mian{position:absolute;left:-200px;top:0;height:540px;width:1600px;}
+.new_hotel_box{width:470px;height:180px;border:1px solid #dedede;color:aaaaaa; float:left;}
+.new_hotel_title{height:29px;line-height:29px;border-bottom:1px solid #dedede;}
+.new_hotel_title h3{font-size:16px;font-weight:normal;padding-left:10px; background-color:#FFF;}
+.new_hotel_singel{display:block;height:150px;width:470px;position:relative;}
+.new_hotel_singel img {width:220px;height:130px;margin:10px;float:left;}
+.new_hotel_singel_right{float:right;width:220px;height:150px;}
+.new_hotel_singel_right h4{margin-top:12px;height:54px;}
+.new_hotel_singel_right h4 a{font-size:14px;font-weight:normal;color:#333333;}
+.new_hotel_info{line-height:20px;color:#aaaaaa;}
+.new_hotel_info div{margin-bottom:5px;}
+.new_hotel_info div i{background:url(../sprite/pic_hotel_home.png) no-repeat;float:left;width:32px;height:20px;}
+.new_hotel_info .new_hotel_star i{background-position:0 0;}
+.new_hotel_info .new_hotel_adress i{background-position:0 -26px;}
+.new_hotel_info .new_hotel_action i{background-position:0 -48px;}
+.new_hotel_singel_right hr{width:210px;display:none;margin-top:7px;}
+.new_hotel_singel_right hr{width:210px;display:none;margin-top:7px;}
+.new_hotel_see_more{height:0;width:206px;text-align:right;overflow:hidden;padding:3px 4px 0 0;margin-top:7px;}
+.new_hotel_see_more_hover{border-top:1px solid #dedede;}
+.new_hotel_see_more i{background:url(../sprite/pic_hotel_home.png) no-repeat 0 -73px;float:right;width:28px;height:24px;}
+.new_hotel_see_more a{float:right;color:#777777;height:24px;line-height:24px;}
+.new_hotel_singel_right a:hover{color:#1d7ad9;text-decoration:none;}
+.new_hotel_info_hover{color:#777777;}
+.new_hotel_info_hover .new_hotel_star i{background-position:-44px 0;}
+.new_hotel_info_hover .new_hotel_adress i{background-position:-44px -26px;}
+.new_hotel_info_hover .new_hotel_action i{background-position:-44px -48px;}
+.hotel_rank_box{width:705px;height:178px;background-color:#FFF;float:left;border:1px solid #dedede;margin-left:20px;}
+.hotel_rank_box .hotel_rank_title{height:29px;line-height:29px;border-bottom:1px solid #dedede;font-size:16px;padding-left:10px;}
+.hotel_rank_box .top_three_hotel_box{float:left;}
+.top_three_hotel_box .top_hotel_unit{width:132px;height:148px;float:left;border-right:1px solid #dedede;}
+.top_hotel_unit .no_one_hotel_icon,.top_hotel_unit .no_two_hotel_icon,.top_hotel_unit .no_three_hotel_icon{width:132px;position:relative;height:99px;float:left;}
+.top_hotel_unit .no_one_hotel_icon a,.top_hotel_unit .no_two_hotel_icon a,.top_hotel_unit .no_three_hotel_icon a{width:132px;height:99px; display:block;border:none;}
+.top_hotel_unit .top_three_num{width:22px;height:20px;line-height:20px;color:#FFF;text-align:center;position:absolute;left:0;top:0;}
+.top_hotel_unit .hotel_name_text{width:110px; height:40px;line-height:20px;padding:4px 11px;float:left;}
+.top_hotel_unit .hotel_name_text a{color:#333333;text-decoration:none;}
+.top_hotel_unit .hotel_name_text a:hover{color:#1d7ad9;}
+.top_hotel_unit .hotel_price{height:14px;line-height:14px;position:relative;float:right;left:-4px;top:-20px;font-family:"Hiragino Sans GB",Arial;color:#AAA;}
+.top_hotel_unit .hotel_price b{font-size:14px;color:#FF7300;}
+.hotel_rank_box .hotel_rank_list_box{width:260px;height:129px;float:left;padding:13px 21px 5px 25px;color:#000;}
+.hotel_rank_list_box li{height:14px;line-height:14px;margin-bottom:12px;color:#AAA;cursor:pointer;}
+.hotel_rank_list_box .rank_num{width:19px;float:left;line-height:14px;}
+.hotel_rank_list_box .hotel_name a{width:180px;line-height:14px;color:#000;float:left;margin-right:6px;}
+.hotel_rank_list_box .hotel_name a:hover{color:#1d7ad9;}
+.hotel_rank_list_box .price{font-family:"Hiragino Sans GB",Arial;float:right;line-height:14px;}
+.hotel_rank_list_box .price b{color:#FF7300;}
+.advertisement_box .member_advertisement{width:468px;height:98px;float:left;margin-right:4px;border:1px solid #AAA;}
+.member_advertisement .member_icon_gold,.member_advertisement .member_icon_platinum,.member_advertisement .member_icon_silver,.member_advertisement .member_icon_ultimate{width:95px;height:98px;background: #333 url(../sprite/icon_hotel_home.png) no-repeat -227px -195px;float:left;}
+.member_advertisement .member_icon_platinum{background-position:-569px -195px;}
+.member_advertisement .member_icon_silver{background-position:-342px -195px;}
+.member_advertisement .member_icon_ultimate{background-position:-441px -195px;}
+.member_advertisement .member_police_box{width:300px;padding:15px 0 14px 18px;float:left;}
+.member_police_box .member_police_head{height:16px;line-height:16px;font-size:14px;color:#000;}
+.member_police_box li{width:136px;height:14px;line-height:14px;float:left;margin-top:11px;}
+.member_police_box .num_text{width:17px;color:#D1AE76;float:left;}
+.member_advertisement .more_btn{float:right;}
+.member_advertisement .more_btn a{float:right;border-bottom:1px solid #D1AE76;padding-bottom:6px;margin:44px 0 28px;cursor:pointer;color:#333333;}
+.member_advertisement .more_btn a:hover{color:#1d7ad9;}
+.member_advertisement .more_btn:hover{color:#1D7AD9;}
+.advertisement_box .gold_card_advertisement{width:470px;height:100px;display:block;background:url(../temp/gold_card_advertisement.jpg) no-repeat;float:left;margin-right:4px;}
+.advertisement_box .other_advertisements{width:224px;height:100px;background-color:#A2A2A2;margin-left:18px;display:block;float:left;}
+/* brand css*/
+/* jinjiang ducheng brand*/
+.jinjiang_ducheng .search_bar .search_bar_head_background{background-color:#907d5d;}
+.jinjiang_ducheng .search_btn{background-color:#907d5d;}
+.jinjiang_ducheng .search_btn:hover{background-color:#b29a75;}
+.jinjiang_ducheng .search_tab_box li.tab_selected{border-top:3px solid #d1ab50;}
+.jinjiang_ducheng .new_hotel_title h3,.jinjiang_ducheng .hotel_rank_title{color:#907d5d;}
+.jinjiang_ducheng .top_hotel_unit .top_three_num{background:#483e3c;}
+.jinjiang_ducheng .hotel_logo{background-position:-181px -511px;}
+/* jinjiang zhixing brand*/
+.jinjiang_zhixing .search_bar .search_bar_head_background{background-color:#009a94;}
+.jinjiang_zhixing .search_btn{background-color:#db1921;}
+.jinjiang_zhixing .search_btn:hover{background-color:#c2161d;}
+.jinjiang_zhixing .search_tab_box li.tab_selected{border-top:3px solid #009d96;}
+.jinjiang_zhixing .new_hotel_title h3,.jinjiang_zhixing .hotel_rank_title{color:#009a94;}
+.jinjiang_zhixing .top_hotel_unit .top_three_num{background:#d0000e;}
+.jinjiang_zhixing .hotel_logo{background-position:-330px -505px;}
+/* baishi brand*/
+.baishi .search_bar .search_bar_head_background{background-color:#8ccfef;}
+.baishi .search_btn{background-color:#0094da;}
+.baishi .search_btn:hover{background-color:#00a4f2;}
+.baishi .search_tab_box li.tab_selected{border-top:3px solid #0094da;}
+.baishi .new_hotel_title h3,.baishi .hotel_rank_title{color:#003372;}
+.baishi .top_hotel_unit .top_three_num{background:#0094da;}
+.baishi .hotel_logo{background-position:-28px -516px;}
+/* jinguang brand*/
+.jinguang .search_bar .search_bar_head_background{background-color:#dbad50;}
+.jinguang .search_btn{background-color:#dbad50;}
+.jinguang .search_btn:hover{background-color:#f2bf5b;}
+.jinguang .search_tab_box li.tab_selected{border-top:3px solid #dbad50;}
+.jinguang .new_hotel_title h3,.jinguang .hotel_rank_title{color:#0d7e36;}
+.jinguang .top_hotel_unit .top_three_num{background:#dbad50;}
+.jinguang .hotel_logo{background-position:-472px -503px;}
+/* jinjiang hotel brand*/
+.jinjiang_hotel .search_bar .search_bar_head_background,.jinjiang_star_hotel .search_bar .search_bar_head_background{background-color:#333;}
+.jinjiang_hotel .search_btn,.jinjiang_star_hotel .search_btn{background-color:#1D7AD9;}
+.jinjiang_hotel .search_btn:hover,.jinjiang_star_hotel .search_btn:hover{background-color:#FF7300;}
+.jinjiang_hotel .search_tab_box li.tab_selected,.jinjiang_star_hotel .search_tab_box li.tab_selected{border-top:3px solid #1D7AD9;}
+.jinjiang_hotel .hotel_logo,.jinjiang_star_hotel .hotel_logo{background-position:-623px -503px;}
+.jinjiang_star_hotel .search_tab_box li.tab_selected{border-top:3px solid #c7a957;}
+.jinjiang_hotel .new_hotel_title h3,.jinjiang_hotel .hotel_rank_title,.jinjiang_star_hotel .new_hotel_title h3,.jinjiang_star_hotel .hotel_rank_title{color:#aaaaaa;}
+.jinjiang_hotel .top_hotel_unit .top_three_num,.jinjiang_star_hotel .top_hotel_unit .top_three_num{background:#333;}
+.jinjiang_hotel .search_bar,.jinjiang_star_hotel .search_bar{bottom:0;}
+.jinjiang_hotel_advertisement_carousel_box{width:1200px;height:259px;margin:0 auto;background-color:#000;border-bottom:1px solid #c7a957; position:relative;}
+.jinjiang_hotel_advertisement_carousel_box .head_text{width:1200px;height:18px;line-height:18px;color:#c7a957;border-top:1px solid #c7a957;margin:0 auto;padding:29px 0 19px;font-size:16px;}
+.jinjiang_hotel_advertisement_carousel_box .hotPic,.baiyulan_advertisement_carousel_box .hotPic{width:1200px;margin:0 auto;}
+.baiyulan_advertisement_carousel_box .hotPic{height:142px;float:left;}
+.jinjiang_hotel_advertisement_carousel_box .hotPic .play_left,.jinjiang_hotel_advertisement_carousel_box .hotPic .play_right,.baiyulan_advertisement_carousel_box .hotPic .play_left,.baiyulan_advertisement_carousel_box .hotPic .play_right{background:url(../sprite/icon_hotel_home.png) no-repeat -1019px -19px;width:13px;height:35px;cursor:pointer;float:left;position:relative;top:-120px; opacity:0.6;filter:alpha(opacity=60);-khtml-opacity:0.6;background-color:#000;}
+.baiyulan_advertisement_carousel_box .hotPic .play_left,.baiyulan_advertisement_carousel_box .hotPic .play_right{top:-102px;}
+.jinjiang_hotel_advertisement_carousel_box .hotPic .play_right,.baiyulan_advertisement_carousel_box .hotPic .play_right{background-position:-1018px -49px;left:1174px;}
+.jinjiang_hotel_advertisement_carousel_box .hotPic .JQ-slide,.baiyulan_advertisement_carousel_box .hotPic .JQ-slide{width:1200px;height:165px;float:left;position:relative;}
+.jinjiang_hotel_advertisement_carousel_box .hotPic .JQ-slide .wrap,.baiyulan_advertisement_carousel_box .hotPic .JQ-slide .wrap{width:1200px;height:165px;overflow:hidden;float:left;position:relative;}
+.jinjiang_hotel_advertisement_carousel_box .hotPic .JQ-slide-content,.baiyulan_advertisement_carousel_box .hotPic .JQ-slide-content{position:absolute;}
+.jinjiang_hotel_advertisement_carousel_box .hotPic .imgList li,.baiyulan_advertisement_carousel_box .hotPic .imgList li{width:220px;height:165px;margin-right:25px;float:left;}
+.jinjiang_hotel_advertisement_carousel_box .imgList .hotel_icon,.baiyulan_advertisement_carousel_box .imgList .hotel_icon{width:220px; height:115px;margin-bottom:13px;display:block;cursor:pointer;}
+.jinjiang_hotel_advertisement_carousel_box .imgList .hotel_title{width:220px;height:14px;line-height:14px;margin-bottom:9px;color:#777; cursor:pointer;float:left;}
+.jinjiang_hotel_advertisement_carousel_box .imgList .hotel_title:hover{color:#777;text-decoration:underline;}
+.jinjiang_hotel_advertisement_carousel_box .imgList .hotel_name_box{height:14px;line-height:14px;}
+.jinjiang_hotel_advertisement_carousel_box .imgList .hotel_name_text{color:#c7a957;}
+/* baiyulan hotel brand*/
+.baiyulan_advertisement_carousel_box{width:1600px;height:301px;margin:0 auto;position:relative;padding:18px 0 30px;}
+.baiyulan .baiyulan_hotel_logo{width:97px;height:80px;background:url(../sprite/icon_hotel_home.png) no-repeat -771px -495px;left:1103px;position:absolute;background-color:#f3f3f3;top:560px;z-index:9;}
+.baiyulan_advertisement_carousel_box .head_text{width:1200px;font-size:16px;color:#a06ba6;height:18px;line-height:18px;padding-bottom:9px; float:left;}
+.baiyulan_advertisement_carousel_box .hotPic .JQ-slide,.baiyulan_advertisement_carousel_box .hotPic .JQ-slide .wrap,.baiyulan_advertisement_carousel_box .hotPic .imgList li{height:142px;}
+.baiyulan_advertisement_carousel_box .imgList .hotel_icon{height:115px;margin-bottom:11px;}
+.baiyulan_advertisement_carousel_box .hotel_name_box{height:16px;line-height:16px;font-size:14px;color:#777;cursor:pointer;}
+.baiyulan_advertisement_carousel_box .hotel_name_box:hover{color:#69004a;}

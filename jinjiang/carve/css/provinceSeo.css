@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+.province_filter_box{width:936px;min-height:535px;margin:30px auto;background-color:#fff;border:1px solid #d6d6d6;padding:35px 32px 35px 30px;}
+.province_filter_box .head_box{height:22px;padding-bottom:15px;border-bottom:1px solid #f2f2f2;font-size:20px;color:#1d7ad9;line-height:22px;margin-bottom:13px;}
+.head_box .title_text{height:14px;line-height:14px;padding-top:8px;color:#777;font-size:12px;padding-left:7px;}
+.province_filter_box .province_list{padding:11px 0 9px;border-bottom:1px dotted #d6d6d6;}
+.province_list .province_name_text{width:67px;height:20px;line-height:20px;background-color:#5cb8e6;color:#fff;text-align:center;font-size:14px;margin-right:21px;}
+.province_list ul{width:848px;}
+.province_list li{width:53px;height:20px;line-height:20px;}
+.province_list li a{cursor:pointer;}
+.province_list li a:hover{text-decoration:underline;color:#1d7ad9;}

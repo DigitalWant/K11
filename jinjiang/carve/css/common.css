@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+.base_main{width:1002px;margin:0 auto;padding:30px 104px 46px 94px;}
+.common_tab{width:178px;background-color:#fff;border:1px solid #d5d5d5;margin-right:20px;}
+.common_tab li{width:143px;padding:14px 0 10px 35px;border-bottom:1px solid #dedede;font-size:14px;color:#777;height:18px;line-height:18px;cursor:pointer;float:left;}
+.common_tab li .tab_head_text{width:121px;}
+.common_tab li .tab_head_arrow{color:#fff;}
+.common_tab .tab_li_selected{background-color:#333;color:#fff;}
+.common_info_box{width:743px;border:1px solid #d5d5d5;min-height:395px;background-color:#fff;padding:35px 29px 68px 28px;}
+.common_info{display:none;}
+.common_info .title_text{height:20px;line-height:18px;font-size:18px;padding:0 0 7px 0;border-bottom:1px solid #dedede;color:#1d7ad9;font-weight:bold;margin-bottom:30px;}
+.paragraph_unit{margin-bottom:30px;}
+.paragraph_unit p{line-height:21px;text-indent:24px;}
+.paragraph_unit p a{cursor:pointer;}
+.paragraph_unit p a:hover{color:#1d7ad9;text-decoration:underline;}
+.paragraph_head_text{height:16px;line-height:16px;font-size:14px;font-weight:bold;color:#333;margin-bottom:27px;}
+.product_name_text{height:21px;line-height:21px;}
+.product_name_text b{color:#333;}
+.common_info .question_text{height:21px;line-height:21px;background:url(../sprite/icon_common.png) no-repeat -577px -135px;padding-left:15px;color:#333;font-weight:bold;}
+.common_info p{line-height:21px;text-indent:15px;}
+.common_info .consult_center li{padding-bottom:30px;}
+.common_info .recruit_list_head li{font-weight:bold; cursor:pointer;}
+.common_info .recruit_list_head li a,.common_info .web_map_list_head li a{color:#333;font-weight:bold;font-size:14px;}
+.common_info .recruit_list_head li a:hover,.common_info .web_map_list_head li a:hover{color:#1d7ad9;text-decoration:underline;}
+.common_info .desparate_line{height:12px;line-height:12px;padding:5px 20px 4px;*padding:3px 20px;}
+.tab_content_box .recruit_position_box,.tab_content_box .web_map_category_box{padding-top:23px;}
+.recruit_position_box .department_name_box,.web_map_category_box .category_name_text{height:25px;line-height:25px;background-color:#5cb8e6;color:#fff;padding-left:12px;}
+.recruit_position_box .position_detail_info_box{padding:29px 0 28px;border-bottom:1px solid #f2f2f2;}
+.position_detail_info_box .position_base_info_box{height:20px;line-height:20px;padding-bottom:12px;color:#333;}
+.position_base_info_box .position_name_text{height:16px;line-height:16px;font-weight:bold;font-size:14px;padding:0 17px 4px 0;}
+.position_base_info_box .position_code_box{height:14px;line-height:14px;padding:0px 16px 4px 0;*padding:3px 16px 1px 0;border-right:1px solid #333;margin:1px 14px 1px 0;}
+.position_base_info_box .issue_box{height:14px;line-height:14px;padding:1px 0;*padding:4px 0 2px;}
+.position_detail_info_box .position_title_text{height:21px;line-height:21px;font-weight:bold;}
+.position_detail_info_box p{text-indent:0px;}
+.web_map_category_box .category_name_text{margin-bottom:8px;}
+.page_genre_box{padding:0 0 8px 12px;margin-bottom:18px;border-bottom:1px dotted #ccc;}
+.common_info .web_map_list_head .desparate_line{padding:5px 14px 4px;*padding:3px 14px;}
+.page_genre_box .genre_name_box{width:70px;height:20px;line-height:20px;font-size:14px;font-weight:bold;color:#333;}
+.page_genre_list{width:640px;padding-left:20px;}
+.page_genre_list li{width:128px;height:20px;line-height:20px;}
+.intra_hotel_list,.inter_travel_list,.intra_travel_list,.brand_travel_list,.rent_car_list,.e_card_list,.four_s_list{padding-left:12px;}
+.intra_hotel_list li,.inter_travel_list li,.intra_travel_list li,.brand_travel_list li,.rent_car_list li,.e_card_list li,.four_s_list li{ height:21px;line-height:21px;}
+.intra_hotel_list li,.intra_travel_list li,.brand_travel_list li{width:81px;}
+.inter_travel_list li,.rent_car_list li,.e_card_list li,.four_s_list li{width:91px;}
+.page_genre_list li a,.intra_hotel_list li a,.inter_travel_list li a,.intra_travel_list li a,.brand_travel_list li a,.rent_car_list li a,.e_card_list li a,.four_s_list li a{color:#777;cursor:pointer;}
+.page_genre_list li a:hover,.intra_hotel_list li a:hover,.inter_travel_list li a:hover,.intra_travel_list li a:hover,.brand_travel_list li a:hover,.rent_car_list li a:hover,.e_card_list li a:hover,.four_s_list li a:hover{color:#1d7ad9;text-decoration:underline;}
+.info_input_box{margin:20px 0;border:1px solid #9dd4f0;padding:25px 25px 15px;}
+.info_input_unit{margin-bottom:15px;}
+.info_input_unit .experience_label_text{width:67px;padding-right:12px;text-align:right;}
+.experience_label_text .caution_notation{color:#ff0000;margin-top:3px;}
+.info_input_unit ul{width:315px;}
+.info_input_unit li{width:78px;}
+.info_input_unit input{width:252px;}
+.info_input_unit input.experience_title{margin-right:52px;}
+.info_input_unit .unselected_check_point,.info_input_unit .selected_check_point,.info_input_unit .disable_check_point{width:12px;height:12px;background:url(../sprite/icon_hotel_order.png) no-repeat -40px -43px;margin:3px 8px 3px 0;cursor:pointer;}
+.info_input_unit .selected_check_point{background-position:-64px -43px;}
+.info_input_unit .disable_check_point{background-position:-85px -43px;}
+.info_input_unit .experience_content{width: 504px;height:78px;text-align:left;resize:none;}
+.caution_text{color:#ff0000;}
+.info_input_box .experience_desparate_line{border-bottom:1px solid #ebebeb;margin-bottom:16px;}
+.confirm_submit_btn{width:89px;height:26px;line-height:26px;color:#fff;background-color:#1d7ad9;font-size:16px;text-align:center;margin:0 auto;cursor:pointer;}
+.confirm_submit_btn:hover{background-color:#ff7300;}

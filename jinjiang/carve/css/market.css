@@ -1,0 +1,41 @@
+@charset "utf-8";/* CSS Document */
+.wrapper{ width:100%; background-color:#F3F3F3;}
+.com_1200{ width:1200px; margin:0 auto;}
+.tab_head{border-bottom:1px solid #dedede;font-size:14px;height:26px;}
+.tab_head li{float:left;height:22px;line-height:20px;padding:0 32px 2px;border-bottom-width:5px;text-align:center;cursor:pointer;}
+.tab_head li:hover{border-bottom:5px solid #aaaaaa;}
+.tab_head li.cur{border-bottom:5px solid #333333;color:#333333;}
+.navigation_bar{ height:16px; line-height:16px; padding:20px 0 32px;}
+.navigation_bar a{ cursor:pointer;}
+.navigation_bar a:hover{ color:#1D7AD9; text-decoration:underline;}
+.tab_mian{position:relative; height:666px;}
+.tab_list{position:absolute;width:1220px;left:-18px;}
+.singel_action{background:#FFF;width:560px;height:170px;border:1px solid #dedede;padding:15px;float:left;margin:20px  0 0 18px;}
+.singel_action .recommend_icon_box{ width:54px; height:29px; color:#fff; text-align:center; z-index:99;position:relative; top:-16px; left:20px; padding-top:5px;}
+.singel_action .hot_icon{ background: url(../images/market_hot_icon.png) no-repeat;}
+.action_card{position:relative;height:100%; top:-33px;}
+.action_pic{float:left;}
+.over_pic{position:absolute;left:0;top:0;display:none;}
+.action_info{margin-left:312px;}
+.action_info h3{font-weight:normal;color:#333333;font-size:18px;}
+.action_time{color:#5cb8e6;height:20px;line-height:20px;margin:12px 0 14px;}
+.action_time i{background:url(../images/time_icon.png) no-repeat;width:20px;height:20px;float:left;margin-right:4px;}
+.action_text{line-height:19px;}
+.action_btn{position:absolute;right:0;bottom:0;}
+.action_btn a{width:108px;height:32px;background:#5cb8e6;display:block;text-align:center;line-height:32px;font-size:14px;color:#FFF;}
+.action_btn a:hover{background:#1d7ad9;}
+.action_over img{-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter:gray !important;
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);}
+.action_over .over_pic{display:block;}
+.action_over .action_time i{background-position:left bottom;}
+.action_over .action_time{color:#777777;}
+.action_over .action_btn a{background:#FFF;border:1px solid #5cb8e6;color:#5cb8e6;}
+.action_over .action_btn a:hover{background:#1d7ad9;color:#FFF;border:none;}/* pagination ---------------------------------------------------------------------- */
+.pagination{ height:24px; padding:26px 0 47px; text-align:right;}
+.pagination .page{ float:right; height:20px; line-height:20px;}
+.pagination .num{ margin-right:10px; color:#333; float:right; height:20px; line-height:20px;}

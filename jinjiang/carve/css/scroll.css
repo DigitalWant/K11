@@ -1,0 +1,10 @@
+@charset "utf-8";
+.scrollDiv{width:9px;position:absolute;top:0;background:#AAA;border-radius:10px;left:-4px;} 
+/* 章节类别 */ 
+.m-catr{padding:15px 0 10px 12px;*padding:15px 0 10px 14px;} 
+.m-catr .tte{float:left;line-height:35px;text-align:left;font-size:14px;font-weight:bold;color:#5b98db;} 
+#content dl{width:225px;float:left;margin-top:10px;} 
+#content dl dt, .m-catr dl dd{float:left;width:100%;line-height:25px;text-align:left;color:#AAA;} 
+#content dl dt{font-weight:bold;} 
+#content dl dd{margin-left:12px;} 
+

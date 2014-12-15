@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+.base_box{width:1000px;margin:0 auto;padding:52px 0 16px;}
+.base_box .base_main{width:998px;background:#fff;border:1px solid #e7e6e7;margin-bottom:25px;padding-top:50px;}
+.base_box .order_fail{padding:102px 0 138px;}
+.base_main .head_box{padding:0 0 30px 230px}
+.base_main .fail_head{padding:0 0 30px 267px;}
+.base_main .fail_operation_btns_box{padding-left:332px;}
+.fail_operation_btns_box a{margin-right:66px;cursor:pointer;}
+.fail_operation_btns_box a:hover{color:#1d7ad9;text-decoration:underline;}
+.head_box .success_icon,.head_box .fail_icon{width:49px;height:49px;background:url(../sprite/icon_payment.png) no-repeat -11px -8px;float:left;margin:7px 10px 0 0;}
+.head_box .fail_icon{background-position:-88px -9px;}
+.head_box .head_text{width:670px;float:left;}
+.head_text div{height:30px;line-height:30px;color:#777;}
+.head_text .order_statue_text{height:34px;line-height:34px;float:left;}
+.head_text .order_num_text{height:34px;line-height:34px;color:#595b63;font-size:22px;font-weight:bold;}
+.order_num_text b{height:34px;line-height:34px;color:#1d7ad9;float:left;}
+.base_main .tips_box{width:936px;margin:0 30px;border:1px solid #dfdfdf;background-color:#f3f3f3;}
+.tips_box .tip_head{width:111px;height:76px;line-height:76px;color:#777;font-weight:bold;text-align:center;border-right:1px solid #dfdfdf;padding:15px 0;float:left;}
+.tips_box .tip_content_box{width:769px;height:90px;padding:15px 20px 1px 35px;float:left;}
+.tip_content_box .tip_box{height:16px;line-height:16px;margin-bottom:14px;color:#777;}
+.tip_box a{width:16px;height:16px;margin-right:9px;background:url(../sprite/icon_payment.png) no-repeat;float:left;display:block;}
+.tip_box a.msg_icon{background-position:-22px -82px;}
+.tip_box a.gift_icon{background-position:-22px -114px;}
+.tip_box a.member_icon{background-position:-22px -144px;}
+.tip_box .tip_label_text{font-weight:bold;}
+.base_main .bill_box{padding:35px 30px 16px;}
+.base_main .label_text{font-size:14px;color:#333;font-weight:bold;line-height:14px;}
+.bill_box .price{color:#ff7300;font-size:14px;}
+.bill_box .remind_text{color:#d70000;}
+.base_main .payment_channel_box{padding:0 30px 21px;}
+.payment_channel_box .payment_channel_list_box{border:1px solid #dfdfdf;background-color:#f3f3f3;padding:25px 17px 15px 2px;margin-top:14px;}
+.payment_channel_box .payment_channel_list_box .separate_line{width:897px;height:1px border-bottom:1px solid #dfdfdf;margin:5px 0 19px 20px;}
+.payment_channel_list_box .payment_channel_head_text{font-size:14px;font-weight:bold;color:#333;padding:0 0 11px 20px;line-height:14px;}
+.payment_channel_list_box .pay_channel{width:192px;height:45px;border:1px solid #dfdfdf;background-color:#fff;cursor:pointer;padding-left:14px;margin:0 0 16px 20px;float:left;}
+.payment_channel_list_box .pay_channel_selected,.payment_channel_list_box .pay_channel:hover{border-color:#ff7300;}
+.pay_channel .unselected_check_point,.pay_channel .selected_check_point{width:12px;height:12px;float:left;display:block;margin:16px 15px 17px 0;background:url(../sprite/icon_hotel_order.png) no-repeat -40px -43px;}
+.pay_channel .checked_point{background-position:-64px -43px;}
+.pay_channel .payment_icon{width:104px;height:45px;display:block;background:url(../sprite/icon_payment.png) no-repeat;margin-right:61px;float:left;}
+.pay_channel .zhi_fu_bao_icon{background-position:-66px -129px;}
+.pay_channel .kuai_qian_icon{background-position:-42px -273px;}
+.pay_channel .yi_zhi_fu_icon{background-position:-273px -131px;}
+.pay_channel .gongshang_bank_icon{background-position:-168px -10px;}
+.pay_channel .jianshe_bank_icon{background-position:-327px -10px;}
+.pay_channel .zhaoshang_bank_icon{background-position:-469px -12px;}
+.pay_channel .jiaotong_bank_icon{background-position:-616px -13px;}
+.pay_channel .nongye_bank_icon{background-position:-189px -274px;}
+.pay_channel .pufa_bank_icon{background-position:-324px -68px;}
+.pay_channel .minsheng_bank_icon{background-position:-472px -69px;}
+.pay_channel .zhongguo_bank_icon{background-position:-617px -64px;}
+.pay_channel .shanghai_bank_icon{background-position:-398px -127px;}
+.pay_channel .guangda_bank_icon{background-position:-533px -130px;}
+.pay_channel .guangfa_bank_icon{background-position:-671px -130px;}
+.pay_channel .shenfa_bank_icon{background-position:-42px -207px;}
+.pay_channel .xingye_bank_icon{background-position:-179px -207px;}
+.pay_channel .zhongxin_bank_icon{background-position:-329px -206px;}
+.pay_channel .pingan_bank_icon{background-position:-468px -209px;}
+.pay_channel .youzheng_bank_icon{background-position:-601px -210px;}
+.base_main .pay_btn{width:119px;height:41px;line-height:41px;color:#fff;background:#ff7300;margin:0 0 12px 30px;text-align:center; font-size:18px;cursor:pointer;}
+.base_main .pay_btn:hover{background:#1d7ad9;}
+.base_main .order_tool_bar{margin-top:6px;border-top:1px solid #dfdfdf;padding:13px 30px 14px;}
+.base_main .order_btns_box{padding:13px 0 14px 378px;}
+.order_tool_bar a{height:14px;line-height:14px;cursor:pointer;color:#1d7ad9;float:right;margin-left:13px;}
+.order_tool_bar a:hover{text-decoration:underline;}
+.order_btns_box .order_btn{width:87px;height:23px;line-height:23px;color:#1d7ad9;border:1px solid #dfdfdf;margin-right:20px;float:left;text-align:center;font-size:14px;}
+.order_btns_box .order_btn:hover{background:#1d7ad9;border-color:#1d7ad9;color:#fff;text-decoration:none;}
+.order_btns_box .continue_book{background:#1d7ad9;border-color:#1d7ad9;color:#fff;}
+.order_btns_box .continue_book:hover{background:#ff7300;border-color:#ff7300;color:#fff;text-decoration:none;}
+.base_box .ad_board_box{margin-bottom:25px;}
+.ad_board_box img{background:#a2a2a2;margin-right:35px;float:left;}
+.ad_board_box img.last_pic{margin:0;}
+/*layer*/
+.mybg{background:#000;width:100%;height:100%;top:0;left:0;position:absolute;z-index:500;opacity:0.3;filter:Alpha(opacity=30);}
+.big_map_box{width:348px;height:177px;border:4px solid #cfcfcf;background:#fff;z-index:9999;position:absolute;top:0;left:0;padding-bottom:13px;}
+.big_map_box .head_box{height:40px;line-height:40px;padding-left:19px;background:#f3f3f3;color:#333;}
+.head_box .close_btn,.head_box .close_btn:hover{width:13px;height:13px;float:right;margin:13px 9px 14px 0;cursor:pointer;background:url(../sprite/icon_hotel_detail.png) no-repeat -487px -321px;}
+.head_box .close_btn:hover{background-color:#000;}
+.head_box .caution_head_text{float:left;}
+.big_map_box .confirm_btn{width:65px;height:24px;line-height:24px;background:#1d7ad9;text-align:center;color:#fff;cursor:pointer;float:right;margin-right:18px;}
+.big_map_box .confirm_btn:hover{background:#ff7300;}
+.big_map_box .caution_content_box{height:80px;padding:33px 18px 0 24px;}
+.caution_content_box .alarm_text{height:16px;line-height:16px;font-size:14px;padding-bottom:18px;color:#d70000;}
+.caution_content_box .caution_text{color:#777;}

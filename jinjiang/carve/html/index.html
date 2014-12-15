@@ -1,0 +1,575 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--其他meta信息-->
+<meta name="keywords" content="锦江酒店预订,锦江之星酒店预订,星级商务酒店预订,白玉兰酒店,百时快捷酒店,金广快捷酒店" />
+<meta name="description" content="锦江旅行家提供全国154个城市100多家锦江星级商务酒店和550多家锦江之星连锁经济型酒店预订服务,锦江旅行家是您商旅出行的最佳选择,预订电话:1010-1666" />
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+<!--文档title-->
+<title>酒店预订_宾馆住宿查询_网上预订酒店宾馆-锦江旅行家</title>
+<link type="text/css" rel="stylesheet" href="../css/base.css" />
+<link type="text/css" rel="stylesheet" href="../css/mF_kdui.css" />
+<link type="text/css" rel="stylesheet" href="../css/mF_tbhuabao.css" />
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css" />
+<link type="text/css" rel="stylesheet" href="../css/platformHome.css" />
+</head>
+
+<body>
+	
+    <div class="header">
+        <div class="w1200 header_inner">
+            <div class="head">
+                <a class="login" title="登录"></a>
+                <!--<a class="logined" title="已登录"><div class="user_name_text ellipsis horizantal" title="礼享家aaaaaaaaaaaaaaaaaa">礼享家aaaaaaaaaaaaaaaaaaa</div><span class="hint_text horizantal">(1)</span><span class="horizantal">▼</span></a>-->
+                <a class="about_jinjiang yahei" title="关于锦江国际">关于锦江国际</a>
+                <a class="automobile_logo" title="锦江汽车"></a>
+                <a class="rent_automobile" title="租车">
+                    <div class="head_title_text yahei">租车</div>
+                    <div class="brand_text">All Brands</div>
+                </a>
+                <a class="jinjiang_trip_logo" title="锦江旅游"></a>
+                <a class="travel" title="旅游">
+                    <div class="head_title_text yahei">旅游</div>
+                    <div class="brand_text">All Brands</div>
+                </a>
+                <a class="baishi_logo" title="百时快捷"></a>
+                <a class="jinguang_logo" title="金广快捷"></a>
+                <a class="baiyulan_logo" title="白玉兰酒店"></a>
+                <a class="jinjiangzhixing_logo" title="锦江之星"></a>
+                <a class="jinjiangducheng_logo" title="锦江都城"></a>
+                <a class="jinjiang_hotel_logo" title="锦江酒店"></a>
+                <a class="all_hotel" title="酒店">
+                    <div class="head_title_text yahei">酒店</div>
+                    <div class="brand_text">All Brands</div>
+                </a>
+                <h1 class=""><a class="international_jinjiang_logo" href="#" target="_blank" title="锦江国际">锦江国际</a></h1>
+            </div>
+            <div id="login_box" class="login_box clearfix">
+                <div class="title_text yahei">用户登录</div>
+                <input id="login_username" type="text" value="注册邮箱/手机号码"/>
+                <div class="login_password_box clearfix">
+                    <input id="login_password" type="password" class="login_password"/>
+                    <label>登录密码</label>
+                </div>
+                <div class="alarm_text">用户名不存在</div>
+                <div class="avoid_login_box">
+                    <div id="" class="check_btn horizantal" value="unchecked"></div>
+                    <div class="horizantal">一个月内免登录</div>
+                </div>
+                <div class="tool_box">
+                    <div class="login_btn yahei horizantal">登录</div>
+                    <a class="horizantal" title="忘记密码">忘记密码</a>
+                    <div class="desperate_notation horizantal">|</div>
+                    <a class="horizantal" title="注册">注册</a>
+                </div>
+                <div class="company_account_box">
+                    <div class="horizantal">使用合作伙伴账户登录：</div>
+                    <a class="weibo_icon horizantal" title="新浪微博">新浪微博</a>|
+                    <a class="qq_icon horizantal" title="QQ">QQ</a>
+                </div>
+                <div class="enter_club_center_btn yahei"><a title="进入会员中心">进入会员中心 > ></a></div>
+            </div>
+            <!--<div id="login_box" class="logined_box">
+                <div class="unit_box">
+                    <label class="horizantal">会员层级:</label>
+                    <div class="horizantal">金卡会员</div>
+                </div>
+                <div class="unit_box">
+                    <label class="horizantal">卡号:</label>
+                    <div class="number horizantal">13224343443</div>
+                </div>
+                <div class="unit_box">
+                    <label class="horizantal">积分:</label>
+                    <div class="number horizantal">140</div>
+                    <a class="exchange_btn horizantal" title="兑换">【兑换】</a>
+                </div>
+                <div class="member_dealing_unit">我的优惠券</div>
+                <div class="member_dealing_unit">我的订单<span class="alarm_num">(2)</span></div>
+                <div class="member_dealing_unit">站内信<span class="alarm_num">(1)</span></div>
+                <div class="enter_club_center_btn yahei"><a title="进入会员中心">进入会员中心 > ></a></div>
+            </div>-->
+        </div>    
+    </div>
+    
+	<div class="wrapper">
+    	 
+        <div class="main_box">
+        
+            <div class="platform_screen">
+                <div class="carousel_box">
+                    <div class="com_1200">
+                        <div class="carousel_inner">
+                            <div class="carousel_mian" id="carousel_mian">
+                                <div class="loading"><span>请稍候...</span></div><!--载入画面-->
+                                <div class="pic"><!--图片列表-->
+                                    <ul>
+                                        <li><a href="#1"><img src="../temp/platform_banner.jpg" width="1600" height="400" alt="酒店图片"></a></li>
+                                        <li><a href="#2"><img src="../temp/platform_banner_2.jpg" alt="酒店图片" /></a></li>
+                                        <li><a href="#3"><img src="../temp/platform_banner.jpg" alt="酒店图片" /></a></li>
+                                        <li><a href="#4"><img src="../temp/platform_banner_2.jpg" alt="酒店图片" /></a></li>
+                                        <li><a href="#5"><img src="../temp/platform_banner.jpg" alt="酒店图片" /></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--首屏轮播-->
+                
+                <div class="product_category_filter_box">
+                	<ul class="product_tab_box clearfix horizantal">
+                    	<li class="product_tab product_tab_selected" title="hotel_filter">酒店<div class="tab_arrow"></div></li>
+                        <li class="product_tab" title="travel_filter">旅游<div class="tab_arrow"></div></li>
+                        <li class="product_tab" title="rent_filter">租车<div class="tab_arrow"></div></li>
+                    </ul><!--
+                    --><div class="filter_condition_box horizantal">
+                    	<div class="filter_box" id="hotel_filter">
+                        	<div class="filter_unit">
+                            	<div class="filter_label horizantal">城市</div><!--
+                                --><div class="input_box horizantal city_box">
+                                    <input name="" type="text" class="input_txt city_input" id="cityInfoHotel" value="上海">
+                                </div>
+                            </div>
+                            <div class="filter_unit">
+                            	<div class="filter_label horizantal">入住日期</div><!--
+                                --><div class="input_box horizantal">
+                                    <input name="" type="text" class="input_txt dateCheckIn" id="hotel_check_in">
+                                </div>
+                            </div>
+                            <div class="filter_unit">
+                            	<div class="filter_label horizantal">离店日期</div><!--
+                                --><div class="input_box horizantal">
+                                    <input name="" type="text" class="input_txt dateCheckOut" id="hotel_check_out">
+                                </div>
+                            </div>
+                            <div class="filter_unit">
+                            	<div class="filter_label horizantal">关键字</div><!--
+                                --><div class="input_box horizantal kw">
+                                    <input name="" autocomplete="off"  type="text" value="" class="input_txt kw_input" title="酒店名称/地标" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter_box" id="travel_filter">
+                        	<div class="filter_unit">
+                            	<div class="filter_label horizantal">出发城市</div><!--
+                                --><div class="input_box horizantal start_city_box">上海</div>
+                            </div>
+                            <div class="filter_unit">
+                            	<div class="filter_label horizantal">目的地</div><!--
+                                --><div class="input_box horizantal travel_terminal_box">
+                                    <input name="" type="text" class="input_txt city_input" id="cityInfoTravelTerminal" value="请输入目的地">
+                                    <div class="travel_terminal_recommend_box" id="travel_terminal_recommend_box">
+                                    	<div class="terminal_title">热门搜索</div>
+                                        <div class="travel_line_unit">
+                                        	<div class="travel_line_head">国内路线</div>
+                                            <ul>
+                                            	<li class="terminal_option horizantal" title="xiamen">厦门</li><!--
+                                                --><li class="terminal_option horizantal" title="sanya">三亚</li><!--
+                                                --><li class="terminal_option horizantal" title="lijinag">丽江</li><!--
+                                                --><li class="terminal_option horizantal" title="guilin">桂林</li><!--
+                                                --><li class="terminal_option horizantal" title="huangshan">黄山</li><!--
+                                                --><li class="terminal_option horizantal" title="kunming">昆明</li><!--
+                                                --><li class="terminal_option horizantal" title="qiandaohu">千岛湖</li><!--
+                                                --><li class="terminal_option horizantal" title="putuoshan">普陀山</li><!--
+                                                --><li class="terminal_option horizantal" title="hangzhou">杭州</li><!--
+                                                --><li class="terminal_option horizantal" title="xitang">西塘</li><!--
+                                                --><li class="terminal_option horizantal" title="hainan">海南</li><!--
+                                                --><li class="terminal_option horizantal" title="yunnan">云南</li><!--
+                                                --><li class="terminal_option horizantal" title="sanqingshan">三清山</li><!--
+                                                --><li class="terminal_option horizantal" title="xian">西安</li><!--
+                                                --><li class="terminal_option horizantal" title="beijing">北京</li><!--
+                                                --><li class="terminal_option horizantal" title="suzhou">苏州</li>
+                                            </ul>
+                                        </div><div class="travel_line_unit">
+                                        	<div class="travel_line_head">出境路线</div>
+                                            <ul>
+                                            	<li class="terminal_option horizantal">长滩岛</li><!--
+                                                --><li class="terminal_option horizantal">香港</li><!--
+                                                --><li class="terminal_option horizantal">普吉岛</li><!--
+                                                --><li class="terminal_option horizantal">韩国</li><!--
+                                                --><li class="terminal_option horizantal">台湾</li><!--
+                                                --><li class="terminal_option horizantal">泰国</li><!--
+                                                --><li class="terminal_option horizantal">巴厘岛</li><!--
+                                                --><li class="terminal_option horizantal">日本</li><!--
+                                                --><li class="terminal_option horizantal">马尔代夫</li><!--
+                                                --><li class="terminal_option horizantal">新加坡</li><!--
+                                                --><li class="terminal_option horizantal">济州岛</li><!--
+                                                --><li class="terminal_option horizantal">毛里求斯</li><!--
+                                                --><li class="terminal_option horizantal">塞班岛</li><!--
+                                                --><li class="terminal_option horizantal">沙巴</li><!--
+                                                --><li class="terminal_option horizantal">法国</li><!--
+                                                --><li class="terminal_option horizantal">柬埔寨</li><!--
+                                                --><li class="terminal_option horizantal">美国</li>
+                                            </ul>
+                                        </div>
+                                        <div class="travel_line_unit">
+                                        	<div class="travel_line_head">主题</div>
+                                            <ul>
+                                            	<li class="terminal_option horizantal">扫货团</li><!--
+                                                --><li class="terminal_option horizantal">特惠</li><!--
+                                                --><li class="terminal_option horizantal">买一送一</li><!--
+                                                --><li class="terminal_option horizantal">蜜月</li><!--
+                                                --><li class="terminal_option horizantal">邮轮</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter_unit">
+                            	<div class="filter_label horizantal">出发日期</div><!--
+                                --><div class="input_box horizantal">
+                                    <input name="" type="text" class="input_txt dateCheckIn" id="travel_check_in">
+                                </div>
+                            </div>
+                            <div class="filter_unit">
+                            	<div class="filter_label horizantal">返程日期</div><!--
+                                --><div class="input_box horizantal">
+                                    <input name="" type="text" class="input_txt dateCheckOut" id="travel_check_out">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter_box" id="rent_filter">
+                        	<div class="rent_filter_title yahei">请提前<b>48</b>小时预订用车服务</div>
+                            <div class="filter_unit">
+                            	<div class="filter_label horizantal">租车用途</div><!--
+                                --><ul class="rent_function horizantal">
+                                	<li class="horizantal" title="common_rent">
+                                    	<span class="unselected_check_point horizantal selected_checked_point"></span><!--
+                                		--><span class="rent_type horizantal">日常出行</span>
+                                    </li><!--
+                                    --><li class="horizantal" title="airport_rent">
+                                    	<span class="unselected_check_point horizantal"></span><!--
+                                		--><span class="rent_type horizantal">机场接送</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="common_rent">
+                                <div class="filter_unit">
+                                    <div class="filter_label horizantal">开始时间</div><!--
+                                    --><div class="input_box horizantal rent_car_time_box clearfix" id="common_rent_car_start_time_box">
+                                        <input name="" type="text" class="input_txt dateCheckIn horizantal car_rent_date"><!--
+                                        --><select name="car_rent_check_in_time_selection" id="car_rent_check_in_time_selection">
+                                            <option value="1">00:00</option>
+                                            <option value="2">00:30</option>
+                                            <option value="3">01:00</option>
+                                            <option value="4">01:30</option>
+                                            <option value="5">02:00</option>
+                                            <option value="6">02:30</option>
+                                            <option value="1">03:00</option>
+                                            <option value="2">03:30</option>
+                                            <option value="3">04:00</option>
+                                            <option value="4">04:30</option>
+                                            <option value="5">05:00</option>
+                                            <option value="6">05:30</option>
+                                            <option value="1">06:00</option>
+                                            <option value="2">06:30</option>
+                                            <option value="3">07:00</option>
+                                            <option value="4">07:30</option>
+                                            <option value="5">08:00</option>
+                                            <option value="6">08:30</option>
+                                            <option value="1">09:00</option>
+                                            <option value="2">09:30</option>
+                                            <option value="3">10:00</option>
+                                            <option value="4">10:30</option>
+                                            <option value="5">11:00</option>
+                                            <option value="6">11:30</option>
+                                            <option value="1">12:00</option>
+                                            <option value="2">12:30</option>
+                                            <option value="3">13:00</option>
+                                            <option value="4">13:30</option>
+                                            <option value="5">14:00</option>
+                                            <option value="6">14:30</option>
+                                            <option value="1">15:00</option>
+                                            <option value="2">15:30</option>
+                                            <option value="3">16:00</option>
+                                            <option value="4">16:30</option>
+                                            <option value="5">17:00</option>
+                                            <option value="6">17:30</option>
+                                            <option value="1">18:00</option>
+                                            <option value="2">18:30</option>
+                                            <option value="3">19:00</option>
+                                            <option value="4">19:30</option>
+                                            <option value="5">20:00</option>
+                                            <option value="6">20:30</option>
+                                            <option value="1">21:00</option>
+                                            <option value="2">21:30</option>
+                                            <option value="3">22:00</option>
+                                            <option value="4">22:30</option>
+                                            <option value="5">23:00</option>
+                                            <option value="6">23:30</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="filter_unit">
+                                    <div class="filter_label horizantal">结束时间</div><!--
+                                    --><div class="input_box horizantal rent_car_time_box clearfix">
+                                        <input name="" type="text" class="input_txt dateCheckIn horizantal car_rent_date"><!--
+                                        --><select name="car_rent_check_in_time_selection" id="common_car_rent_check_in_time_selection">
+                                            <option value="1">00:00</option>
+                                            <option value="2">00:30</option>
+                                            <option value="3">01:00</option>
+                                            <option value="4">01:30</option>
+                                            <option value="5">02:00</option>
+                                            <option value="6">02:30</option>
+                                            <option value="1">03:00</option>
+                                            <option value="2">03:30</option>
+                                            <option value="3">04:00</option>
+                                            <option value="4">04:30</option>
+                                            <option value="5">05:00</option>
+                                            <option value="6">05:30</option>
+                                            <option value="1">06:00</option>
+                                            <option value="2">06:30</option>
+                                            <option value="3">07:00</option>
+                                            <option value="4">07:30</option>
+                                            <option value="5">08:00</option>
+                                            <option value="6">08:30</option>
+                                            <option value="1">09:00</option>
+                                            <option value="2">09:30</option>
+                                            <option value="3">10:00</option>
+                                            <option value="4">10:30</option>
+                                            <option value="5">11:00</option>
+                                            <option value="6">11:30</option>
+                                            <option value="1">12:00</option>
+                                            <option value="2">12:30</option>
+                                            <option value="3">13:00</option>
+                                            <option value="4">13:30</option>
+                                            <option value="5">14:00</option>
+                                            <option value="6">14:30</option>
+                                            <option value="1">15:00</option>
+                                            <option value="2">15:30</option>
+                                            <option value="3">16:00</option>
+                                            <option value="4">16:30</option>
+                                            <option value="5">17:00</option>
+                                            <option value="6">17:30</option>
+                                            <option value="1">18:00</option>
+                                            <option value="2">18:30</option>
+                                            <option value="3">19:00</option>
+                                            <option value="4">19:30</option>
+                                            <option value="5">20:00</option>
+                                            <option value="6">20:30</option>
+                                            <option value="1">21:00</option>
+                                            <option value="2">21:30</option>
+                                            <option value="3">22:00</option>
+                                            <option value="4">22:30</option>
+                                            <option value="5">23:00</option>
+                                            <option value="6">23:30</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="airport_rent">
+                            	<div class="filter_unit">
+                                    <div class="filter_label horizantal">用车时间</div><!--
+                                    --><div class="input_box horizantal rent_car_time_box clearfix">
+                                        <input name="" type="text" class="input_txt dateCheckIn horizantal car_rent_date"><!--
+                                        --><select name="car_rent_check_in_time_selection" id="common_car_rent_check_out_time_selection">
+                                            <option value="1">00:00</option>
+                                            <option value="2">00:30</option>
+                                            <option value="3">01:00</option>
+                                            <option value="4">01:30</option>
+                                            <option value="5">02:00</option>
+                                            <option value="6">02:30</option>
+                                            <option value="1">03:00</option>
+                                            <option value="2">03:30</option>
+                                            <option value="3">04:00</option>
+                                            <option value="4">04:30</option>
+                                            <option value="5">05:00</option>
+                                            <option value="6">05:30</option>
+                                            <option value="1">06:00</option>
+                                            <option value="2">06:30</option>
+                                            <option value="3">07:00</option>
+                                            <option value="4">07:30</option>
+                                            <option value="5">08:00</option>
+                                            <option value="6">08:30</option>
+                                            <option value="1">09:00</option>
+                                            <option value="2">09:30</option>
+                                            <option value="3">10:00</option>
+                                            <option value="4">10:30</option>
+                                            <option value="5">11:00</option>
+                                            <option value="6">11:30</option>
+                                            <option value="1">12:00</option>
+                                            <option value="2">12:30</option>
+                                            <option value="3">13:00</option>
+                                            <option value="4">13:30</option>
+                                            <option value="5">14:00</option>
+                                            <option value="6">14:30</option>
+                                            <option value="1">15:00</option>
+                                            <option value="2">15:30</option>
+                                            <option value="3">16:00</option>
+                                            <option value="4">16:30</option>
+                                            <option value="5">17:00</option>
+                                            <option value="6">17:30</option>
+                                            <option value="1">18:00</option>
+                                            <option value="2">18:30</option>
+                                            <option value="3">19:00</option>
+                                            <option value="4">19:30</option>
+                                            <option value="5">20:00</option>
+                                            <option value="6">20:30</option>
+                                            <option value="1">21:00</option>
+                                            <option value="2">21:30</option>
+                                            <option value="3">22:00</option>
+                                            <option value="4">22:30</option>
+                                            <option value="5">23:00</option>
+                                            <option value="6">23:30</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="filter_unit">
+                                    <div class="filter_label horizantal">目的机场</div><!--
+                                    --><div class="input_box horizantal">
+                                        <select name="airport_selection" id="airport_selection">
+                                            <option value="1">上海虹桥机场</option>
+                                            <option value="2">上海浦东国际机场</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search_tool_bar">
+                        	<a class="check_map_btn horizantal">看地图，找酒店</a><!--
+                            --><div class="search_btn yahei horizantal">搜索</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="board_exit_box">
+            	<div class="w1200">
+                    <div class="platform_title_box">
+                        <div class="platform_title_text yahei">为您提供锦江酒店、锦江都城、国内及境外旅游、机票、车辆租赁等全方位商务旅行在线预订平台</div>
+                        <div class="characteristic_service_box">
+                            <div class="service_unit horizantal">
+                                <div class="service_desparate_notation horizantal">/</div><!--
+                                --><a class="outstanding_service_icon horizantal" title="卓越服务"></a> <!--
+                                --><div class="service_text horizantal yahei">卓越服务</div>
+                            </div><!--
+                            --><div class="service_unit horizantal">
+                                <div class="service_desparate_notation horizantal">/</div><!--
+                                --><a class="price_guarantee_icon horizantal" title="预订价格保障"></a> <!--
+                                --><div class="service_text horizantal yahei">预订价格保障</div>
+                            </div><!--
+                            --><div class="service_unit horizantal">
+                                <div class="service_desparate_notation horizantal">/</div><!--
+                                --><a class="update_guarantee_icon horizantal" title="酒店升级保障"></a> <!--
+                                --><div class="service_text horizantal yahei">酒店升级保障</div>
+                            </div><!--
+                            --><div class="service_unit horizantal">
+                                <div class="service_desparate_notation horizantal">/</div><!--
+                                --><a class="cancel_guarantee_icon horizantal" title="特殊原因退订保障"></a> <!--
+                                --><div class="service_text horizantal yahei">特殊原因退订保障</div><!--
+                                --><div class="service_desparate_notation horizantal">/</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="board_channel_box">
+                        <a class="horizantal" title="锦江国际会员俱乐部">
+                            <img src="../temp/club_chennel.png" alt="锦江国际会员俱乐部"/>
+                            <div class="channel_text_box">
+                                <div class="channel_box horizantal">
+                                    <div class="channel_name_text yahei">锦江国际会员俱乐部</div>
+                                    <div class="channel_describe_text">礼遇千里，智享人生</div>
+                                </div><!--
+                                --><div class="enter_btn horizantal"></div>
+                            </div>
+                            <div class="shadow_icon"></div>
+                        </a><!--
+                        --><a class="horizantal" title="积分商城">
+                            <img src="../temp/mall_channel.png" alt="积分商城"/>
+                            <div class="channel_text_box">
+                                <div class="channel_box horizantal">
+                                    <div class="channel_name_text yahei">积分商城</div>
+                                    <div class="channel_describe_text">千种商品，增值您的消费</div>
+                                </div><!--
+                                --><div class="enter_btn horizantal"></div>
+                            </div>
+                            <div class="shadow_icon"></div>
+                        </a><!--
+                        --><a class="horizantal" title="活动进行时">
+                            <img src="../temp/marketing_channel.png" alt="活动进行时"/>
+                            <div class="channel_text_box">
+                                <div class="channel_box horizantal">
+                                    <div class="channel_name_text yahei">活动进行时</div>
+                                    <div class="channel_describe_text">营销频道</div>
+                                </div><!--
+                                --><div class="enter_btn horizantal"></div>
+                            </div>
+                            <div class="shadow_icon"></div>
+                        </a><!--
+                        --><a class="horizantal" title="秒杀抢购">
+                            <img src="../temp/rush_shopping_channel.png" alt="秒杀抢购"/>
+                            <div class="channel_text_box">
+                                <div class="channel_box horizantal">
+                                    <div class="channel_name_text yahei">秒杀抢购</div>
+                                    <div class="channel_describe_text">精选产品，惊喜价格</div>
+                                </div><!--
+                                --><div class="enter_btn horizantal"></div>
+                            </div>
+                            <div class="shadow_icon"></div>
+                        </a><!--
+                        --><a class="last_link horizantal" title="团购">
+                            <img src="../temp/group_channel.png" alt="团购"/>
+                            <div class="channel_text_box">
+                                <div class="channel_box horizantal">
+                                    <div class="channel_name_text yahei">团购</div>
+                                    <div class="channel_describe_text">大家一起买更便宜！</div>
+                                </div><!--
+                                --><div class="enter_btn horizantal"></div>
+                            </div>
+                            <div class="shadow_icon"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="footer">
+        <div class="w1200 clearfix">
+            <div class="verification_link_box">
+                <div class="links_box">
+                    <a title="关于我们">关于我们&nbsp;</a>|
+                    <a title="网站地图">网站地图&nbsp;</a>|
+                    <a title="联系我们">联系我们&nbsp;</a>|
+                    <a title="诚聘英才">诚聘英才&nbsp;</a>|
+                    <a title="法律声明">法律声明&nbsp;</a>|
+                    <a title="友情链接">友情链接&nbsp;</a>|
+                    <a title="帮助中心">帮助中心&nbsp;</a>|
+                    <a title="用户体验反馈">用户体验反馈</a>
+                </div>
+                <p>Copyright©1997-2014锦江国际（集团）有限公司版权所有</p>
+                <p>沪ICP备05048113号-1</p>
+                <div class="friendly_links_box">
+                    <a class="gongshang_icon" title="上海工商"></a>
+                    <a class="verify_success" title="安全验证"></a>
+                    <a class="net_policeman" title="上海网警"></a>
+                    <a class="collect_credit" title="征信网"></a>
+                    <a class="credited_firm" title="中国信用企业"></a>
+                </div>
+            </div>
+            <div class="app_code_box">
+                <div class="title_text">| 掌上锦江，更多优惠随时享</div>
+                <div class="two_dimension_code_icons_box">
+                    <a class="jinjiang_app_code_icon" title="APP二维码"></a>
+                    <a class="jinjiang_wechat_code_icon" title="微信二维码"></a>
+                </div>
+                <div class="app_name_box">
+                    <div class="app_text">锦江礼享APP</div>
+                    <div>锦江礼享 微信</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript" src="../js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../js/myfocus-2.0.1.min.js"></script>
+<script type="text/javascript" src="../js/mF_kdui.js"></script>
+<script type="text/javascript" src="../js/mF_tbhuabao.js"></script>
+<script type="text/javascript" src="../js/citySelector.js"></script>
+<script type="text/javascript" src="../js/keywordSelect.js"></script>
+<script type="text/javascript" src="../js/jquery-ui-datepicker.js"></script>
+<script type="text/javascript" src="../js/select.js"></script>
+<script type="text/javascript" src="../js/navigation.js"></script>
+<script type="text/javascript" src="../js/platformHome.js" charset="gbk"></script>
+</body>
+</html>

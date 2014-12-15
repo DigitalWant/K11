@@ -1,0 +1,179 @@
+@charset "utf-8";
+/*wrapper*/
+.wrapper{width:1200px;margin:0 auto;padding-top:20px;}
+/*base_main*/
+.base_main{width:820px;float:left;}
+.order_list_box{background-color:#FFF;border:1px solid #5CB8E6;padding-top:27px;}
+.order_list_box .order_head{height:27px;padding:0 30px;color:#5CB8E6;}
+.order_list_box .order_head .input_icon{width:30px;height:27px;background:url(../sprite/icon_hotel_order.png) no-repeat -10px 0;float:left;}
+.order_list_box .order_head .order_head_text{height:22px;line-height:22px;padding:5px 9px 0 0;font-size:18px;float:left;}
+.order_list_box .order_head .separate_line{width:649px;float:right;border-bottom:1px solid #5CB8E6;}
+.order_list_box .order_head .separate_line_box .line{border-bottom:1px solid #5CB8E6;}
+.order_list_box .contact_info_box,.order_list_box .checkIn_list_box,.order_list_box .pay_info_box{padding:30px 0 20px;border-bottom:1px solid #EBEBEB;margin:0 30px 0 60px;}
+.order_list_box .checkIn_list_box{padding-bottom:10px;}
+.order_list_box .contact_info_box{height:98px;}
+.order_list_box .additional_service_box{padding:30px 0 20px 0;border-bottom:1px solid #EBEBEB;margin:0 30px 0 60px;}
+.additional_service_box .insurance_info_label_text{width:60px;height:17px;line-height:14px;}
+.additional_service_box .check_list{height:23px;}
+.additional_service_box .caution_icon{width:16px;height:17px;background:url(../sprite/icon_hotel_order.png) no-repeat -53px -11px;margin-right:6px;}
+.additional_service_box .insurance_announce_text{height:14px;line-height:14px;padding:2px 0 1px;}
+.additional_service_box .insurance_content_box{height:23px;background-position:-8px -204px;width:22px;padding:0;}
+.additional_service_box .checked{background-position:-8px -230px;}
+.additional_service_box .insurance_content_text{height:14px;line-height:14px;padding-top:8px;*padding-top:10px;}
+.additional_service_box .insurance_price_text{padding-top:3px;height:20px;line-height:22px;font-family:Arial;}
+.additional_service_box .insurance_price_text b{font-size:15px;color:#ff7300;}
+.additional_service_box .contract_link{height:17px;line-height:17px;margin:6px 40px 0 0;*margin:8px 40px 0 0;cursor:pointer;}
+.additional_service_box .contract_link:hover{color:#1d7ad9;text-decoration:underline;}
+.order_list_box .more_info_box{padding:30px 30px 20px 60px;}
+.order_list_box .list_head{height:14px;line-height:14px;padding-bottom:20px;font-size:14px;color:#000;}
+#contact_form .contact_row{width:730px;float:left;display:inline-block;}
+#contact_form .first_row{margin-bottom:15px;}
+.order_list_box .frequent_contact{min-width:380px;max-width:590px;position:absolute;float:left;background-color:#FFF;display:none;border:1px solid #D6D6D6;top:142px;z-index:30;left:115px;}
+.order_list_box .frequent_contact .frequent_contact_head{width:inherit;height:25px;line-height:25px;padding-left:19px;background-color:#ECECEC;}
+.order_list_box .frequent_contact .frequent_contact_head .frequent_contact_head_text{float:left;}
+.order_list_box .frequent_contact .frequent_contact_head .close_btn{width:13px;height:13px;background:url(../sprite/icon_hotel_order.png) no-repeat -116px -43px;float:right;margin:6px 10px 0 0;cursor:pointer;}
+.order_list_box .frequent_contact .frequent_contact_head .close_btn:hover{background-color:#000;}
+.order_list_box .frequent_contact .frequent_contact_list{min-width:350px;max-width:560px;padding:11px 11px 11px 19px;float:left;}
+.order_list_box .frequent_contact .frequent_contact_list .frequent_contact_text{width:56px;height:24px;line-height:24px;margin-right:9px; float:left;padding-left:4px;cursor:pointer;}
+.order_list_box .frequent_contact .frequent_contact_list .frequent_contact_text:hover{background-color:#1D7AD9;color:#FFF;}
+.input_unit, .checkIn_first_input_unit{width:365px;height:24px;line-height:24px;display:inline-block;float:left;}
+.checkIn_first_input_unit{width:306px;}
+.required_symbol{height:21px;color:#D70000;float:left;padding-top:3px;*padding-top: 0px;}
+.label_align{padding-left:23px;}
+.label_text{padding:0 4px 0 7px;float:left;}
+.checkIn_mobile_label_text{padding:0 4px 0 37px;float:left;}
+.phone_label_text{width:73px;float:left;text-align:right;padding-right:4px;}
+.verified_succeed{width:11px;height:11px;margin: 8px 0 5px 8px;background:url(../sprite/icon_hotel_order.png) no-repeat -13px -43px;float:left;display:none;}
+.verified_fail{height:22px;line-height:22px;float:left;border:1px solid #D70000;border-width:1px 1px 1px 0;background-color:#FFEDED;padding:0 9px 0 10px;color:#D70000;display:none;}
+.contact_info_input{width:137px;float:left;}
+.order_list_box .checkIn_list_box .hint_box,.order_list_box .more_info_box .hint_box{height:24px;line-height:24px;border:1px solid #FFB97F;background-color:#FFFFEE;padding-left:10px;margin-bottom:15px;}
+#innvoice_form{width:597px;float:left;padding-left:40px;}
+.order_list_box .hint_box .caution_icon{width:16px;height:17px;float:left;background:url(../sprite/icon_hotel_order.png) no-repeat -53px -8px;padding:3px 11px 4px 0;}
+.order_list_box .checkIn_list_box ul li.checkIn_item{width:730px;}
+.order_list_box .checkIn_list_box ul li.checkIn_item .client_info_box{height:24px;line-height:24px;margin-bottom:13px;}
+.order_list_box .checkIn_list_box ul li.checkIn_item .client_info_box .room_num{width:40px;text-align:center;color:#FFF;background-color:#5CB8E6;margin-right:19px;float:left;height:24px;line-height:24px;}
+.order_list_box .checkIn_list_box .check_list{margin:0 0 6px 51px;}
+.order_list_box .checkIn_list_box .special_requirement_text{color:#000;font-weight:normal;}
+.order_list_box .checkIn_list_box .special{color:#aaa;height:21px;line-height:21px;}
+.order_list_box .checkIn_list_box .rooms_prop_box{height:28px;line-height:28px;border:1px solid #DEDEDE;background-color:#F3F3F3;margin:0 0 10px 60px;display:none;}
+.order_list_box .checkIn_list_box .rooms_prop_box .check_list{margin:0 22px 0 0;float:left;}
+.order_list_box .checkIn_list_box .rooms_prop_box .check_list .checkbox{height:21px;line-height:21px;}
+.order_list_box .checkIn_list_box ul li.separate_item_line{width:730px;border-bottom:1px dashed #EBEBEB;margin: 5px 0 20px;}
+.order_list_box .submit_order_box{height:41px;line-height:41px;padding: 8px 30px;border-top:1px solid #9DD4F0;}
+.order_list_box .submit_order_box .check_list{float:left; color:#000;}
+.order_list_box .submit_order_box .check_list .checkbox{height:21px;line-height:21px;margin:6px; 0 7px;}
+.order_list_box .submit_order_box .submit_order_btn,.order_list_box .submit_order_box .disabled_submit_order_btn{width:121px;height:41px;line-height:41px;background:#1d7ad9;color:#fff;border:0;float:right;font-family:microsoft yahei;cursor:pointer;font-size:18px;}
+.order_list_box .submit_order_box .disabled_submit_order_btn{background-color:#DEDEDE;color:777;}
+.order_list_box .submit_order_box .submit_order_btn:hover{background:#FF7300;}
+.order_list_box .pay_info_box .coupon_input_unit{height:24px;line-height:24px;padding-bottom:12px;}
+.order_list_box .pay_info_box .pay_label_text{width:60px;float:left;}
+.order_list_box .pay_info_box .pay_way_label_text{width:60px;height:36px;line-height:36px;float:left;}
+.order_list_box .pay_info_box .coupon_input_unit .coupon_num_label_text{float:left;padding-right:3px;}
+.order_list_box .pay_info_box .coupon_input_unit .coupon_type_select{width:117px;height:22px;line-height:22px;margin-right:18px;border:1px solid #DEDEDE;float:left;background:url(../sprite/icon_hotel_order.png) no-repeat 98px -60px;padding-left:9px;background-color:#FFF;}
+.order_list_box .pay_info_box .coupon_input_unit .disabled{background-color:#DEDEDE;}
+.order_list_box .province_input,.order_list_box .city_input,.order_list_box .detailed_adivress_input{width:130px;float:left;}
+.order_list_box .cellphone_email_input{width:139px;}
+.order_list_box .input_enclose{float:left;position:relative;}
+.wrapper .num_select{width:34px;height:22px;line-height:22px;padding-left:9px;border:1px solid #DEDEDE;float:left;background:url(../sprite/icon_hotel_order.png) no-repeat 15px -60px;}
+.wrapper .num_select ul.tag_options,.order_list_box .pay_info_box .coupon_input_unit .coupon_type_select ul.tag_options,.order_list_box .more_info_box .checkIn_time_box .checkIn_time_select ul.tag_options,.order_list_box .more_info_box .invoice_input_box .innvoice_content_select ul.tag_options{background-color:#FFF;border:1px solid #DEDEDE;left:-10px;padding:1px; width: 124px;height:85px; overflow-y:auto;}
+.wrapper .num_select ul.tag_options{width:41px;left:-10px;}
+.wrapper li.open{padding-left:8px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;line-height:24px;width:90px;}
+.wrapper li.open_hover,.wrapper li.open_selected{padding-left:8px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;line-height:24px;width:90px;}
+.wrapper .num_select li.open_hover,.wrapper .num_select li.open_selected,.wrapper .num_select li.open{width:20px;}
+.wrapper li.open_hover{background-color:#1D7AD9;color:#FFF;}
+.tag_select,.tag_select_hover,.tag_select_open{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;line-height:24px;width:90px;*width:65px;padding-right:27px;*padding-right:44px;}
+.num_select .tag_select,.num_select .tag_select_hover,.num_select .tag_select_open{width:7px;}
+.more_info_box li.open,.more_info_box li.open_hover,.more_info_box li.open_selected,.more_info_box .tag_select,.more_info_box .tag_select_hover,.more_info_box .tag_select_open{width:75px;}
+.order_list_box .more_info_box .checkIn_time_box .checkIn_time_select ul.tag_options{width:104px;}
+.order_list_box .pay_info_box .coupon_input_unit .coupon_code_input{width:105px;}
+.order_list_box .pay_info_box .pay_box .pay_way_select_box{width:668px;display:inline-block;vertical-align:top;}
+.order_list_box .pay_info_box .pay_box .pay_way_select_box .pay_channel,.order_list_box .pay_info_box .pay_box .pay_way_select_box .disabled_pay_channel{height:34px;line-height:34px;border: 1px solid #FFF;}
+.order_list_box .pay_info_box .pay_box .pay_way_select_box .pay_channel{cursor:pointer;}
+.order_list_box .pay_info_box .pay_box .pay_way_select_box .pay_channel:hover,.order_list_box .pay_info_box .pay_box .pay_way_select_box .pay_channel_hover{background-color:#FFFFEE;border:1px solid #FFC795;color: #FF7300;}
+.order_list_box .pay_info_box .pay_box .pay_way_select_box .unselected_check_point,.order_list_box .pay_info_box .pay_box .pay_way_select_box .selected_check_point,.order_list_box .pay_info_box .pay_box .pay_way_select_box .disable_check_point{width:12px;height:12px;margin:11px 13px 11px 10px;background:url(../sprite/icon_hotel_order.png) no-repeat -40px -43px;display:block;float:left;}
+.order_list_box .pay_info_box .pay_box .pay_way_select_box .pay_way{color:#000;}
+.order_list_box .pay_info_box .pay_box .pay_way_select_box .disable_check_point{background-position:-85px -43px;}
+.order_list_box .pay_info_box .pay_box .pay_way_select_box .selected_check_point{background-position:-64px -43px;}
+.order_list_box .more_info_box .checkIn_time_box{height:24px;line-height:24px;margin-bottom:15px;}
+.order_list_box .more_info_box .checkIn_time_box .arrive_time_label_text{width:88px;float:left;}
+.order_list_box .more_info_box .checkIn_time_box .checkIn_time_select{width:97px;height:22px;line-height:22px;padding-left:9px;border:1px solid #DEDEDE;background:url(../sprite/icon_hotel_order.png) no-repeat 78px -60px;float:left;}
+.order_list_box .more_info_box .more_info_label_text{width:58px;height:21px;line-height:21px;float:left;}
+.order_list_box .more_info_box .invoice_info_box .check_list{height:21px;line-height:21px;float:left;}
+.order_list_box .more_info_box .invoice_info_box .check_list .checkbox{height:21px;line-height:21px;background-position:0 -207px;}
+.order_list_box .more_info_box .invoice_info_box .check_list .checked{background-position:0 -233px;}
+.order_list_box .more_info_box .invoice_info_box{width:728px;min-height:21px;margin-bottom:17px;}
+.order_list_box .more_info_box .note_box{width:728px;}
+.order_list_box .more_info_box .invoice_info_box .invoice_input_box{width:637px;border:1px solid #DEDEDE;background-color:#F3F3F3;padding:9px;margin:2px 0 0 68px;display:none;}
+.order_list_box .more_info_box .hint_box{margin-bottom:5px;}
+.order_list_box .more_info_box .innvoice_form_check_alert{float:left;width:597px;padding-top:13px;color:#d70000;}
+.order_list_box .more_info_box .invoice_info_box .invoice_input_box .innvoice_input_unit,.order_list_box .more_info_box .invoice_info_box .invoice_input_box .innvoice_mail_address_input_unit{width:298px;height:24px;line-height:24px;margin-top:13px;float:left;}
+.order_list_box .more_info_box .invoice_info_box .invoice_input_box .innvoice_mail_address_input_unit{width:637px;}
+.order_list_box .more_info_box .invoice_info_box .invoice_input_box .innvoice_label_text{width:52px;text-align:right;padding-right:10px;float:left;}
+.order_list_box .more_info_box .invoice_info_box .invoice_input_box .province_city_text{height:24px;line-height:24px;float:left;padding:0 7px;}
+.order_list_box .more_info_box .innvoice_mail_adivress_input_unit{width:596px;float:left;margin-top:13px;height:24px;line-height:24px;}
+.order_list_box .more_info_box .innvoice_input_unit .innvoice_title{width:190px;}
+.order_list_box .more_info_box .innvoice_input_unit .innvoice_content_select{width:106px;height:22px;line-height:22px;border:1px solid #DEDEDE;float:left;background:url(../sprite/icon_hotel_order.png) no-repeat 88px -60px;padding-left:9px;background-color:#FFF;}
+.order_list_box .more_info_box .invoice_input_box .innvoice_content_select ul.tag_options{width:113px;}
+.order_list_box .more_info_box .invoice_info_box .invoice_input_box .innvoice_mail_address_input_unit .province_input,.order_list_box .more_info_box .invoice_info_box .invoice_input_box .innvoice_mail_address_input_unit .city_input{width:98px;}
+.order_list_box .more_info_box .invoice_info_box .invoice_input_box .innvoice_mail_address_input_unit .detailed_address_input{width:215px;}
+.order_list_box .more_info_box .note_box .memo_textarea{margin-left:11px;width:504px;height:67px;text-align:left;resize:none;}
+.order_principle_box{width:772px;height:145px;padding:19px 23px;margin-top:20px;background-color:#FFF;border:1px solid #D2D2D2;}
+.order_principle_box .order_principle_head{color:#000;font-size:14px;padding-bottom:14px;}
+.order_principle_box .order_principle_textarea{width:770px;height:117px;border:1px solid #ECECEC;resize:none;text-align:left;}
+/*base_side book_police_box*/
+.base_side{margin-left:20px;width:360px;float:left;}
+.book_police_box{width:318px;padding:20px;border:1px solid #CCC;float:right;background-color:#FFF;margin-bottom:20px;}
+.book_police_box .border_corner_icon{width:24px;height:24px;background:url(../sprite/icon_hotel_order.png) no-repeat -115px -6px;position:relative;display:block;top:-21px;left:21px;float:right;}
+.book_police_box .book_police_head{height:14px;line-height:14px;color:#000;border-bottom:1px solid #9DD4F0;padding-bottom:13px;font-size:14px;}
+.book_police_box .book_police_head b{color:#1D7AD9;}
+.book_police_box .detailed_police{line-height:24px;}
+.book_police_box .pressed_detailed_police{width:218px;line-height:24px;}
+.book_police_box .police_label{font-weight:bold;}
+.book_police_box .full_expand_btn,.book_police_box .packup_btn{color:#1D7AD9;float:right;line-height:24px;cursor:pointer;}
+.book_police_box .full_expand_btn:hover,.book_police_box .packup_btn:hover{text-decoration:underline;}
+.book_police_box .packup_btn{width:318px;text-align:right;display:none;}
+/*base_side book_details_box*/
+.book_details_box{width:358px;border:1px solid #CCC;background-color:#FFF;float:left;}
+.book_details_box .book_detail_head_box{color:#FFF;background-color:#333;height:32px;line-height:32px;padding-left:19px;font-weight:bold;}
+.book_details_box .book_detail_head_box .detail_icon{width:15px;height:32px;background:url(../sprite/icon_hotel_order.png) no-repeat -85px -5px;margin-right:12px;float:left;}
+.book_details_box .hotel_info_box{width:317px;margin: 22px 23px 0 18px;padding-bottom:13px;border-bottom:1px solid #EBEBEB;float:left;}
+.book_details_box .hotel_info_box .hotel_image{width:80px;height:60px;margin-right:9px;float:left;}
+.book_details_box .hotel_info_box .hotel_detail_box{width:227px;color:#AAA;line-height:18px;}
+.book_details_box .hotel_info_box .hotel_detail_box .hotel_name{color:#1D7AD9;}
+.book_details_box .hotel_info_box .hotel_detail_box .hotel_name:hover{text-decoration:underline;cursor:pointer;}
+.book_details_box .order_info_expression_box,.book_details_box .order_info_edit_box{width:317px;margin:13px 23px 0 18px;border-bottom:1px solid #EBEBEB;padding-bottom:20px;float:left;color:#000;}
+.book_details_box .order_info_edit_box{display:none;}
+.book_details_box .order_info_box{width:205px;float:left;}
+.book_details_box .order_info_label{width:60px;height:24px;line-height:24px;float:left;margin-top:5px;}
+.book_details_box .order_info_room_num_label{width:60px;height:24px;line-height:24px;float:left;letter-spacing:4px;margin-top:5px;*margin-top:7px;}
+.book_details_box .num_select{margin-top:5px;}
+.book_details_box .order_info_text{width:145px;height:24px;line-height:24px;float:left;margin-top:5px;}
+.book_details_box .order_info_expression_box .edit_btn{width:24px;color:#1D7AD9;cursor:pointer;line-height:24px;margin:92px 0 0 88px;float:left;}
+.book_details_box .order_info_expression_box .edit_btn:hover{text-decoration:underline;}
+.book_details_box .input_txt{width:116px;float:left;margin-top:5px;}
+.book_details_box .order_info_edit_box .edit_btn_box{height:24px;line-height:24px;float:left;margin:92px 0 0 2px;}
+.book_details_box .order_info_edit_box .edit_btn_box .confirm_btn{width:50px;text-align:center;background:#1d7ad9;color:#fff;cursor:pointer;float:right;}
+.book_details_box .order_info_edit_box .edit_btn_box .confirm_btn:hover{background:#FF7300;}
+.book_details_box .order_info_edit_box .edit_btn_box .cancel_btn{margin-left:12px;float:right;color:#1D7AD9;cursor:pointer;}
+.book_details_box .order_info_edit_box .edit_btn_box .cancel_btn:hover{text-decoration:underline;}
+.book_details_box .fee_box{width:317px;margin:13px 23px 0 18px;padding-bottom:12px;border-bottom:1px solid #EBEBEB;float:left;}
+.book_details_box .fee_box .table_head_text{padding-bottom:9px;color:#000;}
+.book_details_box .fee_box .room_fee_table{border:1px solid #E4E4E4;border-width:1px 0 0 1px;float:left;margin-bottom:4px;}
+.book_details_box .fee_box .room_fee_table .each_room_fee_box{width:78px;border:1px solid #E4E4E4;border-width:0 1px 1px 0;float:left; text-align:center;}
+.book_details_box .fee_box .room_fee_table .each_room_fee_box .room_date{border-bottom:1px solid #EBEBEB;background-color:#F3F3F3;}
+.book_details_box .fee_box .room_fee_table .each_room_fee_box .room_fee{font-family:Arial;}
+.book_details_box .fee_box .room_fee_table .each_room_fee_box .room_fee .cash_text{width:78px;color:#FF7300;}
+.book_details_box .fee_box .room_fee_table .each_room_fee_box .room_fee .credits_text{width:78px;color:#339900;}
+.book_details_box .fee_box .room_fee_label{width:317px;height:14px;line-height:14px;float:left;padding-top:16px;color:#000;}
+.book_details_box .fee_box .cancel_insurance{display:none;}
+.book_details_box .fee_box .room_fee_label .room_fee_text{color:#FF7300;font-weight:bold;font-family:Arial;}
+.book_details_box .sum_fee_box{width:317px;float:left;text-align:right;padding:0 23px 0 18px;color:#000;}
+.book_details_box .sum_fee_box .dollar_notation_text{color:#AAA;font-family:Arial;}
+.book_details_box .sum_fee_box .sum_fee_text{color:#FF7300;font-size:24px;}
+.book_details_box .pay_requirement{width:358px;height:34px;line-height:34px;text-align:center;border-top:1px solid #FF7300;background-color:#FFFFEE;float:left;color:#000;font-weight:bold;font-family:Arial;}
+.book_details_box .pay_requirement .price_text{color:#FF7300;font-size:14px;}
+/*fixedside*/
+.fixedside{position:fixed;width:358;z-index:10;top:0;}
+/*scroll bar css*/
+#mainBox{width:775px;height:117px;border:1px solid #ECECEC;overflow:hidden;position:relative;} 
+#content{height:auto;position:absolute;left:0;top:0;padding:0 0 40px 10px;text-align:left;} 

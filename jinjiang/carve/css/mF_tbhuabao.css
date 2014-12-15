@@ -1,0 +1,17 @@
+/*=========mF_tbhuabao========*/
+.mF_tbhuabao {overflow:visible;}
+.mF_tbhuabao .pic,.mF_tbhuabao .pic ul{position:absolute;top:0;left:0;overflow:hidden;}
+.mF_tbhuabao .pic li{position:relative;float:left;overflow:hidden;}
+.mF_tbhuabao .txt li{position:absolute;z-index:2;width:100%;height:38px;line-height:38px;display:none;}/*默认标题高度*/
+.mF_tbhuabao .txt li a{display:block;position:relative;z-index:1;color:#fff;padding-left:16px;font-size:14px;font-weight:bold;text-decoration:none;}/*标题样式*/
+.mF_tbhuabao .txt li b{display:block;height:100%;width:100%;position:absolute;top:0;left:0;background:#000;filter:alpha(opacity=30);opacity:0.3;}
+.mF_tbhuabao .dot{position:absolute;top:-20px;right:70px;height:20px;line-height:20px;text-align:right;}
+.mF_tbhuabao .dot li{display:block;float:left;margin:0 2px;}
+.mF_tbhuabao .dot li a{background:url(../sprite/pic_hotel_home.png) no-repeat -60px -76px;width:10px;height:10px;float:left;}
+.mF_tbhuabao .dot li.current a{background:url(../sprite/pic_hotel_home.png) no-repeat -48px -76px;}
+.mF_tbhuabao .prev,.mF_tbhuabao .next{width:30px;height:29px;overflow:hidden;position:absolute;right:30px;top:-29px; text-indent:-999px;border-left:1px solid #dedede;cursor:pointer;}
+.mF_tbhuabao .next{ right:0; }
+.mF_tbhuabao .prev a,.mF_tbhuabao .next a{background:url(../sprite/pic_hotel_home.png) no-repeat 5px -96px;display:block;color:#bbb;text-align:center;text-decoration:none;width:30px;height:29px;}
+.mF_tbhuabao .next a{background-position:-30px -96px;}
+.mF_tbhuabao .prev a:hover{background:#AAA url(../sprite/icon_hotel_home.png) no-repeat -884px -56px;}
+.mF_tbhuabao .next a:hover{background:#AAA url(../sprite/icon_hotel_home.png) no-repeat -920px -56px;}

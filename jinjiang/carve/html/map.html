@@ -1,0 +1,450 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--其他meta信息-->
+<meta name="keywords" content="锦江酒店预订,锦江之星酒店预订,星级商务酒店预订,白玉兰酒店,百时快捷酒店,金广快捷酒店" />
+<meta name="description" content="锦江旅行家提供全国154个城市100多家锦江星级商务酒店和550多家锦江之星连锁经济型酒店预订服务,锦江旅行家是您商旅出行的最佳选择,预订电话:1010-1666" />
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+<!--文档title-->
+<title>酒店预订_宾馆住宿查询_网上预订酒店宾馆-锦江旅行家</title>
+<link type="text/css" rel="stylesheet" href="../css/base.css" />
+<link type="text/css" rel="stylesheet" href="../css/map.css" />
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css" />
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="w1200 header_inner">
+            <div class="head">
+                <a class="login" title="登录"></a>
+                <!--<a class="logined" title="已登录"><div class="user_name_text ellipsis horizantal" title="礼享家aaaaaaaaaaaaaaaaaa">礼享家aaaaaaaaaaaaaaaaaaa</div><span class="hint_text horizantal">(1)</span><span class="horizantal">▼</span></a>-->
+                <a class="about_jinjiang yahei" title="关于锦江国际">关于锦江国际</a>
+                <a class="automobile_logo" title="锦江汽车"></a>
+                <a class="rent_automobile" title="租车">
+                    <div class="head_title_text yahei">租车</div>
+                    <div class="brand_text">All Brands</div>
+                </a>
+                <a class="jinjiang_trip_logo" title="锦江旅游"></a>
+                <a class="travel" title="旅游">
+                    <div class="head_title_text yahei">旅游</div>
+                    <div class="brand_text">All Brands</div>
+                </a>
+                <a class="baishi_logo" title="百时快捷"></a>
+                <a class="jinguang_logo" title="金广快捷"></a>
+                <a class="baiyulan_logo" title="白玉兰酒店"></a>
+                <a class="jinjiangzhixing_logo" title="锦江之星"></a>
+                <a class="jinjiangducheng_logo" title="锦江都城"></a>
+                <a class="jinjiang_hotel_logo" title="锦江酒店"></a>
+                <a class="all_hotel" title="酒店">
+                    <div class="head_title_text yahei">酒店</div>
+                    <div class="brand_text">All Brands</div>
+                </a>
+                <h1 class=""><a class="international_jinjiang_logo" href="#" target="_blank" title="锦江国际">锦江国际</a></h1>
+            </div>
+            <div id="login_box" class="login_box clearfix">
+                <div class="title_text yahei">用户登录</div>
+                <input id="login_username" type="text" value="注册邮箱/手机号码"/>
+                <div class="login_password_box clearfix">
+                    <input id="login_password" type="password" class="login_password"/>
+                    <label>登录密码</label>
+                </div>
+                <div class="alarm_text">用户名不存在</div>
+                <div class="avoid_login_box">
+                    <div id="" class="check_btn horizantal" value="unchecked"></div>
+                    <div class="horizantal">一个月内免登录</div>
+                </div>
+                <div class="tool_box">
+                    <div class="login_btn yahei horizantal">登录</div>
+                    <a class="horizantal" title="忘记密码">忘记密码</a>
+                    <div class="desperate_notation horizantal">|</div>
+                    <a class="horizantal" title="注册">注册</a>
+                </div>
+                <div class="company_account_box">
+                    <div class="horizantal">使用合作伙伴账户登录：</div>
+                    <a class="weibo_icon horizantal" title="新浪微博">新浪微博</a>|
+                    <a class="qq_icon horizantal" title="QQ">QQ</a>
+                </div>
+                <div class="enter_club_center_btn yahei"><a title="进入会员中心">进入会员中心 > ></a></div>
+            </div>
+            <!--<div id="login_box" class="logined_box">
+                <div class="unit_box">
+                    <label class="horizantal">会员层级:</label>
+                    <div class="horizantal">金卡会员</div>
+                </div>
+                <div class="unit_box">
+                    <label class="horizantal">卡号:</label>
+                    <div class="number horizantal">13224343443</div>
+                </div>
+                <div class="unit_box">
+                    <label class="horizantal">积分:</label>
+                    <div class="number horizantal">140</div>
+                    <a class="exchange_btn horizantal" title="兑换">【兑换】</a>
+                </div>
+                <div class="member_dealing_unit">我的优惠券</div>
+                <div class="member_dealing_unit">我的订单<span class="alarm_num">(2)</span></div>
+                <div class="member_dealing_unit">站内信<span class="alarm_num">(1)</span></div>
+                <div class="enter_club_center_btn yahei"><a title="进入会员中心">进入会员中心 > ></a></div>
+            </div>-->
+        </div>    
+    </div>
+
+    <div class="map_wrapper clearfix">
+        
+        <!--顶部搜索栏-->
+        <div class="top_search_box">
+            <div class="search_bar yahei">
+                <input name="" type="button" value="重新搜索" class="btn_search">
+                <div class="city">
+                    <span class="fl">城市</span>
+                    <div class="city_box">
+                        <input name="" type="text" class="input_txt city_input" id="cityInfo" value="上海">
+                    </div>
+                </div> 
+                <span class="start_time">
+                    <span class="fl">入住日期</span>
+                    <input name="" type="text" class="input_txt dateCheckIn">
+                </span> 
+                <span class="end_time">
+                    <span class="fl">离店日期</span>
+                    <input name="" type="text" class="input_txt dateCheckOut">
+                </span>
+                <div class="keyword"><span class="name">关键字</span>
+                  <div class="kw">
+                    <input name="" autocomplete="off"  type="text" value="" class="input_txt kw_input" title="酒店名称/地标" >
+                  </div>
+                </div>
+                <span class="code">优惠代码 
+                    <span class="pos">
+                        <input name="" type="text" class="input_txt inputText" title="输入优惠代码" value="">
+                    </span> 
+                </span> 
+            </div>
+        </div>
+        <div class="search_bar_fill_box"></div>
+        
+        <!--main content部分-->
+        <div class="base_wrap">
+        
+            <div class="base_main">
+                <!--<img src="../images/map.jpg" >-->
+                <div class="amap_maps">
+                    <div class="amap_layers"></div>
+                    <div class="amap_overlays">
+                    
+                        <div class="amap_info">
+                            <b class="close_button"></b>
+                            <div class="hotel_detail_info_box">
+                                <div class="hotel_title_box">
+                                    <span class="xinjinjiang_logo"></span>
+                                    <a class="hotel_name yahei" href="#" target="_blank" title="上海新锦江大酒店">上海新锦江大酒店</a>
+                                </div>
+                                <img class="hotel_image" src="../temp/pic.jpg" alt="上海新锦江大酒店"/>
+                                <div class="hotel_introduction">
+                                    <div class="star_5"></div>
+                                    <div class="hotel_address">地址： 上海市黄浦区长乐路11111161号</div>
+                                    <div class="hotel_distance">距离<b>长乐路</b>的直线距离为<b class="distance">0.25</b>公里1111</div>
+                                    <a class="consult_more_info" title="了解更多信息">了解更多信息</a>
+                                </div>
+                            </div>
+                            <div class="hotel_price_box">
+                                <a class="check_price_btn" href="javascript:;" title="查看">查看</a>
+                                <div class="hotel_price_range">
+                                <span>¥<b>299</b> 至 ¥<b>1299</b></span>  
+                                </div>                          
+                            </div>
+                            <div class="route_box">
+                                <a class="check_route_btn" href="javascript:;" title="如何去酒店">如何去酒店 ></a>
+                            </div>
+                            <span class="bord_arrow_icon"></span>
+                        </div>
+                    
+                        <div hotel_id="1" class="amap_marker" style="top:500px;">
+                            <div class="map_mark">
+                                <span class="map_num">1</span>
+                                <div class="map_mark_hotel_info">
+                                    <span class="map_xinjinjiang_logo"></span>
+                                    <span class="map_hotel_name">新锦江</span>
+                                    <span class="map_hotel_price">¥<b>299</b>起</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div hotel_id="2" class="amap_marker" style="top:540px;">
+                            <div class="map_mark">
+                                <span class="map_num">2</span>
+                                <div class="map_mark_hotel_info">
+                                    <span class="map_xinjinjiang_logo"></span>
+                                    <span class="map_hotel_name">新锦江</span>
+                                    <span class="map_hotel_price">¥<b>299</b>起</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div hotel_id="3" class="amap_marker" style="top:580px;">
+                            <div class="map_mark">
+                                <span class="map_num">3</span>
+                                <div class="map_mark_hotel_info">
+                                    <span class="map_xinjinjiang_logo"></span>
+                                    <span class="map_hotel_name">新锦江</span>
+                                    <span class="map_hotel_price">¥<b>299</b>起</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div hotel_id="4" class="amap_marker" style="top:540px; left:300px;">
+                            <div class="map_mark">
+                                <span class="map_num">4</span>
+                                <div class="map_mark_hotel_info">
+                                    <span class="map_xinjinjiang_logo"></span>
+                                    <span class="map_hotel_name">新锦江</span>
+                                    <span class="map_hotel_price">¥<b>299</b>起</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div hotel_id="5" class="amap_marker" style="top:580px; left:340px;">
+                            <div class="map_mark">
+                                <span class="map_num">5</span>
+                                <div class="map_mark_hotel_info">
+                                    <span class="map_xinjinjiang_logo"></span>
+                                    <span class="map_hotel_name">新锦江</span>
+                                    <span class="map_hotel_price">¥<b>299</b>起</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div hotel_id="6" class="amap_marker" style="top:560px; left:540px;">
+                            <div class="map_mark">
+                                <span class="map_num">6</span>
+                                <div class="map_mark_hotel_info">
+                                    <span class="map_xinjinjiang_logo"></span>
+                                    <span class="map_hotel_name">新锦江</span>
+                                    <span class="map_hotel_price">¥<b>299</b>起</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div hotel_id="7" class="amap_marker" style="top:550px; left:780px;">
+                            <div class="map_mark">
+                                <span class="map_num">7</span>
+                                <div class="map_mark_hotel_info">
+                                    <span class="map_xinjinjiang_logo"></span>
+                                    <span class="map_hotel_name">新锦江</span>
+                                    <span class="map_hotel_price">¥<b>299</b>起</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <input class="back_list_mode" type="button" value="返回列表模式" >           
+            </div>
+            
+            <div class="base_side">
+                <div class="tag_box">
+                    <span class="fl">查询到<b>155</b>家酒店</span>
+                    <ul>
+                        <li class="fr check_list">              		
+                            <input type="checkbox" >
+                            <label>可用积分</label>
+                        </li>
+                        <li class="fr check_list">
+                            <input type="checkbox">
+                            <label>促销</label>
+                        </li>
+    
+                    </ul>
+                </div>
+                <div class="sort_box">
+                    <ul>
+                        <li>
+                            <a href="javascript:;" class="selected" title="锦江推荐">锦江推荐</a>
+                        </li>
+                        <li class="price"><a href="javascript:;" title="价格"><i class="up"></i>价格</a></li>
+                        <li class="level"><a href="javascript:;" title="星级"><i class="down"></i>星级</a></li>
+                        <li class="distance"><a href="javascript:;" title="距离"><i class="up"></i>距离</a></li>
+                    </ul>
+                </div>
+                <div class="hotel_list">
+                
+                    <div class="hotel_items">
+                        <ul>
+                            <li id="1" class="hotel_item">
+                                <div class="hotel_title yahei">
+                                    <a target="_blank" href="#" class="yahei" title="新锦江大酒店">
+                                        <span class="num">1</span>新锦江大酒店
+                                    </a>
+                                </div>
+                                <div class="hotel_level_price">
+                                    <div class="star_3"></div>
+                                    <div class="price_range">
+                                        <span>¥<b>299</b> 至 ¥<b>1299</b></span>
+                                    </div>
+                                </div>
+                                <div class="hotel_distance">
+                                    <span>距离<b>长乐路</b>的直线距离为<b class="distance_num">0.25</b>公里</span>
+                                </div>
+                            </li>	
+                            <li id="2" class="hotel_item">
+                                <div class="hotel_title yahei">
+                                    <a target="_blank" href="#" class="yahei" title="新锦江大酒店">
+                                        <span class="num">2</span>新锦江大酒店
+                                    </a>
+                                </div>
+                                <div class="hotel_level_price">
+                                    <div class="hotel_genre">经济型酒店</div>
+                                    <div class="price_range">
+                                        <span>¥<b>299</b> 至 ¥<b>1299</b></span>
+                                    </div>
+                                </div>
+                                <div class="hotel_distance">
+                                    <span>距离<b>长乐路</b>的直线距离为<b class="distance_num">0.25</b>公里</span>
+                                </div>
+                            </li>
+                            <li id="3" class="hotel_item">
+                                <div class="hotel_title yahei">
+                                    <a target="_blank" href="#" class="yahei" title="新锦江大酒店">
+                                        <span class="num">3</span>新锦江大酒店
+                                    </a>
+                                </div>
+                                <div class="hotel_level_price">
+                                    <div class="star_5"></div>
+                                    <div class="price_range">
+                                        <span>¥<b>299</b> 至 ¥<b>1299</b></span>
+                                    </div>
+                                </div>
+                                <div class="hotel_distance">
+                                    <span>距离<b>长乐路</b>的直线距离为<b class="distance_num">0.25</b>公里</span>
+                                </div>
+                            </li>
+                            <li id="4" class="hotel_item">
+                                <div class="hotel_title yahei">
+                                    <a target="_blank" href="#" class="yahei" title="新锦江大酒店">
+                                        <span class="num">4</span>新锦江大酒店
+                                    </a>
+                                </div>
+                                <div class="hotel_level_price">
+                                    <div class="star_3"></div>
+                                    <div class="price_range">
+                                        <span>¥<b>299</b> 至 ¥<b>1299</b></span>
+                                    </div>
+                                </div>
+                                <div class="hotel_distance">
+                                    <span>距离<b>长乐路</b>的直线距离为<b class="distance_num">0.25</b>公里</span>
+                                </div>
+                            </li>
+                            <li id="5" class="hotel_item">
+                                <div class="hotel_title yahei">
+                                    <a target="_blank" href="#" class="yahei" title="新锦江大酒店">
+                                        <span class="num">5</span>新锦江大酒店
+                                    </a>
+                                </div>
+                                <div class="hotel_level_price">
+                                    <div class="star_3"></div>
+                                    <div class="price_range">
+                                        <span>¥<b>299</b> 至 ¥<b>1299</b></span>
+                                    </div>
+                                </div>
+                                <div class="hotel_distance">
+                                    <span>距离<b>长乐路</b>的直线距离为<b class="distance_num">0.25</b>公里</span>
+                                </div>
+                            </li>
+                            <li id="6" class="hotel_item">
+                                <div class="hotel_title yahei">
+                                    <a target="_blank" href="#" class="yahei" title="新锦江大酒店">
+                                        <span class="num">6</span>新锦江大酒店
+                                    </a>
+                                </div>
+                                <div class="hotel_level_price">
+                                    <div class="star_3"></div>
+                                    <div class="price_range">
+                                        <span>¥<b>299</b> 至 ¥<b>1299</b></span>
+                                    </div>
+                                </div>
+                                <div class="hotel_distance">
+                                    <span>距离<b>长乐路</b>的直线距离为<b class="distance_num">0.25</b>公里</span>
+                                </div>
+                            </li>
+                            <li id="7" class="hotel_item">
+                                <div class="hotel_title yahei">
+                                    <a target="_blank" href="#" class="yahei" title="新锦江大酒店">
+                                        <span class="num">7</span>新锦江大酒店
+                                    </a>
+                                </div>
+                                <div class="hotel_level_price">
+                                    <div class="star_3"></div>
+                                    <div class="price_range">
+                                        <span>¥<b>299</b> 至 ¥<b>1299</b></span>
+                                    </div>
+                                </div>
+                                <div class="hotel_distance">
+                                    <span>距离<b>长乐路</b>的直线距离为<b class="distance_num">0.25</b>公里</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>             
+                    
+                     <div class="pagination"> 
+                        <span class="num">共4页&nbsp;|</span>
+                        <div class="page">
+                            <span href="#" class="unprev">&lt;&nbsp;上一页</span> 
+                        <span class="list"><a href="#" class="on">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a></span>
+                            <span href="#" class="next">下一页&nbsp;&gt;</span>
+                        </div>
+                     </div>
+                
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    <div class="footer">
+        <div class="w1200 clearfix">
+            <div class="verification_link_box">
+                <div class="links_box">
+                    <a title="关于我们">关于我们&nbsp;</a>|
+                    <a title="网站地图">网站地图&nbsp;</a>|
+                    <a title="联系我们">联系我们&nbsp;</a>|
+                    <a title="诚聘英才">诚聘英才&nbsp;</a>|
+                    <a title="法律声明">法律声明&nbsp;</a>|
+                    <a title="友情链接">友情链接&nbsp;</a>|
+                    <a title="帮助中心">帮助中心&nbsp;</a>|
+                    <a title="用户体验反馈">用户体验反馈</a>
+                </div>
+                <p>Copyright©1997-2014锦江国际（集团）有限公司版权所有</p>
+                <p>沪ICP备05048113号-1</p>
+                <div class="friendly_links_box">
+                    <a class="gongshang_icon" title="上海工商"></a>
+                    <a class="verify_success" title="安全验证"></a>
+                    <a class="net_policeman" title="上海网警"></a>
+                    <a class="collect_credit" title="征信网"></a>
+                    <a class="credited_firm" title="中国信用企业"></a>
+                </div>
+            </div>
+            <div class="app_code_box">
+                <div class="title_text">| 掌上锦江，更多优惠随时享</div>
+                <div class="two_dimension_code_icons_box">
+                    <a class="jinjiang_app_code_icon" title="APP二维码"></a>
+                    <a class="jinjiang_wechat_code_icon" title="微信二维码"></a>
+                </div>
+                <div class="app_name_box">
+                    <div class="app_text">锦江礼享APP</div>
+                    <div>锦江礼享 微信</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript" src="../js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../js/citySelector.js"></script>
+<script type="text/javascript" src="../js/jquery.checkbox.js"></script>
+<script type="text/javascript" src="../js/keywordSelect.js"></script>
+<script type="text/javascript" src="../js/popTip.js"></script>
+<script type="text/javascript" src="../js/navigation.js"></script>
+<script type="text/javascript" src="../js/jquery-ui-datepicker.js"></script>
+<script type="text/javascript" src="../js/map.js"></script>
+</body>
+</html>

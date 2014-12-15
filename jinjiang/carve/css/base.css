@@ -1,0 +1,270 @@
+@charset "utf-8";
+/* CSS Reset - Description :Base KISSY CSS Reset, add HTML5 elements ----------- */
+body, div, h1, h2, h3, h4, h5, h6, hr, p, blockquote,dl, dt, dd, ul, ol, li,pre, code,form, fieldset, legend, button, textarea,table, tbody, tfoot, thead, th, td,article, aside, dialog, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video{margin:0;padding:0;outline:0;background:transparent;}
+article, aside, dialog, figure, footer, header, hgroup, nav, section{display:block;}
+body,button, input, select, textarea, a{font:12px/1.5 "Hiragino Sans GB",tahoma,arial,sans-serif;}
+h1, h2, h3, h4, h5, h6{font-size:100%;}
+address, cite, dfn, var{font-style:normal;}
+code, kbd, pre, samp{font-family:courier new, courier, monospace;}
+small{font-size:12px;}
+ul, ol, li{list-style:none;}
+a{text-decoration:none;outline:thin none; color:#1d7ad9;}
+a:hover{color:#3c3c3c;}
+blockquote:before, blockquote:after,
+q:before, q:after{content:'';content:none;}
+abbr,acronym{border:0;font-variant:normal;}
+ins{background-color:#ff9;color:#000;text-decoration:none;}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold;}
+del{text-decoration:line-through;}
+abbr[title], dfn[title]{border-bottom:1px dotted #000;cursor:help;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+legend{color:#000;}
+fieldset, img{border:0;}
+button, input, select, textarea{font-size:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+/* GLOBAL ---------------------------------------------------------------------- */
+*{-webkit-tap-highlight-color:rgba(0, 0, 0, 0);-webkit-text-size-adjust:none;outline:none;}
+a img{border:none;}
+.fl{float:left; padding-right:4px;}
+.fr{float:right;}
+.clear{clear:both;}
+.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+* html .clearfix{zoom:1;}
+*:first-child+html .clearfix {zoom:1;}
+.en{ font-family:"Hiragino Sans GB",Tahoma,Simsun,sans-serif;}
+body{background:#f3f3f3; color:#777;}
+.yahei{font-family:"Hiragino Sans GB",microsoft yahei;}
+/* top */
+#top{width:20px;height:81px;position:fixed;right:20px;bottom:30px;z-index:999;cursor:pointer;display:none;background:url(../images/top.png) no-repeat 0 0;} 
+#top:hover{background-position:-20px 0px;}
+*html #top{position:absolute;}
+/*date input*/
+.dateCheckIn,.dateCheckOut{background:url(../sprite/icon_hotel_home.png) no-repeat -980px -323px; background-color:#fff;}
+/* header ---------------------------------------------------------------------- */
+.header{width:100%;background:#FFF;border-bottom:1px solid #E0E0E0;z-index:3;}
+.header_inner{height:68px;position:relative;}
+.head{height:68px;background:#FFF;width:1200px;color:#000;text-align:center;margin:0 auto;position:absolute;z-index:3;}
+.header a{width:70px;height:68px;cursor:pointer;background:url(../sprite/icon_hotel_home.png) no-repeat;color:#000;}
+.header .head a{float:right;border-left:1px solid #E2E2E2;}
+.header .rent_automobile,.header .travel,.header .all_hotel{background:none;}
+.header .rent_automobile_hover,.header .travel_hover,.header .all_hotel_hover{color:#FFF;background:none;background-color:#1D7AD9;}
+.header .login_hover,.header .automobile_logo_hover,.header .jinjiang_trip_logo_hover,.header .baishi_logo_hover,.header .jinguang_logo_hover,.header .baiyulan_logo_hover,.header .jinjiangzhixing_logo_hover,.header .jinjiangducheng_logo_hover,.header .jinjiang_hotel_logo_hover,.header .login_selected,.header .automobile_logo_selected,.header .jinjiang_trip_logo_selected,.header .baishi_logo_selected,.header .jinguang_logo_selected,.header .baiyulan_logo_selected,.header .jinjiangzhixing_logo_selected,.header .jinjiangducheng_logo_selected,.header .jinjiang_hotel_logo_selected{background:url(../sprite/icon_hotel_home.png);background-color:#1D7AD9;}
+.header .head .login_selected,.header .head .automobile_logo_selected,.header .head .jinjiang_trip_logo_selected,.header .head .baishi_logo_selected,.header .head .jinguang_logo_selected,.header .head .baiyulan_logo_selected,.header .head .jinjiangzhixing_logo_selected,.header .head .jinjiangducheng_logo_selected,.header .head .jinjiang_hotel_logo_selected,.header .head .logined_selected{background-color:#333;width:80px;height:77px;border-top:3px solid #1D7AD9;border-left:1px solid #333;z-index:3;}
+.header .head .login,.header .head .login_hover,.header .head .login_selected{width:104px;background-position: -911px -121px;background-color:#F4F4F4;border-right:1px solid #E2E2E2;}
+.header .head .login_hover,.header .head .login_selected{background-position: -911px -183px;}
+.header .head .login_selected{border-left:1px solid #e2e2e2;height:68px;border-top:none;}
+.header .head .logined,.header .head .logined_hover,.header .head .logined_selected{width:104px;line-height:68px;font-weight:bold;background:none;background-color:#F4F4F4;border-right:1px solid #E2E2E2;color:#ba9764;}
+.header .head .user_name_text{width:48px;line-height:68px;}
+.header .head .logined_selected{border-left:1px solid #e2e2e2;height:70px;border-top:none;}
+.header .logined .hint_text{color:#d70000;}
+.header .about_jinjiang,.header .about_jinjiang_hover{width:108px;line-height:68px;background:none;font-size:14px;}
+.header .about_jinjiang_hover{color:#1D7AD9;}
+.header .automobile_logo{background-position: -820px -117px;}
+.header .automobile_logo_hover{background-position: -535px -397px;}
+.header .automobile_logo_selected{background-position: -702px -15px;}
+.header .jinjiang_trip_logo{background-position: -745px -117px;}
+.header .jinjiang_trip_logo_hover{background-position: -462px -397px;}
+.header .jinjiang_trip_logo_selected{background-position: -605px -15px;}
+.header .baishi_logo{background-position: -669px -117px;}
+.header .baishi_logo_hover{background-position: -383px -400px;}
+.header .baishi_logo_selected{background-position: -498px -15px;}
+.header .jinguang_logo{background-position: -574px -117px;}
+.header .jinguang_logo_hover{background-position: -313px -397px;}
+.header .jinguang_logo_selected{background-position: -399px -15px;}
+.header .baiyulan_logo{background-position: -480px -114px;}
+.header .baiyulan_logo_hover{background-position: -242px -397px;}
+.header .baiyulan_logo_selected{background-position: -302px -15px;}
+.header .jinjiangzhixing_logo{background-position: -395px -114px;}
+.header .jinjiangzhixing_logo_hover{background-position: -172px -399px;}
+.header .jinjiangzhixing_logo_selected{background-position: -206px -15px;}
+.header .jinjiangducheng_logo{background-position: -308px -114px;}
+.header .jinjiangducheng_logo_hover{background-position: -100px -397px;}
+.header .jinjiangducheng_logo_selected{background-position: -111px -15px;}
+.header .jinjiang_hotel_logo{background-position: -228px -112px;}
+.header .jinjiang_hotel_logo_hover{background-position: -28px -397px;}
+.header .jinjiang_hotel_logo_selected{background-position: -14px -15px;}
+.header .head_title_text{height:15px;line-height:15px;padding:24px 0 6px;font-size:14px;}
+.header .brand_text{height:7px;line-height:7px;font-size:7px;}
+.header .head .international_jinjiang_logo{width:194px;height:68px;float:left;background:url(../sprite/icon_hotel_home.png) no-repeat -38px -109px;border-left:none;color:#fff;}
+.header .head .about_jinjiang_selected,.header .head .travel_selected,.header .head .all_hotel_selected,.header .head .rent_automobile_selected{width:80px;height:77px;border-top:3px solid #1D7AD9;border-left:1px solid #333;z-index:3;background-color:#333;font-weight:bold;color:#FFF;}
+.header .head .about_jinjiang_selected{width:108px;}
+.header .book_num{height:29px;margin:21px 30px 18px 0;color:#5cb8e6;background:url(../sprite/icon_payment.png) no-repeat -77px -80px;padding-left:31px;float:right;}
+.header .book_num div{height:11px;line-height:11px;text-align:left;font-size:11px;}
+.header .book_num .phone_num{height:19px;line-height:19px;font-size:19px;}
+.header .login_box,.header .logined_box{width:319px;z-index:9999;position:relative;top:68px;left:879px;border:1px solid #e2e2e2;display:none;background-color:#fff;padding:20px 0 0;-moz-box-shadow:1px 3px 12px #bbb;-webkit-box-shadow:1px 3px 12px #bbb;box-shadow:1px 3px 12px #bbb;}
+.header .logined_box{width:164px;left:1034px;}
+/*未登录者登录弹框样式*/
+.login_box .title_text{height:16px;line-height:16px;color:#969696;padding:0 0 6px 20px;font-size:14px;}
+.login_box input{width:240px;height:14px;line-height:14px;padding:8px 0 8px 37px;margin:12px 0 0 20px;color:#dedede;background-color:#fff;background:url(../sprite/icon_hotel_home.png) no-repeat -700px -327px;}
+.login_password_box label{position:absolute;left:57px;top:105px;*top:110px;color:#dedede;}
+.login_box .login_password{background-position:-700px -369px;}
+.login_box .alarm_text{height:14px;line-height:14px;color:#d70000;padding:16px 0 0 20px;display:none;}
+.login_box .avoid_login_box{height:14px;line-height:14px;padding:16px 0 15px 20px;}
+.login_box .check_btn,.login_box .checked{width:14px;height:14px;background:url(../sprite/icon_hotel_list.png) no-repeat -9px -212px;margin-right:8px;cursor:pointer;}
+.login_box .checked{background-position:-9px -238px;}
+.login_box .tool_box{height:40px;line-height:40px;padding:0 0 23px 20px;}
+.tool_box .login_btn{width:121px;text-align:center;color:#fff;background:#1d7ad9;font-size:18px;margin-right:26px;cursor:pointer;}
+.tool_box .login_btn:hover{background-color:#ff7300;}
+.tool_box a{width:auto;height:40px;line-height:40px;padding-right:4px;background:none;color:#1d7ad9;}
+.tool_box a:hover{text-decoration:underline;color:#1d7ad9;}
+.tool_box .desperate_notation{padding-right:6px;*padding-right:10px;color:#1d7ad9;*line-height:35px;}
+.login_box .company_account_box{color:#969696;padding:0 0 15px 20px;}
+.company_account_box a{width:48px;height:18px;line-height:18px;background:url(../sprite/icon_hotel_home.png) no-repeat;}
+.company_account_box a:hover{text-decoration:underline;}
+.company_account_box .weibo_icon{padding-left:26px;background-position:-664px -411px;margin-right:4px;}
+.company_account_box .qq_icon{padding-left:22px;background-position:-664px -446px;}
+.login_box .enter_club_center_btn{height:16px;background-color:#333;padding:9px 17px 10px 182px;cursor:pointer;}
+.login_box .enter_club_center_btn:hover{background-color:#000;}
+.login_box .enter_club_center_btn a{color:#d1ae76; height:16px;line-height:16px;width:auto;vertical-align:top;font-size:14px;}
+/*已登录者登录弹框样式*/
+.logined_box .unit_box{height:14px;line-height:14px;padding:0 0 12px 22px;}
+.unit_box div{color:#333;font-weight:bold;}
+.unit_box .exchange_btn{height:14px;line-height:14px;width:auto;color:#1d7ad9;cursor:pointer;background:none;}
+.unit_box .exchange_btn:hover{text-decoration:underline;}
+.logined_box .member_dealing_unit{height:32px;line-height:32px;border-top:1px solid #e2e2e2;padding-left:22px;cursor:pointer;}
+.logined_box .member_dealing_unit:hover{background-color:#fff;}
+.member_dealing_unit .alarm_num{color:#d70000;}
+.logined_box .enter_club_center_btn{height:16px;background-color:#333;padding:9px 11px 10px 22px;cursor:pointer;}
+.logined_box .enter_club_center_btn:hover{background-color:#000;}
+.logined_box .enter_club_center_btn a{color:#d1ae76;height:16px;line-height:16px;width:auto;vertical-align:top;font-size:14px;}
+/* inner ----------------------------------------------------------------------- */
+.inner{}
+/* footer ---------------------------------------------------------------------- */
+.foot{width:100%;background:#333;}
+.footer{background:#333;min-width:1200px;background:#333;color:#ccc;padding-top:16px;margin:0 auto;}
+.footer p{height:14px;line-height:14px;}
+.footer .verification_link_box{width:500px;float:left;}
+.links_box{padding-bottom:19px}
+.links_box a{color:#ccc;cursor:pointer;}
+.links_box a:hover{text-decoration:underline;}
+.friendly_links_box{padding-top:22px;}
+.friendly_links_box a{margin-right:25px;float:left;height:34px;background:url(../sprite/icon_hotel_home.png) no-repeat;display:block;cursor:pointer;}
+.friendly_links_box .gongshang_icon{width:27px;background-position:-41px -311px;}
+.friendly_links_box .gongshang_icon:hover{background-position:-41px -630px;}
+.friendly_links_box .verify_success{width:60px;background-position:-97px -311px;}
+.friendly_links_box .verify_success:hover{background-position:-97px -629px;}
+.friendly_links_box .net_policeman{width:67px;background-position:-183px -311px;}
+.friendly_links_box .net_policeman:hover{background-position:-183px -630px;}
+.friendly_links_box .collect_credit{width:68px;background-position:-275px -311px;}
+.friendly_links_box .collect_credit:hover{background-position:-275px -630px;}
+.friendly_links_box .credited_firm{width:89px;background-position:-365px -311px;}
+.friendly_links_box .credited_firm:hover{background-position:-365px -630px;}
+.footer .app_code_box{width:187px;float:right;}
+.app_code_box .title_text{height:14px;line-height:14px;}
+.app_code_box .two_dimension_code_icons_box{height:84px;margin:6px 0;}
+.two_dimension_code_icons_box a{width:84px;height:84px;float:left;background:url(../sprite/icon_hotel_home.png) no-repeat;cursor:pointer;}
+.two_dimension_code_icons_box .jinjiang_app_code_icon{background-position:-688px -209px;margin-right:19px;}
+.two_dimension_code_icons_box .jinjiang_wechat_code_icon{background-position:-791px -209px;}
+.app_name_box div{float:left;}
+.app_name_box .app_text{padding:0 30px 0 8px;}
+.footer .jinjiang_tool_bar{width:158px;float:right;margin-right:69px;}
+.jinjiang_tool_bar .iphone_app_icon{width:122px;height:36px;background:url(../sprite/icon_jinjiang_bar.png) no-repeat -7px -77px;display:block;margin-bottom:24px;cursor:pointer;}
+.jinjiang_tool_bar p{height:14px;line-height:14px;padding-bottom:14px;}
+.jinjiang_tool_bar .social_network_box{width:158px;height:29px;background:url(../sprite/icon_hotel_home.png) no-repeat -534px -320px;}
+.jinjiang_tool_bar .social_network_box a{width:29px;height:29px;display:block;float:left;margin-right:9px;cursor:pointer;}
+.social_network_box a.facebook_icon{margin-right:14px;}
+/* Microsoft YaHei --------------------------------------------------------------*/
+.class1,.class2{font-family:"Hiragino Sans GB",\5fae\8f6f\96c5\9ed1, Segoe UI;cursor:pointer;}
+.class1:hover,.class2:hover{text-decoration:underline;}
+/* pagination ---------------------------------------------------------------------- */
+.pagination .next{padding-left:12px;cursor:pointer;float:left;color:#1d7ad9;}
+.pagination .next:hover{text-decoration:underline;color:#1d7ad9;}
+.pagination .prev,.pagination .unprev{padding-right:12px;height:20px;line-height:20px;}
+.pagination .unprev,.pagination .unnext{color:#aaa;cursor:text;height:20px;line-height:20px;float:left;}
+.pagination .unprev,.pagination .list{float:left;}
+.pagination .list a{display:inline-block;padding:2px 6px;line-height:16px;height:16px;margin:0 2px;background:#fff;color:#333;}
+.pagination .list a.on,.pagination .list a:hover{background:#333;color:#fff;}
+/* path ---------------------------------------------------------------------- */
+.path_bar{height:32px;line-height:32px;color:#777;}
+/* checkbox ---------------------------------------------------------------------- */
+label.checkbox {padding-left: 28px;cursor:pointer;background:url(../sprite/icon_hotel_list.png) no-repeat 0px -208px;line-height:34px;height:34px;display:inline-block;} 
+label.checked {background-position:0 -233px;} 
+/* citySelector ---------------------------------------------------------------------- */
+.citySelector{background:#fff;font-size:12px;font-family:"Hiragino Sans GB",tahoma,arial,\5b8b\4f53; }
+.cityslide{width:220px;list-style:none;margin:0;padding:0;border:1px solid #d3d3d3;box-shadow:1px 1px 2px #c1c1c1;border-top:0;}
+.cityslide li{list-style:none;overflow:hidden;height:16px;padding:4px 5px;cursor:pointer;color:#777;}
+.cityslide li.on{background:#1d7ad9;color:#fff;}
+.cityslide li b{font-weight:normal;}
+.cityslide li.empty{background:#fff2e8;color:#666;}
+.cityslide li.empty em{color:red;font-style:normal;}
+.cityname{float:left;}
+.cityspell{float:right;}
+.cityBox{width:400px;border:1px solid #d3d3d3;overflow:hidden;box-shadow:1px 1px 2px #c1c1c1;border-top:0;}
+.cityBox ul{margin:0;padding:0;overflow:hidden;background:#ececec;padding:2px 0 0 12px;}
+.cityBox ul li{float:left;list-style:none;padding:2px 8px;cursor:pointer;margin-left:4px;display:inline;color:#777;}
+.cityBox ul li.on{ background: #fff; position: relative; color:#333;}
+.hide{display:none;}
+p.tip{color:#aaa;line-height:20px;padding:5px 0 5px 12px;margin:0;text-indent:3px;}
+.hotCity{margin-top:-1px;clear:left;overflow:hidden;padding-bottom:5px;padding-top:5px;_margin-bottom:8px;}
+.cityTab{overflow:hidden;}
+.cityTab dl{margin:0;padding:0;overflow:hidden; }
+.cityTab dl dt{float:left;padding-left:10px;color:#1d7ad9;text-indent:10px;font-family:"Hiragino Sans GB","Lucida console","consolas","courier new";line-height:26px;font-size:14px;width:20px;padding-top:8px;}
+.cityTab dl dd{margin-left:10px; float:left; width: 360px; padding:8px 0 8px 0;}
+.cityTab dl dd a{width:66px;height:24px;line-height:24px;display:inline-block;color:#777;text-decoration:none;text-indent:14px;margin-right:5px;margin-bottom:1px;float:left;}
+.cityTab dl dd a:hover{color:#1d7ad9;background:#1d7ad9;color:#fff;}
+.hotCity .hot dt{display:none;}
+/*inputText*/
+.tipTxt{position:absolute;left:0px;top:0px;text-indent:10px;color:#aaa;z-index:0;cursor:text;height:25px;line-height:25px;font-size:12px;float:left;}
+input{border:1px solid #dedede;height:22px;line-height:22px;padding:0 0 0 9px;}
+.enter_input_border{border:1px solid #5CB8E6;}
+.n-invalid {border:1px solid #d70000;}
+textarea{border:1px solid #ECECEC;}
+/*horizontalAlign*/
+.horizantal{display:inline-block;vertical-align:top;position:relative;}
+/*
+  * Pre-IE7 IE hack.  On IE, display: inline-block only gives the element
+  * layout, but doesn't give it inline behavior.  Subsequently setting display
+  * to inline does the trick.
+  */
+* html .horizantal{display:inline;}
+/*
+  * IE7-only hack.  On IE, display: inline-block only gives the element
+  * layout, but doesn't give it inline behavior.  Subsequently setting display
+  * to inline does the trick.
+  */
+*:first-child+html .horizantal{display: inline;}
+/*ellipsis*/
+.ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;line-height:24px;}
+/* css3 ---------------------------------------------------------------------- */
+.tool_box a,.tool_box a:hover,.filter_item .filter_item_hd,.filter_item .filter_item_hd:hover,.tag_box a,.tag_box a:hover,.sort_box li a,.sort_box li a:hover,.room_tab li,.room_tab li:hover,.room_info a,.room_info a:hover,.search_bar .btn_search,.search_bar .btn_search:hover,.room_info .ptips,.room_info .ptips:hover,.filter_item_bd .btn,.filter_item_bd .btn:hover,.filter_item_bd .item label,.filter_item_bd .item label:hover{-moz-transition:all .2s linear;-webkit-transition:all .2s linear;transition:all .2s linear;}
+a,a:hover{-moz-transition:color .3s linear;-webkit-transition:color .3s linear;transition:color .3s linear;}
+.w1200{width:1200px;margin:0 auto;z-index:3;}
+.w1600{width:1600px;margin:0 auto;background-color:#000;}
+.mt5{margin-top:5px;}
+.mt10{margin-top:10px;}
+.mt20{margin-top:20px;}
+.mt30{margin-top:30px;}
+.mb30{margin-bottom:30px;}
+/* seo_bar */
+.seo_bar,.province_seo_bar{width:1200px;border-top:1px solid #e1dfdf;margin:20px auto;padding:20px 0 0 0;color:#777;}
+.seo_bar p{line-height:24px;}
+.seo_bar p.txt{padding-left:125px;display:block;overflow:hidden;}
+.seo_bar p .name{width:125px;float:left;margin-left:-125px;}
+.seo_bar p a{color:#777;width:100px;float:left;line-height:24px;}
+.seo_bar p a:hover{color:#1d7ad9;text-decoration:underline;}
+.province_seo_bar a{width:133px;height:20px;line-height:20px;text-align:center;color:#ababab;float:left;}
+.province_seo_bar a:hover{color:#000;text-decoration:none;}
+/* jinjian_top_bar ----------------------------------------------------------------- */
+.jinjian_top_bar{min-width:1200px;background-color:#000;margin:0 auto;}
+.jinjian_top_bar a{color:#c0a354;}
+.jinjiang_tool_bar a:hover{color:#69592c;}
+.jinjian_top_bar .jinjiang_special_box{width:1200px;height:104px;margin:0 auto;}
+.jinjiang_special_box .jinjiang_logo{width:103px;height:93px;margin:5px 332px 6px 24px;background:url(../sprite/icon_jinjiang_bar.png) no-repeat -161px -25px;float:left;}
+.jinjiang_special_box .jinjiang_tool_bar{width:741px;height:44px;margin:37px 0 23px;float:right;}
+.jinjiang_tool_bar .first_row_box,.first_row_box .lg{float:right;padding-bottom:4px;}
+.first_row_box .lg{width:75px;height:15px;line-height:15px;padding-left:6px;font-size:10px;background:url(../sprite/icon_jinjiang_bar.png) no-repeat -7px -28px;color:#c0a354;}
+.first_row_box .lg ul.tag_options{background-color:#c0a354;color:#333;width:81px;*margin-left:-6px;}
+.first_row_box ul{float:right;margin-right:27px;}
+.first_row_box ul.tag_options{margin-right:0;}
+.first_row_box ul li{float:left;padding:0 8px 0 13px;cursor:pointer;background:url(../sprite/icon_jinjiang_bar.png) no-repeat -631px -25px;}
+.first_row_box .lg ul.tag_options li{height:18px;padding:0 0 0 13px;width:68px;background:none;font-size:11px;line-height:18px;}
+.first_row_box .lg ul.tag_options li.open_hover{background-color:#333;color:#c0a354;}
+.first_row_box ul li.user_login{background:none;}
+.jinjiang_tool_bar .seperate_line{width:100%;height:1px;background:url(../sprite/icon_jinjiang_bar.png) no-repeat -8px -4px;display:block;float:left;}
+.jinjiang_tool_bar .second_row_box{float:left;}
+.second_row_box ul,.second_row_box ul li{float:left;}
+.second_row_box ul li{padding:0 44px 0 43px;background:url(../sprite/icon_jinjiang_bar.png) no-repeat -630px -40px;cursor:pointer;}
+.second_row_box ul li.last{padding:0 0 0 40px;}
+.second_row_box ul li a{font-size:14px;}
+.footer .w1200{background-color:#333;}

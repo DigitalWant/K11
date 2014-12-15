@@ -1,0 +1,97 @@
+@charset "utf-8";
+.wrapper{width:1000px;margin:0 auto;padding-top:20px;}
+.top_order_info_box{width:1000px;height:130px;border:1px solid #CCC;position:relative;background:#ffffdd;z-index:2;}
+.top_order_info_box .order_info_head{width:954px;height:30px;line-height:30px;background-color:#333;padding:0 30px 0 16px;color:#FFF;}
+.order_info_head .order_icon{width:15px;height:30px;margin-right:10px;background:url(../sprite/icon_hotel_order.png) no-repeat -85px -5px;float:left;}
+.order_info_head .head_text{font-weight:bold;}
+.order_info_head .contact_text{float:right;}
+.order_base_info_box{width:596px;height:60px;float:left;padding:20px 26px;background-color:#FFFFEE;position:relative;border-right:1px solid #cccccc;}
+.base_info_unit{float:left;width:240px;line-height:30px;}
+.base_info_label{width:62px;float:left;display:block;}
+.base_info_text{font-weight:bold;color:#000;}
+.order_status_text_confirm{font-size:14px; font-weight:bold;}
+.order_decision, .order_pay{color:#339900;}
+.order_wait{color:#ff7300;}
+.order_wait{color:#ff7300;}
+.order_delete{color:#333333;}
+.order_complete{color:#1d7ad9;}
+.order_fee_box{position:absolute;right:26px;height:60px;padding-left:30px;top:15px;border-left:1px dashed #dedede;}
+.order_price b{color:#ff7300;font-size:28px;font-weight:normal; height:36px; line-height:36px;}
+.order_price .order_price_text{ height:14px; line-height:14px; padding:14px 0 8px;}
+.order_first_price b{color:#000;padding-left:4px;}
+.order_toolbsr_box{float:left;width:318px;padding:13px 16px;}
+.order_toolbsr_box .order_operation{width:74px;height:25px;line-height:25px;background:#1d7ad9;color:#FFF;margin:5px 0px 5px 16px;float:left;font-size:14px;display:block;text-align:center;border:1px solid #1d7ad9;cursor:pointer;}
+.order_toolbsr_box .order_assistant_operation{width:74px;height:25px;line-height:25px;background:#ffffff;color:#1d7ad9;border:1px solid #cccccc;margin:5px 0px 5px 16px;float:left;font-size:14px;display:block;text-align:center;cursor:pointer;}
+.order_toolbsr_box .order_operation:hover{background:#ff7300; border:1px solid #ff7300;}
+.order_toolbsr_box .order_assistant_operation:hover{background-color:#1d7ad9;color:#FFF;text-decoration:none;}
+.order_toolbsr_box .btn_clocked,.order_toolbsr_box .btn_clocked:hover{background-color:#DEDEDE;color:#7D7D7D;border:1px solid #cccccc;}
+.com_1000{width:1000px;margin:0 auto;}
+.w1000_fl{width:758px;float:left;}
+.w1000_fr{width:220px;float:right;}
+.column_fl{border:1px solid #cccccc;padding:30px;background:#ffffff;float:left;}
+.hotel_head_text{font-size:18px;cursor:pointer;}
+.hotel_head_text:hover{text-decoration:underline;color:#1d7ad9;}
+.hotel_info{margin:10px 0 18px; color:#777;}
+.hotel_info .adress,.hotel_info .phone{margin-right:30px;color:#000;}
+.com_info{margin-bottom:30px;float:left;width:696px;}
+.com_info h3{color:#333333;padding-bottom:6px;border-bottom:1px solid #dedede;margin-bottom:8px;}
+.mt16{margin-top:16px;}
+.info_table{color:#333333;font-weight:bold;}
+.gay{color:#000;font-weight:normal;}
+.less_gay{color:#aaaaaa;font-weight:normal;}
+.info_table td{padding:6px 0;vertical-align:top;}
+.font_nomal{font-weight:normal;}
+.info_table td p{line-height:26px;}
+.column_fr h3{color:#333333;margin-bottom:7px;}
+.right_map{position:relative; z-index:1; float:left;}
+.right_map img{border:1px solid #cccccc;}
+.map_see{position:absolute;right:1px;top:1px;width:70px;height:28px;background:#1d7ad9;line-height:28px;color:#f3f3f3;text-align:center; cursor:pointer;}
+.map_see:hover{background-color:#ff7300;color:#FFF;}
+.gay_info{padding-bottom:6px;border-bottom:1px solid #dedede;color:#333333;float:left;width:220px;}
+.gay_title{background:#dedede;color:#777777;padding:3px 6px;margin-top:10px;}
+.info_detail p{padding:3px 2px 3px 6px;}
+.info_detail span{float:right;display:inline;margin-left:4px;}
+.link_a{text-align:right;margin-top:4px;float:right;}
+.label_text{font-weight:normal;color:#777;float:left;}
+.link_a a:hover{color:#1d7ad9;text-decoration:underline;}
+.order_price{height:36px;line-height:36px;font-family:"Hiragino Sans GB",Arial;margin-bottom:10px;}
+.order_first_price{height:14px;line-height:14px;font-family:"Hiragino Sans GB",Arial;}
+.save_btn,.save_btn:hover{width:65px;height:24px;line-height:24px;background-color:#1D7AD9;margin:54px 0 0 11px;color:#FFF;text-align:center;cursor:pointer;float:left;}
+.save_btn:hover{background-color:#ff7300;}
+.memo_textarea{height:67px;resize:none;text-align:left;width:512px;}
+.input_enclose{float:left;position:relative;}
+.contact_info_input{width:139px;float:left;}
+.tipTxt{font-weight:normal;}
+.frequent_contact{min-width:380px;max-width:590px;position:absolute;float:left;background-color:#FFF;border:1px solid #D6D6D6;top:401px; display:none;z-index:30;}
+.frequent_contact .frequent_contact_head{width:inherit;height:25px;line-height:25px;padding-left:19px;background-color:#ECECEC;}
+.frequent_contact .frequent_contact_head .frequent_contact_head_text{float:left;}
+.frequent_contact .frequent_contact_head .close_btn{width:13px;height:13px;background:url(../sprite/icon_hotel_order.png) no-repeat -116px -43px;float:right;margin:6px 10px 0 0;cursor:pointer;}
+.frequent_contact .frequent_contact_head .close_btn:hover{background-color:#000;}
+.frequent_contact .frequent_contact_list{min-width:350px;_width:350px;max-width:560px;padding:11px 11px 11px 19px;float:left;}
+.frequent_contact .frequent_contact_list .frequent_contact_text{width:56px;height:24px;line-height:24px;margin-right:9px;float:left;padding-left:4px;cursor:pointer;}
+.frequent_contact .frequent_contact_list .frequent_contact_text:hover{background-color:#1D7AD9;color:#FFF;}
+#contact_form{display:none;margin-top:10px;}
+#contact_form .contact_row{width:696px;float:left;display:inline-block;}
+#contact_form .first_row{margin-bottom:8px;}
+.input_unit, .checkIn_first_input_unit{width:348px;height:24px;line-height:24px;display:inline-block;float:left;}
+.checkIn_first_input_unit{width:306px;}
+.required_symbol{height:21px;color:#D70000;float:left;padding-top:3px;*padding-top:0px;}
+.label_align{padding-left:23px;}
+.memo_box{margin-top:9px;float:left;display:inline-block;}
+.memo_box .label_text,.input_unit .label_text,.input_unit .second_label{float:left;width:48px;}
+.input_unit .second_label{width:63px;}
+.checkIn_mobile_label_text{padding:0 4px 0 37px;float:left;}
+.phone_label_text{width:73px;float:left;text-align:right;padding-right:4px;}
+.order_assistant_operation_box{width:237px;border:1px solid #dedede;position:absolute;float:left;background-color:#FFF;top:112px;display:none;padding:0 0 13px 0;}
+.order_assistant_operation_box .order_operation_window_head{width:217px;height:38px;padding-left:20px;float:left;}
+.order_operation_window_head .order_operation_window_head_text{width:195px;padding:16px 0 10px;color:#000;font-weight:bold;}
+.order_operation_window_head .close_operation_window_btn{width:13px;height:13px; background:url(../sprite/icon_hotel_order.png) no-repeat -116px -43px;float:right;margin:6px 10px 0 0;cursor:pointer;position:relative;top:-42px;}
+.order_assistant_operation_box .email_address_box,.order_assistant_operation_box .phone_number_box{width:217px;padding:5px 0 0 20px; display:none;float:left;}
+.order_assistant_operation_box .number_input{width:184px;color:#dedede;}
+.order_assistant_operation_box .caution_text{color:#fff;padding:5px 0;}
+.order_assistant_operation_box table{display:none;}
+.order_operation_window_head .close_operation_window_btn:hover{background-color:#000;}
+.order_assistant_operation_box td{color:#000;padding:5px 0 5px 11px;}
+.order_assistant_operation_box td .checkbox{height:21px;line-height:21px;}
+.order_assistant_operation_box .operate_btn{width:43px;height:24px;line-height:24px;text-align:center;color:#FFF;background-color:#1d7ad9;cursor:pointer;float:right;margin-right:23px;}
+.order_assistant_operation_box .operate_btn:hover{width:43px;height:24px;line-height:24px;text-align:center;background-color:#FF7300;}

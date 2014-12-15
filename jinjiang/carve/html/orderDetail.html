@@ -1,0 +1,408 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--其他meta信息-->
+<meta name="keywords" content="锦江酒店预订,锦江之星酒店预订,星级商务酒店预订,白玉兰酒店,百时快捷酒店,金广快捷酒店" />
+<meta name="description" content="锦江旅行家提供全国154个城市100多家锦江星级商务酒店和550多家锦江之星连锁经济型酒店预订服务,锦江旅行家是您商旅出行的最佳选择,预订电话:1010-1666" />
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+<!--文档title-->
+<title>酒店预订_宾馆住宿查询_网上预订酒店宾馆-锦江旅行家</title>
+<link type="text/css" rel="stylesheet" href="../css/base.css" />
+<link type="text/css" rel="stylesheet" href="../css/jquery.validator.css" />
+<link type="text/css" rel="stylesheet" href="../css/orderDetail.css" />
+<title>无标题文档</title>
+</head>
+
+<body>
+	<div class="header">
+        <div class="w1200 header_inner">
+            <div class="head">
+                <a class="login" title="登录"></a>
+                <div class="book_num clearfix"><div>预订服务热线</div><div class="phone_num">1010-1666</div></div>
+                <div class="international_jinjiang_logo"></div>
+            </div>
+            <div id="login_box" class="login_box clearfix">
+                <div class="title_text yahei">用户登录</div>
+                <input id="login_username" type="text" value="注册邮箱/手机号码"/>
+                <div class="login_password_box clearfix">
+                    <input id="login_password" type="password" class="login_password"/>
+                    <label>登录密码</label>
+                </div>
+                <div class="alarm_text">用户名不存在</div>
+                <div class="avoid_login_box">
+                    <div id="" class="check_btn horizantal" value="unchecked"></div>
+                    <div class="horizantal">一个月内免登录</div>
+                </div>
+                <div class="tool_box">
+                    <div class="login_btn yahei horizantal">登录</div>
+                    <a class="horizantal" title="忘记密码">忘记密码</a>
+                    <div class="desperate_notation horizantal">|</div>
+                    <a class="horizantal" title="注册">注册</a>
+                </div>
+                <div class="company_account_box">
+                    <div class="horizantal">使用合作伙伴账户登录：</div>
+                    <a class="weibo_icon horizantal" title="新浪微博">新浪微博</a>|
+                    <a class="qq_icon horizantal" title="QQ">QQ</a>
+                </div>
+                <div class="enter_club_center_btn yahei"><a title="进入会员中心">进入会员中心 > ></a></div>
+            </div>
+            <!--<div id="login_box" class="logined_box">
+                <div class="unit_box">
+                    <label class="horizantal">会员层级:</label>
+                    <div class="horizantal">金卡会员</div>
+                </div>
+                <div class="unit_box">
+                    <label class="horizantal">卡号:</label>
+                    <div class="number horizantal">13224343443</div>
+                </div>
+                <div class="unit_box">
+                    <label class="horizantal">积分:</label>
+                    <div class="number horizantal">140</div>
+                    <a class="exchange_btn horizantal" title="兑换">【兑换】</a>
+                </div>
+                <div class="member_dealing_unit">我的优惠券</div>
+                <div class="member_dealing_unit">我的订单<span class="alarm_num">(2)</span></div>
+                <div class="member_dealing_unit">站内信<span class="alarm_num">(1)</span></div>
+                <div class="enter_club_center_btn yahei"><a title="进入会员中心">进入会员中心 > ></a></div>
+            </div>-->
+        </div>    
+    </div> 
+	<div class="wrapper clearfix">
+    	<div class="top_order_info_box clearfix">
+        	<div class="order_info_head">
+            	<div class="order_icon"></div>
+                <span class="contact_text">如果你有任何问题，请直接致电：1010-1666</span>
+                <span class="head_text">订单信息</span>
+            </div>
+            <div class="order_base_info_box">
+            	<div class="base_info_unit">
+                	<span class="base_info_label">订单号:</span>
+                    <span class="base_info_text">20140526017442</span>
+                </div>
+                <div class="base_info_unit">
+                	<span class="base_info_label">订单状态:</span>
+                    <span class="order_status_text_confirm order_decision">已确认</span><!--<span class="order_status_text_confirm order_pay">已支付</span><span class="order_status_text_confirm order_wait">待支付</span><span class="order_status_text_confirm order_delete">已取消</span><span class="order_status_text_confirm order_complete">已入住</span>--><!--说明：注释的部分为订单的不同的状态-->
+                </div>
+                <div class="base_info_unit">
+                	<span class="base_info_label">预订时间:</span>
+                    <span class="base_info_text">2014-05-05</span>
+                </div>
+                <div class="base_info_unit">
+                	<span class="base_info_label">修改时间:</span>
+                    <span class="base_info_text">2014-05-05</span>
+                </div>
+                <div class="order_fee_box">
+                    <div class="order_price"><div class="order_price_text horizantal">订单金额：¥</div><b class="horizantal">2299</b></div>
+                    <div class="order_first_price">首晚预付价：<b>¥1000</b></div>
+                </div>
+            </div>
+            
+            <div class="order_toolbsr_box yahei">
+                <div class="order_operation">支付订单</div>
+                <div class="order_operation">取消订单</div>
+                <div id="edit_order" class="order_operation">修改订单</div>
+                <div id="print" class="order_assistant_operation">打印订单</div>
+                <div id="send_email" class="order_assistant_operation">发送邮件</div>
+                <div id="send_mobil" class="order_assistant_operation">发至手机</div>
+                
+            </div>
+            <div class="order_assistant_operation_box">
+                <div class="order_operation_window_head">
+                    <div class="order_operation_window_head_text"></div>
+                    <div class="close_operation_window_btn"> </div>
+                </div>
+                <div class="email_address_box">
+                	<input type="text" class="number_input" id="email_address" value="例：someone@gmail.com" title="例：someone@gmail.com" />
+                    <div class="caution_text">请输入正确的邮箱格式</div>
+                </div>
+                <div class="phone_number_box">
+                	<input type="text" class="number_input" id="phone_number" value="例：138654889547" title="例：138654889547" />
+                    <div class="caution_text">请输入正确的手机号码格式</div>
+                </div>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <colgroup>
+                        <col width="128"><col width="128">
+                    </colgroup>
+                    <tr>
+                        <td>
+                            <div class="check_list">
+                                <input type="checkbox" />
+                                <label class="innvoice">订单信息</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="check_list">
+                                <input type="checkbox" />
+                                <label class="innvoice">入住信息</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="check_list">
+                                <input type="checkbox" />
+                                <label class="innvoice">支付信息</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="check_list">
+                                <input type="checkbox" />
+                                <label class="innvoice">酒店提示</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="check_list">
+                                <input type="checkbox" />
+                                <label class="innvoice">出行信息</label>
+                            </div>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+                <div class="operate_btn">确定</div>
+            </div>
+        </div>
+        <div class="com_1000 mt16">
+             <div class="w1000_fl">
+                  <div class="column_fl">
+                       <div class="hotel_head">     
+                       		 <a class="hotel_head_text yahei" title="上海新锦江大酒店">上海新锦江大酒店</a>              
+                            <div class="hotel_info">地址：<span class="adress">上海市黄浦区长乐路161号</span>联系电话：<span class="phone">86-21-64151188</span></div>
+                       </div>
+                       <div class="com_info">
+                            <h3>联系人信息</h3>
+                            <div class="info_table">
+                            	<form id="contact_info_expression">
+                            	 <table width="100%" border="0" cellspacing="0" cellpadding="0" id="contact_info_epression">
+                                 	  <colgroup>
+                                           <col width="88"><col width="270"><col width="88"><col width="">
+                                      </colgroup>
+                                      <tr>
+                                        <td><span class="label_text">姓名：</span></td>
+                                        <td>张三</td>
+                                        <td><span class="label_text">手机：</span></td>
+                                        <td>13894389438</td>
+                                      </tr>
+                                      <tr>
+                                        <td><span class="label_text">邮箱：</span></td>
+                                        <td>1243434243432@jinjign.com</td>
+                                        <td><span class="label_text">固定电话:</span></td>
+                                        <td>021-88888888</td>
+                                      </tr>
+                                      <tr>
+                                        <td><span class="label_text">备注：</span></td>
+                                        <td class="gay" colspan="3">需要相邻两间客房，请尽量安排高层</td>
+                                      </tr>
+                                </table>
+                                </form>
+                                <form id="contact_form">
+                                    <div class="contact_row first_row">
+                                        <div class="input_unit">
+                                            <span class="label_text">姓名：</span>
+                                            <div class="input_enclose">
+                                                <input id="contacter_input" type="text" class="inputText contact_info_input" name="chinese_name" data-rule="required;chinesename;" title="例：张三"/>
+                                            </div>
+                                        </div>
+                                        <div class="frequent_contact">
+                                            <div class="frequent_contact_head">
+                                                <div  class="frequent_contact_head_text">常用联系人</div>
+                                                <div class="close_btn"></div>
+                                            </div>
+                                            <div class="frequent_contact_list">
+                                                <div class="frequent_contact_text">张三</div>
+                                                <div class="frequent_contact_text">李四</div>
+                                                <div class="frequent_contact_text">司马相如</div>
+                                                <div class="frequent_contact_text">张三</div>
+                                            </div>
+                                        </div>
+                                        <div class="input_unit">
+                                            <span class="label_text second_label">手机：</span>
+                                            <div class="input_enclose">
+                                                <input id type="text" class="inputText contact_info_input" name="cellphone_num" data-rule="required;mobile;" title="请填入您的11位手机号码"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contact_row">
+                                        <div class="input_unit">
+                                            <span class="label_text">邮箱：</span>
+                                            <div class="input_enclose">
+                                                <input type="text" class="inputText contact_info_input" name="email" data-rule="required;email;" title="sample@xxxx.com"/>
+                                            </div>
+                                        </div>  
+                                        <div class="input_unit">
+                                            <span class="label_text second_label">固定电话：</span>
+                                            <input type="text" class="contact_info_input" name="phone_num"/>
+                                        </div>
+                                    </div>
+                                    <div class="memo_box">
+                                    	<span class="label_text">备注：</span>
+                                        <textarea class="memo_textarea"></textarea>
+                                    </div>    
+                                    <div class="save_btn">保存修改</div>
+                                </form>
+                            </div>
+                       </div>
+                       <div class="com_info">
+                            <h3>入住信息</h3>
+                            <div class="info_table">
+                            	 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                 	  <colgroup>
+                                           <col width="88"><col width="270"><col width="88"><col width="">
+                                      </colgroup>
+                                      <tr>
+                                        <td><span class="label_text">入住日期：</span></td>
+                                        <td>2014-05-05</td>
+                                        <td><span class="label_text">离店日期：</span></td>
+                                        <td>2014-05-05</td>
+                                      </tr>
+                                      <tr>
+                                        <td><span class="label_text">客房数:</span></td>
+                                        <td>1</td>
+                                        <td><span class="label_text">入住人数:</span></td>
+                                        <td>3</td>
+                                      </tr>
+                                      <tr>
+                                        <td><span class="label_text">房型:</span></td>
+                                        <td colspan="3">新豪华景观双床房</td>
+                                      </tr>
+                                      <tr>
+                                        <td><span class="label_text">入住人：</span></td>
+                                        <td colspan="3">
+                                            <div class="hotel_people">
+                                                 <p class="hotel_people_list"><span class="hotel_people_name">张三，</span><span class="gay">手机13918903333，卡号123455，特殊需求：无烟房、高层</span></p>
+                                                 <p class="hotel_people_list"><span class="hotel_people_name">李四，</span></p>
+                                                 <p class="hotel_people_list"><span class="hotel_people_name">王五，</span><span class="gay">特殊需求：无烟房、高层</span></p>
+                                            </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td><span class="label_text">预计抵达时间:</span></td>
+                                        <td colspan="3">18：00<span class="less_gay">（现付订单：酒店将为您保留客房至约定入住第一天的次日18：00）</span></td>
+                                      </tr>
+                                </table>
+                            </div>
+                       </div>
+                       <div class="com_info">
+                            <h3>支付信息</h3>
+                            <div class="info_table">
+                            	 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                 	  <colgroup>
+                                           <col width="88"><col width="270"><col width="88"><col width="">
+                                      </colgroup>
+                                      <tr>
+                                        <td><span class="label_text">支付方式：</span></td>
+                                        <td>首晚预付</td>
+                                        <td><span class="label_text">支付金额：</span></td>
+                                        <td>1000元</td>
+                                      </tr>
+                                      <tr>
+                                        <td><span class="label_text">支付流水号：</span></td>
+                                        <td>1243434243432</td>
+                                        <td><span class="label_text">支付时间:</span></td>
+                                        <td>2014-05-07</td>
+                                      </tr>
+                                </table>
+                            </div>
+                       </div>
+                       <div class="com_info">
+                            <h3>酒店提示</h3>
+                            <div class="info_table font_nomal">
+                            	 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                 	  <colgroup>
+                                           <col width="88"><col width="">
+                                      </colgroup>
+                                      <tr>
+                                        <td><span class="label_text">房型描述：</span></td>
+                                        <td>床型: 双床（1.2米宽）、面积: 30-35平方米 、所在楼层: 13-22层、 加床：可以加床 、宽带上网：全部收费</td>
+                                      </tr>
+                                      <tr>
+                                        <td><span class="label_text">保证金制度：</span></td>
+                                        <td>80元/天</td>
+                                      </tr>
+                                      <tr>
+                                        <td><span class="label_text">取消政策：</span></td>
+                                        <td><p>入住日当天18:00前变更或取消不收费，逾期将收取首晚房费作为罚金。</p><p>入住日当天18:00前变更或取消不收费，逾期将收取首晚房费作为罚金。</p></td>
+                                      </tr>
+                                </table>
+                            </div>
+                       </div>
+                  </div>
+             </div>
+             <div class="w1000_fr">
+                  <div class="column_fr">
+                       <h3>出行信息</h3>
+                       <div class="right_map">
+                            <img src="../images/map_right.jpg">
+                            <a class="map_see" href="#" target="_blank">查看大图</a>
+                       </div>
+                       <div class="gay_info">
+                            <div class="gay_title">最近的公共交通</div> 
+                            <div class="info_detail">
+                                 <p><span>0.5公里/步行30分钟</span>1号线陕西南路站</p>
+                            </div> 
+                            <div class="gay_title">附近的热门商圈</div> 
+                            <div class="info_detail">
+                                 <p><span>1公里/步行30分钟</span>城隍庙</p>
+                                 <p><span>1公里/步行30分钟</span>淮海路 </p>
+                            </div> 
+                            <div class="gay_title">交通枢纽</div> 
+                            <div class="info_detail">
+                                 <p><span>0.5公里/步行30分钟</span>虹桥机场</p>
+                                 <p><span>0.5公里/步行30分钟</span>浦东机场</p>
+                                 <p><span>0.5公里/步行30分钟</span>上海火车站</p>
+                            </div> 
+                       </div>
+                       <div class="link_a"><a href="#" target="_blank">查询更多</a></div> 
+                  </div>
+             </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="w1200 clearfix">
+            <div class="verification_link_box">
+                <div class="links_box">
+                    <a title="关于我们">关于我们&nbsp;</a>|
+                    <a title="网站地图">网站地图&nbsp;</a>|
+                    <a title="联系我们">联系我们&nbsp;</a>|
+                    <a title="诚聘英才">诚聘英才&nbsp;</a>|
+                    <a title="法律声明">法律声明&nbsp;</a>|
+                    <a title="友情链接">友情链接&nbsp;</a>|
+                    <a title="帮助中心">帮助中心&nbsp;</a>|
+                    <a title="用户体验反馈">用户体验反馈</a>
+                </div>
+                <p>Copyright©1997-2014锦江国际（集团）有限公司版权所有</p>
+                <p>沪ICP备05048113号-1</p>
+                <div class="friendly_links_box">
+                    <a class="gongshang_icon" title="上海工商"></a>
+                    <a class="verify_success" title="安全验证"></a>
+                    <a class="net_policeman" title="上海网警"></a>
+                    <a class="collect_credit" title="征信网"></a>
+                    <a class="credited_firm" title="中国信用企业"></a>
+                </div>
+            </div>
+            <div class="app_code_box">
+                <div class="title_text">| 掌上锦江，更多优惠随时享</div>
+                <div class="two_dimension_code_icons_box">
+                    <a class="jinjiang_app_code_icon" title="APP二维码"></a>
+                    <a class="jinjiang_wechat_code_icon" title="微信二维码"></a>
+                </div>
+                <div class="app_name_box">
+                    <div class="app_text">锦江礼享APP</div>
+                    <div>锦江礼享 微信</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript" src="../js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../js/jquery.checkbox.js"></script>
+<script type="text/javascript" src="../js/jquery.validator.js"></script>
+<script type="text/javascript" src="../js/navigation.js"></script>
+<script type="text/javascript" src="../js/zh_CN.js"></script>
+<script type="text/javascript" src="../js/orderDetail.js" charset="gbk"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.citySelector{  font:12px/1.5 tahoma,arial,\5b8b\4f53; background: #fff; }
+.cityslide {width:250px; list-style:none; margin:0;padding:0; border: 1px solid #d3d3d3;box-shadow: 1px 1px 2px #c1c1c1; border-top:0;}
+.cityslide li {list-style:none; overflow:hidden;  height:16px; padding:4px 5px; cursor:pointer;}
+.cityslide li.on{background:#1d7ad9; color:#fff;}
+.cityslide li b { font-weight:normal;}
+.cityslide li.empty{ background: #fff2e8; color: #666;}
+.cityslide li.empty em{color: red; font-style:normal;}
+.cityname {float:left;}
+.cityspell {float:right;}
+.cityBox{ width:400px; border: 1px solid #d3d3d3; overflow: hidden; box-shadow: 1px 1px 2px #c1c1c1; border-top:0;}
+.cityBox ul{ margin: 0; padding: 0; overflow: hidden; background:#ececec; padding:2px 0 0 12px;}
+.cityBox ul li{ float: left; list-style: none; padding:2px 8px;  cursor:pointer; margin-left: 4px; display: inline;  color:#777;}
+.cityBox ul li.on{ background: #fff; position: relative; color:#333;}
+.hide{ display: none;}
+p.tip{ color:#aaa; line-height: 20px; padding:5px 0 5px 12px; margin: 0; text-indent: 3px;}
+.hotCity{ margin-top: -1px; clear:left; overflow: hidden; padding-bottom: 5px; padding-top: 5px; _margin-bottom:8px;}
+.cityTab{overflow: hidden;}
+.cityTab dl{ margin:0; padding: 0; overflow: hidden; }
+.cityTab dl dt{float: left; padding-left:10px;color: #1d7ad9;text-indent:10px; font-family: "Lucida console","consolas","courier new";line-height: 26px; font-size: 14px; width: 20px; padding-top:8px;}
+.cityTab dl dd{ margin-left:10px; float:left; width: 360px; padding:8px 0 8px 0;}
+.cityTab dl dd a{  width:66px; height:24px; line-height: 24px; display: inline-block; color: #777; text-decoration: none; text-indent:14px; margin-right:5px; margin-bottom:1px;}
+.cityTab dl dd a:hover{ color:#1d7ad9; background:#1d7ad9; color:#fff; }
+.hotCity .hot dt{ display:none;}

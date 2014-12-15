@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+/* 轮播--------------------------------*/
+.carousel_box{height:400px;}
+.com_1200{width:1200px;margin:0 auto;}
+.carousel_inner{position:relative;height:400px;}
+.loading span{background:url(../images/loading.gif) no-repeat;padding-left:24px;}
+.carousel_mian{position:absolute;left:-200px;top:0;height:400px;width:1600px;}
+.mF_kdui .prev{left:1px;}
+.mF_kdui .next{left:1562px;}
+/* filter-------------------------*/
+.product_category_filter_box{width:326px;height:306px;position:absolute;top:110px;left:357px;}
+.filter_condition_box{width:230px;height:240px;margin-bottom:6px;padding:30px 20px 30px 30px;background-color:#fff;opacity:0.9;filter:alpha(opacity=90);-khtml-opacity:0.9;z-index:1;*z-index:-1;}
+.product_tab_box{width:46px;}
+.product_tab{width:20px;height:40px;line-height:20px;font-size:18px;margin-bottom:6px;color:#fff;background-color:#333;padding:28px 10px; font-family:"Hiragino Sans GB",microsoft yahei;cursor:pointer;position:relative;float:right;z-index:9999;}
+.product_tab_hover{padding:28px 13px;}
+.product_tab_selected{background-color:#d1ae76;padding:28px 13px;}
+.product_tab .tab_arrow{width:8px;height:16px;background:url(../sprite/icon_platform_home.png) no-repeat -9px -6px;position:relative;left:30px;z-index:9;top:-24px;display:none;}
+.filter_box{height:183px;display:none;}
+.filter_unit{height:35px;padding-bottom:10px;}
+.filter_unit .filter_label{width:61px;color:#777;height:35px;line-height:35px;}
+.rent_function{height:14px;padding:11px 0 10px;}
+.rent_function li{width:76px;height:14px;line-height:14px;cursor:pointer;}
+.rent_function li .unselected_check_point,.rent_function li .disable_check_point,.rent_function li .selected_checked_point{width:12px; height:12px;background:url(../sprite/icon_hotel_order.png) no-repeat -40px -43px;margin:2px 4px 0 0;*margin:0 4px 0 0;}
+.rent_function li .disable_check_point{background-position:-85px -43px;}
+.rent_function li .selected_checked_point{background-position:-64px -43px;}
+.rent_function li .rent_type{height:14px;line-height:14px;}
+#airport_rent,#common_rent{display:none;}
+.input_box .CRselectBox{height:33px;line-height:33px;border:1px solid #dedede;cursor:pointer;}
+.input_box .CRselectValue{padding:0 0 0 9px;width:156px;color:#333;background:url(../sprite/icon_platform_home.png) no-repeat 132px -97px;}
+.input_box .CRselectBoxOptions{background-color:#fff;width:163px;border-bottom:1px solid #dedede;border-left:1px solid #dedede;z-index:15;border-right:1px solid #dedede;position:relative;left:-1px;}
+.input_box .CRselectBoxItem{padding:0 0 0 9px;width:154px;}
+.input_box .CRselectBoxItem a{color:#333;padding:0;width:154px;height:33px;line-height:33px;display:inline-block;}
+.rent_car_time_box .CRselectBox{width:52px;border-left:none;float:left;}
+.rent_car_time_box .CRselectValue{width:49px;padding:0 0 0 3px;background-position:24px -97px;}
+.rent_car_time_box .CRselectBoxOptions{width:52px;height:200px;overflow:auto;}
+.rent_car_time_box .CRselectBoxItem{padding:0;width:35px;}
+.rent_car_time_box .CRselectBoxItem a{padding:0 0 0 3px;width:32px;}
+.filter_unit .input_box{height:35px;width:165px;position:relative;z-index:15;}
+.filter_unit .start_city_box{width:155px;padding-left:10px;line-height:35px;color:#333;}
+.filter_unit .travel_terminal_box{z-index:30;}
+/*travel terminal*/
+.travel_terminal_recommend_box{background-color:#fff;border:1px solid #d3d3d3;color:#333;padding-bottom:15px;width:242px;line-height:20px; display:none;}
+.terminal_title{height:24px;line-height:24px;padding-left:12px;background-color:#dedede;color:#777;}
+.travel_line_unit{padding:0 3px 0 12px;}
+.travel_line_head{font-weight:bold;padding-top:6px;}
+.travel_line_unit li{cursor:pointer;margin-right:8px;}
+.travel_line_unit li:hover{color:#1d7ad9;text-decoration:underline;}
+#cityInfoTravelTerminal{color:#aaa;}
+#common_rent_car_start_time_box{z-index:25;}
+.filter_unit .rent_car_time_box{position:relative;z-index:20;}
+.filter_unit .input_box input{height:33px;line-height:33px;width:154px;}
+.filter_unit .dateCheckIn,.filter_unit .dateCheckOut{background-position:-940px -319px;}
+.filter_box .rent_filter_title{color:#d1ae76;border-bottom:1px solid #d1ae76;padding-left:42px;font-size:14px;height:18px;line-height:18px;width:188px;background:url(../sprite/icon_platform_home.png) no-repeat -160px -6px;margin-bottom:27px;}
+.search_tool_bar{height:40px;padding:17px 0 0 16px;}
+.search_tool_bar .check_map_btn{height:14px;line-height:14px;margin:13px 21px 13px 0;cursor:pointer;}
+.search_tool_bar .check_map_btn:hover{color:#1d7ad9;text-decoration:underline;}
+.search_tool_bar .search_btn{width:67px;height:40px;line-height:40px;color:#fff;background:url(../sprite/icon_platform_home.png) no-repeat -64px 4px;background-color:#1d7ad9;font-size:16px;padding-left:40px;cursor:pointer;}
+.search_tool_bar .search_btn:hover{background-color:#0665c5;}
+.filter_unit input.car_rent_date{width:101px;float:left;background-position:-991px -319px;}
+/*板块*/
+.board_exit_box{width:1600px;margin:0 auto;background-color:#fff;}
+.platform_title_box{height:52px;border-bottom:1px solid #ebebeb;padding:23px 230px 17px 196px;}
+.platform_title_text{font-size:18px;height:22px;line-height:22px;color:#333;padding-bottom:10px;}
+.characteristic_service_box{height:20px;padding-left:104px;}
+.service_unit{height:20px;}
+.service_unit a{width:16px;height:20px;background:url(../sprite/icon_platform_home.png) no-repeat;margin-right:5px;}
+.service_unit a.outstanding_service_icon{background-position:-14px -67px;}
+.service_unit a.price_guarantee_icon{background-position:-58px -67px;}
+.service_unit a.update_guarantee_icon{background-position:-106px -67px;}
+.service_unit a.cancel_guarantee_icon{background-position:-145px -67px;}
+.service_desparate_notation{color:#d1ae76;padding:2px 8px 0 0;height:14px;line-height:14px;}
+.characteristic_service_box .service_text{font-size:14px;padding-right:12px;height:18px;line-height:18px;}
+.board_channel_box{padding:22px 0 41px;}
+.board_channel_box a{margin-right:20px;border:1px solid #e5e5e5;cursor:pointer;}
+.board_channel_box a .shadow_icon{width:220px;height:7px;background:url(../sprite/icon_platform_home.png) no-repeat -6px -45px;position:absolute;top:163px;*top:161px;}
+.board_channel_box a .channel_text_box{border-bottom:1px solid #d8bc8f;padding:8px 10px 9px 17px;}
+.board_channel_box a.last_link{margin-right:0;}
+.board_channel_box a img{width:222px;height:106px;}
+.channel_box{width:175px;height:35px;}
+.channel_name_text{font-size:14px;height:16px;line-height:16px;padding-bottom:5px;color:#333;}
+.channel_describe_text{color:#b5b5b5;height:14px;line-height:14px;}
+.enter_btn,.enter_btn_hover{width:20px;height:20px;background:url(../sprite/icon_platform_home.png) no-repeat -33px -6px;margin-top:5px;}
+.enter_btn_hover{background-position:-199px -70px;}
+.kerword_box{width:370px;padding:6px 12px;text-indent:0;border:1px solid #e7e7e7;box-shadow:#e7e7e7 0px 0px 5px;position:absolute;top:27px;left:5px;font-size:12px;background:#fff;color:#333;font-family:\5b8b\4f53;z-index:9;}
+.kerword_box,.word_slide{width:370px;padding:6px 12px;text-indent:0;border:1px solid #e7e7e7;box-shadow:#e7e7e7 0px 0px 5px;font-size:12px;position:relative;top:0;left:0;background:#fff;color:#333;z-index:9;font-family:\5b8b\4f53;}
+.word_slide{width:220px;padding:0;display:none;}
+.word_slide a{display:block;list-style:none;overflow:hidden;height:16px;padding:4px 5px;cursor:pointer;color:#777;}
+.word_slide a:hover{background:#1d7ad9;color:#fff;}
+.word_slide a:hover b{font-weight:normal;}
+.kerword_box p{border-bottom:1px solid #ececec;padding-bottom:5px;margin-bottom:5px;line-height:24px;text-align:left;}
+.kerword_box .hot_head{float:left;width:100%;}
+.kerword_box p a{margin-right:10px;display:inline-block;}
+.kerword_box p a:hover{color:#ff7300;}
+.kerword_box p.last{padding:0;margin:0;border:0;}
+.kw .tipTxt{position:absolute;}
+.kw .tipTxt{position:absolute;height:14px;line-height:14px;padding:11px 0 10px;}

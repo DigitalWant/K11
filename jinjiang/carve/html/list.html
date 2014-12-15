@@ -1,0 +1,1156 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--其他meta信息-->
+<meta name="keywords" content="锦江酒店预订,锦江之星酒店预订,星级商务酒店预订,白玉兰酒店,百时快捷酒店,金广快捷酒店" />
+<meta name="description" content="锦江旅行家提供全国154个城市100多家锦江星级商务酒店和550多家锦江之星连锁经济型酒店预订服务,锦江旅行家是您商旅出行的最佳选择,预订电话:1010-1666" />
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+<!--文档title-->
+<title>酒店预订_宾馆住宿查询_网上预订酒店宾馆-锦江旅行家</title>
+<link type="text/css" rel="stylesheet" href="../css/base.css" />
+<link type="text/css" rel="stylesheet" href="../css/list.css" />
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css" />
+</head>
+<body>
+
+	<div class="header">
+        <div class="w1200 header_inner">
+            <div class="head">
+                <a class="login" title="登录"></a>
+                <!--<a class="logined" title="已登录"><div class="user_name_text ellipsis horizantal" title="礼享家aaaaaaaaaaaaaaaaaa">礼享家aaaaaaaaaaaaaaaaaaa</div><span class="hint_text horizantal">(1)</span><span class="horizantal">▼</span></a>-->
+                <a class="about_jinjiang yahei" title="关于锦江国际">关于锦江国际</a>
+                <a class="automobile_logo" title="锦江汽车"></a>
+                <a class="rent_automobile" title="租车">
+                    <div class="head_title_text yahei">租车</div>
+                    <div class="brand_text">All Brands</div>
+                </a>
+                <a class="jinjiang_trip_logo" title="锦江旅游"></a>
+                <a class="travel" title="旅游">
+                    <div class="head_title_text yahei">旅游</div>
+                    <div class="brand_text">All Brands</div>
+                </a>
+                <a class="baishi_logo" title="百时快捷"></a>
+                <a class="jinguang_logo" title="金广快捷"></a>
+                <a class="baiyulan_logo" title="白玉兰酒店"></a>
+                <a class="jinjiangzhixing_logo" title="锦江之星"></a>
+                <a class="jinjiangducheng_logo" title="锦江都城"></a>
+                <a class="jinjiang_hotel_logo" title="锦江酒店"></a>
+                <a class="all_hotel" title="酒店">
+                    <div class="head_title_text yahei">酒店</div>
+                    <div class="brand_text">All Brands</div>
+                </a>
+                <h1 class=""><a class="international_jinjiang_logo" href="#" target="_blank" title="锦江国际">锦江国际</a></h1>
+            </div>
+            <div id="login_box" class="login_box clearfix">
+                <div class="title_text yahei">用户登录</div>
+                <input id="login_username" type="text" value="注册邮箱/手机号码"/>
+                <div class="login_password_box clearfix">
+                    <input id="login_password" type="password" class="login_password"/>
+                    <label>登录密码</label>
+                </div>
+                <div class="alarm_text">用户名不存在</div>
+                <div class="avoid_login_box">
+                    <div id="" class="check_btn horizantal" value="unchecked"></div>
+                    <div class="horizantal">一个月内免登录</div>
+                </div>
+                <div class="tool_box">
+                    <div class="login_btn yahei horizantal">登录</div>
+                    <a class="horizantal" title="忘记密码">忘记密码</a>
+                    <div class="desperate_notation horizantal">|</div>
+                    <a class="horizantal" title="注册">注册</a>
+                </div>
+                <div class="company_account_box">
+                    <div class="horizantal">使用合作伙伴账户登录：</div>
+                    <a class="weibo_icon horizantal" title="新浪微博">新浪微博</a>|
+                    <a class="qq_icon horizantal" title="QQ">QQ</a>
+                </div>
+                <div class="enter_club_center_btn yahei"><a title="进入会员中心">进入会员中心 > ></a></div>
+            </div>
+            <!--<div id="login_box" class="logined_box">
+                <div class="unit_box">
+                    <label class="horizantal">会员层级:</label>
+                    <div class="horizantal">金卡会员</div>
+                </div>
+                <div class="unit_box">
+                    <label class="horizantal">卡号:</label>
+                    <div class="number horizantal">13224343443</div>
+                </div>
+                <div class="unit_box">
+                    <label class="horizantal">积分:</label>
+                    <div class="number horizantal">140</div>
+                    <a class="exchange_btn horizantal" title="兑换">【兑换】</a>
+                </div>
+                <div class="member_dealing_unit">我的优惠券</div>
+                <div class="member_dealing_unit">我的订单<span class="alarm_num">(2)</span></div>
+                <div class="member_dealing_unit">站内信<span class="alarm_num">(1)</span></div>
+                <div class="enter_club_center_btn yahei"><a title="进入会员中心">进入会员中心 > ></a></div>
+            </div>-->
+        </div>    
+    </div>
+
+    <!--锦江特有部分-->
+    <div class="jinjian_top_bar">
+        <div class="jinjiang_special_box">
+            <div class="jinjiang_logo"></div>
+            <div class="jinjiang_tool_bar">
+                <div class="first_row_box">
+                    <div class="lg">
+                        <select id="language" name="language">
+                            <option>中文</option>
+                            <option>ENGLISH</option>
+                            <option>日本语</option>
+                        </select>
+                    </div>
+                    <ul>
+                        <li class="user_login"><a title="客户登录">客户登录</a></li>
+                        <li><a title="关于我们">关于我们</a></li>
+                        <li><a title="人力资源">人力资源</a></li>
+                        <li><a title="新闻中心">新闻中心</a></li>
+                        <li><a title="联系我们">联系我们</a></li>
+                        <li><a title="市场联盟和合作伙伴">市场联盟和合作伙伴</a></li>
+                    </ul>
+                </div>
+                <a class="seperate_line"></a>
+                <div class="second_row_box">
+                    <ul>
+                        <li><a title="主页">主页</a></li>
+                        <li><a title="酒店概览">酒店概览</a></li>
+                        <li><a title="位置">位置</a></li>
+                        <li><a title="特别优惠">特别优惠</a></li>
+                        <li><a title="会议及活动">会议及活动</a></li>
+                        <li class="last"><a title="相册">相册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--锦江特有部分-->
+
+    <div class="wrapper baiyulan">
+      <div class="path_bar"><a href="#" title="首页">首页</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="#" title="酒店">酒店</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;上海酒店</div>
+      <div class="search_bar yahei">
+        <input name="" type="button" value="重新搜索" class="btn_search">
+        <div class="city"><span class="fl">城市</span>
+        <div class="city_box"><input name="" type="text" class="input_txt city_input" id="cityInfo" value="上海"></div>
+        </div> <span class="start_time"><span class="fl">入住日期</span>
+        <input name="" type="text" class="input_txt dateCheckIn">
+        </span> <span class="end_time"><span class="fl">离店日期</span>
+        <input name="" type="text" class="input_txt dateCheckOut">
+        </span>
+        <div class="keyword"><span class="name">关键字</span>
+          <div class="kw">
+            <input name="" autocomplete="off"  type="text" value="" class="input_txt kw_input" title="酒店名称/地标" >
+          </div>
+        </div>
+        <span class="code">优惠代码 <span class="pos">
+        <input name="" type="text" class="input_txt inputText" title="输入优惠代码" value="">
+        </span> </span> </div>
+      <div class="base_wrap">
+        <div class="base_side">
+          <div class="float_side">
+            <div class="side_map">
+              <div class="tool_box"> <a href="javascript:;" class="map_unfold" title="展开地图">展开地图</a> <span class="base_label">
+                <label class="checkbox">跟随浮动</label>
+                </span> <a href="#" class="map_link" title="查看大图">查看大图</a> </div>
+              <div class="map_box"><img src="../temp/map.jpg" ></div>
+            </div>
+            <div class="filter_box">
+              <div class="title yahei">更多筛选</div>
+              <div class="filter_item">
+                <div class="filter_item_hd"><b></b>星级</div>
+                <div class="filter_item_bd">
+                  <div class="chklist"> <span class="item">
+                    <input type="checkbox" name="five_star">
+                    <label>五星级</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>四星级</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>三星级</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>经济型</label>
+                    </span></div>
+                  <a href="javascript:;" class="btn" title="确定">确定</a> </div>
+                <div class="filter_item_hd"><b></b>价格</div>
+                <div class="filter_item_bd">
+                  <div class="chklist"> <span class="item">
+                    <input type="checkbox">
+                    <label>100~300</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>300~500</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>500~800</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>800~1200</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>1200以上</label>
+                    </span></div>
+                  <a href="javascript:;" class="btn" title="确定">确定</a> </div>
+                <div class="filter_item_hd"><b></b>行政区</div>
+                <div class="filter_item_bd">
+                  <div class="chklist"> <span class="item">
+                    <input type="checkbox">
+                    <label>宝山区</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>青浦区</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>卢湾区</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>普陀区</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>静安区</label>
+                    </span></div>
+                  <a href="javascript:;" class="btn" title="确定">确定</a> </div>
+                <div class="filter_item_hd"><b></b>飞机场/火车站</div>
+                <div class="filter_item_bd">
+                  <div class="chklist"> <span class="item">
+                    <input type="checkbox">
+                    <label>虹桥机场</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>浦东机场</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>上海火车站</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>上海南站</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>虹桥火车站</label>
+                    </span></div>
+                  <a href="javascript:;" class="btn" title="确定">确定</a> </div>
+                <div class="filter_item_hd"><b></b>商圈/地标</div>
+                <div class="filter_item_bd">
+                  <div class="chklist"> <span class="item">
+                    <input type="checkbox">
+                    <label>陕西南路淮海路</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>八佰伴</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>徐家汇</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>五角场</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>中山公园</label>
+                    </span></div>
+                  <a href="javascript:;" class="btn" title="确定">确定</a> </div>
+                <div class="filter_item_hd"><b></b>轨道交通</div>
+                <div class="filter_item_bd">
+                  <ul class="subway">
+                    <li class="on ellipsis" title="">1号线</li>
+                    <li class="ellipsis" title="2号线北延伸段AAAAAAAAAA">2号线北延伸段AAAAAAAAAA</li>
+                    <li class="ellipsis" title="">3号线</li>
+                    <li class="ellipsis" title="">4号线</li>
+                    <li class="ellipsis" title="">5号线</li>
+                    <li class="ellipsis" title="">6号线</li>
+                    <li class="ellipsis" title="">7号线</li>
+                    <li class="ellipsis" title="">8号线</li>
+                    <li class="ellipsis" title="">9号线</li>
+                    <li class="ellipsis" title="">10号线</li>
+                    <li class="ellipsis" title="">11号线</li>
+                    <li class="ellipsis" title="">12号线</li>
+                  </ul>
+                  <div class="station chklist"> <span class="item">
+                    <input type="checkbox" name="allSelect">
+                    <label>全部</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>莘庄站</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>外环路站</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>莲花路站</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>锦江乐园站</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>上海南站站</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>漕宝路站</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>上海体育馆站</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>徐家汇站</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>衡山路站</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>常熟路站</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>陕西南路站</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>黄陂南路站</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>人民广场站</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>新闸路站</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>汉中路站</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>上海火车站站</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>中山北路站</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>延长路站</label>
+                    </span> <span class="item">
+                    <input type="checkbox">
+                    <label>上海马戏城站</label>
+                    </span> </div>
+                  <a href="javascript:;" class="btn" title="确定">确定</a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="base_main">
+          <div class="tag_box"> <span class="fr">查询到<b>155</b>家酒店</span> <span class="tip">已为您筛选：</span><a href="javascript:;" title="星级">星级：五星酒店<span>X</span></a><a href="javascript:;" title="行政区">行政区：黄浦区/徐汇区<span>X</span></a></div>
+          <div class="sort_box">
+            <ul>
+              <li class="fr chklist">
+                <input type="checkbox" >
+                <label>可用积分</label>
+              </li>
+              <li class="fr chklist">
+                <input type="checkbox">
+                <label>促销</label>
+              </li>
+              <li><a href="javascript:;" class=" selected" title="锦江推荐">锦江推荐</a></li>
+              <li class="price"><a href="javascript:;" title="价格"><i class="up"></i>价格</a></li>
+              <li class="distance"><a href="javascript:;" title="距离"><i class="down"></i>距离</a></li>
+            </ul>
+          </div>
+          <div class="hotel_list">
+            <div class="hotel_item clearfix">
+              <ul class="hotel_info">
+                <li class="pic"><a href="#" target="_blank" title="新锦江大酒店"><img src="../temp/pic.jpg" width="140" height="105" alt="新锦江大酒店"></a></li>
+                <li class="info">
+                  <h2><a class="yahei" href="#" target="_blank" title="新锦江大酒店"><span class="num">1</span>新锦江大酒店</a><span class="star_5"></span></h2>
+                  <p class="address">地址：上海市黄浦区长乐路161号<a href="#" target="" title="了解更多信息">了解更多信息</a></p>
+                  <p class="distance">距离长乐路的直线距离为<span class="col">0.25</span>公里</p>
+                  <p class="panorama"><a href="javascript:;" title="360全景">360全景</a></p>
+                </li>
+                <a class="promotion" href="javascript:;" title="锦江礼享家成员酒店"></a>
+                <li class="price"><span>¥</span><b>299</b>起</li>
+              </ul>
+              <div class="room_list">
+                <ul class="room_tab">
+                  <li class="on">全部房型<i></i></li>
+                  <li>限时促销</li>
+                  <li>现付价</li>
+                  <li>金卡9折</li>
+                </ul>
+                <div class="room_info" style="display:block;">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <thead>
+                      <tr>
+                        <th width="175">房型</th>
+                        <th width="85">早餐</th>
+                        <th width="85">宽带</th>
+                        <th width="130">价格</th>
+                        <th width="100">取消政策</th>
+                        <th>特殊政策</th>
+                        <th width="60">&nbsp;</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="tit yahei">
+                        <td colspan="7">豪华大床房</td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><span><a href="#" target="_blank" class="name" title="限时促销">限时促销</a> 
+                            <div class="tit_box">
+                                <img src="../temp/pic.jpg" alt="新锦江大酒店"/>
+                                <div class="room_type_info">
+                                    <div class="room_type_name yahei">豪华大床房</div>
+                                    <ul>
+                                        <li>床型： 大床（1.5米宽）</li>
+                                        <li>面积： 25平方米</li>
+                                        <li>所在楼层：10-29层</li>
+                                        <li>加床： 可以加床</li>
+                                        <li>宽带上网： 全部（免费）</li>
+                                        <li>无烟房： 有</li>
+                                        <li>窗户： 有</li>
+                                    </ul>
+                                </div>
+                                <span class="board_arrow_icon"></span>
+                            </div>
+                        </span>
+                        <span class="gift" data-params="{'options':{'template':'title_txt','content':{'title':'入住好礼：','txt':'内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}"></span></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price"><span>¥<b class="en">299</b>
+                                <div class="tit_box">
+                                    <table width="561" border="1" cellspacing="0" bordercolor="#d6d6d6">
+                                        <colgroup>
+                                            <col width="79"/><col width="79"/><col width="79"/><col width="79"/><col width="79"/><col width="79"/><col width="79"/>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="date">
+                                                <td>09/26(周五)</td>
+                                                <td>09/27(周六)</td>
+                                                <td>09/28(周日)</td>
+                                                <td>09/29(周一)</td>
+                                                <td>09/30(周二)</td>
+                                                <td>10/01(周三)</td>
+                                                <td>10/02(周四)</td>
+                                            </tr>
+                                            <tr class="price">
+                                                <td><div class="cash_text yahei">￥<b>499</b></div></td>
+                                                <td><div class="cash_text yahei">￥<b>499</b></div></td>
+                                                <td><div class="cash_text yahei">￥<b>499</b></div></td>
+                                                <td><div class="cash_text yahei">￥<b>499</b></div></td>
+                                                <td><div class="cash_text yahei">￥<b>499</b></div></td>
+                                                <td><div class="cash_text yahei">￥<b>499</b></div></td>
+                                                <td><div class="credit_text yahei">10000分</div></td>
+                                            </tr>
+                                            <tr class="date">
+                                                <td>09/26(周五)</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="price">
+                                                <td><div class="cash_text yahei">￥<b>499</b></div><div class="credit_text yahei">10000分</div></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <span class="board_arrow_icon"></span>
+                                </div>
+                            </span>
+                        </td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">限时取消</span></td>
+                        <td class="policy"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">担保首晚房费</span></td>
+                        <td class="btn yahei"><a href="#" target="_blank" class="btn_buy unbtn" title="预订">预订</a></td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name" title="会员积分兑换">会员积分兑换</a></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price"><span class="login_after" ><b class="col">2000</b>分</span></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">免费取消</span></td>
+                        <td class="policy">门店现付</td>
+                        <td class="btn yahei"><a href="#" target="_blank" class="btn_buy btn2" title="预订">预订</a></td>
+                      </tr>
+                      <tr class="linebox">
+                        <td colspan="7"><div class="line"></div></td>
+                      </tr>
+                      <tr class="tit  yahei">
+                        <td colspan="7">豪华大床房</td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><span class="ptips name" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">积分加现金</span></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price">¥<b class="en">299</b>+<b class="col">400</b>分</td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">免费取消</span></td>
+                        <td class="policy">门店现付</td>
+                        <td class="btn  yahei"><a href="#" target="_blank" class="btn_buy" title="预订">预订</a></td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name" title="现付价">现付价</a></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price"><span class="login_before" >专享价<span class="login_tip">此优惠房型属于锦江旅行家会员专属，如需查看请先<a href="#">登录</a><i></i></span></span></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">限时取消</span></td>
+                        <td class="policy"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">担保首晚房费</span></td>
+                        <td class="btn"><a href="#" title="登录">登录</a>查看</td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name" title="连住3天">连住3天</a></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price">¥<b class="en">299</b></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">即时取消</span></td>
+                        <td class="policy">门店现付</td>
+                        <td class="btn yahei"><div class="all_day"><a href="javascript:;" class="btn_buy btn_all" title="查看">查看</a>
+                        <div class="all_main">
+                        <div class="txt"><b class="col">需至少入住两晚才可享受此优惠价格</b><br />最佳入住时间说明</div>
+                        <div class="date">入住日期 <input name="" type="text" class="input_date"></div>
+                        <div class="date">离店日期 <input name="" type="text" class="input_date"></div>
+                        <a href="#" class="btn_book yahei" title="预订">预订</a>
+                        <i></i><b class="close"></b>
+                        </div>
+                        </div></td>
+                      </tr>
+                      <tr class="linebox">
+                        <td colspan="7"><div class="line"></div></td>
+                      </tr>
+                    <tbody>
+                  </table>
+                  <div class="toggle"><a href="javascript:;" title="查看全部房型"><span>查看全部房型</span>&nbsp;▼</a></div>
+                  <!--<div class="toggle"><a href="javascript:;">收起房型列表&nbsp;▲&</a></div>--> 
+                </div>
+                <div class="room_info">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <thead>
+                      <tr>
+                        <th width="175">房型</th>
+                        <th width="100">早餐</th>
+                        <th width="100">宽带</th>
+                        <th width="100">价格</th>
+                        <th width="100">取消政策</th>
+                        <th>特殊政策</th>
+                        <th width="60">&nbsp;</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="tit yahei">
+                        <td colspan="7">豪华大床房</td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name" title="限时促销">限时促销</a> <span class="gift" data-params="{'options':{'template':'title_txt','content':{'title':'入住好礼：','txt':'内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}"></span></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price">¥<b class="en">299</b></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">限时取消</span></td>
+                        <td class="policy"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">担保首晚房费</span></td>
+                        <td class="btn yahei"><a href="#" target="_blank" class="btn_buy" title="预订">预订</a></td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name" title="限时促销">限时促销</a> <span class="gift" data-params="{'options':{'template':'title_txt','content':{'title':'入住好礼：','txt':'内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}"></span></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price">¥<b class="en">299</b></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">限时取消</span></td>
+                        <td class="policy"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">担保首晚房费</span></td>
+                        <td class="btn yahei"><a href="#" target="_blank" class="btn_buy" title="预订">预订</a></td>
+                      </tr>
+                      <tr class="linebox">
+                        <td colspan="7"><div class="line"></div></td>
+                      </tr>
+                    <tbody>
+                  </table>
+                  <div class="toggle"><a href="javascript:;" title="查看全部房型"><span>查看全部房型</span>&nbsp;▼</a></div>
+                </div>
+                <div class="room_info">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <thead>
+                      <tr>
+                        <th width="175">房型</th>
+                        <th width="100">早餐</th>
+                        <th width="100">宽带</th>
+                        <th width="100">价格</th>
+                        <th width="100">取消政策</th>
+                        <th>特殊政策</th>
+                        <th width="60">&nbsp;</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="tit yahei">
+                        <td colspan="7">豪华大床房</td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name" title="现付价">现付价</a></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price">¥<b class="en">299</b></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">限时取消</span></td>
+                        <td class="policy"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">担保首晚房费</span></td>
+                        <td class="btn yahei"><a href="#" target="_blank" class="btn_buy" title="预订">预订</a></td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name" title="现付价">现付价</a></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price">¥<b class="en">299</b></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">限时取消</span></td>
+                        <td class="policy"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">担保首晚房费</span></td>
+                        <td class="btn yahei"><a href="#" target="_blank" class="btn_buy" title="预订">预订</a></td>
+                      </tr>
+                      <tr class="linebox">
+                        <td colspan="7"><div class="line"></div></td>
+                      </tr>
+                    <tbody>
+                  </table>
+                  <div class="toggle"><a href="javascript:;" title="查看全部房型"><span>查看全部房型</span>&nbsp;▼</a></div>
+                </div>
+                <div class="room_info">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <thead>
+                      <tr>
+                        <th width="175">房型</th>
+                        <th width="100">早餐</th>
+                        <th width="100">宽带</th>
+                        <th width="100">价格</th>
+                        <th width="100">取消政策</th>
+                        <th>特殊政策</th>
+                        <th width="60">&nbsp;</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="tit yahei">
+                        <td colspan="7">豪华大床房</td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name" title="金卡9折">金卡9折</a></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price">¥<b class="en">299</b></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">限时取消</span></td>
+                        <td class="policy"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">担保首晚房费</span></td>
+                        <td class="btn yahei"><a href="#" target="_blank" class="btn_buy" title="预订">预订</a></td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name" title="金卡9折">金卡9折</a></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price">¥<b class="en">299</b></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">限时取消</span></td>
+                        <td class="policy"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">担保首晚房费</span></td>
+                        <td class="btn yahei"><a href="#" target="_blank" class="btn_buy" title="查看">查看</a></td>
+                      </tr>
+                      <tr class="linebox">
+                        <td colspan="7"><div class="line"></div></td>
+                      </tr>
+                    <tbody>
+                  </table>
+                  <div class="toggle"><a href="javascript:;" title="查看全部房型"><span>查看全部房型</span>&nbsp;▼</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="hotel_item clearfix">
+              <ul class="hotel_info">
+                <li class="pic"><a href="#" target="_blank" title="新锦江大酒店"><img src="../temp/pic.jpg" width="140" height="105" alt="新锦江大酒店"></a></li>
+                <li class="info">
+                  <h2 class="yahei"><a href="#" target="_blank" title="新锦江大酒店"><span class="num">1</span>新锦江大酒店</a><span class="star_5"></span></h2>
+                  <p class="address">地址：上海市黄浦区长乐路161号<a href="#" target="" title="了解更多信息">了解更多信息</a></p>
+                  <p class="distance">距离长乐路的直线距离为<span class="col">0.25</span>公里</p>
+                  <p class="panorama"><a href="javascript:;" title="360全景">360全景</a></p>
+                </li>
+                <a class="promotion" href="javascript:;" title="锦江礼享家成员酒店"></a>
+                <li class="price"><span>¥</span><b>299</b>起</li>
+              </ul>
+              <div class="room_list">
+                <ul class="room_tab">
+                  <li class="on">全部房型<i></i></li>
+                  <li>限时促销</li>
+                  <li>现付价</li>
+                  <li>金卡9折</li>
+                </ul>
+                <div class="room_info" style="display:block;">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <thead>
+                      <tr>
+                        <th width="175">房型</th>
+                        <th width="85">早餐</th>
+                        <th width="85">宽带</th>
+                        <th width="130">价格</th>
+                        <th width="100">取消政策</th>
+                        <th>特殊政策</th>
+                        <th width="60">&nbsp;</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="tit yahei">
+                        <td colspan="7">豪华大床房</td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name" title="限时促销">限时促销</a> <span class="gift" data-params="{'options':{'template':'title_txt','content':{'title':'入住好礼：','txt':'内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}"></span></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price">¥<b class="en">299</b></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">限时取消</span></td>
+                        <td class="policy"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">担保首晚房费</span></td>
+                        <td class="btn yahei"><a href="#" target="_blank" class="btn_buy unbtn" title="预订">预订</a></td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name" title="会员积分兑换">会员积分兑换</a></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price"><span class="login_after" ><b class="col">2000</b>分</span></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">免费取消</span></td>
+                        <td class="policy">门店现付</td>
+                        <td class="btn yahei"><a href="#" target="_blank" class="btn_buy btn2" title="预订">预订</a></td>
+                      </tr>
+                      <tr class="linebox">
+                        <td colspan="7"><div class="line"></div></td>
+                      </tr>
+                      <tr class="tit  yahei">
+                        <td colspan="7">豪华大床房</td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><span class="ptips name" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">积分加现金</span></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price">¥<b class="en">299</b>+<b class="col">400</b>分</td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">免费取消</span></td>
+                        <td class="policy">门店现付</td>
+                        <td class="btn  yahei"><a href="#" target="_blank" class="btn_buy" title="预订">预订</a></td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name" title="现付价">现付价</a></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price"><span class="login_before" >专享价<span class="login_tip">此优惠房型属于锦江旅行家会员专属，如需查看请先<a href="#">登录</a><i></i></span></span></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">限时取消</span></td>
+                        <td class="policy"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">担保首晚房费</span></td>
+                        <td class="btn"><a class="login_btn" href="#" title="登录">登录</a>查看</td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name" title="连住3天">连住3天</a></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price">¥<b class="en">299</b></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">即时取消</span></td>
+                        <td class="policy">门店现付</td>
+                        <td class="btn yahei"><div class="all_day"><a href="javascript:;" class="btn_buy btn_all" title="查看">查看</a>
+                        <div class="all_main">
+                        <div class="txt"><b class="col">需至少入住两晚才可享受此优惠价格</b><br />最佳入住时间说明</div>
+                        <div class="date">入住日期 <input name="" type="text" class="input_date"></div>
+                        <div class="date">离店日期 <input name="" type="text" class="input_date"></div>
+                        <a href="#" class="btn_book yahei" title="预订">预订</a>
+                        <i></i><b class="close"></b>
+                        </div>
+                        </div></td>
+                      </tr>
+                      <tr class="linebox">
+                        <td colspan="7"><div class="line"></div></td>
+                      </tr>
+                    <tbody>
+                  </table>
+                   <div class="toggle"><a href="javascript:;" title="查看全部房型"><span>查看全部房型</span>&nbsp;▼</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="hotel_item clearfix">
+              <ul class="hotel_info">
+                <li class="pic"><a href="#" target="_blank"><img src="../temp/pic.jpg" width="140" height="105"></a></li>
+                <li class="info">
+                  <h2 class="yahei"><a href="#" target="_blank"><span class="num">1</span>新锦江大酒店</a><span class="star_5"></span></h2>
+                  <p class="address">地址：上海市黄浦区长乐路161号<a href="#" target="">了解更多信息</a></p>
+                  <p class="distance">距离长乐路的直线距离为<span class="col">0.25</span>公里</p>
+                  <p class="panorama"><a href="javascript:;">360全景</a></p>
+                </li>
+                <a class="promotion" href="javascript:;" title="锦江礼享家成员酒店"></a>
+                <li class="price"><span>¥</span><b>299</b>起</li>
+              </ul>
+              <div class="room_list">
+                <ul class="room_tab">
+                  <li class="on">全部房型<i></i></li>
+                  <li>限时促销</li>
+                  <li>现付价</li>
+                  <li>金卡9折</li>
+                </ul>
+                <div class="room_info" style="display:block;">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <thead>
+                      <tr>
+                        <th width="175">房型</th>
+                        <th width="85">早餐</th>
+                        <th width="85">宽带</th>
+                        <th width="130">价格</th>
+                        <th width="100">取消政策</th>
+                        <th>特殊政策</th>
+                        <th width="60">&nbsp;</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="tit yahei">
+                        <td colspan="7">豪华大床房</td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name">限时促销</a> <span class="gift" data-params="{'options':{'template':'title_txt','content':{'title':'入住好礼：','txt':'内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}"></span></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price">¥<b class="en">299</b></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">限时取消</span></td>
+                        <td class="policy"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">担保首晚房费</span></td>
+                        <td class="btn yahei"><a href="#" target="_blank" class="btn_buy unbtn">预订</a></td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name">会员积分兑换</a></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price"><span class="login_after" ><b class="col">2000</b>分</span></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">免费取消</span></td>
+                        <td class="policy">门店现付</td>
+                        <td class="btn yahei"><a href="#" target="_blank" class="btn_buy btn2">预订</a></td>
+                      </tr>
+                      <tr class="linebox">
+                        <td colspan="7"><div class="line"></div></td>
+                      </tr>
+                      <tr class="tit  yahei">
+                        <td colspan="7">豪华大床房</td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><span class="ptips name" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">积分加现金</span></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price">¥<b class="en">299</b>+<b class="col">400</b>分</td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">免费取消</span></td>
+                        <td class="policy">门店现付</td>
+                        <td class="btn  yahei"><a href="#" target="_blank" class="btn_buy">预订</a></td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name">现付价</a></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price"><span class="login_before" >专享价<span class="login_tip">此优惠房型属于锦江旅行家会员专属，如需查看请先<a href="#">登录</a><i></i></span></span></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">限时取消</span></td>
+                        <td class="policy"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">担保首晚房费</span></td>
+                        <td class="btn"><a class="login_btn" href="#">登录</a>查看</td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name">连住3天</a></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price">¥<b class="en">299</b></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">即时取消</span></td>
+                        <td class="policy">门店现付</td>
+                        <td class="btn yahei"><div class="all_day"><a href="javascript:;" class="btn_buy btn_all">查看</a>
+                        <div class="all_main">
+                        <div class="txt"><b class="col">需至少入住两晚才可享受此优惠价格</b><br />最佳入住时间说明</div>
+                        <div class="date">入住日期 <input name="" type="text" class="input_date"></div>
+                        <div class="date">离店日期 <input name="" type="text" class="input_date"></div>
+                        <a href="#" class="btn_book yahei">预订</a>
+                        <i></i><b class="close"></b>
+                        </div>
+                        </div></td>
+                      </tr>
+                      <tr class="linebox">
+                        <td colspan="7"><div class="line"></div></td>
+                      </tr>
+                    <tbody>
+                  </table>
+                   <div class="toggle"><a href="javascript:;"><span>查看全部房型</span>&nbsp;▼</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="hotel_item clearfix">
+              <ul class="hotel_info">
+                <li class="pic"><a href="#" target="_blank"><img src="../temp/pic.jpg" width="140" height="105"></a></li>
+                <li class="info">
+                  <h2 class="yahei"><a href="#" target="_blank"><span class="num">1</span>新锦江大酒店</a><span class="star_5"></span></h2>
+                  <p class="address">地址：上海市黄浦区长乐路161号<a href="#" target="">了解更多信息</a></p>
+                  <p class="distance">距离长乐路的直线距离为<span class="col">0.25</span>公里</p>
+                  <p class="panorama"><a href="javascript:;">360全景</a></p>
+                </li>
+                <a class="promotion" href="javascript:;" title="锦江礼享家成员酒店"></a>
+                <li class="price"><span>¥</span><b>299</b>起</li>
+              </ul>
+              <div class="room_list">
+                <ul class="room_tab">
+                  <li class="on">全部房型<i></i></li>
+                  <li>限时促销</li>
+                  <li>现付价</li>
+                  <li>金卡9折</li>
+                </ul>
+                <div class="room_info" style="display:block;">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <thead>
+                      <tr>
+                        <th width="175">房型</th>
+                        <th width="85">早餐</th>
+                        <th width="85">宽带</th>
+                        <th width="130">价格</th>
+                        <th width="100">取消政策</th>
+                        <th>特殊政策</th>
+                        <th width="60">&nbsp;</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="tit yahei">
+                        <td colspan="7">豪华大床房</td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name">限时促销</a> <span class="gift" data-params="{'options':{'template':'title_txt','content':{'title':'入住好礼：','txt':'内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}"></span></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price">¥<b class="en">299</b></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">限时取消</span></td>
+                        <td class="policy"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">担保首晚房费</span></td>
+                        <td class="btn yahei"><a href="#" target="_blank" class="btn_buy unbtn">预订</a></td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name">会员积分兑换</a></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price"><span class="login_after" ><b class="col">2000</b>分</span></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">免费取消</span></td>
+                        <td class="policy">门店现付</td>
+                        <td class="btn yahei"><a href="#" target="_blank" class="btn_buy btn2">预订</a></td>
+                      </tr>
+                      <tr class="linebox">
+                        <td colspan="7"><div class="line"></div></td>
+                      </tr>
+                      <tr class="tit  yahei">
+                        <td colspan="7">豪华大床房</td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><span class="ptips name" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">积分加现金</span></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price">¥<b class="en">299</b>+<b class="col">400</b>分</td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">免费取消</span></td>
+                        <td class="policy">门店现付</td>
+                        <td class="btn  yahei"><a href="#" target="_blank" class="btn_buy">预订</a></td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name">现付价</a></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price"><span class="login_before" >专享价<span class="login_tip">此优惠房型属于锦江旅行家会员专属，如需查看请先<a href="#">登录</a><i></i></span></span></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">限时取消</span></td>
+                        <td class="policy"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">担保首晚房费</span></td>
+                        <td class="btn"><a class="login_btn" href="#">登录</a>查看</td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name">连住3天</a></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price">¥<b class="en">299</b></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">即时取消</span></td>
+                        <td class="policy">门店现付</td>
+                        <td class="btn yahei"><div class="all_day"><a href="javascript:;" class="btn_buy btn_all">查看</a>
+                        <div class="all_main">
+                        <div class="txt"><b class="col">需至少入住两晚才可享受此优惠价格</b><br />最佳入住时间说明</div>
+                        <div class="date">入住日期 <input name="" type="text" class="input_date"></div>
+                        <div class="date">离店日期 <input name="" type="text" class="input_date"></div>
+                        <a href="#" class="btn_book yahei">预订</a>
+                        <i></i><b class="close"></b>
+                        </div>
+                        </div></td>
+                      </tr>
+                      <tr class="linebox">
+                        <td colspan="7"><div class="line"></div></td>
+                      </tr>
+                    <tbody>
+                  </table>
+                  <div class="toggle"><a href="javascript:;"><span>查看全部房型</span>&nbsp;▼</a></div>
+                  <!--<div class="toggle"><a href="javascript:;">收起房型列表&nbsp;▲&</a></div>--> 
+                </div>
+                <div class="room_info">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <thead>
+                      <tr>
+                        <th width="175">房型</th>
+                        <th width="100">早餐</th>
+                        <th width="100">宽带</th>
+                        <th width="100">价格</th>
+                        <th width="100">取消政策</th>
+                        <th>特殊政策</th>
+                        <th width="60">&nbsp;</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="tit yahei">
+                        <td colspan="7">豪华大床房</td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name">限时促销</a> <span class="gift" data-params="{'options':{'template':'title_txt','content':{'title':'入住好礼：','txt':'内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}"></span></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price">¥<b class="en">299</b></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">限时取消</span></td>
+                        <td class="policy"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">担保首晚房费</span></td>
+                        <td class="btn yahei"><a href="#" target="_blank" class="btn_buy">预订</a></td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name">限时促销</a> <span class="gift" data-params="{'options':{'template':'title_txt','content':{'title':'入住好礼：','txt':'内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}"></span></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price">¥<b class="en">299</b></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">限时取消</span></td>
+                        <td class="policy"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">担保首晚房费</span></td>
+                        <td class="btn yahei"><a href="#" target="_blank" class="btn_buy">预订</a></td>
+                      </tr>
+                      <tr class="linebox">
+                        <td colspan="7"><div class="line"></div></td>
+                      </tr>
+                    <tbody>
+                  </table>
+                  <div class="toggle"><a href="javascript:;"><span>查看全部房型</span>&nbsp;▼</a></div>
+                </div>
+                <div class="room_info">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <thead>
+                      <tr>
+                        <th width="175">房型</th>
+                        <th width="100">早餐</th>
+                        <th width="100">宽带</th>
+                        <th width="100">价格</th>
+                        <th width="100">取消政策</th>
+                        <th>特殊政策</th>
+                        <th width="60">&nbsp;</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="tit yahei">
+                        <td colspan="7">豪华大床房</td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name">现付价</a></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price">¥<b class="en">299</b></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">限时取消</span></td>
+                        <td class="policy"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">担保首晚房费</span></td>
+                        <td class="btn yahei"><a href="#" target="_blank" class="btn_buy">预订</a></td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name">现付价</a></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price">¥<b class="en">299</b></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">限时取消</span></td>
+                        <td class="policy"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">担保首晚房费</span></td>
+                        <td class="btn yahei"><a href="#" target="_blank" class="btn_buy">预订</a></td>
+                      </tr>
+                      <tr class="linebox">
+                        <td colspan="7"><div class="line"></div></td>
+                      </tr>
+                    <tbody>
+                  </table>
+                  <div class="toggle"><a href="javascript:;"><span>查看全部房型</span>&nbsp;▼</a></div>
+                </div>
+                <div class="room_info">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <thead>
+                      <tr>
+                        <th width="175">房型</th>
+                        <th width="100">早餐</th>
+                        <th width="100">宽带</th>
+                        <th width="100">价格</th>
+                        <th width="100">取消政策</th>
+                        <th>特殊政策</th>
+                        <th width="60">&nbsp;</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="tit yahei">
+                        <td colspan="7">豪华大床房</td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name">金卡9折</a></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price">¥<b class="en">299</b></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">限时取消</span></td>
+                        <td class="policy"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">担保首晚房费</span></td>
+                        <td class="btn yahei"><a href="#" target="_blank" class="btn_buy">预订</a></td>
+                      </tr>
+                      <tr class="info">
+                        <td class="promotion"><a href="#" target="_blank" class="name">金卡9折</a></td>
+                        <td>含单早</td>
+                        <td>有宽带</td>
+                        <td class="price">¥<b class="en">299</b></td>
+                        <td class="cancel"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">限时取消</span></td>
+                        <td class="policy"><span class="ptips" data-params="{'options':{'template':'txt','content':{'txt':'限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消限时取消内容内容内容内容内容内容内容内容内容内容内容内容内容内容'}}}">担保首晚房费</span></td>
+                        <td class="btn yahei"><a href="#" target="_blank" class="btn_buy">查看</a></td>
+                      </tr>
+                      <tr class="linebox">
+                        <td colspan="7"><div class="line"></div></td>
+                      </tr>
+                    <tbody>
+                  </table>
+                  <div class="toggle"><a href="javascript:;"><span>查看全部房型</span>&nbsp;▼</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="pagination"> <span class="page"><a href="#" class="unprev">&lt;&nbsp;上一页</a> <span class="list"><a href="#" class="on">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a></span> <a href="#" class="next">下一页&nbsp;&gt;</a></span> <span class="num">共4页&nbsp;|</span> </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        
+      </div>
+      <div class="clearfix"></div>
+      <div class="seo_bar">
+        <p><b>上海酒店信息</b><br />
+          上海五星级酒店预订到锦江旅行家，在线查询上海五星级酒店的详细地址、房型价格以及咨询预订服务，外出旅行，住在锦江。</p>
+        <br />
+        <p class="txt"><b class="name">按星级类型找酒店：</b><a href="#" target="_blank" title="上海经济型酒店">上海经济型酒店</a><a href="#" target="_blank" title="上海三星级酒店">上海三星级酒店</a><a href="#" target="_blank" title="上海四星级酒店">上海四星级酒店</a><a href="#" target="_blank" title="上海五星级酒店">上海五星级酒店</a><a href="#" target="_blank" title="上海快捷酒店">上海快捷酒店</a></p>
+        <p class="txt"><b class="name">按行政区找酒店：</b><a href="#" target="_blank" title="静安区">静安区</a><a href="#" target="_blank" title="黄浦区">黄浦区</a><a href="#" target="_blank" title="卢湾区">卢湾区</a><a href="#" target="_blank" title="闵行区">闵行区</a><a href="#" target="_blank" title="静安区">静安区</a><a href="#" target="_blank" title="黄浦区">黄浦区</a><a href="#" target="_blank" title="卢湾区">卢湾区</a><a href="#" target="_blank" title="闵行区">闵行区</a></p>
+        <p class="txt"><b class="name">飞机场/火车站附近：</b><a href="#" target="_blank" title="浦东机场">浦东机场</a><a href="#" target="_blank" title="虹桥机场">虹桥机场</a><a href="#" target="_blank" title="浦东机场">浦东机场</a><a href="#" target="_blank" title="浦东机场">浦东机场</a><a href="#" target="_blank" title="浦东机场">浦东机场</a><a href="#" target="_blank" title="浦东机场">浦东机场</a></p>
+        <p class="txt"><b class="name">按商圈查找酒店：</b><a href="#" target="_blank" title="人民广场">人民广场</a><a href="#" target="_blank" title="中山公园">中山公园</a><a href="#" target="_blank" title="浦东八佰伴">浦东八佰伴</a><a href="#" target="_blank" title="徐汇港汇广场">徐汇港汇广场</a><a href="#" target="_blank" title="锦江迪生">锦江迪生</a><a href="#" target="_blank" title="中山公园">中山公园</a><a href="#" target="_blank" title="七宝老街">七宝老街</a><a href="#" target="_blank" title="人民广场">人民广场</a><a href="#" target="_blank" title="中山公园">中山公园</a><a href="#" target="_blank" title="浦东八佰伴">浦东八佰伴</a></p>
+        <p class="txt"><b class="name">按酒店品牌查找：</b><a href="#" target="_blank" title="">锦江酒店</a><a href="#" target="_blank" title="">都城酒店</a><a href="#" target="_blank" title="">锦江之星</a><a href="#" target="_blank" title="">百时快捷</a><a href="#" target="_blank" title="">京广快捷</a><a href="#" target="_blank" title="">白玉兰</a></p>
+        <p class="txt"><b class="name">按轨道交通查找：</b><a href="#" target="_blank" title="1号线">1号线</a><a href="#" target="_blank" title="2号线">2号线</a><a href="#" target="_blank" title="3号线">3号线</a><a href="#" target="_blank" title="4号线">4号线</a><a href="#" target="_blank" title="5号线">5号线</a><a href="#" target="_blank" title="6号线">6号线</a><a href="#" target="_blank" title="1号线">1号线</a><a href="#" target="_blank" title="2号线">2号线</a><a href="#" target="_blank" title="3号线">3号线</a><a href="#" target="_blank" title="4号线">4号线</a><a href="#" target="_blank" title="5号线">5号线</a><a href="#" target="_blank" title="6号线">6号线</a></p>
+      </div>
+    </div>
+    
+    <div class="footer">
+        <div class="w1200 clearfix">
+            <div class="verification_link_box">
+                <div class="links_box">
+                    <a title="关于我们">关于我们&nbsp;</a>|
+                    <a title="网站地图">网站地图&nbsp;</a>|
+                    <a title="联系我们">联系我们&nbsp;</a>|
+                    <a title="诚聘英才">诚聘英才&nbsp;</a>|
+                    <a title="法律声明">法律声明&nbsp;</a>|
+                    <a title="友情链接">友情链接&nbsp;</a>|
+                    <a title="帮助中心">帮助中心&nbsp;</a>|
+                    <a title="用户体验反馈">用户体验反馈</a>
+                </div>
+                <p>Copyright©1997-2014锦江国际（集团）有限公司版权所有</p>
+                <p>沪ICP备05048113号-1</p>
+                <div class="friendly_links_box">
+                    <a class="gongshang_icon" title="上海工商"></a>
+                    <a class="verify_success" title="安全验证"></a>
+                    <a class="net_policeman" title="上海网警"></a>
+                    <a class="collect_credit" title="征信网"></a>
+                    <a class="credited_firm" title="中国信用企业"></a>
+                </div>
+            </div>
+            <div class="app_code_box">
+                <div class="title_text">| 掌上锦江，更多优惠随时享</div>
+                <div class="two_dimension_code_icons_box">
+                    <a class="jinjiang_app_code_icon" title="APP二维码"></a>
+                    <a class="jinjiang_wechat_code_icon" title="微信二维码"></a>
+                </div>
+                <div class="app_name_box">
+                    <div class="app_text">锦江礼享APP</div>
+                    <div>锦江礼享 微信</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript" src="../js/jquery-1.8.0.min.js"></script> 
+<script src="../js/popTip.js" type="text/javascript"></script> 
+<script type="text/javascript" src="../js/basic.js"></script>
+<script src="../js/jquery.checkbox.js" type="text/javascript"></script> 
+<script src="../js/citySelector.js" type="text/javascript"></script> 
+<script src="../js/keywordSelect.js" type="text/javascript"></script> 
+<script src="../js/jquery-ui-datepicker.js" type="text/javascript"></script>
+<script src="../js/navigation.js" type="text/javascript"></script>
+<script src="../js/list.js" type="text/javascript"></script>
+</body>
+</html>

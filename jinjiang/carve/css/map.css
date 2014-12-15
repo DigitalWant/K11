@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* map_wrapper --------------------------------------------------------------------- */
+.map_wrapper{margin:0 auto;}
+.top_search_box{background:#3d3d3d;padding:8px 20px 12px 20px;} 
+.search_bar_fill_box{width:100%;display:none;height:47px;}
+/* search_bar */
+.search_bar{width:1172px;height:27px;line-height:27px;font-size:14px;margin:0 auto;}
+.search_bar > span{color:#f3f3f3;float:left;line-height:27px;vertical-align:top;display:inline;margin-left:30px;*margin-left:25px;}
+.search_bar .city{color:#f3f3f3;}
+.search_bar .input_txt{width:120px;border:1px solid #767676;height:23px;line-height:23px;vertical-align:middle;font-family:microsoft yahei;display:inline-block; font-size:12px;}
+.search_bar .keyword .input_txt{width:140px;*width:130px;*float:left;}
+.search_bar .code .input_txt{width:100px;}
+.search_bar .btn_search{width:92px;height:27px;line-height:24px;background:#1d7ad9;color:#fff; border:0;float:right;font-family:microsoft yahei;cursor:pointer;padding:0;}
+.search_bar .btn_search:hover{background:#FF7300;}
+.search_bar .pos{position:relative;}
+.search_bar .keyword{*width:193px;margin-left:30px;float:left;}
+.search_bar .keyword .name{float:left;margin-right:5px;color:#FFF;}
+.search_bar .kw{float:left;position:relative;z-index:9;}
+.kerword_box{width:370px;padding:6px 12px;text-indent:0;border:1px solid #e7e7e7;box-shadow:#e7e7e7 0px 0px 5px;position:absolute;top:27px;left:5px;font-size:12px;background:#fff;color:#333;font-family:\5b8b\4f53;z-index:9;}
+.kerword_box,.word_slide{width:370px;padding:6px 12px;text-indent:0;border:1px solid #e7e7e7;box-shadow:#e7e7e7 0px 0px 5px;background:#fff;position:absolute;top:27px;left:0px;font-size:12px;color:#333;font-family:\5b8b\4f53;}
+.word_slide{width:220px;padding:0;display:none;}
+.word_slide a{display:block;list-style:none;overflow:hidden;height:16px;padding:4px 5px;cursor:pointer;color:#777;}
+.word_slide a:hover{background:#1d7ad9;color:#fff;}
+.word_slide a:hover b{font-weight:normal;}
+.kerword_box p{border-bottom:1px solid #ececec;padding-bottom:5px;margin-bottom:5px;line-height:24px;}
+.kerword_box p a{margin-right:10px;display:inline-block;}
+.kerword_box p a:hover{color:#ff7300;}
+.kerword_box p.last{padding:0;margin:0;border:0;}
+.search_bar .kw .tipTxt{top:3px;*top:2px;}
+.search_bar .pos .tipTxt{*top:3px;}
+.city_box{float:left;width:120px;position:relative;z-index:9;height:29px;}
+.city_input{*float:left;}
+/* fixedtop */
+.fixedtop{position:fixed;top:0;z-index:10;}
+/* base_wrap */
+.base_wrap{border:1px solid #CCC;float:left;}
+.base_wrap .base_main{height:823px;border:1px solid #E3E3E3;float:left;background:url(../temp/amplified_map.jpg) no-repeat;border-width:1px 0 1px 1px;overflow:hidden;}
+.base_wrap .base_side{width:358px;height:803px;border:1px solid #CCC;padding:20px 0 0;float:left;}
+/* base_main */
+.base_main .back_list_mode{width:97px;height:28px;line-height:24px;color:#fff;border:0;font-family:microsoft yahei;cursor:pointer;position:absolute;z-index:2;padding:0;background:#1d7ad9;}
+.base_main .back_list_mode:hover{background:#FF7300;}
+/*amap_marker*/
+.amap_marker{position:absolute;}
+.amap_marker:hover{cursor:pointer;}
+.amap_marker .map_mark{white-space:nowrap;overflow:hidden;}
+.map_mark .map_num,.map_mark .map_num_hover{display:inline-block;width:26px;height:33px;background: url(../sprite/icon_hotel_map.png) no-repeat -1px -34px;font-family:tahoma;font-size:18px;color:#fff;line-height:25px;text-align:center;float:left;z-index:3;position:relative;}
+.map_mark .map_num_hover{background-position:-29px -34px;width:28px;height:35px;}
+.map_mark .map_mark_hotel_info{height:31px;line-height:31px;border:1px solid #d6d6d6;z-index:2;left:-11px;position:relative;background-color:#FFF;float:left;padding-left:10px;background-color:#FFF;}
+.map_mark .map_mark_hotel_info_hover{background-color:#1F79DA;color:#FFF;}
+.map_mark_hotel_info .map_xinjinjiang_logo,.map_mark_hotel_info .map_xinjinjiang_hover_logo{display:block;width:20px;height:18px;margin:5px 5px 0 2px;float:left;background:url(../sprite/icon_hotel_map.png) no-repeat -60px -5px;} 
+.map_mark_hotel_info .map_xinjinjiang_hover_logo{background-position:-60px -29px;}
+.map_mark_hotel_info .map_hotel_name{color:#1d7ad9;padding:0 3px;display:inline-block;}
+.map_mark_hotel_info .map_hotel_price{padding:0 8px;font-family:Arial;}
+.map_mark_hotel_info .map_hotel_price b{color:#ff7300;font-size:18px;font-weight:normal;padding:0 3px;display:inline-block;vertical-align:top;}
+.map_mark_hotel_info .map_hotel_name_hover,.map_hotel_price .b_hover{color:#FFF;}
+/*amap_info*/
+.amap_overlays .amap_info{width:358px;border:1px solid #d6d6d6;background-color:#FFF;position:absolute;}
+.amap_info .close_button{position:absolute;background:url(../images/close.gif) no-repeat;width:15px;height:14px;top:11px;left:337px;cursor:pointer;}
+.amap_info .close_button:hover{background-position:0 -14px;}
+.amap_info .hotel_detail_info_box{width:336px;margin:18px 11px 0;border-bottom:1px solid #d6d6d6;padding-bottom:6px;}
+.hotel_detail_info_box .hotel_title_box{height:25px;line-height:25px;font-size:18px;color:#1D7AD9;padding-bottom:7px;}
+.hotel_title_box .xinjinjiang_logo{display:block;background:url(../sprite/icon_hotel_map.png) no-repeat -60px -5px;float:left;width:20px;height:18px;margin:3px 9px 4px 0;}
+.hotel_title_box .hotel_name{font-size:16px;cursor:pointer;}
+.hotel_title_box .hotel_name:hover{text-decoration:underline;color:#1d7ad9;}
+.hotel_detail_info_box .hotel_image{width:140px;height:105px;margin-right:11px;display:inline-block;vertical-align:top;float:left;}
+.hotel_detail_info_box .hotel_introduction{width:185px;display:inline-block;vertical-align:top;}
+.hotel_introduction .star_3,.hotel_introduction .star_4,.hotel_introduction .star_5{display:block;width:82px;height:13px;margin-right:103px;float:left;background:url(../sprite/icon_hotel_map.png) no-repeat -60px -90px;}
+.hotel_introduction .star_4{background-position:-60px -72px;}
+.hotel_introduction .star_5{background-position:-60px -56px;}
+.hotel_introduction .hotel_address,.hotel_introduction .hotel_distance{width:185px;line-height:21px;color:#000;}
+.hotel_introduction .hotel_distance b{font-weight:normal;}
+.hotel_introduction .hotel_distance .distance{color:#ff6000;}
+.hotel_introduction .consult_more_info{cursor:pointer;color:#1d7ad9;}
+.hotel_introduction .consult_more_info:hover{text-decoration:underline;}
+
+.amap_info .hotel_price_box{width:348px;height:26px;line-height:26px;padding:5px 10px 5px 0;}
+.hotel_price_box .check_price_btn{width:60px;height:26px;line-height:26px;background-color:#FF7200;float:right;color:#FFF;text-align:center;margin-left:24px;}
+.hotel_price_box .check_price_btn:hover{background:#1d7ad9;}
+.hotel_price_box .hotel_price_range{text-align:right;float:right;font-family:Arial;}
+.hotel_price_box .hotel_price_range b{color:#ff7300;font-size:18px;display:inline-block;font-weight:normal;padding:0 3px;vertical-align:middle;}
+.amap_info .route_box,.amap_info .route_box_hover{width:79px;height:12px;line-height:12px;background-color:#DEDEDE;padding:6px 17px 9px 262px;font-size:12px;color:#000;font-weight:normal;}
+.amap_info .route_box_hover{background-color:#333;}
+.amap_info .bord_arrow_icon,.amap_info .bord_arrow_icon_hover{background:url(../sprite/icon_hotel_map.png) no-repeat -10px -127px;left:170px;height:11px;line-height:8px;width:15px;z-index:1;position:absolute;bottom:-11px;}
+.amap_info .bord_arrow_icon_hover{background-position:-10px -108px;}
+.route_box .check_route_btn{color:#000;cursor:pointer;}
+.route_box .check_route_btn_hover{color:#FFF;cursor:pointer;}
+/* base_side tag_box */
+.base_side .tag_box{width:318px;height:14px;line-height:14px;padding:0 20px 8px;}
+.tag_box .fl{color:#777;}
+.tag_box b{color:#333;font-size:14px;font-family:Tahoma;}
+.tag_box .check_list{padding:0 5px 0 19px;height:14px;line-height:14px;}
+.tag_box ul{float:right;}
+.tag_box li{float:right;}
+.check_list label.checkbox{height:14px;line-height:14px;background:url(../sprite/icon_hotel_list.png) no-repeat 0px -212px;}
+.check_list label.checked{background-position:0 -238px;} 
+.tag_box .checkbox_label{display:inline-block;vertical-align:top;}
+/* sort_box */
+.sort_box{background:#ececec;border-style:solid;border-color:#d6d6d6;border-width:1px 0 1px 1px;width:317px;height:35px;line-height:35px; margin:0 20px 10px;}
+.sort_box li{float:left;}
+.sort_box li.fr{float:right;margin-right:20px;}
+.sort_box li a{padding:0 18px;display:block;border-right:1px solid #d6d6d6;color:#777;height:35px;line-height:35px;}
+.sort_box li a:hover{background:#fff;}
+.sort_box li a.selected{color:#1d7ad9;font-weight:bold;background:#fff;height:35px;line-height:35px;}
+.sort_box li a i{width:9px;height:12px;float:right;margin:12px 0 11px 6px;background:url(../sprite/icon_hotel_map.png) no-repeat -41px -12px;}
+.sort_box li a i.up{background-position:-24px -76px;}
+.sort_box li a i.down{background-position:-39px -76px;}
+.sort_box li.rec{*width:95px;}
+.sort_box li.price,.sort_box li.distance,.sort_box li.level{width:76px;}
+/*hotel_list*/
+.hotel_items .hotel_item {width:320px;height:95px;padding:0 18px 0 20px;}
+.hotel_items .hotel_item .hotel_title{width:320px;height:30px; padding-top:8px;float:left;}
+.hotel_items .hotel_item:hover{background-color:#FFF;}
+.hotel_items .hotel_item .hotel_title a{font-size:16px;color:#333;font-weight:normal;line-height:28px;float:left;margin-bottom: 1px;}
+.hotel_items .hotel_item .hotel_title a .num{display:inline-block;width:26px;height:30px;background: url(../sprite/icon_hotel_map.png) no-repeat -1px -1px;font-family:tahoma;font-size:18px;color:#fff;line-height: 25px;text-align:center;vertical-align:1px;float:left;margin-right:8px;}
+.hotel_items .hotel_item .hotel_title .a_hover{color:#1d7ad9;}
+.hotel_items .hotel_item .hotel_title a .num_hover{background-position:-28px -1px;}
+.hotel_items .hotel_item .hotel_level_price{width:286px;height:22px;line-height:22px;margin-bottom:10px;padding-left:34px;float:left;}
+.hotel_items .hotel_item .hotel_level_price .star_3,.hotel_items .hotel_item .hotel_level_price .star_4,.hotel_items .hotel_item .hotel_level_price .star_5{display:block;width:72px;height:21px;background:url(../sprite/icon_hotel_map.png) no-repeat -59px -87px;float:left;}
+.hotel_items .hotel_item .hotel_level_price .star_4{background-position:-59px -68px;}
+.hotel_items .hotel_item .hotel_level_price .star_5{background-position:-59px -50px;}
+.hotel_items .hotel_item .hotel_level_price .hotel_genre{width:72px;height:21px;line-height:21px;float:left;}
+.hotel_items .hotel_item .hotel_level_price .price_range{float:right;color:#333;font-family:Arial;}
+.hotel_items .hotel_item .hotel_level_price .price_range span{font-size:12px;}
+.hotel_items .hotel_item .hotel_level_price .price_range span b{color:#ff7300;font-size:18px;font-weight:normal;padding:0 3px; vertical-align:middle;}
+.hotel_items .hotel_item .hotel_distance{width:286px;height:12px;line-height:12px;padding:0px 0 12px 34px;float:left;border-bottom:1px solid #d6d6d6;color:#000;}
+.hotel_items .hotel_item .hotel_distance b{font-weight:normal;}
+.hotel_items .hotel_item .hotel_distance .distance_num{color:#FF6000;}
+/* pagination ---------------------------------------------------------------------- */
+.map_wrapper .pagination{height:24px;padding:22px 20px 23px 20px;text-align:right;}
+.map_wrapper .pagination .page{float:left;height:20px;line-height:20px;}
+.map_wrapper .pagination .num{margin-right:10px;color:#333;float:left;height:20px;line-height:20px;}
