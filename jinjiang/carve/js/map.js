@@ -1,19 +1,19 @@
 $(function(){
 	navigation();
 	
-	//��ʼ��ʱ�����ӵ�ͼ�����������	 
-	$(".base_main").width($(window).width() - 360 - 3);//360pxΪ�ұ߹̶������;3pxΪborder����	
-	$(".back_list_mode").css( "left", $(window).width() - 360 - 2 - 97);//2pxΪborder���ȣ�97Ϊ��ť����
+	//³õÊ¼»¯Ê±£¬Ìí¼ÓµØÍ¼¿ò¡¢ËÑË÷¿ò¿í¶È	 
+	$(".base_main").width($(window).width() - 360 - 3);//360pxÎªÓÒ±ß¹Ì¶¨¿ò¿í¶È;3pxÎªborder¿í¶È	
+	$(".back_list_mode").css( "left", $(window).width() - 360 - 2 - 97);//2pxÎªborder¿í¶È£¬97Îª°´Å¥¿í¶È
 	$('.top_search_box').width($(window).width() - 40);
 	
-	//�������С�仯ʱ���޸ĵ�ͼ�����������
+	//ä¯ÀÀÆ÷´óÐ¡±ä»¯Ê±£¬ÐÞ¸ÄµØÍ¼¿ò¡¢ËÑË÷¿ò¿í¶È
 	$(window).resize(function(){
-		$(".base_main").width($(window).width() - 360 - 3);//360pxΪ�ұ߹̶������;3pxΪborder����
-		$(".back_list_mode").css( "left", $(window).width() - 360 - 2 - 97);//2pxΪborder���ȣ�97Ϊ��ť����
+		$(".base_main").width($(window).width() - 360 - 3);//360pxÎªÓÒ±ß¹Ì¶¨¿ò¿í¶È;3pxÎªborder¿í¶È
+		$(".back_list_mode").css( "left", $(window).width() - 360 - 2 - 97);//2pxÎªborder¿í¶È£¬97Îª°´Å¥¿í¶È
 		$('.top_search_box').width($(window).width() - 40);
 	});
 	
-	//�Ƶ�list��hover��ʽ
+	//¾ÆµêlistµÄhoverÑùÊ½
 	$("li.hotel_item").bind("mouseenter", function(){	
 		$(this).find(".num").addClass("num_hover");
 		$(this).find("a").addClass("a_hover");
@@ -39,7 +39,7 @@ $(function(){
 		});
 	});
 	
-	//��ͼ�Ƶ���hover��ʽ
+	//µØÍ¼¾Æµê¿òµÄhoverÑùÊ½
 	$(".amap_marker").bind("mouseenter", function(){
 		$(this).find(".map_num").addClass("map_num_hover");
 		$(this).find(".map_mark_hotel_info").addClass("map_mark_hotel_info_hover");
@@ -59,7 +59,7 @@ $(function(){
 		});
 	});
 	
-	//�������ͷhover
+	//µ¯³ö¿ò¼ýÍ·hover
 	$(".route_box").bind("mouseenter", function(){
 		$(this).addClass("route_box_hover");
 		$(this).find(".check_route_btn").addClass("check_route_btn_hover");
@@ -73,10 +73,10 @@ $(function(){
 		
 	});
 	
-	//�ؼ�����ʾЧ��
+	//¹Ø¼ü×ÖÌáÊ¾Ð§¹û
 	$('.kw_input').citySelect({});
 
-	//����ѡ����
+	//³ÇÊÐÑ¡ÔñÆ÷
 	var test=new Vcity.CitySelector({input:'cityInfo'});
 	
 	function inputTipText(){   
@@ -97,10 +97,10 @@ $(function(){
 	} 
 	inputTipText();
 	
-	//checkbox����
+	//checkboxÃÀ»¯
 	$(".check_list").hcheckbox();
 	
-	//��������
+	//¹ö¶¯Ðü¸¡
 	$(window).scroll(function (){
 		var st = $(document).scrollTop();
 		if(st > 69){
@@ -112,7 +112,7 @@ $(function(){
 		}
 	});
 	
-	//����Ч��
+	//ÈÕÀúÐ§¹û
 	var today = new Date();
 	$(".dateCheckIn, .dateCheckOut").datepicker({
 		minDate: new Date(today.getFullYear(), today.getMonth(), today.getDate()),
@@ -129,3 +129,117 @@ $(function(){
 	});
 
 });
+
+
+//自定义插件
+AMap.homeControlDiv = function(){};
+
+//DOM elements
+var $search = $('#search');
+var map = new AMap.Map('mapDiv', {view:new AMap.View2D({center: new AMap.LngLat(116.39, 39.9),zoom:15})});
+var homeControl=new AMap.homeControlDiv('map'); //新建自定义插件对象 
+
+//bind event on elements
+map.addControl(homeControl);                  //地图上添加插件 
+
+//点击触发内容：常用地域列表和所有城市列表框
+$search.on('focus',function(){
+	console.log('test');
+});
+
+//输入文本：弹出模糊地域下拉列表
+$search.on('keypress',function(e){
+   clearTimeout($.data(this, 'timer'));
+    if (e.keyCode == 13)
+      search(true);
+    else
+      $(this).data('timer', setTimeout(search, 500));
+});
+
+
+//load service plugin 
+map.plugin(["AMap.Autocomplete"], function() {  
+    //判断是否IE浏览器  
+    if (navigator.userAgent.indexOf("MSIE") > 0) {  
+        document.getElementById("keyword").onpropertychange = autoSearch;  
+    }  
+    else {  
+        document.getElementById("keyword").oninput = autoSearch;  
+    }  
+});  
+
+function autocomplete_CallBack(data) {
+    var tipArr  = data.tips;
+    var outputHtml ="";
+
+    if (data.info == "OK") {  
+    	for (var i = 0; i < tipArr.length; i++) {  
+    		outputHtml += "<div id='divid" + (i + 1) + "' onmouseover='openMarkerTipById(" + (i + 1)  
+                        + ",this)' onclick='selectResult(" + i + ")' onmouseout='onmouseout_MarkerStyle(" + (i + 1)  
+                        + ",this)' style=\"font-size: 13px;cursor:pointer;padding:5px 5px 5px 5px;\">" + tipArr[i].name + "<span style='color:#C1C1C1;'>"+ tipArr[i].district + "</span></div>"
+    	}
+
+    } 
+
+    if (data.info == "NO_DATA"){
+
+    	outputHtml ="sorry, not find .";
+    }                 
+
+    $('#autoComplete').html(outputHtml);
+}  
+
+//输入提示  
+function search(force) {
+    var existingString = $search.val();
+    if (!force && existingString.length < 3) return; //wasn't enter, not > 2 char
+	var searchCity = new AMap.Autocomplete();
+	AMap.event.addListener(searchCity, "complete", autocomplete_CallBack);  
+	searchCity.search(existingString); 
+
+    /*$.get('/Tracker/Search/' + existingString, function(data) {
+        $('div#results').html(data);
+        $('#results').show();
+    });*/
+}
+
+
+  	AMap.homeControlDiv.prototype = {
+  		addTo:function(map,dom){
+  			dom.appendChild(this._getHtmlDom(map));
+  		},
+  		_getHtmlDom:function(map){
+
+		  this.map=map; 
+		                
+		     // 创建一个能承载控件的<div>容器               
+		     var controlUI=document.createElement("DIV");               
+
+			     controlUI.id = 'return';          
+		               
+		     // 设置控件响应点击onclick事件               
+		     controlUI.onclick=function(){               
+		        map.setCenter(new AMap.LngLat(116.404, 39.915));               
+		     }  
+
+		     return controlUI; 		  			
+  		}
+
+  	}
+
+
+	map.plugin(["AMap.ToolBar","AMap.OverView","AMap.Scale"],function(){
+	  //加载工具条
+	  tool = new AMap.ToolBar({
+	    direction:true,//隐藏方向导航
+	    ruler:true,//隐藏视野级别控制尺
+	    autoPosition:true//禁止自动定位
+	  });
+	  map.addControl(tool);
+	  //加载鹰眼
+	  view = new AMap.OverView();
+	  map.addControl(view);
+	  //加载比例尺
+	  scale = new AMap.Scale();
+	  map.addControl(scale);
+	});

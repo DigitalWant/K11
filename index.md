@@ -7,4 +7,4 @@ tagline: Supporting tagline
 
 [Prime time](/primeTime)
 
-[jinjiang](/jinjiang)
+[jinjiang](/jinjiang/carve/html/)
