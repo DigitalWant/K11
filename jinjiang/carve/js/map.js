@@ -129,18 +129,44 @@ $(function(){
 	});
 
 });
-
+/*======================高德地图API===================================*/
 
 //自定义插件
 AMap.homeControlDiv = function(){};
+AMap.homeControlDiv.prototype = {
+	addTo:function(map,dom){
+		dom.appendChild(this._getHtmlDom(map));
+	},
+	_getHtmlDom:function(map){
 
-//DOM elements
+ 	 this.map=map; 
+                
+     // 创建一个能承载控件的<div>容器               
+     var controlUI=document.createElement("DIV");               
+
+	     controlUI.id = 'return';          
+               
+     // 设置控件响应点击onclick事件               
+     controlUI.onclick=function(){               
+        map.setCenter(new AMap.LngLat(116.404, 39.915));               
+     }  
+
+     return controlUI; 		  			
+	}
+
+}
+
+//elements
 var $search = $('#search');
 var map = new AMap.Map('mapDiv', {view:new AMap.View2D({center: new AMap.LngLat(116.39, 39.9),zoom:15})});
-var homeControl=new AMap.homeControlDiv('map'); //新建自定义插件对象 
+var mapObj;  
+var marker = new Array();  
+var windowsArr = new Array();
+var cloudDataLayer;
+var MSearch;  
 
-//bind event on elements
-map.addControl(homeControl);                  //地图上添加插件 
+
+
 
 //点击触发内容：常用地域列表和所有城市列表框
 $search.on('focus',function(){
@@ -157,16 +183,6 @@ $search.on('keypress',function(e){
 });
 
 
-//load service plugin 
-map.plugin(["AMap.Autocomplete"], function() {  
-    //判断是否IE浏览器  
-    if (navigator.userAgent.indexOf("MSIE") > 0) {  
-        document.getElementById("keyword").onpropertychange = autoSearch;  
-    }  
-    else {  
-        document.getElementById("keyword").oninput = autoSearch;  
-    }  
-});  
 
 function autocomplete_CallBack(data) {
     var tipArr  = data.tips;
@@ -196,50 +212,65 @@ function search(force) {
 	var searchCity = new AMap.Autocomplete();
 	AMap.event.addListener(searchCity, "complete", autocomplete_CallBack);  
 	searchCity.search(existingString); 
-
-    /*$.get('/Tracker/Search/' + existingString, function(data) {
-        $('div#results').html(data);
-        $('#results').show();
-    });*/
 }
 
 
-  	AMap.homeControlDiv.prototype = {
-  		addTo:function(map,dom){
-  			dom.appendChild(this._getHtmlDom(map));
-  		},
-  		_getHtmlDom:function(map){
-
-		  this.map=map; 
-		                
-		     // 创建一个能承载控件的<div>容器               
-		     var controlUI=document.createElement("DIV");               
-
-			     controlUI.id = 'return';          
-		               
-		     // 设置控件响应点击onclick事件               
-		     controlUI.onclick=function(){               
-		        map.setCenter(new AMap.LngLat(116.404, 39.915));               
-		     }  
-
-		     return controlUI; 		  			
-  		}
-
-  	}
+map.plugin([
+		"AMap.ToolBar",
+		"AMap.OverView",
+		"AMap.Scale",
+		"AMap.CitySearch",
+		"AMap.Autocomplete"
+	],
+	function(){
+		  //加载工具条
+		  tool = new AMap.ToolBar({
+		    direction:true,//隐藏方向导航
+		    ruler:true,//隐藏视野级别控制尺
+		    autoPosition:true//禁止自动定位
+		  });
+		map.addControl(tool);
 
 
-	map.plugin(["AMap.ToolBar","AMap.OverView","AMap.Scale"],function(){
-	  //加载工具条
-	  tool = new AMap.ToolBar({
-	    direction:true,//隐藏方向导航
-	    ruler:true,//隐藏视野级别控制尺
-	    autoPosition:true//禁止自动定位
-	  });
-	  map.addControl(tool);
-	  //加载鹰眼
-	  view = new AMap.OverView();
-	  map.addControl(view);
-	  //加载比例尺
-	  scale = new AMap.Scale();
-	  map.addControl(scale);
-	});
+		//加载鹰眼
+		view = new AMap.OverView();
+		map.addControl(view);
+
+
+		//加载比例尺
+		scale = new AMap.Scale();
+		map.addControl(scale);
+
+
+		//bind event on elements
+
+		map.addControl(homeControl);
+
+
+
+
+});
+
+
+//获取用户所在城市信息
+function showCityInfo() { 
+	//加载城市查询插件
+		//实例化城市查询类
+		var citysearch = new AMap.CitySearch();
+		//自动获取用户IP，返回当前城市
+		citysearch.getLocalCity();
+		//citysearch.getCityByIp("123.125.114.*");
+		AMap.event.addListener(citysearch, "complete", function(result){
+			if(result && result.city && result.bounds) {
+				var cityinfo = result.city;
+				var citybounds = result.bounds;
+				document.getElementById('info').innerHTML = "您当前所在城市："+cityinfo+"";
+				//地图显示当前城市
+				mapObj.setBounds(citybounds);
+			}
+			else {
+				document.getElementById('info').innerHTML = "您当前所在城市："+result.info+"";
+			}
+		});
+		AMap.event.addListener(citysearch, "error", function(result){alert(result.info);});
+}
