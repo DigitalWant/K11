@@ -56,14 +56,14 @@
   .navbar-nav {
     > li {
       > a {
-        @extend %color-secondary-color;
+        color:$lighter-color;
 
         @media (min-width: $screen-md-min) {
           padding: 41px 10px 40px 10px;
           max-height: 100px;
 
           &:after {
-            background-color: $primary-color;
+            background-color: $tertiary-color;
             content: "";
             position: absolute;
             width: 100%;
@@ -82,8 +82,8 @@
 
         .caret {
           position: absolute;
-          border-top-color: $text-color;
-          border-bottom-color: $text-color;
+          border-top-color: $tertiary-color!important;
+          border-bottom-color: $tertiary-color!important;
           bottom: 50%;
           right: 30px;
           margin-right: -4px;
@@ -123,7 +123,7 @@
       &:hover {
         > a {
           @media (min-width: $screen-md-min) {
-            color: $primary-color;
+            color: $lighter-color;
 
             &:after {
               visibility: visible;
@@ -132,8 +132,8 @@
           }
         }
         .caret {
-          border-top-color: $primary-color !important;
-          border-bottom-color: $primary-color !important;
+          border-top-color: $lighter-color !important;
+          border-bottom-color: $lighter-color !important;
         }
       }
     }
@@ -146,7 +146,7 @@
     padding: 0 0 0 5px;
 
     @media (min-width: $screen-md-min) {
-      border-top: 2px solid rgba($primary-color, 0.9);
+      border-top: 2px solid rgba($lighter-color, 0.9);
       position: absolute;
       visibility: hidden;
       opacity: 0;
@@ -168,14 +168,14 @@
           padding: 9px 20px;
           font-weight: 700;
           border-bottom: 1px solid darken($primary-color, 10%);
-          color: $default-color;
+          color: $lighter-color;
         }
 
       }
       @media (min-width: $screen-md-min) {
         &:hover > a {
           background-color: darken($primary-color, 10%);
-          color: $default-color;
+          color: $lighter-color;
           text-decoration: none;
         }
       }
@@ -184,7 +184,7 @@
 }
 
 .glyphicon-search--nav {
-  @extend %color-primary-color;
+  color:$lighter-color;
   font-size: 17px;
   line-height: 19px;
 }

@@ -1,13 +1,13 @@
 
 // Footer widgets
 .footer-widgets {
-  color: $dark-color;
+  color: $lighter-color;
   position: relative;
   background-color: $footer-secondary-color;
 
   // Divider betwen footer and footer widgets
   &:after {
-    @extend %background-secondary-color;
+    @extend %background-primary-color;
     background-image: image-url("divider-default.png");
     background-position:  center center;
     background-repeat: no-repeat;
@@ -69,27 +69,27 @@
     &:hover {
       color: $default-color;
      background: transparent;
-    }
+    } 
   }
 
   // Footer tags
   .tag {
     display: inline-block;
-    border: 2px solid $dark-color;
+    border: 2px solid $lighter-color;
     border-radius: 5px;
     padding: 5px 8px;
     margin: 4px 2px;
     font-family: $secondary-font;
     font-weight: 700;
-    color: $dark-color;
+    color: $lighter-color;
     text-transform: uppercase;
     font-size: 11px;
     transition: all 0.2s linear;
 
     &:hover {
-      color: $default-color;
+      color: $tertiary-color;
       text-decoration: none;
-      border: 2px solid $default-color;
+      border: 2px solid $tertiary-color;
     }
   }
 
@@ -106,9 +106,9 @@
 
 // Footer
 .footer {
-  @extend %background-secondary-color;
+  @extend %background-primary-color;
   padding: 18px 0;
-  color: $dark-color;
+  color: $lighter-color;
 
 
   .footer__link--small {
@@ -140,7 +140,7 @@
 }
 
 .footer__link {
-  color: $default-color;
+  color: $lighter-color;
   font-weight: bold;
 
   &:hover {

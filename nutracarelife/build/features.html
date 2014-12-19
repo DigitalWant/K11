@@ -12,7 +12,7 @@
     <title>Organique - HTML Template For Organic Shop</title>
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="stylesheets/2eef9d0d.main.css"/>
+    <link rel="stylesheet" href="stylesheets/88afea43.main.css"/>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
