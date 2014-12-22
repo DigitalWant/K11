@@ -13,14 +13,14 @@ $default-color:          #f3f2eb;
 $dark-color:             #b1b0a7;
 $lighter-color:          #ffffff;
 $light-color:            #e5e5dc;
-$gray-dark:              #b3b3aa; //$text-color
+$gray-dark:              #b3b3aa; //$text-color 
 $footer-secondary-color: lighten($primary-color,10%);
 
 $banner-primary-color:   #6c8053;
 $banner-secondary-color: #6c8053;
 
 $body-bg:                #fff;
-$text-color:             $secondary-color;
+$text-color:             $gray-dark;
 
 // Fonts
 //...............
@@ -54,7 +54,13 @@ $buttons-transition:     background 0.1s linear;
 %background-tertiary-color {
   background-color: $tertiary-color;
 }
-
+ 
 %color-tertiary-color {
   color: $tertiary-color;
+}
+%color-lighter-color {
+  color: $lighter-color;
+}
+%background-lighter-color {
+  background-color: $lighter-color;
 }

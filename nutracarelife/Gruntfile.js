@@ -36,6 +36,27 @@ module.exports = function(grunt) {
 				files: [
 					'src/scripts/{,*/}*.js'
 				]
+			},
+			compass:{
+				files:[
+					'src/sass/*.scss','src/sass/components/*.scss','src/bower_components/sass-bootstrap/lib/*.scss'
+				],
+				tasks:[
+					'clean:beforebuild',
+					'newer:assemble:build',
+					'newer:assemble:buildphp',
+					'newer:imagemin:build',
+					'compass:build',
+					//'autoprefixer:build',
+					'requirejs',
+					'useminPrepare',
+					'concat', // automatically configured by usemin
+					//'cssmin', // automatically configured by usemin
+					//'rev',
+					//'usemin',
+					'copy:build',
+					'clean:afterBuild'
+					]
 			}
 		},
 
@@ -258,6 +279,8 @@ module.exports = function(grunt) {
 		'autoprefixer:dev',
 		'concurrent:dev'
 	]);
+
+
 
 	// building
 	grunt.registerTask('build', [

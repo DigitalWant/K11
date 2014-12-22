@@ -46,7 +46,7 @@
     <div class="row">
       <div class="col-xs-12  col-sm-6">
         <div class="top__slogan">
-          Made with <small><span class="glyphicon  glyphicon-heart  tertiary-color"></span></small> for a healthy lifestyle
+          Made with <small><span class="glyphicon  glyphicon-heart lighter-color"></span></small> for a healthy lifestyle
         </div>
       </div>
       <div class="col-xs-12  col-sm-6">
@@ -473,16 +473,5 @@
     
     <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
     
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-33538073-8', 'proteusthemes.com');
-      ga('send', 'pageview');
-
-    </script>
   </body>
 </html>

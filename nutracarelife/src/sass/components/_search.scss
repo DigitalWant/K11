@@ -1,7 +1,7 @@
 // Search
 
 .search-panel {
-  @extend %background-primary-color;
+  @extend %background-tertiary-color;
   z-index: 1001;
   position: absolute;
   width: 100%;
@@ -23,7 +23,7 @@
   }
 
   .form-control {
-    @extend %background-primary-color;
+    @extend %background-tertiary-color;
     display: inline;
     color: $light-color;
     border: 0;
@@ -35,7 +35,7 @@
     font-size: 24px;
 
     &:focus {
-      @extend %background-primary-color;
+      @extend %background-tertiary-color;
     }
   }
 

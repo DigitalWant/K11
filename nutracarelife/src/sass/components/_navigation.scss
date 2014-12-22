@@ -156,26 +156,24 @@
     > li {
       > a {
         padding: 5px 20px;
-        color: lighten($secondary-color, 15%);
+        color: $lighter-color;
 
         &:hover {
-          color: $secondary-color;
           background: none;
           text-decoration: underline;
         }
         @media (min-width: $screen-md-min) {
-          background-color: $primary-color;
+          background-color: $tertiary-color;
           padding: 9px 20px;
           font-weight: 700;
-          border-bottom: 1px solid darken($primary-color, 10%);
+          border-bottom: 1px solid darken($tertiary-color, 10%);
           color: $lighter-color;
         }
 
       }
       @media (min-width: $screen-md-min) {
         &:hover > a {
-          background-color: darken($primary-color, 10%);
-          color: $lighter-color;
+          background-color: darken($tertiary-color, 10%);
           text-decoration: none;
         }
       }

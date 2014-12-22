@@ -1,6 +1,7 @@
 // Header
 .header {
-  background: linear-gradient(to bottom, $primary-color 0%, $secondary-color 100%);
+  background: linear-gradient(to bottom, $primary-color 0%,  $secondary-color 100%);
+
   position: relative;
   z-index: 1001;
 

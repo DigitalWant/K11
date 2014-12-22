@@ -9,7 +9,7 @@
   &:before {
     content: "";
     position: absolute;
-    background-color: darken($default-color, 15%);
+    background-color: darken($lighter-color, 15%);
     width: 1px;
     height: 36px;
     top: 50%;
@@ -18,7 +18,7 @@
   }
   // the hover border top
   &:after {
-    @extend %background-primary-color;
+    @extend %background-tertiary-color;
     content: "";
     position: absolute;
     width: 100%;
@@ -39,7 +39,7 @@
     }
 
     .header-cart__text--price {
-      @extend %color-primary-color;
+      @extend %color-lighter-color; 
     }
 
     .header-cart__open-cart {
@@ -63,7 +63,7 @@
     position: absolute;
   }
   &:after {
-    @extend %background-primary-color;
+    background-color: darken($tertiary-color, 10%);
     background-image: image-url("pattern_dark.png");
     top: 3px;
     bottom: 0;
@@ -76,7 +76,7 @@
     border-radius: 40%;
     width: 18px;
     height: 18px;
-    border: 2px solid $primary-color;
+    border: 2px solid darken($tertiary-color, 10%);
     left: 50%;
     top: -8px;
     margin-left: -9px;
@@ -95,7 +95,7 @@
 }
 
 .header-cart__text {
-  color: $dark-color;
+  color: $lighter-color;
   margin-right: 4px;
   display: none;
 
@@ -105,7 +105,7 @@
 }
 
 .header-cart__text--price {
-  @extend %color-secondary-color;
+  @extend %color-lighter-color;
   font-weight: 700;
   display: inline-block;
   margin-right: 10px;
@@ -122,7 +122,7 @@
   transition: all .1s linear;
   padding: 10px;
   z-index: 1001;
-  @extend %background-primary-color;
+  background-color:darken($tertiary-color,5%);
   color: $lighter-color;
   box-shadow: 0px 2px 0 rgba(0, 0, 0, 0.1) inset;
   border-bottom-left-radius: 2px;
@@ -139,9 +139,10 @@
   padding: 10px;
 
   &:hover {
-    background-color: darken($primary-color, 10%);
-    border-top: 1px solid darken($primary-color, 12%);
-    border-bottom: 1px solid darken($primary-color, 12%);
+    color:$lighter-color;
+    background-color: darken($tertiary-color, 20%);
+    border-top: 1px solid darken($tertiary-color, 22%);
+    border-bottom: 1px solid darken($tertiary-color, 22%);
     padding-top: 9px;
     padding-bottom: 9px;
 
@@ -183,7 +184,8 @@
 }
 
 .header-cart__qty {
-  @extend %color-secondary-color;
+
+  color:darken($secondary-color,15%);
   font-family: $secondary-font;
   font-weight: 700;
   font-size: 11px;
@@ -197,13 +199,14 @@
 }
 
 .header-cart__divider {
-  border: 1px solid darken($primary-color, 12%);
+  border: 1px solid lighten($tertiary-color,15%);
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 5px; 
 }
 
 .header-cart__subtotal {
   @extend %color-secondary-color;
+
   font-family: $secondary-font;
   font-weight: 700;
   font-size: 12px;
@@ -212,6 +215,7 @@
 }
 
 .header-cart__subtotal-price {
+  color:darken($secondary-color,10%);
   font-size: 24px;
   font-weight: 700;
 }
