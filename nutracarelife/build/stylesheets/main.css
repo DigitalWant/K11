@@ -534,7 +534,7 @@ pre {
     position: absolute; }
   .header-cart__items:after {
     background-color: #be923e;
-    background-image: url('../images/pattern_dark.png?1419239669');
+    background-image: url('../images/pattern_dark.png?1419239730');
     top: 3px;
     bottom: 0;
     right: 0;
@@ -639,7 +639,7 @@ pre {
   float: left; }
 
 .header-cart__divider {
-  border: 1px solid #0175a6;
+  border: 1px solid #cca863;
   margin-top: 5px;
   margin-bottom: 5px; }
 
@@ -663,7 +663,7 @@ pre {
   text-align: center; }
 
 .jumbotron {
-  background: url('../images/dark_wood.jpg?1419239668') repeat center center;
+  background: url('../images/dark_wood.jpg?1419239730') repeat center center;
   text-align: center;
   position: relative;
   background-size: cover; }
@@ -745,7 +745,7 @@ pre {
   max-width: none; }
 
 .breadcrumbs {
-  background-image: url('../images/pattern_dark.png?1419239669');
+  background-image: url('../images/pattern_dark.png?1419239730');
   width: 100%;
   margin-bottom: 30px; }
 
@@ -777,7 +777,7 @@ pre {
   position: relative;
   background-color: #0177d8; }
   .footer-widgets:after {
-    background-image: url('../images/quality.png?1419239669');
+    background-image: url('../images/quality.png?1419239730');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -935,7 +935,7 @@ pre {
       text-decoration: none; }
 
 .banners--medium {
-  background-image: url('../images/pattern_dark.png?1419239669');
+  background-image: url('../images/pattern_dark.png?1419239730');
   padding: 26px 52px 26px 26px;
   position: relative; }
   .banners--medium .glyphicon-circle {
@@ -953,7 +953,7 @@ pre {
 
 .banners--big {
   text-align: center;
-  background: url('../images/noise_pattern.png?1419239669'), linear-gradient(to right, #455235 0%, #6c8053 50%, #455235 100%);
+  background: url('../images/noise_pattern.png?1419239730'), linear-gradient(to right, #455235 0%, #6c8053 50%, #455235 100%);
   padding: 24px; }
 
 .banners--big-left {
@@ -1293,7 +1293,7 @@ pre {
   .divider:after {
     position: absolute;
     content: "";
-    background: #fff url('../images/divider-default.png?1419239668') center center no-repeat;
+    background: #fff url('../images/divider-default.png?1419239730') center center no-repeat;
     width: 28px;
     height: 17px;
     left: 50%;
@@ -1324,7 +1324,7 @@ pre {
   .divider-dark:after {
     position: absolute;
     content: "";
-    background: #f3f2eb url('../images/divider-dark.png?1419239668') center center no-repeat;
+    background: #f3f2eb url('../images/divider-dark.png?1419239730') center center no-repeat;
     width: 28px;
     height: 17px;
     left: 50%;
@@ -1653,7 +1653,7 @@ html.no-touch .product-overlay__stock {
   font-size: 9px; }
 
 .light-paper-pattern {
-  background-image: url('../images/light_paper_pattern.jpg?1419239669'); }
+  background-image: url('../images/light_paper_pattern.jpg?1419239730'); }
 
 .testimonials {
   padding: 50px 0;
