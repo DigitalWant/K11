@@ -122,7 +122,7 @@
   transition: all .1s linear;
   padding: 10px;
   z-index: 1001;
-  background-color:darken($tertiary-color,5%);
+  background-color:darken($tertiary-color,15%);
   color: $lighter-color;
   box-shadow: 0px 2px 0 rgba(0, 0, 0, 0.1) inset;
   border-bottom-left-radius: 2px;
@@ -185,7 +185,7 @@
 
 .header-cart__qty {
 
-  color:darken($secondary-color,15%);
+  color:darken($lighter-color,5%);
   font-family: $secondary-font;
   font-weight: 700;
   font-size: 11px;
@@ -199,13 +199,13 @@
 }
 
 .header-cart__divider {
-  border: 1px solid lighten($tertiary-color,15%);
+  border: 1px solid $secondary-color;
   margin-top: 5px;
   margin-bottom: 5px; 
 }
 
 .header-cart__subtotal {
-  @extend %color-secondary-color;
+  @extend %color-lighter-color;
 
   font-family: $secondary-font;
   font-weight: 700;
@@ -215,7 +215,7 @@
 }
 
 .header-cart__subtotal-price {
-  color:darken($secondary-color,10%);
+  color:$lighter-color;
   font-size: 24px;
   font-weight: 700;
 }
