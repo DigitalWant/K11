@@ -14,11 +14,12 @@
     background-size:contain;
     content: "";
     position: absolute;
-    bottom: -20px;
+    top: -60px;
     width: 120px;
     height: 120px;
     border-radius: 40px;
-    left: 50%;
+    right: 5%;
+    left:auto;
     margin-left: -20px;
   }
 
@@ -53,7 +54,7 @@
   .footer-widgets__heading {
     position: relative;
     text-align: center;
-    color: $default-color;
+    color: $lighter-color;
     z-index: 2;
     background-color: $footer-secondary-color;
     display: inline-block;
@@ -63,13 +64,14 @@
   // Footer navigation
   .nav-footer > li > a {
     padding: 0;
-    color: $dark-color;
+    color: $lighter-color;
     font-weight: bold;
     line-height: 30px;
 
     &:hover {
-      color: $default-color;
-     background: transparent;
+      @extend %color-tertiary-color;
+      text-decoration:underline;
+      background-color:transparent;
     } 
   }
 

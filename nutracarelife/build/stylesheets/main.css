@@ -30,17 +30,17 @@
 .secondary-color, .nav-tabs > li > a:hover, .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus, .btn-darker--transition:hover, .btn-jumbotron:hover, .panel-link, .pagination, .pagination > li > a, .social-container:hover > span, .opening-time .week-day, .opening-time .opening-time__title, .nav-sidebar-menu > li.active a,
-.nav-sidebar-menu > li > a:hover, .products-navigation__arrows .glyphicon-circle:hover, .testimonials .glyphicon-circle:hover, .quantity .quantity__button, .woocommerce .input-text {
+.nav-sidebar-menu > li > a:hover, .testimonials .glyphicon-circle:hover, .quantity .quantity__button, .woocommerce .input-text {
   color: #0175a6; }
 
 .top .dropdown-menu > li > a, .search-panel, .search-panel__form .form-control, .search-panel__form .form-control:focus, .header-cart:after, .alert-warning, .btn-warning--transition, .btn-warning--reverse-transition:hover, .progress .progress-bar--warning, .motivational-stories .motivational-stories__circle, .shop__filter__slider .ui-slider-range {
   background-color: #cca863; }
 
 .secondary-link, .tertiary-color,
-.warning, .footer .footer__text .glyphicon-heart, .footer__link:hover, .banners-box:hover, .btn-warning--transition:hover, .btn-shop:hover, .available-soon, .shop__amount-filter__link, .nav--filter > li > a, .star-on, .woocommerce .required {
+.warning, .footer-widgets .nav-footer > li > a:hover, .footer .footer__text .glyphicon-heart, .footer__link:hover, .banners-box:hover, .btn-warning--transition:hover, .btn-shop:hover, .products-navigation__arrows .glyphicon-circle:hover, .available-soon, .shop__amount-filter__link, .nav--filter > li > a, .star-on, .woocommerce .required {
   color: #cca863; }
 
-.top .glyphicon-heart, .header-cart:hover .header-cart__text--price, .header-cart__text--price, .header-cart__subtotal, .table-theme > thead > tr > th,
+.header-cart:hover .header-cart__text--price, .header-cart__text--price, .header-cart__subtotal, .table-theme > thead > tr > th,
 .table > thead > tr > th, .product-overlay__cart:hover {
   color: #ffffff; }
 
@@ -207,6 +207,8 @@ pre {
   font-weight: 600;
   position: relative;
   z-index: 1002; }
+  .top .glyphicon-heart {
+    color: #ebdec3; }
   .top .dropdown:hover .dropdown-menu {
     visibility: visible;
     opacity: 1; }
@@ -534,7 +536,7 @@ pre {
     position: absolute; }
   .header-cart__items:after {
     background-color: #be923e;
-    background-image: url('../images/pattern_dark.png?1419320869');
+    background-image: url('../images/pattern_dark.png?1419325664');
     top: 3px;
     bottom: 0;
     right: 0;
@@ -663,7 +665,7 @@ pre {
   text-align: center; }
 
 .jumbotron {
-  background: url('../images/dark_wood.jpg?1419320868') repeat center center;
+  background: url('../images/dark_wood.jpg?1419325663') repeat center center;
   text-align: center;
   position: relative;
   background-size: cover; }
@@ -752,7 +754,7 @@ pre {
   background-color: transparent; }
 
 .breadcrumbs {
-  background-image: url('../images/pattern_dark.png?1419320869');
+  background-image: url('../images/pattern_dark.png?1419325664');
   width: 100%;
   margin-bottom: 30px; }
 
@@ -784,17 +786,18 @@ pre {
   position: relative;
   background-color: #0177d8; }
   .footer-widgets:after {
-    background-image: url('../images/quality.png?1419320869');
+    background-image: url('../images/quality.png?1419325664');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
     content: "";
     position: absolute;
-    bottom: -20px;
+    top: -60px;
     width: 120px;
     height: 120px;
     border-radius: 40px;
-    left: 50%;
+    right: 5%;
+    left: auto;
     margin-left: -20px; }
   .footer-widgets .footer-widgets__social {
     margin: 58px 0; }
@@ -817,19 +820,19 @@ pre {
   .footer-widgets .footer-widgets__heading {
     position: relative;
     text-align: center;
-    color: #f3f2eb;
+    color: #ffffff;
     z-index: 2;
     background-color: #0177d8;
     display: inline-block;
     padding: 0 10px; }
   .footer-widgets .nav-footer > li > a {
     padding: 0;
-    color: #b1b0a7;
+    color: #ffffff;
     font-weight: bold;
     line-height: 30px; }
     .footer-widgets .nav-footer > li > a:hover {
-      color: #f3f2eb;
-      background: transparent; }
+      text-decoration: underline;
+      background-color: transparent; }
   .footer-widgets .tag {
     display: inline-block;
     border: 2px solid #ffffff;
@@ -949,7 +952,7 @@ pre {
 
 .banners--medium {
   background-color: #ab8338;
-  background-image: url('../images/pattern_dark.png?1419320869');
+  background-image: url('../images/pattern_dark.png?1419325664');
   padding: 26px 52px 26px 26px;
   position: relative; }
   .banners--medium .glyphicon-circle {
@@ -967,7 +970,7 @@ pre {
 
 .banners--big {
   text-align: center;
-  background: url('../images/noise_pattern.png?1419320869'), linear-gradient(to right, #ab8338 0%, #cca863 50%, #ab8338 100%);
+  background: url('../images/noise_pattern.png?1419325664'), linear-gradient(to right, #ab8338 0%, #cca863 50%, #ab8338 100%);
   padding: 24px; }
 
 .banners--big-left {
@@ -1316,7 +1319,7 @@ pre {
   .divider:after {
     position: absolute;
     content: "";
-    background: #fff url('../images/divider-default.png?1419320868') center center no-repeat;
+    background: #fff url('../images/divider-default.png?1419325663') center center no-repeat;
     width: 28px;
     height: 17px;
     left: 50%;
@@ -1347,7 +1350,7 @@ pre {
   .divider-dark:after {
     position: absolute;
     content: "";
-    background: #f3f2eb url('../images/divider-dark.png?1419320868') center center no-repeat;
+    background: #f3f2eb url('../images/divider-dark.png?1419325663') center center no-repeat;
     width: 28px;
     height: 17px;
     left: 50%;
@@ -1521,7 +1524,7 @@ pre {
   transition: .1s linear;
   transition-property: color, border-color; }
   .products-navigation__arrows .glyphicon-circle:hover {
-    border-color: #0175a6; }
+    border-color: #cca863; }
 
 /**
  * products
@@ -1677,7 +1680,7 @@ html.no-touch .product-overlay__stock {
   font-size: 9px; }
 
 .light-paper-pattern {
-  background-image: url('../images/light_paper_pattern.jpg?1419320869'); }
+  background-image: url('../images/light_paper_pattern.jpg?1419325664'); }
 
 .testimonials {
   padding: 50px 0;

@@ -53,8 +53,8 @@
     transition-property: color, border-color;
 
     &:hover {
-      @extend %color-secondary-color;
-      border-color: $secondary-color;
+      @extend %color-tertiary-color;
+      border-color: $tertiary-color;
     }
   }
 }
