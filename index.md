@@ -9,4 +9,4 @@ tagline: Supporting tagline
 
 [jinjiang](/jinjiang/carve/html/)
 
-[Nutracare](/nutracarelife/build/)
+[Nutracare](/nutracarelife/build/home-slider-sticky-navbar.html)
