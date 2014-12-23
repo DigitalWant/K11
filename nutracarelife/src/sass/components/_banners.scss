@@ -10,7 +10,7 @@
 
 // Widget banners
 .banners {
-  background: lighten($primary-color,10%); 
+  background: $tertiary-color; 
 }
 
 .banners-box {
@@ -22,7 +22,7 @@
 
   &:hover {
     @extend %background-lighter-color;
-    @extend %color-primary-color;
+    @extend %color-tertiary-color;
     transition: all 0.1s linear;
   }
 

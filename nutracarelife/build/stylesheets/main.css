@@ -20,7 +20,7 @@
 .nav-sidebar-menu > li > a:hover:before, .product-overlay__cart, .page-not-found .page-not-found__background {
   background-color: #015ba5; }
 
-.primary-color, .header-cart:hover, .banners-box:hover, .btn-primary--transition:hover, .table-theme tr.active td, .pagination .active, .pagination > li > a:hover, .pagination .pagination--nav:hover, .opening-time .week-day.today, .in-stock, .products__price--widgets, .page-not-found .page-not-found__link, .single-product__price, .star-on, .quantity .quantity__input, .blog .blog__comments-link {
+.primary-color, .header-cart:hover, .btn-primary--transition:hover, .table-theme tr.active td, .pagination .active, .pagination > li > a:hover, .pagination .pagination--nav:hover, .opening-time .week-day.today, .in-stock, .products__price--widgets, .page-not-found .page-not-found__link, .single-product__price, .quantity .quantity__input, .blog .blog__comments-link {
   color: #015ba5; }
 
 .header .navbar-toggle, .breadcrumbs, .btn-darker, .btn-darker--transition, .btn-darker--reverse-transition:hover, .progress .progress-bar--even-more-dark {
@@ -29,14 +29,14 @@
 .secondary-color, .nav-tabs > li > a:hover, .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus, .btn-darker--transition:hover, .btn-jumbotron:hover, .panel-link, .pagination, .pagination > li > a, .social-container:hover > span, .opening-time .week-day, .opening-time .opening-time__title, .nav-sidebar-menu > li.active a,
-.nav-sidebar-menu > li > a:hover, .products-navigation__arrows .glyphicon-circle:hover, .testimonials .testimonials__text, .testimonials .glyphicon-circle:hover, .quantity .quantity__button, .woocommerce .input-text {
+.nav-sidebar-menu > li > a:hover, .products-navigation__arrows .glyphicon-circle:hover, .testimonials .glyphicon-circle:hover, .quantity .quantity__button, .woocommerce .input-text {
   color: #0175a6; }
 
 .top .dropdown-menu > li > a, .search-panel, .search-panel__form .form-control, .search-panel__form .form-control:focus, .header-cart:after, .alert-warning, .btn-warning--transition, .btn-warning--reverse-transition:hover, .progress .progress-bar--warning, .motivational-stories .motivational-stories__circle, .shop__filter__slider .ui-slider-range {
   background-color: #cca863; }
 
 .secondary-link, .tertiary-color,
-.warning, .footer .footer__text .glyphicon-heart, .footer__link:hover, .btn-warning--transition:hover, .btn-shop:hover, .available-soon, .shop__amount-filter__link, .nav--filter > li > a, .woocommerce .required {
+.warning, .footer .footer__text .glyphicon-heart, .footer__link:hover, .banners-box:hover, .btn-warning--transition:hover, .btn-shop:hover, .available-soon, .shop__amount-filter__link, .nav--filter > li > a, .star-on, .woocommerce .required {
   color: #cca863; }
 
 .top .glyphicon-heart, .header-cart:hover .header-cart__text--price, .header-cart__text--price, .header-cart__subtotal, .table-theme > thead > tr > th,
@@ -533,7 +533,7 @@ pre {
     position: absolute; }
   .header-cart__items:after {
     background-color: #be923e;
-    background-image: url('../images/pattern_dark.png?1419318867');
+    background-image: url('../images/pattern_dark.png?1419319505');
     top: 3px;
     bottom: 0;
     right: 0;
@@ -662,7 +662,7 @@ pre {
   text-align: center; }
 
 .jumbotron {
-  background: url('../images/dark_wood.jpg?1419318865') repeat center center;
+  background: url('../images/dark_wood.jpg?1419319505') repeat center center;
   text-align: center;
   position: relative;
   background-size: cover; }
@@ -751,7 +751,7 @@ pre {
   background-color: transparent; }
 
 .breadcrumbs {
-  background-image: url('../images/pattern_dark.png?1419318867');
+  background-image: url('../images/pattern_dark.png?1419319505');
   width: 100%;
   margin-bottom: 30px; }
 
@@ -783,7 +783,7 @@ pre {
   position: relative;
   background-color: #0177d8; }
   .footer-widgets:after {
-    background-image: url('../images/quality.png?1419318867');
+    background-image: url('../images/quality.png?1419319505');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -887,7 +887,7 @@ pre {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); }
 
 .banners {
-  background: #0177d8; }
+  background: #cca863; }
 
 .banners-box {
   padding: 25px;
@@ -948,7 +948,7 @@ pre {
 
 .banners--medium {
   background-color: #ab8338;
-  background-image: url('../images/pattern_dark.png?1419318867');
+  background-image: url('../images/pattern_dark.png?1419319505');
   padding: 26px 52px 26px 26px;
   position: relative; }
   .banners--medium .glyphicon-circle {
@@ -966,7 +966,7 @@ pre {
 
 .banners--big {
   text-align: center;
-  background: url('../images/noise_pattern.png?1419318867'), linear-gradient(to right, #ab8338 0%, #cca863 50%, #ab8338 100%);
+  background: url('../images/noise_pattern.png?1419319505'), linear-gradient(to right, #ab8338 0%, #cca863 50%, #ab8338 100%);
   padding: 24px; }
 
 .banners--big-left {
@@ -1315,7 +1315,7 @@ pre {
   .divider:after {
     position: absolute;
     content: "";
-    background: #fff url('../images/divider-default.png?1419318866') center center no-repeat;
+    background: #fff url('../images/divider-default.png?1419319505') center center no-repeat;
     width: 28px;
     height: 17px;
     left: 50%;
@@ -1346,7 +1346,7 @@ pre {
   .divider-dark:after {
     position: absolute;
     content: "";
-    background: #f3f2eb url('../images/divider-dark.png?1419318866') center center no-repeat;
+    background: #f3f2eb url('../images/divider-dark.png?1419319505') center center no-repeat;
     width: 28px;
     height: 17px;
     left: 50%;
@@ -1676,7 +1676,7 @@ html.no-touch .product-overlay__stock {
   font-size: 9px; }
 
 .light-paper-pattern {
-  background-image: url('../images/light_paper_pattern.jpg?1419318867'); }
+  background-image: url('../images/light_paper_pattern.jpg?1419319505'); }
 
 .testimonials {
   padding: 50px 0;
