@@ -18,15 +18,17 @@ $gray-dark:              darken(#b3b3aa,15%); //$text-color
 $footer-secondary-color: lighten($primary-color,10%);
 
 $banner-primary-color:   $tertiary-color;
-$banner-secondary-color: $tertiary-color;
+$banner-secondary-color: $tertiary-color; 
 
 $body-bg:                #fff;
 $text-color:             $gray-dark;
 
 // Fonts
 //...............
-$primary-font:           "Open Sans", Helvetica, Arial, sans-serif;
-$secondary-font:         "Arvo", Georgia, Times, serif;
+$primary-font:           "Open Sans", Helvetica, Arial,"Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
+$secondary-font:         "Arvo","Microsoft Yahei","微软雅黑", STXihei, "华文细黑", Georgia, Times, serif;
+
+$chinese-primary-font:	"Microsoft Yahei","微软雅黑", STXihei, "华文细黑";
 
 $font-size:              13px;
 
@@ -37,7 +39,7 @@ $buttons-transition:     background 0.1s linear;
 // Common placeholders
 //...............
 %background-primary-color {
-  background-color: $primary-color;
+  background-color: $primary-color; 
 }
 
 %color-primary-color {

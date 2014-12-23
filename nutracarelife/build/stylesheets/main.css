@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*------------------------------------*\
     Organique - HTML template
 \*------------------------------------*/
@@ -77,7 +78,7 @@ h5 {
 
 h6 {
   margin-bottom: 12px;
-  font-family: "Arvo", Georgia, Times, serif;
+  font-family: "Arvo", "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", Georgia, Times, serif;
   font-weight: 700;
   text-transform: uppercase;
   font-weight: bold; }
@@ -533,7 +534,7 @@ pre {
     position: absolute; }
   .header-cart__items:after {
     background-color: #be923e;
-    background-image: url('../images/pattern_dark.png?1419319505');
+    background-image: url('../images/pattern_dark.png?1419320869');
     top: 3px;
     bottom: 0;
     right: 0;
@@ -627,7 +628,7 @@ pre {
 
 .header-cart__qty {
   color: #f2f2f2;
-  font-family: "Arvo", Georgia, Times, serif;
+  font-family: "Arvo", "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", Georgia, Times, serif;
   font-weight: 700;
   font-size: 11px;
   display: block; }
@@ -643,7 +644,7 @@ pre {
   margin-bottom: 5px; }
 
 .header-cart__subtotal {
-  font-family: "Arvo", Georgia, Times, serif;
+  font-family: "Arvo", "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", Georgia, Times, serif;
   font-weight: 700;
   font-size: 12px;
   text-align: right;
@@ -662,7 +663,7 @@ pre {
   text-align: center; }
 
 .jumbotron {
-  background: url('../images/dark_wood.jpg?1419319505') repeat center center;
+  background: url('../images/dark_wood.jpg?1419320868') repeat center center;
   text-align: center;
   position: relative;
   background-size: cover; }
@@ -751,7 +752,7 @@ pre {
   background-color: transparent; }
 
 .breadcrumbs {
-  background-image: url('../images/pattern_dark.png?1419319505');
+  background-image: url('../images/pattern_dark.png?1419320869');
   width: 100%;
   margin-bottom: 30px; }
 
@@ -783,7 +784,7 @@ pre {
   position: relative;
   background-color: #0177d8; }
   .footer-widgets:after {
-    background-image: url('../images/quality.png?1419319505');
+    background-image: url('../images/quality.png?1419320869');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -835,7 +836,7 @@ pre {
     border-radius: 5px;
     padding: 5px 8px;
     margin: 4px 2px;
-    font-family: "Arvo", Georgia, Times, serif;
+    font-family: "Arvo", "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", Georgia, Times, serif;
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
@@ -903,20 +904,20 @@ pre {
     float: left;
     margin: 0 10px 0 0; }
   .banners-box .banners__title {
-    font-family: "Arvo", Georgia, Times, serif;
+    font-family: "Arvo", "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", Georgia, Times, serif;
     display: block; }
 
 .banners--small {
   background: #be923e;
   padding: 19px;
   text-align: center;
-  font-family: "Arvo", Georgia, Times, serif;
+  font-family: "Arvo", "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", Georgia, Times, serif;
   text-transform: uppercase;
   font-size: 12px;
   text-shadow: none;
   color: #ffffff; }
   .banners--small .banners--small--text {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+    font-family: "Open Sans", Helvetica, Arial, "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", sans-serif; }
 
 .banners--small--social {
   text-align: left;
@@ -948,7 +949,7 @@ pre {
 
 .banners--medium {
   background-color: #ab8338;
-  background-image: url('../images/pattern_dark.png?1419319505');
+  background-image: url('../images/pattern_dark.png?1419320869');
   padding: 26px 52px 26px 26px;
   position: relative; }
   .banners--medium .glyphicon-circle {
@@ -966,7 +967,7 @@ pre {
 
 .banners--big {
   text-align: center;
-  background: url('../images/noise_pattern.png?1419319505'), linear-gradient(to right, #ab8338 0%, #cca863 50%, #ab8338 100%);
+  background: url('../images/noise_pattern.png?1419320869'), linear-gradient(to right, #ab8338 0%, #cca863 50%, #ab8338 100%);
   padding: 24px; }
 
 .banners--big-left {
@@ -992,7 +993,7 @@ pre {
 
 .alert {
   padding: 11px;
-  font-family: "Arvo", Georgia, Times, serif;
+  font-family: "Arvo", "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", Georgia, Times, serif;
   font-weight: 700;
   color: #f3f2eb;
   font-size: 12px;
@@ -1019,7 +1020,7 @@ pre {
     margin-bottom: -3px; }
     .nav-tabs > li > a {
       color: #b1b0a7;
-      font-family: "Arvo", Georgia, Times, serif;
+      font-family: "Arvo", "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", Georgia, Times, serif;
       font-weight: 700;
       font-size: 14px;
       border: none;
@@ -1039,7 +1040,7 @@ pre {
   line-height: 1.7; }
 
 .btn {
-  font-family: "Arvo", Georgia, Times, serif;
+  font-family: "Arvo", "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", Georgia, Times, serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
@@ -1293,7 +1294,7 @@ pre {
 .panel-link {
   font-size: 13px;
   text-transform: uppercase;
-  font-family: "Arvo", Georgia, Times, serif;
+  font-family: "Arvo", "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", Georgia, Times, serif;
   font-weight: 700; }
   .panel-link:hover {
     text-decoration: none; }
@@ -1315,7 +1316,7 @@ pre {
   .divider:after {
     position: absolute;
     content: "";
-    background: #fff url('../images/divider-default.png?1419319505') center center no-repeat;
+    background: #fff url('../images/divider-default.png?1419320868') center center no-repeat;
     width: 28px;
     height: 17px;
     left: 50%;
@@ -1346,7 +1347,7 @@ pre {
   .divider-dark:after {
     position: absolute;
     content: "";
-    background: #f3f2eb url('../images/divider-dark.png?1419319505') center center no-repeat;
+    background: #f3f2eb url('../images/divider-dark.png?1419320868') center center no-repeat;
     width: 28px;
     height: 17px;
     left: 50%;
@@ -1360,7 +1361,7 @@ pre {
 .pagination {
   margin: 0;
   font-size: 15px;
-  font-family: "Arvo", Georgia, Times, serif;
+  font-family: "Arvo", "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", Georgia, Times, serif;
   font-weight: 700; }
   .pagination .active {
     background-color: #f3f2eb;
@@ -1438,7 +1439,7 @@ pre {
   .opening-time .divider-dark {
     margin: 20px auto; }
   .opening-time .opening-time__title {
-    font-family: "Arvo", Georgia, Times, serif;
+    font-family: "Arvo", "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", Georgia, Times, serif;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -1622,7 +1623,7 @@ html.no-touch .product-overlay__stock {
   font-size: 14px; }
 
 .products__category {
-  font-family: "Arvo", Georgia, Times, serif;
+  font-family: "Arvo", "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", Georgia, Times, serif;
   font-weight: 700;
   font-size: 11px;
   color: #c9c8c2;
@@ -1676,7 +1677,7 @@ html.no-touch .product-overlay__stock {
   font-size: 9px; }
 
 .light-paper-pattern {
-  background-image: url('../images/light_paper_pattern.jpg?1419319505'); }
+  background-image: url('../images/light_paper_pattern.jpg?1419320869'); }
 
 .testimonials {
   padding: 50px 0;
@@ -2009,7 +2010,7 @@ html.no-touch .product-overlay__stock {
     border-radius: 2px;
     height: 36px;
     font-weight: bold;
-    font-family: "Arvo", Georgia, Times, serif;
+    font-family: "Arvo", "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", Georgia, Times, serif;
     text-align: center;
     margin: 0 -2px; }
   .quantity .quantity__button {
@@ -2035,7 +2036,7 @@ html.no-touch .product-overlay__stock {
 
 .blog__archive {
   text-align: center;
-  font-family: "Arvo", Georgia, Times, serif;
+  font-family: "Arvo", "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", Georgia, Times, serif;
   padding: 5px 0;
   font-size: 12px; }
   .blog__archive .blog__banner__link {

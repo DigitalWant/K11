@@ -261,7 +261,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", sans-serif;
   font-size: 13px;
   line-height: 1.5;
   color: #757569;
@@ -386,7 +386,7 @@ cite {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", sans-serif;
   font-weight: 700;
   line-height: 1.1;
   color: #8f8f82; }
