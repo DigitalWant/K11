@@ -7,14 +7,10 @@ tagline: Supporting tagline
 ```<2014>```
 
 [Bellamy's Organic](http://bellamysorganic.com.au/)
-####Chinese Responsive
 
 [Huggies Pitch]
-####comming soon..
-
 
 [Britax] 
-####migration
 
 [Prime time](/primeTime)
 
