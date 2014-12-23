@@ -4,9 +4,8 @@ title: Mike's jobs!
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
-```
-<2014>
-```
+
+\</2014>
 
 [Prime time](/primeTime)
 
@@ -14,7 +13,4 @@ tagline: Supporting tagline
 
 [Nutracare](/nutracarelife/build/home-slider-sticky-navbar.html)
 
-
-```
-</2014>
-```
+2014
