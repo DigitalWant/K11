@@ -163,7 +163,7 @@
           text-decoration: underline;
         }
         @media (min-width: $screen-md-min) {
-          background-color: $tertiary-color;
+          background-color: darken($tertiary-color,15%);
           padding: 9px 20px;
           font-weight: 700;
           border-bottom: 1px solid darken($tertiary-color, 10%);
@@ -190,7 +190,7 @@
 .input-group-addon {
   background-color: $default-color;
   border: 1px solid $light-color;
-}
+} 
 
 // Blog sidebar navigation
 .nav-blog {
@@ -200,7 +200,6 @@
   list-style: none;
 
   a {
-    @extend %color-primary-color;
 
     &:hover {
       text-decoration: underline;

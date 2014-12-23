@@ -30,6 +30,10 @@
       padding: 3px 10px 1px 10px;
       margin: 0px -1px;
       color: $dark-color;
+
+      &:hover {
+        color:$tertiary-color;
+      }
     }
   }
 }
@@ -44,10 +48,10 @@
 }
 
 .shop__amount-filter__link {
-  @extend %color-secondary-color;
+  @extend %color-tertiary-color;
 
   &:hover {
-    @extend %color-primary-color;
+    color:darken($tertiary-color,10%);
   }
   &:active {
     background: none;
@@ -61,8 +65,8 @@
 
 // Color and style of Shop sidebar links
 .nav--filter > li > a {
-  padding: 4px 0;
-  @extend %color-secondary-color;
+  padding: 4px;
+  @extend %color-tertiary-color;
 
   &.selected {
     font-weight: 700;

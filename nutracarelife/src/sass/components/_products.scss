@@ -171,12 +171,12 @@ html.no-touch {
   transition: color .1s linear;
 
   &:hover {
-    @extend %color-secondary-color;
+    @extend %color-lighter-color;
   }
 }
 
 .product-overlay__stock {
-  @extend %background-secondary-color;
+  background-color:lighten($secondary-color,15%);
   padding: 0px 18px 0 10px;
   color: $default-color;
   font-size: 11px;
@@ -191,7 +191,6 @@ html.no-touch {
   font-size: $font-size;
 
   a {
-    @extend %color-secondary-color;
 
     &:hover {
       text-decoration: none;
@@ -200,7 +199,6 @@ html.no-touch {
 }
 
 .products__price {
-  @extend %color-primary-color;
   float: right;
   padding-right: 3px;
   font-weight: bold;

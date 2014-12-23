@@ -28,8 +28,7 @@ body {
 
 a {
   &:active {
-    @extend %background-tertiary-color;
-    color: $lighter-color;
+    color: darken($tertiary-color,10%);
   }
 
   &:hover {
@@ -122,15 +121,14 @@ pre {
 }
 
 .secondary-link {
-  @extend %color-primary-color;
+  @extend %color-tertiary-color;
 
   &:hover {
-    @extend %color-primary-color;
+    color:darken($tertiary-color,15%);
   }
 }
 
 .text {
-  @extend %color-secondary-color;
   text-align: left;
   line-height: 23px;
   font-weight: normal;
@@ -147,7 +145,6 @@ pre {
 }
 
 .text-dark {
-  @extend %color-secondary-color;
   font-weight: 700;
   font-size: 15px;
   line-height: 1.5;
@@ -182,7 +179,7 @@ pre {
   background: $default-color;
 
   &:focus {
-    background: $lighter-color;
+    background:darken($default-color,5%);
   }
 }
 
