@@ -62,6 +62,7 @@ $grid-float-breakpoint:  992px; // Collapse
 // Reset
 @import "sass-bootstrap/lib/normalize";
 @import "sass-bootstrap/lib/print";
+@import "sass-bootstrap/lib/glyphicons";
 
 // Core CSS
 @import "sass-bootstrap/lib/scaffolding";
@@ -74,7 +75,6 @@ $grid-float-breakpoint:  992px; // Collapse
 
 // Components
 @import "sass-bootstrap/lib/component-animations";
-@import "sass-bootstrap/lib/glyphicons";
 @import "sass-bootstrap/lib/dropdowns";
 @import "sass-bootstrap/lib/button-groups";
 @import "sass-bootstrap/lib/input-groups";
