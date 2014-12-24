@@ -22,7 +22,23 @@ module.exports = function(grunt) {
 			// Watch .hbs (html) files with database
 			assemble: {
 				files: ['src/assemble/{,*/}*.hbs{,php}', 'lib/*'],
-				tasks: ['newer:assemble:dev', 'newer:assemble:devphp'],
+				//tasks: ['newer:assemble:dev', 'newer:assemble:devphp'],
+				tasks: [
+				'clean:beforebuild',
+				'newer:assemble:dev', 'newer:assemble:devphp',
+				'newer:assemble:build',
+				'newer:imagemin:build',
+				'compass:build',
+				//'autoprefixer:build',
+				'requirejs',
+				'useminPrepare',
+				'concat', // automatically configured by usemin
+				//'cssmin', // automatically configured by usemin
+				//'rev',
+				//'usemin',
+				'copy:build',
+				'clean:afterBuild'
+				],
 			},
 
 			// autoprefix the files
