@@ -564,62 +564,55 @@
       <div class="widgets__heading--line">
         <h4 class="widgets__heading">Saving Calculator!</h4>
       </div>
-      
-<form role="form">
+      <form class="form-horizontal" role="form">
   <div class="form-group">
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="input-group">
-          <span class="input-group-btn">
-            <button class="btn btn-primary" type="button">Go!</button>
-          </span>
-          <input type="text" class="form-control" placeholder="Search for...">
-        </div><!-- /input-group -->
-      </div><!-- /.col-lg-6 -->
-      <div class="col-lg-6">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search for...">
-          <span class="input-group-btn">
-            <button class="btn btn-primary" type="button">Go!</button>
-          </span>
-        </div><!-- /input-group -->
-      </div><!-- /.col-lg-6 -->
-    </div><!-- /.row -->
+    <label for="currentBrand" class="col-sm-6 control-label" style="font-family:arial;">Current brand</label>
+    <div class="col-sm-6">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="current brand name"> 
+        <div class="input-group-btn">
+          <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+          <ul id="cal_productList" class="dropdown-menu pull-right">
+            <li><a href="#" data-price="50">Infant Formula</a></li>
+            <li><a href="#" data-price="70">Follow-On Formula</a></li>
+            <li><a href="#" data-price="90">Growing-Up Formula</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Tire 1</a></li>
+          </ul>
+        </div><!-- /btn-group -->
+      </div><!-- /input-group -->
+
+    </div>
   </div>
   <div class="form-group">
-      <div class="row">
-      <div class="col-lg-12">
-        <label for="exampleInputEmail1">How many you want to buy?</label> 
-      </div>
-      </div>
-      <div class="row">
-      <div class="col-lg-6">
-        <select class="form-control">
-          <option>option 1</option>
-          <option>option 2</option>
-          <option>option 3</option>
-        </select>
-      </div>
-      <div class="col-lg-6">
-            <input type="text" class="form-control" id="priceOther" placeholder="888.88">
-
-      </div>
-      </div>
-
+    <label for="currentPrice" class="col-sm-6 control-label" style="font-family:arial;">Current price</label>
+    <div class="col-sm-6">
+      <div class="input-group">
+      <div class="input-group-addon">$</div>
+      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+      <div class="input-group-addon">.00</div>
+    </div>
+    </div>
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Saving</label>
-    <input type="text" class="form-control" id="Saving" placeholder="You have saved 888.88">
+    <label for="tins" class="col-sm-6 control-label" style="font-family:arial;">How many tins per month</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="tins" placeholder="tins">
+    </div>
   </div>
-
-
-  <div class="checkbox">
-    <label>
-      <input type="checkbox"> include transport 
-    </label>
+  <div class="form-group"> 
+    <div class="col-sm-offset-4 col-sm-5"> 
+      <button id="cal_action" type="submit" class="btn btn-primary">Calculator</button> 
+    </div>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form> 
+      <div id="cal_priceBan" class="alert hidden alert-default text-center  uppercase  fade  in"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <p><span class="glyphicon glyphicon-info-sign"></span> You will saving</p>
+        <p class="text-danger">500 RMB per year</p>
+        <p>if you choose Nutracare!</p>          
+      </div>
+
+</form>
+ 
     </div>
   </div>
   <div class="col-xs-12  col-sm-4">
@@ -671,7 +664,7 @@
         
       </div>
     </div>
-  </div>
+  </div> 
   <div class="col-xs-12  col-sm-4">
     <div class="widgets__navigation">
       <div class="widgets__heading--line">

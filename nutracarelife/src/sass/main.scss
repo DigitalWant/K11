@@ -1,8 +1,8 @@
 /*------------------------------------*\
     Organique - HTML template
 \*------------------------------------*/
-
-/**
+ 
+/**    
  * TABLE OF CONTENTS
  *
  * 01. Project variables..Imported variables
@@ -174,8 +174,8 @@ pre {
 }
 
 .form-control {
-  border: none;
-  box-shadow: none !important;
+  //border: none;
+  //box-shadow: none !important;
   background: $default-color;
 
   &:focus {

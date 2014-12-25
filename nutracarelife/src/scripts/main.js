@@ -132,4 +132,23 @@ require(['jquery', 'AffixMenu', 'IsotopeShop', 'SimpleMap', 'AttachedNavbar', 'e
 		}).renderMap();
 	})();
 
+	/**
+	 * calculator
+	 */
+	(function () {
+		if ( $('#cal_productList').length < 1 ) {
+			return;
+		}
+		var $productList = $('#cal_productList');
+		var $action = $('#cal_action');
+		var $priceBan = $('#cal_priceBan');
+		$action.on('click',function(e){
+			//alert('test');
+			e.preventDefault();
+			$priceBan.removeClass('hidden');
+		})
+		//Saving Value = (<current unit price> x <number of tins per month> x 12) – (<number of tins per month> x 199 x 12 +200) 
+
+	})();
+
 });

@@ -8,33 +8,36 @@
     padding: 7px 0;
   }
 }
+.nav {
 
-.dropdown-menu {
-  display: block;
-  margin: 0;
-  padding: 0;
-  box-shadow: none;
-  border: none;
-  border-radius: 0;
-  background: none;
-  transition: all .1s linear;
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
+    .dropdown-menu {
+    display: block;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    background: none;
+    transition: all .1s linear;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
 
-  @media (min-width: $screen-md-min) {
-  > li {
-      &:last-child > a {
-        border-bottom-left-radius: 2px;
-        border-bottom-right-radius: 2px;
+    @media (min-width: $screen-md-min) {
+    > li {
+        &:last-child > a {
+          border-bottom-left-radius: 2px;
+          border-bottom-right-radius: 2px;
+        }
       }
     }
+    .dropdown-menu {
+      left: 100%;
+      top: 0;
+      border-top: none !important;
+    }
   }
-  .dropdown-menu {
-    left: 100%;
-    top: 0;
-    border-top: none !important;
-  }
+
 }
 
 // collapsible navbar

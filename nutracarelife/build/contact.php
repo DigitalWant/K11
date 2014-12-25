@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -350,415 +351,130 @@
     </div>
   </div>
 </header>
-<div id="carousel-example-generic" class="carousel  slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item  active">
-      <img src="images/organic-slider-1.jpg" alt="">
-      <div class="carousel-caption">
-
-        <div class="jumbotron__container">
-          <h2 class="jumbotron__subtitle">
-            "Open Sans", Helvetica, Arial for English
-          </h2>
-          <h1 class="jumbotron__title">
-              微软雅黑 = win， 华文细黑 = mac 
-          </h1>
-          <a class="btn  btn-warning" href="http://themeforest.net/item/organique-html-template-for-healthy-food-store/6779086?ref=ProteusThemes" target="_blank">Buy theme</a> &nbsp;
-          <a class="btn  btn-jumbotron" href="features.html">More details</a>
-        </div>
-
-      </div>
-    </div>
-    <div class="item">
-      <img src="images/organic-slider-2.jpg" alt="">
-      <div class="carousel-caption">
-
-        <div class="jumbotron__container">
-          <h2 class="jumbotron__subtitle">
-            Awesome oppurtunity to save a lof of money on
-          </h2>
-          <h1 class="jumbotron__title">
-            Fresh organic food
-          </h1>
-          <a class="btn  btn-warning" href="http://themeforest.net/item/organique-html-template-for-healthy-food-store/6779086?ref=ProteusThemes" target="_blank">Buy theme</a> &nbsp;
-          <a class="btn  btn-jumbotron" href="features.html">More details</a>
-        </div>
-
-      </div>
-    </div>
-    <div class="item">
-      <img src="images/organic-slider-3.jpg" alt="">
-      <div class="carousel-caption">
-
-        <div class="jumbotron__container">
-          <h2 class="jumbotron__subtitle">
-            Awesome oppurtunity to save a lof of money on
-          </h2>
-          <h1 class="jumbotron__title">
-            Fresh organic food
-          </h1>
-          <a class="btn  btn-warning" href="http://themeforest.net/item/organique-html-template-for-healthy-food-store/6779086?ref=ProteusThemes" target="_blank">Buy theme</a> &nbsp;
-          <a class="btn  btn-jumbotron" href="features.html">More details</a>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <a class="left  carousel-control" href="#carousel-example-generic" data-slide="prev">
-    <span class="glyphicon  glyphicon-chevron-left"></span>
-  </a>
-  <a class="right  carousel-control" href="#carousel-example-generic" data-slide="next">
-    <span class="glyphicon  glyphicon-chevron-right"></span>
-  </a>
-</div>
-<div class="banners  push-down-30">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12  col-sm-6  col-md-3">
-        <div class="banners-box">
-          <span class="glyphicon glyphicon-earphone glyphicon--banners"></span>
-          <b class="banners__title">CALL US ANYTIME</b>
-          +386 31 567 537
-        </div>
-      </div>
-      <div class="col-xs-12  col-sm-6  col-md-3">
-        <div class="banners-box">
-          <span class="glyphicon glyphicon-road glyphicon--banners"></span>
-          <b class="banners__title">FREE DELIVERY</b>
-          Anywhere worldwide
-        </div>
-      </div>
-      <div class="col-xs-12  col-sm-6  col-md-3">
-        <div class="banners-box">
-          <span class="glyphicon glyphicon-credit-card glyphicon--banners"></span>
-          <b class="banners__title">PAYMENT METHODS</b>
-          Credit cards, Paypal ...
-        </div>
-      </div>
-      <div class="col-xs-12  col-sm-6  col-md-3">
-        <div class="banners-box">
-          <span class="glyphicon glyphicon-leaf glyphicon--banners"></span>
-          <b class="banners__title">MADE WITH LOVE</b>
-          For mother nature
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <!-- Title for motivational stories -->
-<div class="row">
-  <div class="col-xs-12">
-    <div class="main__title">
-      <h3 class="main__title__text"><span class="light">Why</span> is Quality Food Very Important?</h3>
-    </div>
-  </div>
-</div>
-
-<!-- Motivational stories -->
-<div class="motivational-stories">
-  <div class="row">
-    <div class="col-xs-12  col-sm-4  push-down-30">
-      <div class="motivational-stories__circle">
-        <span class="glyphicon  glyphicon-heart"></span>
-      </div>
-      <h5>It is good for your heart</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor pulvinar et, cursus quis neque. Donec suscipit dui leo, vehicula pellentesque nunc rhoncus vel. Aliquam tempus justo eu orci faucibus fermentum. </p>
-    </div>
-    <div class="col-xs-12  col-sm-4  push-down-30">
-      <div class="motivational-stories__circle">
-        <span class="glyphicon  glyphicon-leaf"></span>
-      </div>
-      <h5>Because it is from nature</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor pulvinar et, cursus quis neque. Donec suscipit dui leo, vehicula pellentesque nunc rhoncus vel. Aliquam tempus justo eu orci faucibus fermentum. </p>
-    </div>
-    <div class="col-xs-12  col-sm-4  push-down-30">
-      <div class="motivational-stories__circle">
-        <span class="glyphicon  glyphicon-record"></span>
-      </div>
-      <h5>It increase your health resistance</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor pulvinar et, cursus quis neque. Donec suscipit dui leo, vehicula pellentesque nunc rhoncus vel. Aliquam tempus justo eu orci faucibus fermentum. </p>
-    </div>
-  </div>
-</div>
-</div>
-<div class="testimonials  team-slider  light-paper-pattern">
+<div class="breadcrumbs">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <a href="#js--team-carousel" data-slide="prev"><span class="glyphicon  glyphicon-circle  glyphicon-chevron-left"></span></a>
-        <h3 class="testimonials__title"><span class="light">Meet</span> the Team</h3>
-        <a href="#js--team-carousel" data-slide="next"><span class="glyphicon  glyphicon-circle  glyphicon-chevron-right"></span></a>
-        <div class="push-down-35"></div>
-      </div>
-    </div>
-    <div id="js--team-carousel" class="carousel  slide" data-ride="carousel" data-interval="5000">
-      <div class="carousel-inner">
-        <div class="item  active">
-          <div class="row">
-            <div class="col-xs-12  col-sm-3">
-              <img alt="#" class="product__image  team-image" src="images/dummy-licensed/team-1.jpg">
-              <h5>Carl Hansen,</h5>
-              <span class="team-slider__title">Chief executive officer</span>
-            </div>
-            <div class="col-xs-12  col-sm-3">
-              <img alt="#" class="product__image  team-image" src="images/dummy-licensed/team-2.jpg">
-              <h5>Anna Evans,</h5>
-              <span class="team-slider__title">Certificated ecologist</span>
-            </div>
-            <div class="col-xs-12  col-sm-3">
-              <img alt="#" class="product__image  team-image" src="images/dummy-licensed/team-3.jpg">
-              <h5>Heather Reynolds,</h5>
-              <span class="team-slider__title">Product manager</span>
-            </div>
-            <div class="col-xs-12  col-sm-3">
-              <img alt="#" class="product__image  team-image" src="images/dummy-licensed/team-4.jpg">
-              <h5>Andrew Stanley</h5>
-              <span class="team-slider__title">Eco - farmer</span>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="row">
-            <div class="col-xs-12  col-sm-3">
-              <img alt="#" class="product__image  team-image" src="images/dummy-licensed/team-1.jpg">
-              <h5>Carl Hansen,</h5>
-              <span class="team-slider__title">Chief executive officer</span>
-            </div>
-            <div class="col-xs-12  col-sm-3">
-              <img alt="#" class="product__image  team-image" src="images/dummy-licensed/team-2.jpg">
-              <h5>Anna Evans,</h5>
-              <span class="team-slider__title">Certificated ecologist</span>
-            </div>
-            <div class="col-xs-12  col-sm-3">
-              <img alt="#" class="product__image  team-image" src="images/dummy-licensed/team-3.jpg">
-              <h5>Heather Reynolds,</h5>
-              <span class="team-slider__title">Product manager</span>
-            </div>
-            <div class="col-xs-12  col-sm-3">
-              <img alt="#" class="product__image  team-image" src="images/dummy-licensed/team-4.jpg">
-              <h5>Andrew Stanley</h5>
-              <span class="team-slider__title">Eco - farmer</span>
-            </div>
-          </div>
-        </div>
+        <nav>
+          <ol class="breadcrumb">
+            
+            <li><a href="index.html">Home</a></li>
+            
+            <li><a href="contact.php">Contact</a></li>
+            
+            <li class="active">First Option</li>
+            
+          </ol>
+        </nav>
       </div>
     </div>
   </div>
 </div>
-<div class="container">
+<div class="container  push-down-30">
   <div class="row">
-  <div class="col-xs-12  col-sm-4">
-    <div class="widgets__navigation">
-      <div class="widgets__heading--line">
-        <h4 class="widgets__heading">Saving Calculator!</h4>
+    <div class="col-xs-12">
+      <h1 class="center"><span class="light">Contact</span> Us</h1>
+      <hr class="divider">
+      <div class="text-shrink">
+        <p class="text-highlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate, leo vel malesuada tincidunt, purus nunc tristique erat, at elementum tellus mi nec mi. Nunc rutrum ullamcorper blandit.</p>
       </div>
-      <form class="form-horizontal" role="form">
-  <div class="form-group">
-    <label for="currentBrand" class="col-sm-6 control-label" style="font-family:arial;">Current brand</label>
-    <div class="col-sm-6">
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="current brand name"> 
-        <div class="input-group-btn">
-          <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-          <ul id="cal_productList" class="dropdown-menu pull-right">
-            <li><a href="#" data-price="50">Infant Formula</a></li>
-            <li><a href="#" data-price="70">Follow-On Formula</a></li>
-            <li><a href="#" data-price="90">Growing-Up Formula</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Tire 1</a></li>
-          </ul>
-        </div><!-- /btn-group -->
-      </div><!-- /input-group -->
-
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="currentPrice" class="col-sm-6 control-label" style="font-family:arial;">Current price</label>
-    <div class="col-sm-6">
-      <div class="input-group">
-      <div class="input-group-addon">$</div>
-      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
-      <div class="input-group-addon">.00</div>
-    </div>
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="tins" class="col-sm-6 control-label" style="font-family:arial;">How many tins per month</label>
-    <div class="col-sm-3">
-      <input type="text" class="form-control" id="tins" placeholder="tins">
-    </div>
-  </div>
-  <div class="form-group"> 
-    <div class="col-sm-offset-4 col-sm-5"> 
-      <button id="cal_action" type="submit" class="btn btn-primary">Calculator</button> 
-    </div>
-  </div>
-      <div id="cal_priceBan" class="alert hidden alert-default text-center  uppercase  fade  in"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-        <p><span class="glyphicon glyphicon-info-sign"></span> You will saving</p>
-        <p class="text-danger">500 RMB per year</p>
-        <p>if you choose Nutracare!</p>          
+      <hr class="divider  divider-about">
+      <div class="push-down-30"></div>
+      <div class="row">
+        <div class="col-xs-12  col-sm-3  push-down-30">
+        <h2  class="no-margin"><span class="light">Organique</span> Itd</h2><br/>
+        <p><strong>Dunajska cesta 17,<br>
+        1000 Ljubljana,<br>
+        Slovenia, Europe</strong></p>
+        <span class="glyphicon  glyphicon-earphone"></span> <span class="text-dark">00386 31 567 537</span><br>
+        <span class="glyphicon  glyphicon-envelope"></span> <a class="secondary-link" href="mailto:hello@proteusnet.com"><strong>hello@proteusnet.com</strong></a>
+        </div>
+        <div class="col-xs-12  col-sm-9">
+          <?php
+            include_once( 'php-form/send-email.php' );
+          ?>
+        </div>
       </div>
-
-</form>
- 
-    </div>
-  </div>
-  <div class="col-xs-12  col-sm-4">
-    <div class="widgets__navigation">
-      <div class="widgets__heading--line">
-        <h4 class="widgets__heading">Gallery</h4>
+      <div class="push-down-30">
+        <h1 class="center"><span class="light">Our</span> Location And Opening Times</h1>
+        <hr class="divider">
       </div>
       <div class="row">
-        
-        <div class="col-xs-4  col-lg-3  push-down-15">
-          <img alt="#" class="product__image" src="images/dummy/w78/1.jpg" width="78" height="78">
-        </div>
-        <div class="col-xs-4  col-lg-3  push-down-15">
-          <img alt="#" class="product__image" src="images/dummy/w78/2.jpg" width="78" height="78">
-        </div>
-        <div class="col-xs-4  col-lg-3  push-down-15">
-          <img alt="#" class="product__image" src="images/dummy/w78/13.jpg" width="78" height="78">
-        </div>
-        
-        <div class="col-xs-4  col-lg-3  push-down-15">
-          <img alt="#" class="product__image" src="images/dummy/w78/1.jpg" width="78" height="78">
-        </div>
-        <div class="col-xs-4  col-lg-3  push-down-15">
-          <img alt="#" class="product__image" src="images/dummy/w78/2.jpg" width="78" height="78">
-        </div>
-        <div class="col-xs-4  col-lg-3  push-down-15">
-          <img alt="#" class="product__image" src="images/dummy/w78/13.jpg" width="78" height="78">
-        </div>
-        
-        <div class="col-xs-4  col-lg-3  push-down-15">
-          <img alt="#" class="product__image" src="images/dummy/w78/1.jpg" width="78" height="78">
-        </div>
-        <div class="col-xs-4  col-lg-3  push-down-15">
-          <img alt="#" class="product__image" src="images/dummy/w78/2.jpg" width="78" height="78">
-        </div>
-        <div class="col-xs-4  col-lg-3  push-down-15">
-          <img alt="#" class="product__image" src="images/dummy/w78/13.jpg" width="78" height="78">
-        </div>
-        
-        <div class="col-xs-4  col-lg-3  push-down-15">
-          <img alt="#" class="product__image" src="images/dummy/w78/1.jpg" width="78" height="78">
-        </div>
-        <div class="col-xs-4  col-lg-3  push-down-15">
-          <img alt="#" class="product__image" src="images/dummy/w78/2.jpg" width="78" height="78">
-        </div>
-        <div class="col-xs-4  col-lg-3  push-down-15">
-          <img alt="#" class="product__image" src="images/dummy/w78/13.jpg" width="78" height="78">
-        </div>
-        
-      </div>
-    </div>
-  </div> 
-  <div class="col-xs-12  col-sm-4">
-    <div class="widgets__navigation">
-      <div class="widgets__heading--line">
-        <h4 class="widgets__heading">Weekly Recipe</h4>
-      </div>
-      <img alt="#" class="product__image  push-down-10" src="images/dummy-licensed/recipe.jpg" width="353" height="186">
-      <div class="products__title">
-        Delicious organic big-ecologic sandwich
-      </div>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est purus, fringilla sit amet arcu quis, feugiat ultrices metus. Vestibulum lorem dolor, pharetra sit amet urna nec, hendrerit scelerisque risus.
-    </div>
+        <div class="col-xs-12  col-sm-3  push-down-30">
+          <div class="contact__opening-time">
+            <!-- Opening Times Widget -->
+<div class="sidebar-item  opening-time  light-paper-pattern">
+  <h3 class="opening-time__title">Opening time</h3>
+  <hr class="divider-dark">
+  <div class="time-table  js--timetable">
+    <dl class="week-day" data-day="1">
+      <dt>
+        Monday
+      </dt>
+      <dd>
+        8:00 - 16:00
+      </dd>
+    </dl>
+    <dl class="week-day" data-day="2">
+      <dt>
+        Tuesday
+      </dt>
+      <dd>
+        8:00 - 16:00
+      </dd>
+    </dl>
+    <dl class="week-day" data-day="3">
+      <dt>
+        Wednesday
+      </dt>
+      <dd>
+        8:00 - 16:00
+      </dd>
+    </dl>
+    <dl class="week-day" data-day="4">
+      <dt>
+        Thursday
+      </dt>
+      <dd>
+        8:00 - 16:00
+      </dd>
+    </dl>
+    <dl class="week-day" data-day="5">
+      <dt>
+        Friday
+      </dt>
+      <dd>
+        8:00 - 16:00
+      </dd>
+    </dl>
+    <dl class="week-day" data-day="6">
+      <dt>
+        Saturday
+      </dt>
+      <dd>
+        8:00 - 16:00
+      </dd>
+    </dl>
+    <dl class="week-day  closed" data-day="0">
+      <dt>
+        Sunday
+      </dt>
+      <dd>
+        CLOSED
+      </dd>
+    </dl>
   </div>
 </div>
-  <!-- Banners big -->
-<div class="banners--big  banners--big-left">
-  <div class="row">
-    <div class="col-xs-12  col-md-7">
-      <div class="banners--big__text">
-        Sign up on newsletter for more information about <strong>ProteusThemes</strong>
-      </div>
-    </div>
-    <div class="col-xs-12  col-md-5">
-      <div class="banners--big__form">
-        <form action="http://proteusthemes.us4.list-manage.com/subscribe/post?u=ea0786485977f5ec8c9283d5c&amp;id=5dad3f35e9" method="post" name="mc-embedded-subscribe-form" role="form" target="_blank">
-          <div class="form-group  form-group--form">
-            <input type="email" name="EMAIL" class="form-control  form-control--form" placeholder="Enter your E-mail address" required>
-            <button class="btn  btn-primary" type="submit">Sign up now</button>
-          </div>
-          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <div style="position: absolute; left: -5000px;"><input type="text" name="b_ea0786485977f5ec8c9283d5c_5dad3f35e9" value=""></div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-  <div class="row">
-  <div class="col-xs-12  col-sm-4  push-down-30">
-    <div class="banners--medium  banners--medium--info">
-      The Beginnings
-    </div>
-    Ut consectetur, magna non accumsan laoreet, enim justo varius tortor, non ornare lacus lacus eu quam. Sed id leo sit amet leo facilisis consequat. Donec eget libero sed ante faucibus dignissim in vehicula sem. Mauris gravida neque vel nibh condimentum tincidunt. Cras interdum lacus eu ipsum lobortis viverra. Integer lorem justo, elementum malesuada pretium vel, egestas a eros. Curabitur consectetur nisl augue.
-  </div>
-  <div class="col-xs-12  col-sm-4  push-down-30">
-    <div class="banners--medium  banners--medium--info">
-      Nowdays
-    </div>
-    Ut consectetur, magna non accumsan laoreet, enim justo varius tortor, non ornare lacus lacus eu quam. Sed id leo sit amet leo facilisis consequat. Donec eget libero sed ante faucibus dignissim in vehicula sem. Mauris gravida neque vel nibh condimentum tincidunt. Cras interdum lacus eu ipsum lobortis viverra. Integer lorem justo, elementum malesuada pretium vel, egestas a eros. Curabitur consectetur nisl augue.
-  </div>
-  <div class="col-xs-12  col-sm-4  push-down-30">
-    <div class="banners--medium  banners--medium--info">
-      Our Belief For the Future
-    </div>
-    Ut consectetur, magna non accumsan laoreet, enim justo varius tortor, non ornare lacus lacus eu quam. Sed id leo sit amet leo facilisis consequat. Donec eget libero sed ante faucibus dignissim in vehicula sem. Mauris gravida neque vel nibh condimentum tincidunt. Cras interdum lacus eu ipsum lobortis viverra. Integer lorem justo, elementum malesuada pretium vel, egestas a eros. Curabitur consectetur nisl augue.
-  </div>
-</div>
-</div>
-<div class="testimonials  light-paper-pattern">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-3  hidden-xs">
-        <div class="testimonials__quotes">
-          <img alt="#" class="testimonials__quotes--img" src="images/quotes.png">
-        </div>
-      </div>
-      <div class="col-xs-12  col-sm-6">
-        <a href="#js--testimonails-carousel" data-slide="prev"><span class="glyphicon  glyphicon-circle  glyphicon-chevron-left"></span></a>
-        <h4 class="testimonials__title"><span class="light">Others</span> About Us</h4>
-        <a href="#js--testimonails-carousel" data-slide="next"><span class="glyphicon  glyphicon-circle  glyphicon-chevron-right"></span></a>
-        <hr class="divider-dark">
-        <div id="js--testimonails-carousel" class="carousel  slide" data-ride="carousel" data-interval="5000">
-          <div class="carousel-inner">
-            <div class="item  active">
-              <q class="testimonials__text">A top quality product delivered super quick! Thank you so much Organic Shop,<br>I shall definitely be using you guys again!</q><br><br>
-              <cite><b>John Don Joe,</b></cite> Musician
-            </div>
-            <div class="item">
-              <q class="testimonials__text">THANKS! I really appreciate the FAST service of Proteus! Really Really Happy with the theme and support! Thanks again.</q><br><br>
-              <cite><b>Timonvki,</b></cite> Themeforest user
-            </div>
-            <div class="item">
-              <q class="testimonials__text">Great theme, perfect for any salon. Client loves it. Very good documentation and easy to use and setup.</q><br><br>
-              <cite><b>Ypclarke,</b></cite> Themeforest user
-            </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm-3  hidden-xs">
-        <div class="testimonials__quotes--rotate">
-          <img alt="#" class="testimonials__quotes--img" src="images/quotes.png">
+        <div class="col-xs-12  col-sm-9">
+          <div class="simple-map  js--where-we-are"></div>
         </div>
       </div>
+
     </div>
   </div>
 </div>
-<div class="simple-map  js--where-we-are" data-latlng="46.049467,14.460506" data-markers="[{lat: 46.049467,lng: 14.460506,title: 'ProteusThemes Ljubljana'},{lat: 46.020569,lng: 15.476118,title: 'ProteusThemes Senovo'}]" data-zoom="6"></div>
   <footer class="js--page-footer">
     <div class="footer-widgets">
       <div class="container">

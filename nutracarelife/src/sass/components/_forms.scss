@@ -1,1 +1,16 @@
 //amend of bootstrap default form layout 
+.input-group-btn{
+
+	.btn{
+		border:none;
+		padding:7px 7px;
+	}
+	&.open{
+		.dropdown-menu {
+			visibility:visible;
+			opacity: 1;
+		}		
+	}
+
+
+}
