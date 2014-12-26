@@ -569,7 +569,7 @@
     <label for="currentBrand" class="col-sm-6 control-label" style="font-family:arial;">Current brand</label>
     <div class="col-sm-6">
       <div class="input-group">
-        <input type="text" id="cal_productName" class="form-control" placeholder="current brand name"> 
+        <input type="text" id="cal_productName" class="form-control" placeholder="Product Name"> 
         <div class="input-group-btn">
           <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
           <ul id="cal_productList" class="dropdown-menu pull-right">
@@ -597,7 +597,12 @@
   <div class="form-group">
     <label for="tins" class="col-sm-6 control-label" style="font-family:arial;">How many tins per month</label>
     <div class="col-sm-3">
-      <input type="text" class="form-control" id="cal_tins" placeholder="tins">
+      <!--<input type="text" class="form-control" id="cal_tins" placeholder="tins">-->
+       <div class="quantity  js--quantity" style="width:125px;">
+            <input type="button" value="-" class="quantity__button  js--minus-one  js--clickable">
+            <input type="text" id="cal_tins" name="quantity" value="1" class="quantity__input">
+            <input type="button" value="+" class="quantity__button  js--plus-one  js--clickable">
+        </div>
     </div>
   </div>
   <div class="form-group"> 

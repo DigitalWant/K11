@@ -1,2 +1,17 @@
 //amend of bootstrap default form layout 
- 
+
+#savingForm {
+		.dropdown-menu {
+			li{
+				a {
+					color:darken($tertiary-color,15%);
+					img {
+						padding-right:5px;
+						margin-right:5px;
+						border-right:1px solid $tertiary-color;
+					}
+				}
+			}
+			
+		}	
+ }
