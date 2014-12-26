@@ -139,15 +139,47 @@ require(['jquery', 'AffixMenu', 'IsotopeShop', 'SimpleMap', 'AttachedNavbar', 'e
 		if ( $('#cal_productList').length < 1 ) {
 			return;
 		}
+
 		var $productList = $('#cal_productList');
+		var $productListItems = $('a',$productList);
+		var $productName = $('#cal_productName');
+		var $productPrice = $('#cal_productPrice');
 		var $action = $('#cal_action');
 		var $priceBan = $('#cal_priceBan');
-		$action.on('click',function(e){
-			//alert('test');
+		var $productTins = $('#cal_tins');
+		var $cal_error = $('#cal_error');
+
+
+		var algorithm = function(current_unit_price,umber_of_tins_per_month){
+			return (current_unit_price*umber_of_tins_per_month*12)-(umber_of_tins_per_month*199*12+200);
+		}
+
+
+		//put product name and value 
+		$productListItems.on('click',function(e){
 			e.preventDefault();
-			$priceBan.removeClass('hidden');
+			var $thisItem = $(this);
+			var thisPrice = $thisItem.attr('data-price');
+			var thisName = $thisItem.text();
+			$productName.val(thisName);
+			$productPrice.val(thisPrice);
 		})
-		//Saving Value = (<current unit price> x <number of tins per month> x 12) – (<number of tins per month> x 199 x 12 +200) 
+
+		$priceBan.hide();	
+		$cal_error.hide();
+		
+		//click button action
+		$action.on('click',function(e){
+			e.preventDefault();
+			if ($productPrice.val()&&$productTins.val()){
+				$priceBan.find('b').text(algorithm($productPrice.val(),$productTins.val()));
+				$priceBan.show();
+				$cal_error.hide();				
+			} else {
+				$priceBan.hide();
+				$cal_error.show();
+			}
+		})
 
 	})();
 

@@ -564,22 +564,22 @@
       <div class="widgets__heading--line">
         <h4 class="widgets__heading">Saving Calculator!</h4>
       </div>
-      <form class="form-horizontal" role="form">
+      <form class="form-horizontal" role="form" id="savingForm">
   <div class="form-group">
     <label for="currentBrand" class="col-sm-6 control-label" style="font-family:arial;">Current brand</label>
     <div class="col-sm-6">
       <div class="input-group">
-        <input type="text" class="form-control" placeholder="current brand name"> 
+        <input type="text" id="cal_productName" class="form-control" placeholder="current brand name"> 
         <div class="input-group-btn">
           <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
           <ul id="cal_productList" class="dropdown-menu pull-right">
-            <li><a href="#" data-price="50">Infant Formula</a></li>
-            <li><a href="#" data-price="70">Follow-On Formula</a></li>
-            <li><a href="#" data-price="90">Growing-Up Formula</a></li>
-            <li class="divider"></li>
             <li><a href="#">Tire 1</a></li>
+            <li class="divider"></li> 
+            <li><a href="#" data-price="50"><img src="images/dummy/product1.jpg" />Infant Formula</a></li>
+            <li><a href="#" data-price="70"><img src="images/dummy/product3.jpg" />Follow-On Formula</a></li>
+            <li><a href="#" data-price="90"><img src="images/dummy/product1.jpg" />Growing-Up Formula</a></li>
           </ul>
-        </div><!-- /btn-group -->
+        </div><!-- /btn-group --> 
       </div><!-- /input-group -->
 
     </div>
@@ -589,7 +589,7 @@
     <div class="col-sm-6">
       <div class="input-group">
       <div class="input-group-addon">$</div>
-      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+      <input type="text" class="form-control text-right" id="cal_productPrice" placeholder="Amount">
       <div class="input-group-addon">.00</div>
     </div>
     </div>
@@ -597,7 +597,7 @@
   <div class="form-group">
     <label for="tins" class="col-sm-6 control-label" style="font-family:arial;">How many tins per month</label>
     <div class="col-sm-3">
-      <input type="text" class="form-control" id="tins" placeholder="tins">
+      <input type="text" class="form-control" id="cal_tins" placeholder="tins">
     </div>
   </div>
   <div class="form-group"> 
@@ -605,12 +605,14 @@
       <button id="cal_action" type="submit" class="btn btn-primary">Calculator</button> 
     </div>
   </div>
-      <div id="cal_priceBan" class="alert hidden alert-default text-center  uppercase  fade  in"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+      <div id="cal_priceBan" class="alert alert-default text-center  uppercase  fade  in"><button type="button" class="close" data-hide="alert" aria-hidden="true">×</button>
         <p><span class="glyphicon glyphicon-info-sign"></span> You will saving</p>
-        <p class="text-danger">500 RMB per year</p>
-        <p>if you choose Nutracare!</p>          
+        <p class="text-danger"><b>500</b> RMB per year</p>
+        <p>if you choose Nutracare!</p>       
       </div>
-
+      <div id="cal_error"  class="alert  alert-danger  uppercase  fade  in"><button type="button" class="close" data-hide="alert" aria-hidden="true">×</button>
+      Please select your product and amount!
+    </div>
 </form>
  
     </div>

@@ -1,9 +1,9 @@
 
 // Footer widgets
 .footer-widgets {
-  color: $lighter-color;
+  color: $lighter-color; 
   position: relative;
-  background-color: $footer-secondary-color;
+  background-color: $footer-secondary-color; 
 
   // Divider betwen footer and footer widgets
   &:after {
