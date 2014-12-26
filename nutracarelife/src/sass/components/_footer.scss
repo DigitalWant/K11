@@ -6,7 +6,7 @@
   background-color: $footer-secondary-color; 
 
   // Divider betwen footer and footer widgets
-  &:after {
+  &:after { 
    // @extend %background-primary-color;
     background-image: image-url("quality.png");
     background-position:  center center;
