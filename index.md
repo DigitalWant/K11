@@ -16,6 +16,8 @@ tagline: Supporting tagline
 
 [Jinjiang](/jinjiang/carve/html/)
 
+[Jinjiang wechat project](/jinjiang/mobileApp/)
+
 [Nutracare](/nutracarelife/build/home-slider-sticky-navbar.html)
 
 ```</2014>```
