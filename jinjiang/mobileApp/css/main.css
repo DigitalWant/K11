@@ -49,10 +49,26 @@
 	padding: 0px;
 	background-image: url(../img/bg-keylist.jpg);
 	background-repeat: no-repeat;
+	cursor: default;
+}
+#intro a.unlocked {
+	cursor: pointer;
+	filter: saturate(100%);
+	-webkit-filter: saturate(100%);
+	-moz-filter: saturate(100%);
+	-o-filter: saturate(100%);
+	-ms-filter: saturate(100%);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 #intro img {
 	width: 100%;
 	min-height: 100%;
 	height: 100%;
 	display: none;
+
 }
+

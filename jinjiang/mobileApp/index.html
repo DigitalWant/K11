@@ -50,7 +50,7 @@
 
 	<div role="main" class="ui-content">
 		<img src="http://placehold.it/320x480&amp;text=dishInfo1" />
-		<a href="#intro">back key list</a>
+		<a href="#intro" class="backToIntro">back key list 1</a>
 	</div><!-- /content -->
 </div><!-- /page popup -->
 
@@ -60,7 +60,7 @@
 <div data-role="page" id="hotelInfo2" >
 	<div role="main" class="ui-content">
 		<img src="http://placehold.it/320x480&amp;text=hotelInfo2" />
-		<a href="#dishInfo1">dish2 intro</a>
+		<a href="#dishInfo2">dish2 intro</a>
 
 	</div><!-- /content -->
 </div><!-- /page popup -->
@@ -72,7 +72,7 @@
 
 	<div role="main" class="ui-content">
 		<img src="http://placehold.it/320x480&amp;text=dishInfo2" />
-		<a href="#intro">back key list</a>
+		<a href="#intro" class="backToIntro" >back key list 2</a>
 	</div><!-- /content -->
 </div><!-- /page popup -->
 
@@ -82,7 +82,7 @@
 <div data-role="page" id="hotelInfo3" >
 	<div role="main" class="ui-content">
 		<img src="http://placehold.it/320x480&amp;text=hotelInfo3" />
-		<a href="#dishInfo3">dish1 intro</a>
+		<a href="#dishInfo3">dish3 intro</a>
 
 	</div><!-- /content -->
 </div><!-- /page popup -->
@@ -94,7 +94,7 @@
 
 	<div role="main" class="ui-content">
 		<img src="http://placehold.it/320x480&amp;text=dishInfo3" />
-		<a href="#intro">back key list</a>
+		<a href="#intro" class="backToIntro">back key list 3</a>
 	</div><!-- /content -->
 </div><!-- /page popup -->
 
@@ -145,7 +145,7 @@
 	<div role="main" class="ui-content">
 		<h2>Popup</h2>
 		<p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>
-		<p><a href="#intro" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "one"</a></p>
+		<p><a href="#intro" class="backToIntro ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "one"</a></p>
 	</div><!-- /content -->
 
 	<div data-role="footer">
@@ -153,11 +153,30 @@
 	</div><!-- /footer -->
 </div><!-- /page popup -->
 
-	<script id="panel-init">
+
+
+<script id="panel-init">
 		//$(function() {
+
 			//rule tips 
+			var steps = [false,false,false,false];
 			var $rulePanel = $( "body>[data-role='panel']" ).panel();
 			var $ruleTips = $("#ruleTip");
+			var $listKey = $("#intro [data-role=listview] A");
+			var $backToIntro = $(".backToIntro");
+			
+			steps[0]=true;
+
+			// Bind an event to window.orientationchange that, when the device is turned,
+			// gets the orientation and displays it to on screen.
+			$( window ).on( "orientationchange", function( event ) {
+				console.log("This device is in " + event.orientation + " mode!" );
+			  //$( "#popup" ).text( "This device is in " + event.orientation + " mode!" );
+			});
+			 
+			// You can also manually force this event to fire.
+			$( window ).orientationchange();
+
 			$rulePanel.on('panelbeforeopen',function(){
 				$ruleTips.addClass('open');
 			})
@@ -165,9 +184,23 @@
 				$ruleTips.removeClass('open');
 			})
 
+			// When entering intro
+			$(document).on("pagebeforeshow","#intro",function(){ 
+				for( i in steps){
+					if (steps[i] == true){
+						$listKey.eq(i).addClass('unlocked');
+					}
+				}
+			});
+
+			//Reach the step end, mark on global
+			$backToIntro.on('click',function(){
+				var nextIndex = $backToIntro.index($(this))+1;
+				steps[nextIndex] = true;
+			})
 
 		//});
-	</script>
+</script>
 <script type="text/javascript">
 
 
