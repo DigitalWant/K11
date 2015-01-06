@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile Demos</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script id="panel-init">
+		$(function() {
+			$( "body>[data-role='panel']" ).panel();
+		});
+	</script>
+</head>
+<body>
+
+<!-- Start of main page -->
+<div data-role="page" id="main">
+	<div role="main" class="ui-content">
+		<p>I'm first in the source order so I'm shown as the page.</p>
+		<p>View internal page called <a href="#intro">Enter</a></p>
+
+	</div><!-- /content -->
+
+
+</div><!-- /page -->
+
+<!-- Start of intro page -->
+<div data-role="page" id="intro">
+	<div role="main" class="ui-content" style="height:100%;">
+		<ul data-role="listview" style="height:100%;" ><!--
+		--><li style="height:25%;"><a href="#hotelInfo1"><img src="http://placehold.it/450x150&amp;text=Level%201" style="max-width:100%;" /></a></li><!-- 
+		--><li style="height:25%;"><a href="#hotelInfo2"><img src="http://placehold.it/450x150&amp;text=Level%202" style="max-width:100%;" /></a></li><!-- 
+		--><li style="height:25%;"><a href="#hotelInfo3"><img src="http://placehold.it/450x150&amp;text=Level%203" style="max-width:100%;" /></a></li><!-- 
+		--><li style="height:25%;"><a href="#hotelInfo4"><img src="http://placehold.it/450x150&amp;text=Level%204" style="max-width:100%;" /></a></li><!--
+		--></ul>
+	</div><!-- /content -->
+	
+</div><!-- /page -->
+
+
+
+
+<!-- Start of hotelInfo  -->
+<div data-role="page" id="hotelInfo1" >
+	<div role="main" class="ui-content">
+		<img src="http://placehold.it/320x480&amp;text=hotelInfo1" />
+		<a href="#dishInfo1">dish1 intro</a>
+	</div><!-- /content -->
+</div><!-- /page popup -->
+<!-- Start of dishInfo  -->
+<div data-role="page" id="dishInfo1" >
+	<div data-role="header">
+		<h1>logo</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<img src="http://placehold.it/320x480&amp;text=dishInfo1" />
+		<a href="#intro">back key list</a>
+	</div><!-- /content -->
+</div><!-- /page popup -->
+
+
+
+<!-- Start of hotelInfo  -->
+<div data-role="page" id="hotelInfo2" >
+	<div role="main" class="ui-content">
+		<img src="http://placehold.it/320x480&amp;text=hotelInfo2" />
+		<a href="#dishInfo1">dish2 intro</a>
+
+	</div><!-- /content -->
+</div><!-- /page popup -->
+<!-- Start of dishInfo  -->
+<div data-role="page" id="dishInfo2" >
+	<div data-role="header">
+		<h1>logo</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<img src="http://placehold.it/320x480&amp;text=dishInfo2" />
+		<a href="#intro">back key list</a>
+	</div><!-- /content -->
+</div><!-- /page popup -->
+
+
+
+<!-- Start of hotelInfo  -->
+<div data-role="page" id="hotelInfo3" >
+	<div role="main" class="ui-content">
+		<img src="http://placehold.it/320x480&amp;text=hotelInfo3" />
+		<a href="#dishInfo3">dish1 intro</a>
+
+	</div><!-- /content -->
+</div><!-- /page popup -->
+<!-- Start of dishInfo  -->
+<div data-role="page" id="dishInfo3" >
+	<div data-role="header">
+		<h1>logo</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<img src="http://placehold.it/320x480&amp;text=dishInfo3" />
+		<a href="#intro">back key list</a>
+	</div><!-- /content -->
+</div><!-- /page popup -->
+
+
+<!-- Start of hotelInfo  -->
+<div data-role="page" id="hotelInfo4" >
+	<div role="main" class="ui-content">
+		<img src="http://placehold.it/320x480&amp;text=hotelInfo4" />
+		<a href="#dishInfo4">dish4 intro</a>
+
+	</div><!-- /content -->
+</div><!-- /page popup -->
+<!-- Start of dishInfo  -->
+<div data-role="page" id="dishInfo4" >
+	<div data-role="header">
+		<h1>logo</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<img src="http://placehold.it/320x480&amp;text=dishInfo4" />
+		<p><a href="#popup" data-rel="dialog" data-transition="pop">完成</a></p>
+	</div><!-- /content -->
+</div><!-- /page popup -->
+
+
+
+
+
+
+
+<!-- leftpanel3  -->
+<div data-role="panel" id="rule" data-position="left" data-display="overlay" >
+<a href="#rule" id="ruleTip" >游戏规则</a>
+	 <h3>Left Panel: Overlay</h3>
+    <p>This panel is positioned on the left with the overlay display mode. The panel markup is <em>after</em> the header, content and footer in the source order.</p>
+    <p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p>
+    <a href="#demo-links" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Close panel</a>
+
+</div><!-- /leftpanel3 -->
+
+<!-- Start of pop page: #popup -->
+<div data-role="page" id="popup">
+
+	<div data-role="header">
+		<h1>Dialog</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Popup</h2>
+		<p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>
+		<p><a href="#intro" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "one"</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+
+<script type="text/javascript">
+
+
+/*	
+$.widget( "custom.progressbar", {
+    options: {
+        value: 0
+    },
+    _create: function() {
+    	console.log('0');
+        this.options.value = this._constrain(this.options.value);
+        this.element.addClass( "progressbar" );
+        this.refresh();
+    },
+    _setOption: function( key, value ) {
+    	console.log('1');
+        if ( key === "value" ) {
+            value = this._constrain( value );
+        }
+        this._super( key, value );
+    },
+    _setOptions: function( options ) {
+    	console.log('2');
+        this._super( options );
+        this.refresh();
+    },
+    refresh: function() {
+    	console.log('3');
+        var progress = this.options.value + "%";
+        this.element.text( progress );
+        if ( this.options.value == 100 ) {
+            this._trigger( "complete", null, { value: 100 } );
+        }
+    },
+    _constrain: function( value ) {
+    	console.log('4');
+
+        if ( value > 100 ) {
+            value = 100;
+        }
+        if ( value < 0 ) {
+            value = 0;
+        }
+        return value;
+    }
+});
+
+
+var bar = $( "<div></div>" )
+    .appendTo( "body" )
+    .progressbar();
+
+
+	bar.progressbar('option','value',330);
+*/
+</script>
+</body>
+</html>
