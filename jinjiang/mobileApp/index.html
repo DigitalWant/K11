@@ -9,11 +9,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
-	<script id="panel-init">
-		$(function() {
-			$( "body>[data-role='panel']" ).panel();
-		});
-	</script>
+
 </head>
 <body>
 
@@ -24,8 +20,6 @@
 		<p>View internal page called <a href="#intro">Enter</a></p>
 
 	</div><!-- /content -->
-
-
 </div><!-- /page -->
 
 <!-- Start of intro page -->
@@ -40,9 +34,6 @@
 	</div><!-- /content -->
 	
 </div><!-- /page -->
-
-
-
 
 <!-- Start of hotelInfo  -->
 <div data-role="page" id="hotelInfo1" >
@@ -123,7 +114,7 @@
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
-		<img src="http://placehold.it/320x480&amp;text=dishInfo4" />
+		<img src="http://placehold.it/320x680&amp;text=dishInfo4" />
 		<p><a href="#popup" data-rel="dialog" data-transition="pop">完成</a></p>
 	</div><!-- /content -->
 </div><!-- /page popup -->
@@ -133,10 +124,10 @@
 
 
 
+<a href="#rule" id="ruleTip" class="ui-panel-animate" >游戏规则</a>
 
 <!-- leftpanel3  -->
-<div data-role="panel" id="rule" data-position="left" data-display="overlay" >
-<a href="#rule" id="ruleTip" >游戏规则</a>
+<div data-role="panel" id="rule" data-position="left" data-display="overlay" data-position-fixed="true" data-theme="b">
 	 <h3>Left Panel: Overlay</h3>
     <p>This panel is positioned on the left with the overlay display mode. The panel markup is <em>after</em> the header, content and footer in the source order.</p>
     <p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p>
@@ -162,7 +153,21 @@
 	</div><!-- /footer -->
 </div><!-- /page popup -->
 
+	<script id="panel-init">
+		//$(function() {
+			//rule tips 
+			var $rulePanel = $( "body>[data-role='panel']" ).panel();
+			var $ruleTips = $("#ruleTip");
+			$rulePanel.on('panelbeforeopen',function(){
+				$ruleTips.addClass('open');
+			})
+			$rulePanel.on('panelbeforeclose',function(){
+				$ruleTips.removeClass('open');
+			})
 
+
+		//});
+	</script>
 <script type="text/javascript">
 
 
