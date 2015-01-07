@@ -138,10 +138,11 @@ tagline: Supporting tagline
           </div>
         </div>
       </div>
+      
        <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingFour">
           <h4 class="panel-title">
-            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="headingFour">
               2012
             </a>
           </h4>
@@ -155,7 +156,7 @@ tagline: Supporting tagline
        <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingFive">
           <h4 class="panel-title">
-            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
               2011
             </a>
           </h4>
@@ -169,7 +170,7 @@ tagline: Supporting tagline
        <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingSix">
           <h4 class="panel-title">
-            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
               2010
             </a>
           </h4>
@@ -183,7 +184,7 @@ tagline: Supporting tagline
        <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingSeven">
           <h4 class="panel-title">
-            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
               2009
             </a>
           </h4>
@@ -197,7 +198,7 @@ tagline: Supporting tagline
        <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingEight">
           <h4 class="panel-title">
-            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseThree">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
               2008
             </a>
           </h4>
