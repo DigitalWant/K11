@@ -197,6 +197,14 @@
 			$backToIntro.on('click',function(){
 				var nextIndex = $backToIntro.index($(this))+1;
 				steps[nextIndex] = true;
+			});
+
+			//key list
+
+			$listKey.on('click',function(e){
+				if (!$(this).hasClass('unlocked')){
+					e.preventDefault();
+				}
 			})
 
 		//});
