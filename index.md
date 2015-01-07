@@ -43,11 +43,13 @@ tagline: Supporting tagline
 ```</2011>```
 
 ```<2012>```
+
+[Tourism victoria](http://www.visitvictoria.com/)
+
 [Remserv](http://www.remserv.com.au/)
 
 [Port of Melbourne](http://portofmelbourne.com.au/)
 
-[Tourism victoria](http://www.visitvictoria.com/)
 
 
 ```</2012>```
@@ -76,6 +78,9 @@ tagline: Supporting tagline
 
 [Prime time](/primeTime)
 
+[Jinjiang wechat project](/jinjiang/mobileApp/)
+
+[Jinjiang](/jinjiang/carve/html/)
 
 ```</2014>```
 
@@ -93,10 +98,7 @@ tagline: Supporting tagline
         </div>
         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
           <div class="panel-body">
-          
-				[Jinjiang wechat project](/jinjiang/mobileApp/)
 
-				[Jinjiang](/jinjiang/carve/html/)
 
 
           </div>
