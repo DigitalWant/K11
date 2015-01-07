@@ -104,6 +104,7 @@ tagline: Supporting tagline
         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
           <div class="panel-body">
 
+[Jinjiang wechat project](/jinjiang/mobileApp/)
 
 
           </div>
