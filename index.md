@@ -92,6 +92,14 @@ tagline: Supporting tagline
 ```</2014>```
 
 
+```<2015>```
+
+[Jinjiang wechat project](/jinjiang/mobileApp/)
+
+
+```</2015>```
+
+
  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
       <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingOne">
@@ -104,7 +112,6 @@ tagline: Supporting tagline
         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
           <div class="panel-body">
 
-[Jinjiang wechat project](/jinjiang/mobileApp/)
 
 
           </div>
@@ -139,7 +146,7 @@ tagline: Supporting tagline
           </div>
         </div>
       </div>
-      
+
        <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingFour">
           <h4 class="panel-title">
