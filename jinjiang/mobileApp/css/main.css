@@ -6,10 +6,10 @@
 	height: 100%;
 }
 #rule{
-	/*
+	/**/
 	color:#fff;
 	background-color: rgba(0,0,0,0.8);
-	text-shadow:none;*/
+	text-shadow:none;
 }
 
 #ruleTip {
@@ -46,29 +46,48 @@
 
 #intro a {
 	min-height: 100%;
+	height: 100%;
 	padding: 0px;
-	background-image: url(../img/bg-keylist.jpg);
-	background-repeat: no-repeat;
+	/*background-image: url(../img/bg-keylist.jpg);
+	background-repeat: no-repeat;*/
 	cursor: default;
 }
 #intro a.unlocked {
 	cursor: pointer;
-	filter: saturate(100%);
-	-webkit-filter: saturate(100%);
-	-moz-filter: saturate(100%);
-	-o-filter: saturate(100%);
-	-ms-filter: saturate(100%);
+
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
+#intro a.unlocked img:first-child {
+	display: none;
+}
+
 #intro img {
 	width: 100%;
 	min-height: 100%;
 	height: 100%;
-	display: none;
+	max-width: 100%;
+	/*display: none;
+	filter: saturate(100%);
+	-webkit-filter: saturate(100%);
+	-moz-filter: saturate(100%);
+	-o-filter: saturate(100%);
+	-ms-filter: saturate(100%);*/
+}
+
+div[id^='hotelInfo'] .ui-content {
+	padding: 0px;
+}
+
+div[id^='dishInfo'] .ui-content{
+
+	padding: 0px;
 
 }
 
+div[id^='hotelInfo'] img, div[id^='dishInfo'] img {
+	width:100%;
+}
