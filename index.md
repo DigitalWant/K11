@@ -5,7 +5,6 @@ tagline: Supporting tagline
 ---
 {% include JB/setup %}
 
-
 ```<2008>```
 
 [Swann Global](http://www.swannglobal.com/)
@@ -93,8 +92,7 @@ tagline: Supporting tagline
 ```</2014>```
 
 
-
-    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+ <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
       <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingOne">
           <h4 class="panel-title">
