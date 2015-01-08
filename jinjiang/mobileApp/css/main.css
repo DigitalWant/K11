@@ -23,8 +23,8 @@
 	background-color: rgba(0,0,0,0.8);
 	position: fixed;
 	left: 0px;
-	bottom: 40px;
-	top:auto;
+	bottom: auto;
+	top: 80%;
 	padding: 10px 0px;
 	color:#fff;
 	width: 3em;
