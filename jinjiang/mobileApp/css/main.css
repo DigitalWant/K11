@@ -5,6 +5,12 @@
 #intro {
 	height: 100%;
 }
+#start{
+	position: fixed;
+	bottom: 20%;
+	top:auto;
+	right:30%;
+}
 #rule{
 	/**/
 	color:#fff;
