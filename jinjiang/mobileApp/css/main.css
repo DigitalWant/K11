@@ -14,20 +14,23 @@
 
 #ruleTip {
 	z-index: 9999;
+	/*
 	-ms-writing-mode: tb-rl;
 	-webkit-writing-mode: vertical-rl;
 	-moz-writing-mode: vertical-rl;
 	-ms-writing-mode: vertical-rl;
-	writing-mode: vertical-rl;
+	writing-mode: vertical-rl;*/
 	text-decoration: none;
 	background-color: rgba(0,0,0,0.8);
 	position: fixed;
 	left: 0px;
 	bottom: auto;
-	top: 80%;
-	padding: 10px 0px;
+	top: auto;
+	bottom:10%;
+	padding: 10px 10px;
 	color:#fff;
-	line-height: 3em;
+	line-height: 1.2em;
+	width: 1em;
 	text-shadow:none;
 }
 
