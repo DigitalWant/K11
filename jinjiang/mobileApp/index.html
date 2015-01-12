@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="ui-loading">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,8 +15,7 @@
 	<script src="js/jquery.waitforimages.min.js"></script><!---->
 
 	<script type="text/javascript" >
-			 $.mobile.loader.prototype.options.theme = "b";
-			$.mobile.loading( 'show');
+		$.mobile.loading( 'show');
 
 		$(document).on( "pagebeforecreate",  function() {
 
@@ -28,7 +27,7 @@
 			    },
 			    each: function() {
 			       // ...
-			        $('html').addClass('ui-loading');
+			       // $('html').addClass('ui-loading');
 			    },
 			    waitForAll: true
 			});
