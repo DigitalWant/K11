@@ -15,25 +15,9 @@
 	<script src="js/jquery.waitforimages.min.js"></script><!---->
 
 	<script type="text/javascript" >
-			$.mobile.loading( 'show');
-
-		$(document).on( "pagebeforecreate",  function() {
 
 
 
-			$('body').waitForImages({
-			    finished: function() {
-			        // ...
-			        $('html').removeClass('ui-loading');
-
-			    },
-			    each: function() {
-			       // ...
-			        $('html').addClass('ui-loading');
-			    },
-			    waitForAll: true
-			});
-		})
 
 	</script>
 </head>
@@ -196,7 +180,21 @@
 
 
 <script type="text/javascript" >
+			$.mobile.loading( 'show');
 
+			$('body').waitForImages({
+			    finished: function() {
+			        // ...
+			        $('html').removeClass('ui-loading');
+
+			    },
+			    each: function() {
+			       // ...
+			        $('html').addClass('ui-loading');
+			    },
+			    waitForAll: true
+			});
+		
 			//rule tips 
 			var steps = [true,false,false,false];
 			var $rulePanel = $( "body>[data-role='panel']" ).panel();
