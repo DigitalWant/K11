@@ -82,6 +82,14 @@
 	-ms-filter: saturate(100%);*/
 }
 
+#intro .unlocked .key {
+	position: absolute;
+	left:0px;
+	top:0px;
+}
+#intro .unlocked .not-animate{
+	opacity: 0;
+}
 div[id^='hotelInfo'] .ui-content {
 	padding: 0px;
 }
