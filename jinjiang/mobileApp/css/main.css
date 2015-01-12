@@ -1,3 +1,6 @@
+.ui-loading div[data-role='page']{
+	display: none;
+}
 #main{
 	background: #c7c1b1 url(../img/bg-start.jpg) no-repeat center bottom;
 	background-size: cover;
@@ -48,22 +51,19 @@
 	margin-top: -2px;
 }
 
-#intro a {
+#intro a,#intro a:focus{
 	min-height: 100%;
 	height: 100%;
 	padding: 0px;
 	/*background-image: url(../img/bg-keylist.jpg);
 	background-repeat: no-repeat;*/
 	cursor: default;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
 }
 #intro a.unlocked {
 	cursor: pointer;
-
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
 }
 #intro a.unlocked img:first-child {
 	display: none;
@@ -82,14 +82,28 @@
 	-ms-filter: saturate(100%);*/
 }
 
-#intro .unlocked .key {
+#intro .key ,#intro .lock {
 	position: absolute;
-	left:0px;
-	top:0px;
-}
-#intro .unlocked .not-animate{
+	left:50%;
+	top:50%;
+	width: auto;
+	height: auto;
+	margin-left: -100px;
+	margin-top: -25px;
+	max-width: 200px;
+	min-height: 50px;
 	opacity: 0;
 }
+#intro .lock {
+	max-width: 50px;
+	margin-left: -25px;
+	opacity: 0.5;
+}
+#intro .unlocked .lock{
+	opacity: 0;
+}
+
+
 div[id^='hotelInfo'] .ui-content {
 	padding: 0px;
 }

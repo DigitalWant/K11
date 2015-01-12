@@ -12,11 +12,31 @@
 	<script src="js/wechat.js"></script>
 	<script src="js/jquery.cookie.js"></script><!---->
 	<script src="js/jquery.transit.min.js"></script><!---->
+	<script src="js/jquery.waitforimages.min.js"></script><!---->
 
+	<script type="text/javascript" >
+			 $.mobile.loader.prototype.options.theme = "b";
+			$.mobile.loading( 'show');
+
+		$(document).on( "pagebeforecreate",  function() {
+
+			$('body').waitForImages({
+			    finished: function() {
+			        // ...
+			        $('html').removeClass('ui-loading');
+
+			    },
+			    each: function() {
+			       // ...
+			        $('html').addClass('ui-loading');
+			    },
+			    waitForAll: true
+			});
+		})
+
+	</script>
 </head>
 <body>
-
-
 
 
 <!-- Start of main page -->
@@ -38,21 +58,25 @@
 		<img src="http://placehold.it/450x150&amp;text=Level%201" />
 		<img src="http://placehold.it/450x150/ffffff&amp;text=Level%201%20unlocked" />
 		<img src="http://placehold.it/450x150&amp;text=Level%201+Key" class="key not-animate" />
+		<img src="http://placehold.it/50x50/000000&amp;text=X" class="lock" />
 		</a></li><!-- 
 		--><li style="height:25%;"><a href="#hotelInfo2">
 		<img src="http://placehold.it/450x150&amp;text=Level%202" />
 		<img src="http://placehold.it/450x150/ffffff&amp;text=Level%202%20unlocked" />
 		<img src="http://placehold.it/450x150&amp;text=Level%202+Key" class="key not-animate" />
+		<img src="http://placehold.it/50x50/000000&amp;text=X" class="lock" />
 		</a></li><!-- 
 		--><li style="height:25%;"><a href="#hotelInfo3">
 		<img src="http://placehold.it/450x150&amp;text=Level%203" />
 		<img src="http://placehold.it/450x150/ffffff&amp;text=Level%203%20unlocked" />
 		<img src="http://placehold.it/450x150&amp;text=Level%203+Key" class="key not-animate" />
+		<img src="http://placehold.it/50x50/000000&amp;text=X" class="lock" />
 		</a></li><!-- 
 		--><li style="height:25%;"><a href="#hotelInfo4">
 		<img src="http://placehold.it/450x150&amp;text=Level%204" />
 		<img src="http://placehold.it/450x150/ffffff&amp;text=Level%204%20unlocked" />
 		<img src="http://placehold.it/450x150&amp;text=Level%204+Key" class="key not-animate" />
+		<img src="http://placehold.it/50x50/000000&amp;text=X" class="lock" />
 		</a></li><!--
 		--></ul>
 	</div><!-- /content -->
@@ -142,7 +166,7 @@
 <a href="#rule" id="ruleTip" class="ui-panel-animate" >游戏规则</a>
 
 <!-- leftpanel3  -->
-<div data-role="panel" id="rule" data-position="left" data-display="overlay" data-position-fixed="true">
+<div data-role="panel" id="rule" data-position="left" data-display="overlay" data-position-fixed="true" >
 	 <h3>Left Panel: Overlay</h3>
     <p>This panel is positioned on the left with the overlay display mode. The panel markup is <em>after</em> the header, content and footer in the source order.</p>
     <p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p>
@@ -157,7 +181,7 @@
 	<div data-role="header">
 		<h1>Dialog</h1>
 	</div><!-- /header -->
-	<div role="main" class="ui-content">
+	<div role="main" class="ui-content scale-text">
 		<h2>Popup</h2>
 		<p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>
 		<p><a href="#intro" class="backToIntro ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "one"</a></p>
@@ -171,7 +195,6 @@
 
 
 <script type="text/javascript" >
-		//$(function() {
 
 			//rule tips 
 			var steps = [true,false,false,false];
@@ -229,9 +252,8 @@
 			});
 
 			$(document).on("pageshow","#intro",function(){ 
-				if ($.cookie('gameStatus')){
-					steps = $.cookie('gameStatus');
-				}
+
+
 				for( i in steps){
 					if (steps[i] == true){				
 						//if the key hasn't animate
@@ -249,7 +271,8 @@
 						}
 					
 					} 
-				}
+				}					
+
 
 			});
 
@@ -271,8 +294,6 @@
 					e.preventDefault();
 				}
 			})
-
-
 
 			//$.cookie('gameStatus',steps);
 
