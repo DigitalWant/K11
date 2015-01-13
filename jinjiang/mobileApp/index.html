@@ -168,8 +168,21 @@
 	</div><!-- /header -->
 	<div role="main" class="ui-content scale-text">
 		<h2>Popup</h2>
-		<p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>
-		<p><a href="#intro" class="backToIntro ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "one"</a></p>
+		<p><label for="text-basic">Text input:</label><input type="text" name="text-basic" id="text-basic" value=""></p>
+		<div class="ui-field-contain">
+		    <select name="select-native-fc" id="select-native-fc">
+		        <option value="small" disabled="disabled">Native select</option>
+		        <option value="medium">Two</option>
+		        <option value="large">Three</option>
+		    </select>
+		</div>
+		<p><label for="tel">Tel:</label><input type="tel" name="tel" id="tel" value=""></p>
+		<p></p>
+		<p>
+		<a href="#intro" class="backToIntro ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "one"</a>
+		<a href="#" class="backToIntro ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-forward ui-btn-icon-right">Submit</a>
+
+		</p>
 	</div><!-- /content -->
 
 	<div data-role="footer">
