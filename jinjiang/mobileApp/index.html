@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="ui-loading">
+<html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,14 +12,6 @@
 	<script src="js/wechat.js"></script>
 	<script src="js/jquery.cookie.js"></script><!---->
 	<script src="js/jquery.transit.min.js"></script><!---->
-	<script src="js/jquery.waitforimages.min.js"></script><!---->
-
-	<script type="text/javascript" >
-
-
-
-
-	</script>
 </head>
 <body>
 
@@ -27,47 +19,62 @@
 <!-- Start of main page -->
 <div data-role="page" id="main">
 	<div role="main" class="ui-content">
-		<a id="start" href="#intro">Enter</a>
+		<a id="start" href="#form">Enter</a>
 	</div><!-- /content -->
 </div><!-- /page -->
 
 
+<!-- Start of pop page: #popup -->
+<div data-role="page" id="form">
+	<div data-role="header"><img src="img/logo.png" id="logo" /></div>
+	<div role="main" class="ui-content fieldset">	
+		<p><input type="text" name="text-basic" id="phone" value="" placeholder="电话号码"></p> 
+		<p><input type="text" name="text-basic" id="age" value="" placeholder="年龄"></p>
+		    <select  id="gender">
+		     	<option value="" disabled selected>性别</option>
+			    <option value="male">男</option>
+			    <option value="female">女</option>
+		    </select>
+			<a href="#intro" id="dataSubmit" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ">拿我的钥匙</a>
+		</div>		
+	</div><!-- /content -->
+</div><!-- /page popup -->
 
 
 
 <!-- Start of intro page -->
 <div data-role="page" id="intro">
 	<div role="main" class="ui-content" style="height:100%;">
+		<img src="img/intro.png" class="beginning not-animate" />
 		<ul data-role="listview" style="height:100%;" ><!--
-		--><li style="height:25%;"><a href="#hotelInfo1">
-		<img src="http://placehold.it/450x150&amp;text=Level%201" />
-		<img src="http://placehold.it/450x150/ffffff&amp;text=Level%201%20unlocked" />
-		<img src="http://placehold.it/450x150&amp;text=Level%201+Key" class="key not-animate" />
-		<img src="http://placehold.it/50x50/000000&amp;text=X" class="lock" />
+		--><li style="height:25%;"><a href="#hotelInfo1" data-transition="flip">
+		<img src="img/hotel/hotel-1.png" />
+		<img src="img/hotel/hotel-1.png" class="door"/>
+		<img src="img/key.png" class="key not-animate" />
+		<img src="img/lock.png" class="lock" />
 		</a></li><!-- 
-		--><li style="height:25%;"><a href="#hotelInfo2">
-		<img src="http://placehold.it/450x150&amp;text=Level%202" />
-		<img src="http://placehold.it/450x150/ffffff&amp;text=Level%202%20unlocked" />
-		<img src="http://placehold.it/450x150&amp;text=Level%202+Key" class="key not-animate" />
-		<img src="http://placehold.it/50x50/000000&amp;text=X" class="lock" />
+		--><li style="height:25%;"><a href="#hotelInfo2" data-transition="flip">
+		<img src="img/hotel/hotel-2.png" />
+		<img src="img/hotel/hotel-2.png" class="door"/>
+		<img src="img/key.png" class="key not-animate" />
+		<img src="img/lock.png" class="lock" />
 		</a></li><!-- 
-		--><li style="height:25%;"><a href="#hotelInfo3">
-		<img src="http://placehold.it/450x150&amp;text=Level%203" />
-		<img src="http://placehold.it/450x150/ffffff&amp;text=Level%203%20unlocked" />
-		<img src="http://placehold.it/450x150&amp;text=Level%203+Key" class="key not-animate" />
-		<img src="http://placehold.it/50x50/000000&amp;text=X" class="lock" />
+		--><li style="height:25%;"><a href="#hotelInfo3" data-transition="flip">
+		<img src="img/hotel/hotel-3.png" />
+		<img src="img/hotel/hotel-3.png" class="door"/>
+		<img src="img/key.png" class="key not-animate" />
+		<img src="img/lock.png" class="lock" />
 		</a></li><!-- 
-		--><li style="height:25%;"><a href="#hotelInfo4">
-		<img src="http://placehold.it/450x150&amp;text=Level%204" />
-		<img src="http://placehold.it/450x150/ffffff&amp;text=Level%204%20unlocked" />
-		<img src="http://placehold.it/450x150&amp;text=Level%204+Key" class="key not-animate" />
-		<img src="http://placehold.it/50x50/000000&amp;text=X" class="lock" />
+		--><li style="height:25%;"><a href="#hotelInfo4" data-transition="flip">
+		<img src="img/hotel/hotel-4.png" />
+		<img src="img/hotel/hotel-4.png" class="door"/>
+		<img src="img/key.png" class="key not-animate" />
+		<img src="img/lock.png" class="lock" />
 		</a></li><!--
 		--></ul>
 	</div><!-- /content -->
 	
 </div><!-- /page -->
-
 
 
 
@@ -100,13 +107,10 @@
 
 <!-- Start of dishInfo  -->
 <div data-role="page" id="dishInfo2" >
-
 	<div role="main" class="ui-content">
 		<a href="#intro" class="backToIntro" ><img src="http://placehold.it/320x480&amp;text=dishInfo2" /></a>
 	</div><!-- /content -->
 </div>
-
-
 
 
 
@@ -131,7 +135,6 @@
 
 
 
-
 <!-- Start of hotelInfo  -->
 <div data-role="page" id="hotelInfo4" >
 	<div role="main" class="ui-content">
@@ -142,10 +145,19 @@
 <!-- Start of dishInfo  -->
 <div data-role="page" id="dishInfo4" >
 	<div role="main" class="ui-content">
-		<a href="#popup" data-rel="dialog" data-transition="pop"><img src="http://placehold.it/320x680&amp;text=done" /></a>
+		<a href="#keyPage"><img src="http://placehold.it/320x680&amp;text=done" /></a>
 	</div><!-- /content -->
 </div>
 
+
+
+<!-- Start of dishInfo  -->
+<div data-role="page" id="keyPage" >
+	<div role="main" class="ui-content">
+		<a href="#"><img src="http://placehold.it/320x380&amp;text=Gold+Key" /></a>
+		<a href="#"><img src="http://placehold.it/320x380&amp;text=Silver+Key" /></a>
+	</div><!-- /content -->
+</div>
 
 
 <a href="#rule" id="ruleTip" class="ui-panel-animate" >游戏规则</a>
@@ -160,54 +172,8 @@
 
 
 
-<!-- Start of pop page: #popup -->
-<div data-role="page" id="popup">
-
-	<div data-role="header">
-		<h1>Dialog</h1>
-	</div><!-- /header -->
-	<div role="main" class="ui-content scale-text">
-		<h2>Popup</h2>
-		<p><label for="text-basic">Text input:</label><input type="text" name="text-basic" id="text-basic" value=""></p>
-		<div class="ui-field-contain">
-		    <select name="select-native-fc" id="select-native-fc">
-		        <option value="small" disabled="disabled">Native select</option>
-		        <option value="medium">Two</option>
-		        <option value="large">Three</option>
-		    </select>
-		</div>
-		<p><label for="tel">Tel:</label><input type="tel" name="tel" id="tel" value=""></p>
-		<p></p>
-		<p>
-		<a href="#intro" class="backToIntro ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "one"</a>
-		<a href="#" class="backToIntro ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-forward ui-btn-icon-right">Submit</a>
-
-		</p>
-	</div><!-- /content -->
-
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div><!-- /footer -->
-</div><!-- /page popup -->
-
-
-
 <script type="text/javascript" >
-			$.mobile.loading( 'show');
 
-			$('body').waitForImages({
-			    finished: function() {
-			        // ...
-			        $('html').removeClass('ui-loading');
-
-			    },
-			    each: function() {
-			       // ...
-			        $('html').addClass('ui-loading');
-			    },
-			    waitForAll: true
-			});
-		
 			//rule tips 
 			var steps = [true,false,false,false];
 			var $rulePanel = $( "body>[data-role='panel']" ).panel();
@@ -215,6 +181,15 @@
 			var $listKey = $("#intro [data-role=listview] A");
 			var $backToIntro = $(".backToIntro");
 			var $everyStepKeyImg = $("#intro img.key");
+			var $beginning =$("#intro .beginning");
+			var formData = {
+				phone:"",
+				age:"",
+				gender:""
+			};
+			var $formSubmitBtn = $("#dataSubmit");
+
+			$.cookie.json = true;
 
 			var hasBeenShared = false;
 			var midnight_cookie = function(name, value, path) {
@@ -229,7 +204,14 @@
 			  //return expire;
 			}
 
-			$.cookie.json = true;
+
+
+			$formSubmitBtn.on('click',function(){
+				$.removeCookie('formData');
+				$.cookie('formData',formData,{expires:7,path:'/'});
+			});
+
+
 
 			// Bind an event to window.orientationchange that, when the device is turned,
 			// gets the orientation and displays it to on screen.
@@ -252,7 +234,9 @@
 			$(document).on("pagebeforeshow","#intro",function(){ 
 
 				if ($.cookie('gameStatus')){
+
 					steps = $.cookie('gameStatus');
+					
 				}
 				for( i in steps){
 					if (steps[i] == true){
@@ -261,12 +245,35 @@
 					} 
 				}
 
+
 			});
-
+			
 			$(document).on("pageshow","#intro",function(){ 
+				if ($.cookie('gameStatus')){
 
+					steps = $.cookie('gameStatus');
 
+				}
+				if($beginning.hasClass('not-animate')){
+
+					$beginning.transition({ 
+								opacity: 1,
+								  duration: 2200 
+							 }).transition({
+	  							rotateY: '360deg',
+								  delay: 500
+							}).transition({
+								y: -100,
+								opacity:0,
+								duration: 2200,
+								delay: 1000
+ 
+							},function(){
+								  	$beginning.remove();
+							});
+				}
 				for( i in steps){
+
 					if (steps[i] == true){				
 						//if the key hasn't animate
 						if($everyStepKeyImg.eq(i).hasClass('not-animate')){
@@ -278,33 +285,32 @@
 							 })
 							.transition({
 	  							rotateX: '360deg',
-								  delay: 500
 							}).removeClass('not-animate');
 						}
 					
 					} 
 				}					
 
-
 			});
-
-
-
 
 			//Reach the step end, mark on global
 			$backToIntro.on('click',function(){
+
 				var Index = $backToIntro.index($(this));
 				steps[Index+1] = true;
-				$.removeCookie('gameStatus');
 				midnight_cookie('gameStatus',steps,'/');
 
 			});
+	
 
 			//key list
 			$listKey.on('click',function(e){
-				if (!$(this).hasClass('unlocked')){
-					e.preventDefault();
-				}
+					var $thisLink =$(this);
+					var $thisDoor =$('.door',$thisLink);
+
+					if (!$thisLink.hasClass('unlocked')){
+						e.preventDefault();	
+					}
 			})
 
 			//$.cookie('gameStatus',steps);
@@ -318,7 +324,7 @@
 			    // 微信分享的数据
 			    var wxData = {
 			        "appId": "", // 服务号可以填写appId
-			        "imgUrl" : 'data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABkAAD/4QPoaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjMtYzAxMSA2Ni4xNDU2NjEsIDIwMTIvMDIvMDYtMTQ6NTY6MjcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpBRDY0Qjk0ODhFNjVFNDExQjk4MUFEMTc3QzlDODg2NSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDQzlCOURERTk3MEQxMUU0QkIwMjk3MkY0Q0EyQTM3RSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDQzlCOURERDk3MEQxMUU0QkIwMjk3MkY0Q0EyQTM3RSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBJbGx1c3RyYXRvciBDUzYgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QUQ2NEI5NDg4RTY1RTQxMUI5ODFBRDE3N0M5Qzg4NjUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QUQ2NEI5NDg4RTY1RTQxMUI5ODFBRDE3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',
+			        "imgUrl" : 'img/logo.png',
 			        "link" : "iamike.github.io/jinjiang/mobileApp",
 			        "desc" : 'test',
 			        "title" : "文章分享测试"
@@ -371,62 +377,7 @@
 			    Api.generalShare(wxData,wxCallbacks);
 			});
 
-				
-		//});
-
-
-/*	
-$.widget( "custom.progressbar", {
-    options: {
-        value: 0
-    },
-    _create: function() {
-    	console.log('0');
-        this.options.value = this._constrain(this.options.value);
-        this.element.addClass( "progressbar" );
-        this.refresh();
-    },
-    _setOption: function( key, value ) {
-    	console.log('1');
-        if ( key === "value" ) {
-            value = this._constrain( value );
-        }
-        this._super( key, value );
-    },
-    _setOptions: function( options ) {
-    	console.log('2');
-        this._super( options );
-        this.refresh();
-    },
-    refresh: function() {
-    	console.log('3');
-        var progress = this.options.value + "%";
-        this.element.text( progress );
-        if ( this.options.value == 100 ) {
-            this._trigger( "complete", null, { value: 100 } );
-        }
-    },
-    _constrain: function( value ) {
-    	console.log('4');
-
-        if ( value > 100 ) {
-            value = 100;
-        }
-        if ( value < 0 ) {
-            value = 0;
-        }
-        return value;
-    }
-});
-
-
-var bar = $( "<div></div>" )
-    .appendTo( "body" )
-    .progressbar();
-
-
-	bar.progressbar('option','value',330);
-*/
+	
 </script>
 </body>
 </html>
