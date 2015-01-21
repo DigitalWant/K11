@@ -19,12 +19,19 @@
   transition: all 0.2s linear;
   color: $lighter-color;
   line-height: 1.35;
-
+  a {
+    @extend %color-lighter-color; 
+  }
   &:hover {
     @extend %background-lighter-color;
     @extend %color-tertiary-color;
     transition: all 0.1s linear;
-  }
+
+    a {
+         @extend %color-tertiary-color;
+    }
+
+  }  
 
   .glyphicon--banners {
     display: block;

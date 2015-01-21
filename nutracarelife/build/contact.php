@@ -357,7 +357,7 @@
             
             <li><a href="index.html">Home</a></li>
             
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.php">Contact</a></li>
             
             <li class="active">First Option</li>
             
@@ -387,34 +387,9 @@
         <span class="glyphicon  glyphicon-envelope"></span> <a class="secondary-link" href="mailto:hello@proteusnet.com"><strong>hello@proteusnet.com</strong></a>
         </div>
         <div class="col-xs-12  col-sm-9">
-          <form validate>
-            <div class="row">
-              <div class="col-xs-12  col-sm-4">
-                <div class="form-group">
-                  <label class="text-dark" for="name">Name <span class="warning">*</span></label>
-                  <input type="text" id="name" class="form-control  form-control--contact" required>
-                </div>
-                <div class="form-group">
-                  <label class="text-dark" for="email">E-mail <span class="warning">*</span></label>
-                  <input type="text" id="email" class="form-control  form-control--contact" required>
-                </div>
-                <div class="form-group">
-                  <label class="text-dark" for="subject">Subject <span class="warning">*</span></label>
-                  <input type="text" id="subject" class="form-control  form-control--contact" required>
-                </div>
-                <span class="hidden-xs">Fields marked with <span class="warning">*</span> are obligatory</span>
-              </div>
-              <div class="col-xs-12  col-sm-8">
-                <div class="form-group">
-                  <label class="text-dark" for="message">Message <span class="warning">*</span></label>
-                  <textarea class="form-control  form-control--contact  form-control--big" id="message" rows="12" required></textarea>
-                </div>
-                <div class="right">
-                  <button type="submit" class="btn  btn-warning">Send now</button>
-                </div>
-              </div>
-            </div>
-          </form>
+          <?php
+            include_once( 'php-form/send-email.php' );
+          ?>
         </div>
       </div>
       <div class="push-down-30">
@@ -490,7 +465,7 @@
           </div>
         </div>
         <div class="col-xs-12  col-sm-9">
-          <div class="simple-map  js--where-we-are" data-latlng="46.049467,14.460506" data-markers="[{lat: 46.049467,lng: 14.460506,title: 'ProteusThemes Ljubljana'},{lat: 46.020569,lng: 15.476118,title: 'ProteusThemes Senovo'}]" data-zoom="6"></div>
+          <div class="simple-map  js--where-we-are"></div>
         </div>
       </div>
 
