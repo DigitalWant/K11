@@ -70,7 +70,7 @@
      */
     var _share = function (cmd, data, callbacks) {
         callbacks = callbacks || {};
-        alert('run');
+
         // 分享过程中的一些回调
         var progress = function (resp) {
             switch (true) {

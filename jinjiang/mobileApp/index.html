@@ -25,20 +25,30 @@
 
 
 <!-- Start of pop page: #popup -->
-<div data-role="page" id="form">
-	<div data-role="header"><img src="img/logo.png" id="logo" /></div>
-	<div role="main" class="ui-content fieldset">	
-		<p><input type="text" name="text-basic" id="phone" value="" placeholder="电话号码"></p> 
-		<p><input type="text" name="text-basic" id="age" value="" placeholder="年龄"></p>
-		    <select  id="gender">
-		     	<option value="" disabled selected>性别</option>
-			    <option value="male">男</option>
-			    <option value="female">女</option>
-		    </select>
-			<a href="#intro" id="dataSubmit" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ">拿我的钥匙</a>
-		</div>		
-	</div><!-- /content -->
-</div><!-- /page popup -->
+<div data-role="page" id="form" class="lightBg">
+    <div data-role="header"><img src="img/logo.png" class="logo" /></div>
+
+    <div role="main" class="ui-content fieldset">
+        <p style="text-align:center;margin:0px;padding:0px;"><img src="img/getKey.png" style="width:90%;margin:0px auto;" /></p>
+        <p><input type="tel" name="text-basic" id="txtTel" value="" placeholder="手机号码" data-corners="false"></p>
+        <select id="txtAge" data-corners="false">
+                <option value="" disabled selected>年龄</option>
+                <option value="20岁以下">20岁以下</option>
+                <option value="21-30岁">21-30岁</option>
+                <option value="31-40岁">31-40岁</option>
+                <option value="41-50岁">41-50岁</option>
+                <option value="51-60岁">51-60岁</option>
+                <option value="61-70岁">61-70岁</option>
+                <option value="71岁以上">71岁以上</option>
+        </select>
+        <select id="selGender" data-corners="false">
+                <option value="" disabled selected>性别</option>
+                <option value="男">男</option>
+                <option value="女">女</option>
+            </select>
+        <a href="#intro" id="dataSubmit" class="ui-btn ui-shadow ui-btn-inline" style="background-color:rgba(185, 149, 91, 0.85);">拿我的钥匙</a>
+        </div>
+    </div><!-- /content -->
 
 
 
@@ -76,313 +86,395 @@
 	
 </div><!-- /page -->
 
-
-
-
-<!-- Start of hotelInfo  -->
-<div data-role="page" id="hotelInfo1" >
-	<div role="main" class="ui-content">
-		<a href="#dishInfo1"><img src="http://placehold.it/320x480&amp;text=hotelInfo1" /></a>
-	</div><!-- /content -->
-</div>
-
-<!-- Start of dishInfo  -->
-<div data-role="page" id="dishInfo1" >
-	<div role="main" class="ui-content">
-		<a href="#intro" class="backToIntro"><img src="http://placehold.it/320x480&amp;text=dishInfo1" /></a>		
-	</div><!-- /content -->
-</div>
-
-
-
-
-
-
-<!-- Start of hotelInfo  -->
-<div data-role="page" id="hotelInfo2" >
-	<div role="main" class="ui-content">
-		<a href="#dishInfo2"><img src="http://placehold.it/320x480&amp;text=hotelInfo2" /></a>
-	</div><!-- /content -->
-</div>
-
-<!-- Start of dishInfo  -->
-<div data-role="page" id="dishInfo2" >
-	<div role="main" class="ui-content">
-		<a href="#intro" class="backToIntro" ><img src="http://placehold.it/320x480&amp;text=dishInfo2" /></a>
-	</div><!-- /content -->
-</div>
-
-
-
-
-
-
-<!-- Start of hotelInfo  -->
-<div data-role="page" id="hotelInfo3" >
-	<div role="main" class="ui-content">
-		<a href="#dishInfo3"><img src="http://placehold.it/320x480&amp;text=hotelInfo3" /></a>
-	</div><!-- /content -->
-</div>
-
-<!-- Start of dishInfo  -->
-<div data-role="page" id="dishInfo3" >
-	<div role="main" class="ui-content">
-		<a href="#intro" class="backToIntro"><img src="http://placehold.it/320x480&amp;text=dishInfo3" /></a>
-	</div><!-- /content -->
-</div>
-
-
-
-
-
-<!-- Start of hotelInfo  -->
-<div data-role="page" id="hotelInfo4" >
-	<div role="main" class="ui-content">
-		<a href="#dishInfo4"><img src="http://placehold.it/320x480&amp;text=hotelInfo4" /></a>
-	</div><!-- /content -->
-</div>
-
-<!-- Start of dishInfo  -->
-<div data-role="page" id="dishInfo4" >
-	<div role="main" class="ui-content">
-		<a href="#keyPage"><img src="http://placehold.it/320x680&amp;text=done" /></a>
-	</div><!-- /content -->
-</div>
-
-
-
- <!-- Start of dishInfo  -->
-    <div data-role="page" id="keyPage" class="lightBg">
-       <div data-role="header"><img src="img/logo.png" class="logo" /></div>
+   <!-- Start of hotelInfo  -->
+    <div data-role="page" id="hotelInfo1">
         <div role="main" class="ui-content">
+            <a href="#dishInfo1" ><p><img width="500"  height="789" src="img/hotel/hotel-intro-1.jpg" alt="Hotel -intro -1 (1)" class="bg"/></p>
+<div class="intro">
+<p><img width="150" height="" src="img/hotel/hotel-name.png" alt="Hotel -name"/></p>
+<p>  </p>
+<p>这是一家充满传奇的酒店，自1951年至今已接待了一百多个国家超过五百位国家元首和政府首脑。如今的锦江饭店，除了现代化的设施与装潢，也保留了往日的欧洲传统风格。成为上海最富盛名的五星级饭店。</p>
+<p>想知道锦江饭店在1971年发生了什么吗？</p>
+<p>当年尼克松访华，锦江饭店不仅见证了震撼世界的中美握手，更以一道“蟹黄豆腐”令被誉为“中国通”的基辛格博士终身难忘，击掌称绝。</p>
+<p class="gold">想要品尝基辛格博士</p>
+<p class="gold">赞不绝口的菜谱吗？</p>
+<p class="gold whiteBtn">我想吃 </p>
+</div>
+</a>
+        </div><!-- /content -->
+    </div>
 
-                <a href="#">
-                    <img src="img/goldKey.png" class="result" />
-                    <img src="img/goldKeyRibbon.png" class="result ribbon" />
-                </a>
+    <!-- Start of dishInfo  -->
+    <div data-role="page" id="dishInfo1">
+        <div role="main" class="ui-content">
+            <a href="#intro" class="backToIntro" ><p><img width="500"  height="789" src="img/dish/dish-intro-1.jpg" alt="Dish -intro -1" class="bg"/></p>
+<div class="intro">
+<p class="dishName">蟹黄豆腐</p>
+<p>若你吃过这道蟹黄豆腐，定留恋这咸鲜软嫩，爽滑可口的味蕾享受。至今，锦江饭店还保留着当时传承下来的制作工艺，让每个尝过此菜的人都赞不绝口。</p>
+<p><img width="195" height="61" src="img/sharetips.png" alt="Share Tips" style="display: block; margin-left: auto; margin-right: auto;"/></p>
+</div>
 
+</a>
+        </div><!-- /content -->
+    </div>
+
+    <!-- Start of hotelInfo  -->
+    <div data-role="page" id="hotelInfo2">
+        <div role="main" class="ui-content">
+            <a href="#dishInfo2"><p><img width="500"  height="789" src="img/hotel/hotel-intro-2.jpg" alt="Hotel -intro -2" class="bg"/></p>
+<div class="intro">
+<p><img width="150" height="NaN" src="img/hotel/hotel-name-2.png" alt="Hotel -name -2"/></p>
+<p> </p>
+<p>它是名噪一时的“亚洲高度”，也是融贯中西”的经典用餐之地。其摩登的建筑风格和五个不同风格的餐厅至今依然光彩夺目...它就是坐落于上海大地原点的国际饭店。</p>
+<p>很多人都知道北京丰泽园的葱烤海参可谓是名不虚传。但你知道吗？自1947年，这道招牌菜就被国际饭店引进并保留至今。身在上海的你，想亲自尝尝这道传承了百余年的名菜吗？</p>
+<p class="gold">想尝尝好吃的鲁菜吗？</p>
+<p class="gold whiteBtn">我想吃 </p>
+<p> </p>
+</div>
+
+</a>
+        </div><!-- /content -->
+    </div>
+
+    <!-- Start of dishInfo  -->
+    <div data-role="page" id="dishInfo2">
+        <div role="main" class="ui-content">
+            <a href="#intro" class="backToIntro"><p><img width="500"  height="789" src="img/dish/dish-intro-2.jpg" alt="Dish -intro -2" class="bg"/></p>
+<div class="intro">
+<p><img width="NaN" height="147" src="img/dish/dish-2.png" alt="Dish -2" style="display: block; margin-left: auto; margin-right: auto;"/></p>
+<p> </p>
+<p> </p>
+<p>袁枚《随园食单》有载：“海参无为之物，沙多气腥，最难讨好，然天性浓重，断不可以清汤煨也。”国际饭店的这道葱烤海参以独特的烹饪秘方，以浓攻浓，以浓汁、浓味入其里，浓色表其外，色香味形四美俱全。</p>
+<p> <img width="179" height="56" src="img/sharetips.png" alt="Share Tips" style="display: block; margin-left: auto; margin-right: auto;"/></p>
+</div>
+
+</a>
+        </div><!-- /content -->
+    </div>
+
+    <!-- Start of hotelInfo  -->
+    <div data-role="page" id="hotelInfo3">
+        <div role="main" class="ui-content">
+            <a href="#dishInfo3"><p><img width="500"  height="789" src="img/hotel/hotel-intro-3.jpg" alt="Hotel -intro -3" class="bg"/></p>
+<div class="intro">
+<p><img width="145" height="46" src="img/hotel/hotel-name-3.png" alt="Hotel -name -3"/></p>
+<p>  </p>
+<p>金门大酒店名厨精心烹饪的各式中西式特色菜肴如同它新古典主义建筑风格的外貌一样令人印象深刻，其中尤以“佛跳墙”特色佳肴赢得各路美食家的青睐。</p>
+<p>时光重回上世纪20年代，这座有着意大利精美风格的豪门名宅堪称十里洋场人尽皆知。除了那令人倾情向往的典雅居停，更有赢得各路美食家青睐的特色佳肴。其中，你最爱的会是这道吗？</p>
+<p> </p>
+<p class="gold">名流都吃些什么呢？</p>
+<p class="gold whiteBtn">我想吃 </p>
+</div>
+
+</a>
+        </div><!-- /content -->
+    </div>
+
+    <!-- Start of dishInfo  -->
+    <div data-role="page" id="dishInfo3">
+        <div role="main" class="ui-content">
+            <a href="#intro" class="backToIntro"><p><img width="500"  height="789" src="img/dish/dish-intro-3.jpg" alt="Dish -intro -3" class="bg"/></p>
+<div class="intro">
+<p><img width="144" height="144" src="img/dish/dish-3.png" alt="Dish -3" style="display: block; margin-left: auto; margin-right: auto;"/></p>
+<p> </p>
+<p> </p>
+<p>如果要问上海最好吃的闽醉排骨哪里去寻？恐怕非金门大酒店莫属了。酸甜微辣，外脆里嫩，香味浓郁，令人陶醉。恍忽间，仿佛重回那个年代，处处是名流淑媛，精英荟萃。</p>
+<p> <img width="179" height="56" src="img/sharetips.png" alt="Share Tips" style="display: block; margin-left: auto; margin-right: auto;"/></p>
+</div>
+
+</a>
         </div><!-- /content -->
     </div>
 
 
-<a href="#rule" id="ruleTip" class="ui-panel-animate" >游戏规则</a>
+    <!-- Start of hotelInfo  -->
+    <div data-role="page" id="hotelInfo4">
+        <div role="main" class="ui-content">
+            <a href="#dishInfo4"><p><img width="500"  height="789" src="img/hotel/hotel-intro-4.jpg" alt="Hotel -intro -4" class="bg"/></p>
+<div class="intro">
+<p><img width="149" height="52" src="img/hotel/hotel-name-4.png" alt="Hotel -name -4"/></p>
+<p>  </p>
+<p>素有“花园宾馆”美称的静安宾馆，处处是白墙、红瓦、露台、花园，尽显典雅的西班牙风格。而酒店特有的花园景观客房，选择多样的餐厅，让人即便身处城市核心，也能领略异国风情。</p>
+<p>这是一道闻名世界的名点，它在APEC会议的宴席上，大放异彩，令人称绝。也许你对他并不陌生，他就是上海传统点心，葱油麻球。</p>
+<p> </p>
+<p class="gold">这个小圆球到底是什么呢？</p>
+<p class="gold whiteBtn">我想吃 </p>
+</div>
+</a>
+        </div><!-- /content -->
+    </div>
 
-<!-- leftpanel3  -->
-<div data-role="panel" id="rule" data-position="left" data-display="overlay" data-position-fixed="true" >
-	 <h3>Left Panel: Overlay</h3>
-    <p>This panel is positioned on the left with the overlay display mode. The panel markup is <em>after</em> the header, content and footer in the source order.</p>
-    <p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p>
+    <!-- Start of dishInfo  -->
+    <div data-role="page" id="dishInfo4">
+        <div role="main" class="ui-content">
+            <a href="#keyPage"><p><img width="500"  height="789" src="img/dish/dish-intro-4.jpg" alt="Dish -intro -4" class="bg"/></p>
+<div class="intro">
+<p class="dishName">葱油麻球</p>
+<p>这是在传统工艺上加以改良的一道点心，一个个浑圆饱满、飘香四溢。忍不住咬下去，皮薄香脆，满满的芝麻留香于齿间，也难怪这道葱油麻球倍受大家喜爱。</p>
+<p><img width="195" height="61" src="img/sharetips.png" alt="Share Tips" style="display: block; margin-left: auto; margin-right: auto;"/></p>
+</div>
+
+</a>
+        </div><!-- /content -->
+    </div>
+
+
+
+    <!-- Start of dishInfo  -->
+    <div data-role="page" id="keyPage" class="lightBg">
+       <div data-role="header"><img src="img/logo.png" class="logo" /></div>
+        <div role="main" class="ui-content">
+                <a href="jumpitune.html" data-ajax="false" >
+                    <img src="img/silverKey.png" class="result"/>
+                    <img src="img/silverKeyRibbon.png" class="result ribbon"/>
+                </a>
+            
+        </div><!-- /content -->
+    </div>
+
+
+    <a href="#rule" id="ruleTip" class="ui-panel-animate">活动规则</a>
+
+    <!-- leftpanel3  -->
+    <div data-role="panel" id="rule" data-position="left" data-display="overlay" data-position-fixed="true"><div id="imcontent">
+<div id="imcontent">
+<p align="justify"><strong>活动机制</strong></p>
+<p align="justify"> </p>
+<p class="gold" align="justify">上海的故事，您知道多少？</p>
+<p align="justify">跟随锦江，重回上海的黄金年代，感受那些不败的经典与魅力，探索那些伴随国际领袖，王室贵族，学者创造历史的地方和名菜。</p>
+<p align="justify"> </p>
+<p class="gold" align="justify"><strong>您的收获：</strong></p>
+<p class="gold" align="justify">赢得回归黄金时代的钥匙</p>
+<p align="justify"><span>完成旅途解锁</span><span>4</span><span>道门后，您就有机会抽取</span></p>
+<p align="justify"><span>银钥匙：全国</span><span>40</span><span>家锦江旗下的酒店七折折扣优惠!</span></p>
+<p align="justify">金钥匙：免费住宿一晚上海经典酒店，深度感受经典魅力</p>
+<p align="justify"><span>(</span><span>每周</span><span>4</span><span>把</span><span>)</span></p>
+<p align="justify"> </p>
+<p class="gold" align="justify"><strong>活动时间</strong></p>
+<p align="justify"><span>2015</span><span>年</span><span>2</span><span>月</span><span>1</span><span>日</span><span>00:00</span><span>起</span></p>
+<p align="justify"><span>至</span><span>2015</span><span>年</span><span>3</span><span>月</span><span>1</span><span>日</span><span>23:59</span><span>结束</span></p>
+</div>
+</div>
 
 </div><!-- /leftpanel3 -->
 
 
 
-<script type="text/javascript" >
-
-			//rule tips 
-			var steps = [true,false,false,false];
-			var $rulePanel = $( "body>[data-role='panel']" ).panel();
-			var $ruleTips = $("#ruleTip");
-			var $listKey = $("#intro [data-role=listview] A");
-			var $backToIntro = $(".backToIntro");
-			var $everyStepKeyImg = $("#intro img.key");
-			var $beginning =$("#intro .beginning");
-			var formData = {
-				phone:"",
-				age:"",
-				gender:""
-			};
-			var $formSubmitBtn = $("#dataSubmit");
-
-			$.cookie.json = true;
-
-			var hasBeenShared = false;
-			var midnight_cookie = function(name, value, path) {
-			  var now = new Date();
-			  var expire = new Date();
-			  expire.setFullYear(now.getFullYear());
-			  expire.setMonth(now.getMonth());
-			  expire.setDate(now.getDate()+1);
-			  expire.setHours(0);
-			  expire.setMinutes(0);
-			  document.cookie = name+"="+JSON.stringify(value)+"; expires=" + expire.toString() +"; path=" + path;
-			  //return expire;
-			}
+  <script type="text/javascript" >
 
 
 
-			$formSubmitBtn.on('click',function(){
-				$.removeCookie('formData');
-				$.cookie('formData',formData,{expires:7,path:'/'});
-			});
+        //rule tips
+        var steps = [true, false, false, false];
+        var $rulePanel = $("body>[data-role='panel']").panel();
+        var $ruleTips = $("#ruleTip");
+        var $listKey = $("#intro [data-role=listview] A");
+        var $backToIntro = $(".backToIntro");
+        var $everyStepKeyImg = $("#intro img.key");
+      var $beginning = $("#intro .beginning");
+      var formData = {
+          phone: "",
+          age: "",
+          gender: ""
+      };
+      var $formSubmitBtn = $("#dataSubmit");
+      var $introBox = $("div[id ^= 'hotelInfo'], div[id ^= 'dishInfo']");
+      var viewPortHeight = $.mobile.getScreenHeight();
+
+      var introTranstion = {
+          y: -180,
+          opacity:1,
+          delay: 500
+      }
+      var introHide = {
+          'transform':' ',
+          'opacity':0
+      }
+      $.cookie.json = true;
+
+        var hasBeenShared = false;
+        var midnight_cookie = function (name, value, path) {
+            var now = new Date();
+            var expire = new Date();
+            expire.setFullYear(now.getFullYear());
+            expire.setMonth(now.getMonth());
+            expire.setDate(now.getDate() + 1);
+            expire.setHours(0);
+            expire.setMinutes(0);
+            document.cookie = name + "=" + JSON.stringify(value) + "; expires=" + expire.toString() + "; path=" + path;
+            //return expire;
+        }
+
+
+        // Bind an event to window.orientationchange that, when the device is turned,
+        // gets the orientation and displays it to on screen.
+        $(window).on("orientationchange", function (event) {
+            //alert("This device is in " + event.orientation + " mode!");
+            //$( "#popup" ).text( "This device is in " + event.orientation + " mode!" );
+        });
+
+        // You can also manually force this event to fire.
+        $(window).orientationchange();
+
+        $rulePanel.on('panelbeforeopen', function () {
+            $ruleTips.addClass('open');
+        })
+        $rulePanel.on('panelbeforeclose', function () {
+            $ruleTips.removeClass('open');
+        })
+
+        // When entering intro
+        $(document).on("pagebeforeshow", "#intro", function () {
+
+            if ($.cookie('gameStatus')) {
+
+                steps = $.cookie('gameStatus');
+
+            }
+            for (i in steps) {
+                if (steps[i] == true) {
+
+                    $listKey.eq(i).addClass('unlocked');
+                }
+            }
+
+
+        });
+
+        $(document).on("pageshow", "#intro", function () {
+            if ($.cookie('gameStatus')) {
+
+                steps = $.cookie('gameStatus');
+
+            }
+          if ($beginning.hasClass('not-animate')) {
+
+              $beginning.transition({
+                  opacity: 1,
+                  duration: 2200
+              }).transition({
+                  rotateY: '360deg',
+                  delay: 500
+              }).transition({
+                  y: -100,
+                  opacity: 0,
+                  duration: 2200,
+                  delay: 1000
+
+              }, function () {
+                  $beginning.remove();
+              });
+          }
+            for (i in steps) {
+
+                if (steps[i] == true) {
+                    //if the key hasn't animate
+                    if ($everyStepKeyImg.eq(i).hasClass('not-animate')) {
+
+                        $everyStepKeyImg.eq(i)
+                        .transition({
+                            opacity: 1,
+                            delay: 500
+                        })
+                        .transition({
+                            rotateX: '360deg',
+                        }).removeClass('not-animate');
+                    }
+
+                }
+            }
+
+        });
+
+      //make intro box to animate 
+      $(document).on("pageshow", $introBox, function () {
+          $(this).find('.intro').transition(introTranstion);
+      })
+
+      //make sure every time leaveing page, reset the animate elements
+      $(document).on("pagebeforehide", $introBox, function () {
+          $(this).find('.intro').css(introHide);
+      })
+
+        //Reach the step end, mark on global
+        $backToIntro.on('click', function () {
+
+            var Index = $backToIntro.index($(this));
+            steps[Index + 1] = true;
+            midnight_cookie('gameStatus', steps, '/');
+
+        });
+
+
+        //key list
+        $listKey.on('click', function (e) {
+          var $thisLink = $(this);
+          var $thisDoor = $('.door', $thisLink);
+
+          if (!$thisLink.hasClass('unlocked')) {
+                e.preventDefault();
+            }
+        })
 
 
 
-			// Bind an event to window.orientationchange that, when the device is turned,
-			// gets the orientation and displays it to on screen.
-			$( window ).on( "orientationchange", function( event ) {
-				console.log("This device is in " + event.orientation + " mode!" );
-			  //$( "#popup" ).text( "This device is in " + event.orientation + " mode!" );
-			});
-			 
-			// You can also manually force this event to fire.
-			$( window ).orientationchange();
+          var onBridgeReady = function () {
+              WeixinJSBridge.call("hideToolbar");
 
-			$rulePanel.on('panelbeforeopen',function(){
-				$ruleTips.addClass('open');
-			})
-			$rulePanel.on('panelbeforeclose',function(){
-				$ruleTips.removeClass('open');
-			})
-
-			// When entering intro
-			$(document).on("pagebeforeshow","#intro",function(){ 
-
-				if ($.cookie('gameStatus')){
-
-					steps = $.cookie('gameStatus');
-					
-				}
-				for( i in steps){
-					if (steps[i] == true){
-
-						$listKey.eq(i).addClass('unlocked');
-					} 
-				}
+              var appId = "",	//$('#txt-wx').data('appid'),
+                  link = window.location.href,	//$('#txt-wx').data('link'),
+                  title = "一起来拿重回上海美好年代荣耀的钥匙!";//htmlDecode($('title').text()),	// htmlDecode($('#txt-wx').data('title')),
+              desc = "锦江酒店诚邀鉴赏", //htmlDecode($('title').text() + "，敬请访问！"),	//<br/>官网地址：" + window.location.href),	// htmlDecode($('#txt-wx').data('desc')),
+              desc = desc || link,
+              imgUrl = window.location.href+"/img/logo.png";
 
 
-			});
-			
-			$(document).on("pageshow","#intro",function(){ 
-				if ($.cookie('gameStatus')){
+              // 发送给好友;
+              WeixinJSBridge.on('menu:share:appmessage', function (argv) {
+                  WeixinJSBridge.invoke('sendAppMessage', {
+                      //"appid"      : appId,
+                      "img_url": imgUrl,
+                      //"img_width"  : "640",
+                      //"img_height" : "640",
+                      "link": link,
+                      "desc": desc,
+                      "title": title
+                },
+                  function (res) { });
+              });
 
-					steps = $.cookie('gameStatus');
+              // 分享到朋友圈;
+              WeixinJSBridge.on('menu:share:timeline', function (argv) {
+                  WeixinJSBridge.invoke('shareTimeline', {
+                      "img_url": imgUrl,
+                      //"img_width"  : "640",
+                      //"img_height" : "640",
+                      "link": link,
+                      "desc": desc,
+                      "title": title + " " + desc
+                  }, function (res) { });
+        });
 
-				}
-				if($beginning.hasClass('not-animate')){
+              // 分享到微博;
+              var weiboContent = '';
+              WeixinJSBridge.on('menu:share:weibo', function (argv) {
+                  WeixinJSBridge.invoke('shareWeibo', {
+                      "content": title + link,
+                      "url": link,
+            },
+                  function (res) { });
+              });
+          };
 
-					$beginning.transition({ 
-								opacity: 1,
-								  duration: 2200 
-							 }).transition({
-	  							rotateY: '360deg',
-								  delay: 500
-							}).transition({
-								y: -100,
-								opacity:0,
-								duration: 2200,
-								delay: 1000
- 
-							},function(){
-								  	$beginning.remove();
-							});
-				}
-				for( i in steps){
+          if (document.addEventListener) {
+              document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+          } else if (document.attachEvent) {
+              document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+              document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+            }
 
-					if (steps[i] == true){				
-						//if the key hasn't animate
-						if($everyStepKeyImg.eq(i).hasClass('not-animate')){
-							
-							$everyStepKeyImg.eq(i)
-							.transition({ 
-								opacity: 1,
-								  delay: 500
-							 })
-							.transition({
-	  							rotateX: '360deg',
-							}).removeClass('not-animate');
-						}
-					
-					} 
-				}					
 
-			});
+    </script>
 
-			//Reach the step end, mark on global
-			$backToIntro.on('click',function(){
-
-				var Index = $backToIntro.index($(this));
-				steps[Index+1] = true;
-				midnight_cookie('gameStatus',steps,'/');
-
-			});
-	
-
-			//key list
-			$listKey.on('click',function(e){
-					var $thisLink =$(this);
-					var $thisDoor =$('.door',$thisLink);
-
-					if (!$thisLink.hasClass('unlocked')){
-						e.preventDefault();	
-					}
-			})
-
-			//$.cookie('gameStatus',steps);
-
-			// 开发阶段，开启WeixinApi的调试模式
-			//WeixinApi.enableDebugMode();
-
-			// 初始化WeixinApi，等待分享
-			WeixinApi.ready(function(Api) {
-
-			    // 微信分享的数据
-			    var wxData = {
-			        "appId": "", // 服务号可以填写appId
-			        "imgUrl" : 'img/logo.png',
-			        "link" : "iamike.github.io/jinjiang/mobileApp",
-			        "desc" : 'test',
-			        "title" : "文章分享测试"
-			    };
-
-			    // 分享的回调
-			    var wxCallbacks = {
-			        // 收藏操作不执行回调，默认是开启(true)的
-			        favorite : false,
-
-			        // 分享操作开始之前
-			        ready : function() {
-			            // 你可以在这里对分享的数据进行重组
-			            alert("准备分享");
-			        },
-			        // 分享被用户自动取消
-			        cancel : function(resp) {
-			            // 你可以在你的页面上给用户一个小Tip，为什么要取消呢？
-			            alert("分享被取消，msg=" + resp.err_msg);
-			        },
-			        // 分享失败了
-			        fail : function(resp) {
-			            // 分享失败了，是不是可以告诉用户：不要紧，可能是网络问题，一会儿再试试？
-			            alert("分享失败，msg=" + resp.err_msg);
-			        },
-			        // 分享成功
-			        confirm : function(resp) {
-			            // 分享成功了，我们是不是可以做一些分享统计呢？
-			            alert("分享成功，msg=" + resp.err_msg);
-
-			            hasBeenShared=true;
-			        },
-			        // 整个分享过程结束
-			        all : function(resp,shareTo) {
-			            // 如果你做的是一个鼓励用户进行分享的产品，在这里是不是可以给用户一些反馈了？
-			            alert("分享" + (shareTo ? "到" + shareTo : "") + "结束，msg=" + resp.err_msg);
-			        }
-			    };
-
-			    // 用户点开右上角popup菜单后，点击分享给好友，会执行下面这个代码
-			    Api.shareToFriend(wxData, wxCallbacks);
-
-			    // 点击分享到朋友圈，会执行下面这个代码
-			    Api.shareToTimeline(wxData, wxCallbacks);
-
-			    // 点击分享到腾讯微博，会执行下面这个代码
-			    Api.shareToWeibo(wxData, wxCallbacks);
-
-			    // iOS上，可以直接调用这个API进行分享，一句话搞定
-			    Api.generalShare(wxData,wxCallbacks);
-			});
-
-	
-</script>
 </body>
 </html>
