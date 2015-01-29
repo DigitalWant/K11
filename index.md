@@ -108,6 +108,7 @@ tagline: Supporting tagline
 
 [Jinjiang wechat project](/jinjiang/mobileApp/)
 
+[Heinz wechat campaign]()
 
 ```</2015>```
 
