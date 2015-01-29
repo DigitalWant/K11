@@ -1,17 +1,33 @@
 //amend of bootstrap default form layout 
 
 #savingForm {
-		.dropdown-menu {
-			li{
-				a {
-					color:darken($tertiary-color,15%);
-					img {
-						padding-right:5px;
-						margin-right:5px;
-						border-right:1px solid $tertiary-color;
-					}
+	@media (min-width: $screen-md-min) {
+		position:relative;
+		padding-top: 35px;
+
+		&:after{
+			content:url(../images/calculator.png);
+			width:146px;
+			height:146px;
+			position:absolute;
+			left:0px;top:-102px;
+			z-index:9;
+
+
+		}
+	}
+
+	.dropdown-menu {
+		li{
+			a {
+				color:darken($tertiary-color,15%);
+				img {
+					padding-right:5px;
+					margin-right:5px;
+					border-right:1px solid $tertiary-color;
 				}
 			}
-			
-		}	
+		}
+		
+	}	
  }

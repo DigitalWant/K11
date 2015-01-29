@@ -1,12 +1,14 @@
 // Top
 .top {
   
-  background: linear-gradient(to bottom, $tertiary-color 0%, darken($tertiary-color,20%) 100%);
+  background: linear-gradient(to bottom, #EAC276, darken($tertiary-color,10%) 100%);
   border-bottom:1px solid lighten($tertiary-color,20%);
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
   position: relative;
   z-index: 1002;
+  text-shadow: -1px 0px 1px #9E721E;
+  
   .glyphicon-heart {
     color:lighten($tertiary-color,25%);
   }
