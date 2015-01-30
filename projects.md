@@ -113,6 +113,5 @@ group: navigation
 
 ```</2015>```
 
-{% assign posts_collate = site.posts %}
-{% include JB/posts_collate %}
+
 
