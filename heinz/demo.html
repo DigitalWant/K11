@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/jquery.cookie.js"></script><!---->
+	<script src="js/jquery.transit.min.js"></script><!---->
+	<script src="js/recipes.js"></script><!---->
+    <script src="js/ND.Heinz.js"></script>
+    <title>Heinz Game</title>
+
+</head>
+<body>
+
+    
+<div id="header" data-role="header" data-id="header" data-position="fixed" data-fullscreen="true" data-tap-toggle="false">
+    <h1>开始</h1>
+</div><!-- /header -->
+
+<div data-role="page" id="start" class="page" data-title="开始" data-next="tips" style="background-image:url(img/1-01.jpg);">
+
+
+
+</div><!-- /page -->
+
+<div data-role="page" id="tips" class="page" data-title="tips" data-prev="start" data-next="recipes-1" style="background-image:url(img/2-01.jpg);">
+
+
+
+</div><!-- /page -->
+
+<div data-role="page" id="recipes-1" class="page" data-title="如意洋洋" data-prev="tips" data-next="recipes-2" style="background-image:url(img/3-01.jpg);">
+
+	<div role="main" class="ui-content">
+
+		<div id="trivia-recipes-1" class="trivia ui-content" data-role="popup" data-position-to="window" data-tolerance="50,30,30,30" data-theme="a">
+        	<a href="#" data-rel="back" class="ui-btn ui-btn-right ui-btn-b ui-btn-icon-notext ui-icon-delete ui-corner-all">Close</a>
+			<img src="img/2-02.jpg" />
+        </div>
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<div data-role="page" id="recipes-2" class="page" data-title="步步高升" data-prev="recipes-1" data-next="recipes-3" style="background-image:url(img/3-01.jpg);">
+
+	<div role="main" class="ui-content">
+
+		<div id="trivia-recipes-2" class="trivia ui-content" data-role="popup" data-position-to="window" data-tolerance="50,30,30,30" data-theme="a">
+        	<a href="#" data-rel="back" class="ui-btn ui-btn-right ui-btn-b ui-btn-icon-notext ui-icon-delete ui-corner-all">Close</a>
+			<p>2At 140 meters (16 lanes), Avenida 9 de Julio in Buenos Aires is the world’s widest avenue. Its name honors Argentina’s birthdate. (July 9, 1816). The avenue runs roughly one kilometer to the west of the Río de la Plata waterfront, from the Retiro district in the north to Constitución station in the south. <small>步步高升</small></p>
+        </div>
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="recipes-3" class="page" data-title="xxxx" data-prev="recipes-2" data-next="recipes-4" style="background-image:url(img/3-01.jpg);">
+
+	<div role="main" class="ui-content">
+
+		<div id="trivia-recipes-3" class="trivia ui-content" data-role="popup" data-position-to="window" data-tolerance="50,30,30,30" data-theme="a">
+        	<a href="#" data-rel="back" class="ui-btn ui-btn-right ui-btn-b ui-btn-icon-notext ui-icon-delete ui-corner-all">Close</a>
+			<p>3At 140 meters (16 lanes), Avenida 9 de Julio in Buenos Aires is the world’s widest avenue. Its name honors Argentina’s birthdate. (July 9, 1816). The avenue runs roughly one kilometer to the west of the Río de la Plata waterfront, from the Retiro district in the north to Constitución station in the south. <small>步步高升</small></p>
+        </div>
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<div data-role="page" id="recipes-4" class="page" data-title="xxxx" data-prev="recipes-3" data-next="recipes-5" style="background-image:url(img/3-01.jpg);">
+
+	<div role="main" class="ui-content">
+
+		<div id="trivia-recipes-4" class="trivia ui-content" data-role="popup" data-position-to="window" data-tolerance="50,30,30,30" data-theme="a">
+        	<a href="#" data-rel="back" class="ui-btn ui-btn-right ui-btn-b ui-btn-icon-notext ui-icon-delete ui-corner-all">Close</a>
+			<p>4At 140 meters (16 lanes), Avenida 9 de Julio in Buenos Aires is the world’s widest avenue. Its name honors Argentina’s birthdate. (July 9, 1816). The avenue runs roughly one kilometer to the west of the Río de la Plata waterfront, from the Retiro district in the north to Constitución station in the south. <small>步步高升</small></p>
+        </div>
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<div data-role="page" id="recipes-5" class="page" data-title="xxxx" data-prev="recipes-4" data-next="lottery">
+
+	<div role="main" class="ui-content">
+
+		<div id="trivia-recipes-5" class="trivia ui-content" data-role="popup" data-position-to="window" data-tolerance="50,30,30,30" data-theme="a">
+        	<a href="#" data-rel="back" class="ui-btn ui-btn-right ui-btn-b ui-btn-icon-notext ui-icon-delete ui-corner-all">Close</a>
+			<p>5 <small>步步高升</small></p>
+        </div>
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="lottery" class="page" data-title="刮奖区" data-prev="recipes-5" >
+	<div role="main" class="ui-content" >
+       <div id="lotteryContainer"></div>
+        <div data-role="popup" id="popupReward" data-theme="a" class="ui-corner-all" style="padding:10px;">
+                <h3 >Congration! </h3>
+                <h4> Please Leave Your Information! </h4>
+                <label for="un" class="ui-hidden-accessible">姓名:</label>
+            <input type="text" name="frmname" id="frmname" value="" placeholder="姓名" data-theme="a" required>
+                <label for="pw" class="ui-hidden-accessible">手机号码:</label>
+            <input type="tel" name="frmphoneNumber" id="frmphoneNumber" value="" placeholder="手机号码" data-theme="a" required maxlength="11">
+                <label for="pw" class="ui-hidden-accessible">Email:</label>
+            <input type="email" name="frmemail" id="frmemail" value="" placeholder="Email" data-theme="a" required>
+                <button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check" id="btnAward">提交</button>
+        </div>        
+  
+	</div><!-- /content -->
+</div><!-- /page -->
+
+
+
+
+
+
+<div id="footer" data-id="footer" data-position="fixed" data-fullscreen="true" data-tap-toggle="false">
+	<!--
+    <div data-role="controlgroup" class="control ui-btn-left" data-type="horizontal" data-mini="true">
+    	<a href="#" class="prev ui-btn ui-btn-icon-notext ui-icon-carat-l">Previous</a>
+    	<a href="#" class="next ui-btn ui-btn-icon-notext ui-icon-carat-r">Next</a>
+    </div>
+-->
+      <div class="ui-grid-b">
+          <div class="ui-block-a"></div>
+          <div class="ui-block-b">
+
+              <a href="#trivia-newyork" id="trivia-button" data-rel="popup" data-transition="flip" ><img src="img/btn.jpg" style="width:100%;" /></a>
+              <div class="lotteryBtn">
+                        <!-- 中奖的 -->
+                        <a href="#popupReward" data-rel="popup" data-position-to="window" class=" ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" data-transition="pop">索取</a>    
+
+              </div>
+
+          </div>
+      </div>
+	
+</div><!-- /footer -->
+    <input type="hidden" id="hdnAwardId" value="1" />
+    <input type="hidden" id="hdnAwardCount" value="40" />
+    <input type="hidden" id="hdnAwardDesc" value="320g番茄酱" />
+    <input type="hidden" id="hdnScore" value="34" />
+</body>
+</html>
