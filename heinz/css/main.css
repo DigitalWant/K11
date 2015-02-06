@@ -50,7 +50,7 @@ font-size: .75em;
 color: #666;
 }
 /*start page */
-.startPage #header,.startPage #footer {
+.startPage #header,.startPage #footer,.tips #footer {
     display:none;
 }
 /*lottery page*/

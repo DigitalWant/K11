@@ -319,13 +319,23 @@ $(document).on("pagehide", "#lottery", function () {
 
 });
 
-$(document).on("pageshow", "#start,#tips", function () {
+$(document).on("pageshow", "#start", function () {
 
     $('body').addClass('startPage');
 
 });
 
-$(document).on("pagehide", "#start,#tips", function () {
+$(document).on("pagehide", "#start", function () {
     $('body').removeClass('startPage');
+
+});
+$(document).on("pageshow", "#tips", function () {
+
+    $('body').addClass('tips');
+
+});
+
+$(document).on("pagehide", "#tips", function () {
+    $('body').removeClass('tips');
 
 });
