@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/jquery.cookie.js"></script><!---->
+	<script src="js/jquery.transit.min.js"></script><!---->
+	<script src="js/recipes.js"></script><!---->
+    <script src="js/ND.Heinz.js"></script>
+    <title>Heinz Game</title>
+
+</head>
+<body>
+
+    
+<div id="header" data-role="header" data-id="header" data-position="fixed" data-fullscreen="true" data-tap-toggle="false">
+    <h1>开始</h1>
+</div><!-- /header -->
+
+<div data-role="page" id="start" class="page" data-title="开始" data-next="tips" style="background-image:url(img/1-01.jpg);">
+
+
+
+</div><!-- /page -->
+
+<div data-role="page" id="tips" class="page" data-title="tips" data-prev="start" data-next="recipes-1" style="background-image:url(img/2-01.jpg);">
+
+
+
+</div><!-- /page -->
+
+<div data-role="page" id="recipes-1" class="page" data-title="如意洋洋" data-prev="tips" data-next="recipes-2" style="background-image:url(img/3-01.jpg);">
+
+	<div role="main" class="ui-content">
+
+		<div id="trivia-recipes-1" class="trivia ui-content" data-role="popup" data-position-to="window" data-tolerance="50,30,30,30" data-theme="a">
+        	<a href="#" data-rel="back" class="ui-btn ui-btn-right ui-btn-b ui-btn-icon-notext ui-icon-delete ui-corner-all">Close</a>
+			<img src="img/2-02.jpg" />
+        </div>
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<div data-role="page" id="recipes-2" class="page" data-title="步步高升" data-prev="recipes-1" data-next="recipes-3" style="background-image:url(img/3-01.jpg);">
+
+	<div role="main" class="ui-content">
+
+		<div id="trivia-recipes-2" class="trivia ui-content" data-role="popup" data-position-to="window" data-tolerance="50,30,30,30" data-theme="a">
+        	<a href="#" data-rel="back" class="ui-btn ui-btn-right ui-btn-b ui-btn-icon-notext ui-icon-delete ui-corner-all">Close</a>
+			<p>2At 140 meters (16 lanes), Avenida 9 de Julio in Buenos Aires is the world’s widest avenue. Its name honors Argentina’s birthdate. (July 9, 1816). The avenue runs roughly one kilometer to the west of the Río de la Plata waterfront, from the Retiro district in the north to Constitución station in the south. <small>步步高升</small></p>
+        </div>
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<div data-role="page" id="girdview" class="page" data-title="test" data-prev="recipes-2" >
+    <div class="grid-list">
+        <div class="ui-grid-b"><div class="item ui-block-a">Block A</div><div class="item ui-block-b">Block B</div><div class="item ui-block-c">Block C</div></div><!-- /grid-b -->
+        <div class="ui-grid-b"><div class="item ui-block-a">Block A</div><div class="item ui-block-b">Block B</div><div class="item ui-block-c">Block C</div></div><!-- /grid-b -->
+        <div class="ui-grid-b"><div class="item ui-block-a">Block A</div><div class="item ui-block-b">Block B</div><div class="item ui-block-c">Block C</div></div><!-- /grid-b -->
+    </div>
+</div><!-- /page -->
+
+
+
+<div id="footer" data-id="footer" data-position="fixed" data-fullscreen="true" data-tap-toggle="false">
+	<!--
+    <div data-role="controlgroup" class="control ui-btn-left" data-type="horizontal" data-mini="true">
+    	<a href="#" class="prev ui-btn ui-btn-icon-notext ui-icon-carat-l">Previous</a>
+    	<a href="#" class="next ui-btn ui-btn-icon-notext ui-icon-carat-r">Next</a>
+    </div>
+-->
+      <div class="ui-grid-b">
+          <div class="ui-block-a"></div>
+          <div class="ui-block-b">
+
+              <a href="#trivia-newyork" id="trivia-button" data-rel="popup" data-transition="flip" ><img src="img/btn.jpg" style="width:100%;" /></a>
+              <div class="lotteryBtn">
+                        <!-- 中奖的 -->
+                        <a href="#popupReward" data-rel="popup" data-position-to="window" class=" ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" data-transition="pop">索取</a>    
+
+              </div>
+
+          </div>
+      </div>
+	
+</div><!-- /footer -->
+    <input type="hidden" id="hdnAwardId" value="1" />
+    <input type="hidden" id="hdnAwardCount" value="40" />
+    <input type="hidden" id="hdnAwardDesc" value="320g番茄酱" />
+    <input type="hidden" id="hdnScore" value="34" />
+    <style>
+        #girdview .grid-list {
+          height:100%;
+        }
+        #girdview .ui-grid-b {
+            height:33%;
+        }
+    </style>
+    <script>
+         //code for me
+        var pageID = [];
+        var $pages = $(".page");
+        var lastPageId;
+        $pages.each(function () {
+            pageID.push($(this).attr('id'));
+        })
+        $(document).bind('touchmove', function (e) {
+            e.preventDefault();
+        });
+        $(document).on("pageshow", ".page", function () {
+            // jQuery events go here...
+            var nextPageId = $(':mobile-pagecontainer').pagecontainer('getActivePage').next()[0].id;
+            var switchNextPage = function (nextPageId) {
+                if ($('#' + nextPageId).hasClass('page')) {
+                    $.mobile.changePage('#' + nextPageId, { transition: "slide" });
+                }
+            }
+
+            setTimeout(function () {
+                switchNextPage(nextPageId);
+
+            }, 5000);
+        });
+
+        $(document).on("pageshow", "#girdview", function () {
+            $('.grid-list').css({
+                'width': $(window).width(),
+                'height':$(window).height()
+            })
+            //alert('test');
+            $('.item').transition({
+                perspective: '100px',
+                rotateY: '180deg'
+            });
+
+        });
+
+
+
+
+    </script>
+</body>
+</html>
