@@ -6,11 +6,11 @@
 <meta name="viewport" content="width=640,target-densitydpi=device-dpi,user-scalable=no" />
 <title>盛时表行，日内瓦展</title>
 
-<script src="http://code.createjs.com/easeljs-0.6.0.min.js"></script>
-<script src="http://code.createjs.com/tweenjs-0.4.0.min.js"></script>
-<script src="http://code.createjs.com/movieclip-0.6.0.min.js"></script>
-<script src="http://code.createjs.com/preloadjs-0.3.0.min.js"></script>
-<script src="js/volvo.js"></script>
+<script src="http://code.createjs.com/easeljs-0.7.1.min.js"></script>
+<script src="http://code.createjs.com/tweenjs-0.5.1.min.js"></script>
+<script src="http://code.createjs.com/movieclip-0.7.1.min.js"></script>
+<script src="http://code.createjs.com/preloadjs-0.4.1.min.js"></script>
+<script src="js/primetime.js"></script>
 <script src="js/jquery-1.11.1.min.js"></script>
 
 <style>
@@ -75,51 +75,15 @@ myAudio.autoplay = true;
 
 
 var canvas, stage, exportRoot;
-
 function init() {
     canvas = document.getElementById("canvas");
     images = images||{};
 
-    var manifest = [
-        {src:"images/lib_img_000001.png", id:"lib_img_000001"},
-        {src:"images/lib_img_000002.jpg", id:"lib_img_000002"},
-        {src:"images/lib_img_000003.jpg", id:"lib_img_000003"},
-        {src:"images/lib_img_000004.jpg", id:"lib_img_000004"},
-        {src:"images/lib_img_000005.png", id:"lib_img_000005"},
-        {src:"images/lib_img_000006.png", id:"lib_img_000006"},
-        {src:"images/lib_img_000007.png", id:"lib_img_000007"},
-        {src:"images/lib_img_000008.png", id:"lib_img_000008"},
-        {src:"images/lib_img_000009.png", id:"lib_img_000009"},
-        {src:"images/lib_img_000010.png", id:"lib_img_000010"},
-        {src:"images/lib_img_000011.png", id:"lib_img_000011"},
-        {src:"images/lib_img_000012.png", id:"lib_img_000012"},
-        {src:"images/lib_img_000013.png", id:"lib_img_000013"},
-        {src:"images/lib_img_000014.jpg", id:"lib_img_000014"},
-        {src:"images/lib_img_000015.jpg", id:"lib_img_000015"},
-        {src:"images/lib_img_000016.png", id:"lib_img_000016"},
-        {src:"images/lib_img_000017.jpg", id:"lib_img_000017"},
-        {src:"images/lib_img_000018.jpg", id:"lib_img_000018"},
-        {src:"images/lib_img_000019.png", id:"lib_img_000019"},
-        {src:"images/lib_img_000020.jpg", id:"lib_img_000020"},
-        {src:"images/lib_img_000021.jpg", id:"lib_img_000021"},
-        {src:"images/lib_img_000022.jpg", id:"lib_img_000022"},
-        {src:"images/lib_img_000023.jpg", id:"lib_img_000023"},
-        {src:"images/lib_img_000024.png", id:"lib_img_000024"},
-        {src:"images/lib_img_000025.png", id:"lib_img_000025"},
-        {src:"images/lib_img_000026.jpg", id:"lib_img_000026"},
-        {src:"images/lib_img_000027.jpg", id:"lib_img_000027"},
-        {src:"images/lib_img_000028.png", id:"lib_img_000028"},
-        {src:"images/lib_img_000029.png", id:"lib_img_000029"},
-        {src:"images/lib_img_000030.png", id:"lib_img_000030"},
-        {src:"images/lib_img_000031.jpg", id:"lib_img_000031"},
-        {src:"images/lib_img_000032.png", id:"lib_img_000032"}
-    ];
-
     var loader = new createjs.LoadQueue(false);
-    loader.addEventListener("progress", handleProgress);
     loader.addEventListener("fileload", handleFileLoad);
     loader.addEventListener("complete", handleComplete);
-    loader.loadManifest(manifest);
+    loader.addEventListener("progress", handleProgress);
+    loader.loadManifest(lib.properties.manifest);
 }
 
 function handleProgress(event) {
@@ -130,9 +94,8 @@ function handleProgress(event) {
 function handleFileLoad(evt) {
     if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
 }
-
 function handleComplete() {
-    exportRoot = new lib.volvo();
+    exportRoot = new lib.primetime();
     exportRoot.addEventListener("completed", completed)
 
     stage = new createjs.Stage(canvas);
@@ -161,10 +124,8 @@ function completed(){
     
     $(".intro").fadeIn();
     setTimeout(function(){
-        window.location.href = "index2.html";
+        //window.location.href = "index2.html";
     }, 5000)
-    
-    
     
     
     
@@ -183,7 +144,6 @@ $(document).ready(function(e) {
     
     var btn2 = new Btn(document.getElementById("canvas3"));
     //btn2.init();
-    
     
     
     
@@ -299,6 +259,52 @@ function touchend(event){
 function update(){
     $(".wrapper").animate({"top":(-1136 * (pageIndex - 1)) + "px"});
 }
+
+</script>
+
+<!-- weixin sdk js 文件 -->
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<!-- heywow js sdk 文件 -->
+<script src="http://v2.shheywow.com/assets/jssdk/weixin.js"></script>
+<!-- jquery/zepto 库 -->
+<script src="http://v2.shheywow.com/assets/js/zepto.min.js"></script>
+<script>
+
+// 微信公众号的appid
+var appid = 'wx4855a807c793c274';
+
+// HW 是heywow js sdk的命名空间
+
+// 要使用的jsapi列表
+HW.jsApiList = ['onMenuShareTimeline', 'onMenuShareAppMessage'];
+
+// 分享朋友圈的数据
+HW.shareTimelineData = {
+     title:"我写贺卡，你收礼，这样真的好吗？",
+     link:'',
+     imgUrl:'',
+     success:function() {
+     }
+};
+
+// 分享给好友的数据
+HW.shareAppData = {
+     title:"呲牙送壕礼",
+     desc:"我写贺卡，你收礼，这样真的好吗？",
+     link:'',
+     imgUrl:'',
+     success:function() {
+     }
+}
+
+// 隐藏菜单列表
+HW.hideMenuList = [];
+
+// 调用HW.wxconfig初始化微信jssdk
+// 第一个参数：微信公众号appid
+// 第二个参数：当前页面的完整URL(需要urlencode)
+// 第三个参数：是否需要开启debug模式
+HW.wxconfig(appid, window.location.href, true);
 </script>
 </head>
 
