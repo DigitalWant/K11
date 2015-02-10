@@ -1,0 +1,150 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=640,target-densitydpi=device-dpi,user-scalable=no" />
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<title>沃尔沃全新XC90</title>
+</head>
+<style> 
+   body,html{ margin:0; padding:0; overflow:hidden; height:100%;}
+    .box{ background:url(images/fm.jpg) no-repeat; width:630px; height:1136px;padding:0 0 0 10px;}
+    .box>div{ width:206px; height:356px; float:left; position:relative;
+                position: relative;
+                margin: 0 auto;
+                top:50px;
+                -webkit-perspective: 800px;/*3d场景*/
+                -moz-perspective: 800px;
+    }
+    .dian1{ width:56px; height:56px; position:absolute; top:47px; right:16px; z-index:80;}
+
+    .kkl{ position:absolute; top:0; right:0; width:100%; height:40px;  z-index:10;}
+    .pic_1,.pic_2,.pic_3,.pic_4{ position:absolute; top:0; left:0;}
+    .nm_1{ width:100%; height:78px; position:absolute; bottom:0; left:0; background:rgba(0,0,0,0.2); text-align:center;}
+    .nm_2{ width:100%; height:78px; position:absolute; bottom:0; left:0; background:rgba(0,0,0,0.2);text-align:center;}
+    .nm_3{ width:100%; height:78px; position:absolute; bottom:0; left:0; background:rgba(0,0,0,0.2);text-align:center;}
+    .nm_4{ width:100%; height:78px; position:absolute; bottom:0; left:0; background:rgba(0,0,0,0.2);text-align:center;}
+    .nm_1 img,.nm_2 img,.nm_3 img,.nm_4 img{ padding-top:10px;}
+    .a{ 
+        position:absolute; left:0; top:0; width:206px; height:356px; background:#FFF;
+        -webkit-transition: 3s ease-in-out;
+        -moz-transition: 3s ease-in-out;
+        -ms-transition: 3s ease-in-out;
+        -o-transition: 3s ease-in-out;
+        transition: 3s ease-in-out; 
+        font-family: verdana, arial, sans-serif; background:#fff;
+        background: -moz-linear-gradient(-45deg, #fff, #fff 50%, #fff 100%);  
+        background: -webkit-gradient(linear, 0 0, 100% 100%, from(#fff), color-stop(50%, #fff), color-stop(100%, #fff));
+        -moz-transform-style: preserve-3d;
+        -moz-backface-visibility: hidden;/*抖动*/
+        -webkit-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-transform: rotateY(-180deg);
+        -webkit-transform: rotateY(-180deg);    
+
+    }
+    .num{
+    -moz-transform: rotateY(0);
+    -webkit-transform: rotateY(0) !important;
+    }
+</style>
+<body>
+
+    <div class="box">
+        <div class="n1">
+            <div class="a a1"><img src="images/fm_1.jpg" /></div>
+        </div>
+        <div class="n2">
+            <div class="a a2"><img src="images/fm_2.jpg" /></div>
+        </div>
+        <div class="n3">
+            <div class="a a3"><img src="images/fm_3.jpg" /></div>
+        </div>
+        <div class="n4">
+            <div class="a a4"><img src="images/fm_4.jpg" /></div>
+        </div>
+        <div class="n5">
+            <div class="a a5"><img src="images/fm_5.jpg" /></div>
+        </div>
+        <div class="n6">
+            <div class="a a6"><img src="images/fm_6.jpg" /></div>
+        </div>
+        <div class="n7">
+            <div class="a a7"><img src="images/fm_7.jpg" /></div>
+        </div>
+        <div class="n8">
+            <div class="a a8"><img src="images/fm_8.jpg" /></div>
+        </div>
+        <div class="n9">
+            <div class="a a9"><img src="images/fm_9.jpg" /></div>
+        </div>
+    </div>
+  
+<script>
+
+setTimeout(function(){
+        $(".a2,.a4,.a6,.a8").addClass("num");
+},700);
+setTimeout(function(){
+    $(".a5").addClass("num");
+},100);
+
+setTimeout(function(){
+            $(".a1,.a3,.a7,.a9").addClass("num");
+},1400);
+var sh=$(window).height();
+var sw=$(window).width();
+var sl=sh/1136;
+$(".box").css({"-webkit-transform":"scale("+sl+","+sl+")","-webkit-transform-origin":"center top"});
+var flg= true;
+    $(".dian1").click(function(){
+        if(flg){
+            $(".nav,.pup1").show();
+            $(".nav").addClass("navan").removeClass("navan1");
+        }else{
+            
+            $(".nav").removeClass("navan").addClass("navan1");
+            $(".pup1").hide();
+            
+        }
+            flg= !flg;
+    });
+    $(".nav_1,.n1").click(function(){
+        location.href="exterior.html";
+    });
+    $(".nav_2,.n2").click(function(){
+        location.href="wood.html";
+    });
+    $(".nav_3,.n3").click(function(){
+        location.href="leather.html";
+    });
+    $(".nav_4,.n4").click(function(){
+        location.href="engine.html";
+    });
+    $(".nav_5,.n5").click(function(){
+        location.href="sound.html";
+    });
+    $(".nav_6,.n6").click(function(){
+        location.href="crystal.html";
+    });
+    $(".nav_7,.n7").click(function(){
+        location.href="air.html";
+    });
+    $(".n8").click(function(){
+        location.href="safety.html";
+    });
+    $(".n9").click(function(){
+        location.href="sensus.html";
+    });
+    $(".nav_11").click(function(){
+        location.href="pioneer.html";
+    });
+    $(".kkl").click(function(){
+        location.href="index.html";
+    });
+    
+
+</script>
+</body>
+</html>

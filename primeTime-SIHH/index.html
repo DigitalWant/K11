@@ -1,186 +1,371 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="format-detection" content="telephone=no">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-touch-fullscreen" content="no">
-<meta name="Description" content="2015年的冬日，日内瓦高级钟表展(即SIHH)在热烈的举杯中开幕，因为今年是它的25岁生日。现在对于腕表来说，不是一个最好的时代，但对于爱表人来说，每一次的SIHH，都是一场狂欢。">
-<meta name='Keywords' content="春运,澎湃,澎湃新闻,交互,动画,上海报业,东方早报,上海东方早报">
-<title>日内瓦高级钟表展</title>
-<link rel="stylesheet" href="assets/common.css" />
-</head>
-<body>
-<!-- turn-box -->
-<div id="turn-box">
-    <div class="tb-inner">
-        <div class="h2v">
-            <div class="imgtip"></div>
-            <p>请将手机调至竖屏浏览</p>
-        </div>
-    </div>
-</div>
-<div class="loadpage" id="loading">
-    <div class="tips">
-        <div class="tipbox">
-            <p>每一条回家的路，都有最动人的故事</p>
-            <p class="loader">
-                <img src="assets/loading.png" alt="">
-            </p>
-        </div>
-    </div>
-</div>
-<div class="container-wrap">
-<div class="container">
-    <div class="active-info" id="activeInfo">
-        <div class="bgaudio">
-            <a href="#" id="mute-btn"></a>
-            <a href="#" class="active" id='play-btn'></a>
-        </div>
-        <audio id="bgAudio" src="assets/bg.mp3" preload="auto" loop></audio>
-        <div class="pager" id="pager"><span id="ci">1</span>/<span id="cc"></span></div>
-    </div>
-    <a href="#" class="tonext" id="toNext"></a>
-    <div class="swiper-wrapper">
-        <div class="swiper-slide cover noswipe">
-            <div class="cimg"></div>
-            <div class="cimg2"></div>
-            <div class="ctext">
-                <img class="fadeIn" src="img/cover-t.jpg" alt="" />
-                <img class="delay1" src="img/cover-t1.png" alt="" />
-                <img class="delay2" src="img/cover-t2.png" alt="" />
-                <img class="delay3" src="img/cover-t3.png" alt="" />
-            </div>
-        </div>
-        <div class="swiper-slide p1">
-            <div class="cimg"></div>
-            <div class="ctext fadeIn">
-                <img src="img/p1-t.png" alt="" />
-            </div>
-        </div>
-        <div class="swiper-slide p2">
-            <div class="cimg"></div>
-            <div class="ctext fadeIn">
-                <img src="img/p2-t.png" alt="" />
-            </div>
-        </div>
-        <div class="swiper-slide p3">
-            <div class="cimg"></div>
-            <div class="ctext fadeIn">
-                <img src="img/p3-t.png" alt="" />
-            </div>
-        </div>
-        <div class="swiper-slide p4">
-            <div class="cimg"></div>
-            <div class="ctext fadeIn">
-                <img src="img/p4-t.png" alt="" />
-            </div>
-        </div>
-        <div class="swiper-slide p5">
-            <div class="cimg"></div>
-            <div class="ctext fadeIn">
-                <img src="img/p5-t.png" alt="" />
-            </div>
-        </div>
-        <div class="swiper-slide p6">
-            <div class="cimg"></div>
-            <div class="ctext fadeIn">
-                <img src="img/p6-t.png" alt="" />
-            </div>
-        </div>
-        <div class="swiper-slide p7">
-            <div class="cimg"></div>
-            <div class="ctext fadeIn">
-                <img src="img/p7-t.png" alt="" />
-            </div>
-        </div>
-        <div class="swiper-slide p8">
-            <div class="cimg"></div>
-            <div class="ctext fadeIn">
-                <img src="img/p8-t.png" alt="" />
-            </div>
-        </div>
-        <div class="swiper-slide p9">
-            <div class="cimg"></div>
-            <div class="ctext fadeIn">
-                <img src="img/p9-t.png" alt="" />
-            </div>
-        </div>
-        <div class="swiper-slide p10 noswipe">
-            <div class="cimg"></div>
-            <div class="ctext fadeIn">
-                <img src="img/p10-t.png" alt="" />
-            </div>
-        </div>
-    </div>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=640,target-densitydpi=device-dpi,user-scalable=no" />
+<title>盛时表行，日内瓦展</title>
 
-</div>
-<div class="sharewrap" id="sharebox">
-    <div id="paper-share" class="paper-share">
-        <p class="share-title">点击分享 把回家的消息告诉你最思念的人</p>
-        <div class="share-span cf">
-            <a class="jiathis_button_weixin" title="分享到微信"></a>
-            <a class="jiathis_button_tsina" title="分享到新浪微博"></a>
-        </div>
-    </div>
-    <a class="appdl" href="http://m.thepaper.cn/app"><img src="assets/appdl.png" alt="点击下载澎湃新闻客户端" /></a>
-    <a class="brand" href="http://thepaper.cn"><img src="assets/logo-black.svg" alt="澎湃新闻" /></a>
-</div>
-</div>
-<script src="http://image.thepaper.cn/html/static/js/jquery.js"></script>
-<script src="http://image.thepaper.cn/html/static/js/swiper.js"></script>
-<script src="http://image.thepaper.cn/html/static/js/wxjssdk.js"></script>
-<script src="assets/main.js"></script>
+<script src="http://code.createjs.com/easeljs-0.6.0.min.js"></script>
+<script src="http://code.createjs.com/tweenjs-0.4.0.min.js"></script>
+<script src="http://code.createjs.com/movieclip-0.6.0.min.js"></script>
+<script src="http://code.createjs.com/preloadjs-0.3.0.min.js"></script>
+<script src="js/volvo.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
 
-<!-- weixin sdk js 文件 -->
-<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-<!-- heywow js sdk 文件-->
-<script src="http://v2.shheywow.com/assets/jssdk/weixin.js"></script>
-<!-- jquery/zepto 库 -->
-<script src="http://v2.shheywow.com/assets/js/zepto.min.js"></script>
+<style>
+    body, html{margin:0; padding:0; overflow:hidden; width:100%; height:100%;}
+    .wrapper{width:640px; height:100%; margin:0 auto; position:absolute; left:50%; top:0; margin-left:-320px; overflow:hidden;}
+    .motion{width:640px; height:1136px; margin:0 auto; position:relative;}
+    .music_btn{width:66px; height:66px; position:absolute; z-index:55; right:20px; bottom:20px; cursor:pointer;}
+    
+    #canvas{position:absolute; left:0; top:0;}
+    
+    .p1{width:640px; height:1136px; margin:0 auto; position:relative; background:#FFF;}
+    .p2{width:640px; height:1136px; margin:0 auto; position:relative; }
+    .p3{width:640px; height:1136px; margin:0 auto; position:relative; }
+    .p4{width:640px; height:1136px; margin:0 auto; position:relative; }
+    
+    .loading{width:124px; height:124px; position:absolute; left:50%; top:50%; margin-left:-62px; margin-top:-62px; z-index:666}
+    .intro{width:640px; height:1136px; margin:0 auto; position:absolute; z-index:333; display:none; left:0; top:0;}
+    .share_tips{width:640px; height:1136px; position:absolute; z-index:88; left:50%; margin-left:-320px; display:none;}
+    .share_btn{width:120px; height:120px; position:absolute; z-index:333; left:260px; top:500px; background:#000; opacity:0}
+    .skip{width:58px; height:30px; position:absolute; z-index:332; right:100px; margin-left:-29px; top:0; cursor:pointer;}
+    .progress{position:absolute; left:50%; top:50%; margin-left:-25px; margin-top:-15px; font-size:1.5em; z-index:888; color:#999; width:50px; height:30px; text-align:center;}
+    .arrow{width:50px; height:59px; position:absolute; left:50%; top:0; margin-left:-20px;}
+    #canvas2{position:absolute; left:50%; top:600px; z-index:55; width:251px; height:58px; margin-left:-125px;}
+    #canvas3{position:absolute; left:50%; top:400px; z-index:55; width:251px; height:58px; margin-left:-115px;}
+</style>
+
 <script>
 
-// 微信公众号的appid
-var appid = 'wx4855a807c793c274';
-
-// HW 是heywow js sdk的命名空间
-
-// 要使用的jsapi列表
-HW.jsApiList = ['onMenuShareTimeline', 'onMenuShareAppMessage'];
-
-// 分享朋友圈的数据
-HW.shareTimelineData = {
-     title:"我写贺卡，你收礼，这样真的好吗？",
-     link:'',
-     imgUrl:'',
-     success:function() {
-
-     }
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i) ? true : false;
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPod/i) ? true : false;
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i) ? true : false;
+    },
+    Windows2: function() {
+        return navigator.userAgent.match(/Windows Phone/i) ? true : false;
+    },
+    
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows() || isMobile.Windows2());
+    }
 };
 
-// 分享给好友的数据
-HW.shareAppData = {
-     title:"呲牙送壕礼",
-     desc:"我写贺卡，你收礼，这样真的好吗？",
-     link:'',
-     imgUrl:'',
-     success:function() {
 
-     }
+var playEnd = false;
+var pageIndex = 1;
+var pageHeight;
+var audioFlag = true;
+var timeout;
+var myAudio=new Audio();
+myAudio.setAttribute('src','bgMusic.mp3');                
+myAudio.volume=1;
+myAudio.autoplay = true;
+//myAudio.loop = true;
+
+
+var canvas, stage, exportRoot;
+
+function init() {
+    canvas = document.getElementById("canvas");
+    images = images||{};
+
+    var manifest = [
+        {src:"images/lib_img_000001.png", id:"lib_img_000001"},
+        {src:"images/lib_img_000002.jpg", id:"lib_img_000002"},
+        {src:"images/lib_img_000003.jpg", id:"lib_img_000003"},
+        {src:"images/lib_img_000004.jpg", id:"lib_img_000004"},
+        {src:"images/lib_img_000005.png", id:"lib_img_000005"},
+        {src:"images/lib_img_000006.png", id:"lib_img_000006"},
+        {src:"images/lib_img_000007.png", id:"lib_img_000007"},
+        {src:"images/lib_img_000008.png", id:"lib_img_000008"},
+        {src:"images/lib_img_000009.png", id:"lib_img_000009"},
+        {src:"images/lib_img_000010.png", id:"lib_img_000010"},
+        {src:"images/lib_img_000011.png", id:"lib_img_000011"},
+        {src:"images/lib_img_000012.png", id:"lib_img_000012"},
+        {src:"images/lib_img_000013.png", id:"lib_img_000013"},
+        {src:"images/lib_img_000014.jpg", id:"lib_img_000014"},
+        {src:"images/lib_img_000015.jpg", id:"lib_img_000015"},
+        {src:"images/lib_img_000016.png", id:"lib_img_000016"},
+        {src:"images/lib_img_000017.jpg", id:"lib_img_000017"},
+        {src:"images/lib_img_000018.jpg", id:"lib_img_000018"},
+        {src:"images/lib_img_000019.png", id:"lib_img_000019"},
+        {src:"images/lib_img_000020.jpg", id:"lib_img_000020"},
+        {src:"images/lib_img_000021.jpg", id:"lib_img_000021"},
+        {src:"images/lib_img_000022.jpg", id:"lib_img_000022"},
+        {src:"images/lib_img_000023.jpg", id:"lib_img_000023"},
+        {src:"images/lib_img_000024.png", id:"lib_img_000024"},
+        {src:"images/lib_img_000025.png", id:"lib_img_000025"},
+        {src:"images/lib_img_000026.jpg", id:"lib_img_000026"},
+        {src:"images/lib_img_000027.jpg", id:"lib_img_000027"},
+        {src:"images/lib_img_000028.png", id:"lib_img_000028"},
+        {src:"images/lib_img_000029.png", id:"lib_img_000029"},
+        {src:"images/lib_img_000030.png", id:"lib_img_000030"},
+        {src:"images/lib_img_000031.jpg", id:"lib_img_000031"},
+        {src:"images/lib_img_000032.png", id:"lib_img_000032"}
+    ];
+
+    var loader = new createjs.LoadQueue(false);
+    loader.addEventListener("progress", handleProgress);
+    loader.addEventListener("fileload", handleFileLoad);
+    loader.addEventListener("complete", handleComplete);
+    loader.loadManifest(manifest);
 }
 
-// 隐藏菜单列表
-HW.hideMenuList = [];
+function handleProgress(event) {
+    var loaded = Math.floor(event.loaded * 100);
+    $(".progress").html(loaded);
+}
 
-// 调用HW.wxconfig初始化微信jssdk
-// 第一个参数：微信公众号appid
-// 第二个参数：当前页面的完整URL(需要urlencode)
-// 第三个参数：是否需要开启debug模式
-HW.wxconfig(appid, window.location.href, true);
+function handleFileLoad(evt) {
+    if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete() {
+    exportRoot = new lib.volvo();
+    exportRoot.addEventListener("completed", completed)
+
+    stage = new createjs.Stage(canvas);
+    stage.addChild(exportRoot);
+    stage.update();
+
+    createjs.Ticker.setFPS(40);
+    createjs.Ticker.addEventListener("tick", stage);
+    
+    
+    $(".loading").fadeOut();
+    $(".progress").fadeOut();
+    myAudio.play();
+    
+    if(!isMobile.iOS()){
+        var s = 1000 * 81;
+        timeout = setTimeout(function(){
+            completed();
+        }, s)
+    }
+    
+    
+}
+
+function completed(){
+    
+    $(".intro").fadeIn();
+    setTimeout(function(){
+        window.location.href = "index2.html";
+    }, 5000)
+    
+    
+    
+    
+    
+    return;
+    playEnd = true;
+    $(".intro").fadeIn();
+    if(timeout) clearInterval(timeout);
+}
+
+
+    
+$(document).ready(function(e) {
+    init();
+    var btn = new Btn(document.getElementById("canvas2"));
+    //btn.init();
+    
+    var btn2 = new Btn(document.getElementById("canvas3"));
+    //btn2.init();
+    
+    
+    
+    
+    pageHeight = window.innerHeight;
+    var t = (pageHeight - 1136) * 0.5;
+    $(".wrapper").height(1136 * 4);
+    $("#canvas").css({"top":t+"px"});
+    $(".skip").css({"top":(pageHeight - 70)+"px"});
+    
+    $(".p4 img").css({"top":t+"px"});
+    $(".intro").css({"top":(pageHeight - 1136)+"px"});
+    $(".p4 .share_btn").css({"top":(t + 760)+"px"});
+    
+    pageIndex = 1;
+    update();
+    
+    
+    
+    
+    $(".music_btn").click(function(){       
+        if(audioFlag){
+            myAudio.pause();
+            $(".music_btn").attr("src", "images/bo.png");
+        }
+        else if(!audioFlag){
+            myAudio.play();
+            $(".music_btn").attr("src", "images/ting.png");
+        }
+        
+        audioFlag = !audioFlag;
+    })
+    
+    $(".share_btn").click(function(){
+        $(".share_tips").fadeIn();
+    });
+    
+    
+    $(".share_tips").click(function(){
+        $(this).fadeOut();
+    });
+    
+    
+    $(".skip").click(function(){
+        completed();
+    });
+    
+    $(".skip")[0].addEventListener('touchstart', function(event){
+        completed();
+    }, false);
+    
+    /*
+    $(".share_btn")[0].addEventListener('touchstart', function(event){
+        $(".share_tips").fadeIn();
+    }, false);
+
+    
+    $("#canvas2")[0].addEventListener('touchstart', function(event){
+        window.location.href = "http://115.29.36.127/weixin/allnewxc90/exterior.html";
+    }, false);
+    
+    
+    $("#canvas3")[0].addEventListener('touchstart', function(event){
+        window.location.href = "http://115.29.36.127/weixin/allnewxc90/exterior.html";
+    }, false);
+    */    
+    $(".wrapper")[0].addEventListener('touchstart', touchstart, false);
+    $(".wrapper")[0].addEventListener('touchmove', touchmove, false);
+    $(".wrapper")[0].addEventListener('touchend', touchend, false);
+});
+
+
+var startY, endY;
+function touchstart(event){
+    event.preventDefault();
+    var touch = event.touches[0];
+    endY = startY = touch.pageY;
+}
+
+function touchmove(event){
+    event.preventDefault();
+    var touch = event.touches[0];
+    endY = touch.pageY;
+}
+
+function touchend(event){
+    var distance = startY - endY;
+    if(distance > 30){
+        if(playEnd){
+            if(pageIndex < 4) {
+                pageIndex ++;
+                update(pageIndex);
+            }
+        }
+    }
+    else if(distance < -30){
+        
+        if($(".intro").css("display") == "block"){
+            if(pageIndex == 1) {
+                $(".intro").fadeOut();
+                init();
+            }   
+        }
+        
+        if(pageIndex > 1) {
+            pageIndex --;   
+            update(pageIndex);
+        }
+            
+    }
+}
+
+
+function update(){
+    $(".wrapper").animate({"top":(-1136 * (pageIndex - 1)) + "px"});
+}
 </script>
+</head>
 
+<body style="background-color:#D4D4D4">
+     <img src="images/ting.png" class="music_btn" />
+     <img src="images/loading.gif" class="loading" />
+     <img src="images/share.png" class="share_tips" />
+     <div class="progress">0%</div>
+    
+    <div class="wrapper">
+        <div class="p1">
+            <img src="images/skip.png" class="skip" />
+            <div class="intro">
+                <img src="images/p8.jpg"/>
+                <!--<canvas id="canvas2" width="251" height="58" style="background-color:none"></canvas>-->
+            </div>
+            <canvas id="canvas" width="640" height="1136" style="background-color:none"></canvas>
+        </div>
+        <div class="p2"><img src="images/p9.jpg" /></div>
+        <div class="p3"><img src="images/p10.jpg" /></div>
+        <div class="p4">
+            <img src="images/lib_img_000026.jpg" style="position:absolute; left:0; top:0;" />
+            <canvas id="canvas3" width="251" height="58" style="background-color:none"></canvas>
+            <!-- <a href="#" class="share_btn"></a> -->
+        </div>
+    </div>
+    
+
+<script>
+var Btn = function(canvas){
+    this.canvas = canvas;
+    this.images = images || {};
+}
+Btn.prototype = {   
+    init:function(){
+        createjs.MotionGuidePlugin.install();
+        var manifest = [
+            {src:"images/btn1.png", id:"btn1"},
+            {src:"images/img30.png", id:"图层30"}
+        ];
+    
+        var loader = new createjs.LoadQueue(false);
+        loader._self = this;
+        loader.addEventListener("fileload", this.handleFileLoad);
+        loader.addEventListener("complete", this.handleComplete);
+        loader.loadManifest(manifest);
+        
+    },
+    
+    handleFileLoad:function(evt){
+        if (evt.item.type == "image") { this.images[evt.item.id] = evt.result; }
+    },
+    
+    handleComplete:function(e){
+        var loader = e.target;
+        var _self = loader._self;
+        
+        var exportRoot = new lib.btn();
+        
+        var stage = new createjs.Stage(_self.canvas);
+        stage.addChild(exportRoot);
+        stage.update();
+    
+        createjs.Ticker.setFPS(24);
+        createjs.Ticker.addEventListener("tick", stage);
+    }
+}
+</script>
 </body>
 </html>
