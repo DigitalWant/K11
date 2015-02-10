@@ -10,7 +10,7 @@
 <script src="http://code.createjs.com/tweenjs-0.5.1.min.js"></script>
 <script src="http://code.createjs.com/movieclip-0.7.1.min.js"></script>
 <script src="http://code.createjs.com/preloadjs-0.4.1.min.js"></script>
-<script src="js/volvo.js"></script>
+<script src="js/primetime.js"></script>
 <script src="js/jquery-1.11.1.min.js"></script>
 
 <style>
@@ -94,7 +94,7 @@ function handleFileLoad(evt) {
     if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
 }
 function handleComplete() {
-    exportRoot = new lib.volvo();
+    exportRoot = new lib.primetime();
     exportRoot.addEventListener("completed", completed)
 
     stage = new createjs.Stage(canvas);
