@@ -10,7 +10,7 @@
 <script src="http://code.createjs.com/tweenjs-0.5.1.min.js"></script>
 <script src="http://code.createjs.com/movieclip-0.7.1.min.js"></script>
 <script src="http://code.createjs.com/preloadjs-0.4.1.min.js"></script>
-<script src="js/primetime.js"></script>
+<script src="js/volvo.js"></script>
 <script src="js/jquery-1.11.1.min.js"></script>
 
 <style>
@@ -36,7 +36,6 @@
     #canvas2{position:absolute; left:50%; top:600px; z-index:55; width:251px; height:58px; margin-left:-125px;}
     #canvas3{position:absolute; left:50%; top:400px; z-index:55; width:251px; height:58px; margin-left:-115px;}
 </style>
-
 <script>
 
 var isMobile = {
@@ -95,7 +94,7 @@ function handleFileLoad(evt) {
     if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
 }
 function handleComplete() {
-    exportRoot = new lib.primetime();
+    exportRoot = new lib.volvo();
     exportRoot.addEventListener("completed", completed)
 
     stage = new createjs.Stage(canvas);
@@ -139,10 +138,10 @@ function completed(){
     
 $(document).ready(function(e) {
     init();
-    var btn = new Btn(document.getElementById("canvas2"));
+    //var btn = new Btn(document.getElementById("canvas2"));
     //btn.init();
     
-    var btn2 = new Btn(document.getElementById("canvas3"));
+    //var btn2 = new Btn(document.getElementById("canvas3"));
     //btn2.init();
     
     
@@ -158,7 +157,7 @@ $(document).ready(function(e) {
     $(".p4 .share_btn").css({"top":(t + 760)+"px"});
     
     pageIndex = 1;
-    update();
+    //update();
     
     
     
@@ -262,49 +261,6 @@ function update(){
 
 </script>
 
-<!-- weixin sdk js 文件 -->
-<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-<!-- heywow js sdk 文件 -->
-<script src="http://v2.shheywow.com/assets/jssdk/weixin.js"></script>
-
-<script>
-
-// 微信公众号的appid
-var appid = 'wx4855a807c793c274';
-
-// HW 是heywow js sdk的命名空间
-
-// 要使用的jsapi列表
-HW.jsApiList = ['onMenuShareTimeline', 'onMenuShareAppMessage'];
-
-// 分享朋友圈的数据
-HW.shareTimelineData = {
-     title:"我写贺卡，你收礼，这样真的好吗？",
-     link:'',
-     imgUrl:'',
-     success:function() {
-     }
-};
-
-// 分享给好友的数据
-HW.shareAppData = {
-     title:"呲牙送壕礼",
-     desc:"我写贺卡，你收礼，这样真的好吗？",
-     link:'',
-     imgUrl:'',
-     success:function() {
-     }
-}
-
-// 隐藏菜单列表
-HW.hideMenuList = [];
-
-// 调用HW.wxconfig初始化微信jssdk
-// 第一个参数：微信公众号appid
-// 第二个参数：当前页面的完整URL(需要urlencode)
-// 第三个参数：是否需要开启debug模式
-HW.wxconfig(appid, window.location.href, true);
-</script>
 </head>
 
 <body style="background-color:#D4D4D4">
@@ -315,62 +271,19 @@ HW.wxconfig(appid, window.location.href, true);
     
     <div class="wrapper">
         <div class="p1">
-            <img src="images/skip.png" class="skip" />
-            <div class="intro">
-                <img src="images/p8.jpg"/>
-                <!--<canvas id="canvas2" width="251" height="58" style="background-color:none"></canvas>-->
-            </div>
             <canvas id="canvas" width="640" height="1136" style="background-color:none"></canvas>
         </div>
-        <div class="p2"><img src="images/p9.jpg" /></div>
-        <div class="p3"><img src="images/p10.jpg" /></div>
-        <div class="p4">
-            <img src="images/lib_img_000026.jpg" style="position:absolute; left:0; top:0;" />
-            <canvas id="canvas3" width="251" height="58" style="background-color:none"></canvas>
-            <!-- <a href="#" class="share_btn"></a> -->
-        </div>
+
     </div>
     
 
-<script>
-var Btn = function(canvas){
-    this.canvas = canvas;
-    this.images = images || {};
-}
-Btn.prototype = {   
-    init:function(){
-        createjs.MotionGuidePlugin.install();
-        var manifest = [
-            {src:"images/btn1.png", id:"btn1"},
-            {src:"images/img30.png", id:"图层30"}
-        ];
-    
-        var loader = new createjs.LoadQueue(false);
-        loader._self = this;
-        loader.addEventListener("fileload", this.handleFileLoad);
-        loader.addEventListener("complete", this.handleComplete);
-        loader.loadManifest(manifest);
-        
-    },
-    
-    handleFileLoad:function(evt){
-        if (evt.item.type == "image") { this.images[evt.item.id] = evt.result; }
-    },
-    
-    handleComplete:function(e){
-        var loader = e.target;
-        var _self = loader._self;
-        
-        var exportRoot = new lib.btn();
-        
-        var stage = new createjs.Stage(_self.canvas);
-        stage.addChild(exportRoot);
-        stage.update();
-    
-        createjs.Ticker.setFPS(24);
-        createjs.Ticker.addEventListener("tick", stage);
-    }
-}
-</script>
+<!-- weixin sdk js 文件 
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>-->
+<!-- heywow js sdk 文件 
+<script src="http://v2.shheywow.com/assets/jssdk/weixin.js"></script>
+<script src="http://v2.shheywow.com/assets/jssdk/wxsettings.js"></script>-->
+
+
+
 </body>
 </html>
