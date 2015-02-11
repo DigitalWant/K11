@@ -29,7 +29,6 @@ function handleFileLoad(evt) {
 
 function handleComplete() {
 	exportRoot = new lib.primetime();
-	exportRoot.addEventListener("completed", completed);
 
 	stage = new createjs.Stage(canvas);
 	stage.addChild(exportRoot);

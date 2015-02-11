@@ -131,15 +131,18 @@ p.nominalBounds = new cjs.Rectangle(0,0,640,1130);
 // stage content:
 (lib.primetime = function(mode,startPosition,loop) {
 if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
+
 	// timeline functions:
-	this.frame_325 = function() {
-		this.stop();
-		completed();
-		//this.dispatchEvent(new Event("completed"))
+	this.frame_326 = function() {
+		/* Code to get the frame number of the current frame
+		*/
+		
+		window.location.href = "index2.html";
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(325).call(this.frame_325));
+	this.timeline.addTween(cjs.Tween.get(this).wait(326).call(this.frame_326).wait(1));
+
 	// Layer 2
 	this.instance = new lib.Symbol6("synched",0);
 	this.instance.setTransform(336,874.2,1,1,0,0,0,250.8,31.4);

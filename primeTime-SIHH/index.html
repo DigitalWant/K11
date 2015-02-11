@@ -108,7 +108,6 @@ function handleFileLoad(evt) {
 
 function handleComplete() {
     exportRoot = new lib.primetime();
-    exportRoot.addEventListener("completed", completed);
 
     stage = new createjs.Stage(canvas);
     stage.addChild(exportRoot);
@@ -116,14 +115,11 @@ function handleComplete() {
 
     createjs.Ticker.setFPS(lib.properties.fps);
     createjs.Ticker.addEventListener("tick", stage);
-    //console.log(stage);
 
     $(".loading").fadeOut();
     $(".progress").fadeOut();
     myAudio.play();
-    //屈彪帮我看看怎么样才能调用completed funciton 谢谢。
-    //completed(createjs.Ticker.getTime());
-    //sprite.on("animationend", handleAnimationEnd);
+
 }
 var startY, endY;
 function touchstart(event){
@@ -166,10 +162,12 @@ function touchend(event){
 }
 
 $(document).ready(function(e) {
-    pageHeight = window.innerHeight;
+   
+   /* pageHeight = window.innerHeight;
     var t = (pageHeight - 1136) * 0.5;
    // $(".wrapper").height(1136 * 4);
-    $("#canvas").css({"top":t+"px"});
+    $("#canvas").css({"top":t+"px"});*/
+    
     $(".skip").css({"top":(pageHeight - 70)+"px"});
     $(".wrapper")[0].addEventListener('touchstart', touchstart, false);
     $(".wrapper")[0].addEventListener('touchmove', touchmove, false);
