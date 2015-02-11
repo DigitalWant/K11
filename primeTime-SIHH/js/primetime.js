@@ -131,7 +131,15 @@ p.nominalBounds = new cjs.Rectangle(0,0,640,1130);
 // stage content:
 (lib.primetime = function(mode,startPosition,loop) {
 if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
+	// timeline functions:
+	this.frame_325 = function() {
+		this.stop();
+		completed();
+		//this.dispatchEvent(new Event("completed"))
+	}
 
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(1688).call(this.frame_325));
 	// Layer 2
 	this.instance = new lib.Symbol6("synched",0);
 	this.instance.setTransform(336,874.2,1,1,0,0,0,250.8,31.4);
