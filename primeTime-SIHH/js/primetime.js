@@ -139,7 +139,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(1688).call(this.frame_325));
+	this.timeline.addTween(cjs.Tween.get(this).wait(325).call(this.frame_325));
 	// Layer 2
 	this.instance = new lib.Symbol6("synched",0);
 	this.instance.setTransform(336,874.2,1,1,0,0,0,250.8,31.4);
