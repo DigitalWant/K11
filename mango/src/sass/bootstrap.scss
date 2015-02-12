@@ -3,6 +3,7 @@
 //scafolding
 //...............
 
+$text-color: $secondary-color;
 
 $brand-primary:          $primary-color;
 $brand-success:          $primary-color;
@@ -20,7 +21,7 @@ $brand-light:            $lighter-color;
 $link-color: $tertiary-color;
 $link-hover-color: darken($link-color, 10%);
 
-//Typography 
+//Typography
 //...............
 
 $font-family-sans-serif: $primary-font;
@@ -31,13 +32,14 @@ $font-size-base: $font-size;
 $line-height-base: 1.5;
 
 $headings-font-weight: 700;
+$headings-color: $secondary-color;
 
 $font-size-h1:           30px;
-$font-size-h2:           24px; 
+$font-size-h2:           24px;
 $font-size-h3:           22px;
 $font-size-h4:           18px;
 $font-size-h5:           15px;
-$font-size-h6:           12px; 
+$font-size-h6:           12px;
 
 
 // Fonts
@@ -61,7 +63,6 @@ $grid-float-breakpoint:  992px; // Collapse
 // Reset
 @import "sass-bootstrap/lib/normalize";
 @import "sass-bootstrap/lib/print";
-@import "sass-bootstrap/lib/glyphicons";
 
 // Core CSS
 @import "sass-bootstrap/lib/scaffolding";
@@ -74,6 +75,7 @@ $grid-float-breakpoint:  992px; // Collapse
 
 // Components
 @import "sass-bootstrap/lib/component-animations";
+@import "sass-bootstrap/lib/glyphicons";
 @import "sass-bootstrap/lib/dropdowns";
 @import "sass-bootstrap/lib/button-groups";
 @import "sass-bootstrap/lib/input-groups";
@@ -81,23 +83,23 @@ $grid-float-breakpoint:  992px; // Collapse
 @import "sass-bootstrap/lib/navbar";
 @import "sass-bootstrap/lib/breadcrumbs";
 @import "sass-bootstrap/lib/pagination";
-@import "sass-bootstrap/lib/pager";
-@import "sass-bootstrap/lib/labels";
-@import "sass-bootstrap/lib/badges";
-@import "sass-bootstrap/lib/jumbotron";
-@import "sass-bootstrap/lib/thumbnails";
+// @import "sass-bootstrap/lib/pager";
+// @import "sass-bootstrap/lib/labels";
+// @import "sass-bootstrap/lib/badges";
+// @import "sass-bootstrap/lib/jumbotron";
+// @import "sass-bootstrap/lib/thumbnails";
 @import "sass-bootstrap/lib/alerts";
 @import "sass-bootstrap/lib/progress-bars";
-@import "sass-bootstrap/lib/media";
-@import "sass-bootstrap/lib/list-group";
-@import "sass-bootstrap/lib/panels";
-@import "sass-bootstrap/lib/wells";
+// @import "sass-bootstrap/lib/media";
+// @import "sass-bootstrap/lib/list-group";
+// @import "sass-bootstrap/lib/panels";
+// @import "sass-bootstrap/lib/wells";
 @import "sass-bootstrap/lib/close";
 
 // Components w/ JavaScript
 @import "sass-bootstrap/lib/modals";
-@import "sass-bootstrap/lib/tooltip";
-@import "sass-bootstrap/lib/popovers";
+// @import "sass-bootstrap/lib/tooltip";
+// @import "sass-bootstrap/lib/popovers";
 @import "sass-bootstrap/lib/carousel";
 
 // Utility classes

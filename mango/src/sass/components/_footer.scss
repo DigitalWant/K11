@@ -1,25 +1,23 @@
 
 // Footer widgets
 .footer-widgets {
-  color: $lighter-color; 
+  color: $dark-color;
   position: relative;
-  background-color: $footer-secondary-color; 
+  background-color: $footer-secondary-color;
 
   // Divider betwen footer and footer widgets
-  &:after { 
-   // @extend %background-primary-color;
-    background-image: image-url("quality.png");
+  &:after {
+    @extend %background-secondary-color;
+    background-image: image-url("divider-default.png");
     background-position:  center center;
     background-repeat: no-repeat;
-    background-size:contain;
     content: "";
     position: absolute;
-    top: -60px;
-    width: 120px;
-    height: 120px;
+    bottom: -20px;
+    width: 40px;
+    height: 40px;
     border-radius: 40px;
-    right: 5%;
-    left:auto;
+    left: 50%;
     margin-left: -20px;
   }
 
@@ -54,7 +52,7 @@
   .footer-widgets__heading {
     position: relative;
     text-align: center;
-    color: $lighter-color;
+    color: $default-color;
     z-index: 2;
     background-color: $footer-secondary-color;
     display: inline-block;
@@ -64,35 +62,34 @@
   // Footer navigation
   .nav-footer > li > a {
     padding: 0;
-    color: $lighter-color;
+    color: $dark-color;
     font-weight: bold;
     line-height: 30px;
 
     &:hover {
-      @extend %color-tertiary-color;
-      text-decoration:underline;
-      background-color:transparent;
-    } 
+      color: $default-color;
+     background: transparent;
+    }
   }
 
   // Footer tags
   .tag {
     display: inline-block;
-    border: 2px solid $lighter-color;
+    border: 2px solid $dark-color;
     border-radius: 5px;
     padding: 5px 8px;
     margin: 4px 2px;
     font-family: $secondary-font;
     font-weight: 700;
-    color: $lighter-color;
+    color: $dark-color;
     text-transform: uppercase;
     font-size: 11px;
     transition: all 0.2s linear;
 
     &:hover {
-      color: $tertiary-color;
+      color: $default-color;
       text-decoration: none;
-      border: 2px solid $tertiary-color;
+      border: 2px solid $default-color;
     }
   }
 
@@ -109,9 +106,9 @@
 
 // Footer
 .footer {
-  @extend %background-primary-color;
+  @extend %background-secondary-color;
   padding: 18px 0;
-  color: $lighter-color;
+  color: $dark-color;
 
 
   .footer__link--small {
@@ -143,7 +140,7 @@
 }
 
 .footer__link {
-  color: $lighter-color;
+  color: $default-color;
   font-weight: bold;
 
   &:hover {

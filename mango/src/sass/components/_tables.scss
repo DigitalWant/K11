@@ -1,16 +1,16 @@
 // tables
 .table > tbody > tr > td {
   border: 0;
-  color: darken($text-color, 10%);
+  color: lighten($text-color, 10%);
   font-size: 14px;
   font-weight: 600;
 }
 
 .table-theme > thead > tr > th,
 .table > thead > tr > th {
-  @extend %color-lighter-color;
   border: 0;
-  background: $primary-color;
+  background: $dark-color;
+  @extend %color-secondary-color;
 }
 
 .table-striped > tbody > tr:nth-child(odd) > td {

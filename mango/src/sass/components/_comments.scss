@@ -54,6 +54,7 @@
   .author-name {
     font-size: 18px;
     font-weight: bold;
+    @extend %color-secondary-color;
   }
 
   .comment__date {
@@ -62,7 +63,9 @@
     font-size: 13px;
   }
 
-
+  .comment-text {
+    @extend %color-secondary-color;
+  }
 }
 
 .comment-content--nested {

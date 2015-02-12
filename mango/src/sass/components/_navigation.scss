@@ -8,36 +8,33 @@
     padding: 7px 0;
   }
 }
-.nav {
 
-    .dropdown-menu {
-    display: block;
-    margin: 0;
-    padding: 0;
-    box-shadow: none;
-    border: none;
-    border-radius: 0;
-    background: none;
-    transition: all .1s linear;
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
+.dropdown-menu {
+  display: block;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  background: none;
+  transition: all .1s linear;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
 
-    @media (min-width: $screen-md-min) {
-    > li {
-        &:last-child > a {
-          border-bottom-left-radius: 2px;
-          border-bottom-right-radius: 2px;
-        }
+  @media (min-width: $screen-md-min) {
+  > li {
+      &:last-child > a {
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
       }
     }
-    .dropdown-menu {
-      left: 100%;
-      top: 0;
-      border-top: none !important;
-    }
   }
-
+  .dropdown-menu {
+    left: 100%;
+    top: 0;
+    border-top: none !important;
+  }
 }
 
 // collapsible navbar
@@ -55,19 +52,18 @@
   border: 0;
   background: none;
   font-weight: bold;
-  font-size:15px;
-  
+
   .navbar-nav {
     > li {
       > a {
-        color:$lighter-color;
+        @extend %color-secondary-color;
 
         @media (min-width: $screen-md-min) {
           padding: 41px 10px 40px 10px;
           max-height: 100px;
 
           &:after {
-            background-color: $tertiary-color;
+            background-color: $primary-color;
             content: "";
             position: absolute;
             width: 100%;
@@ -86,8 +82,8 @@
 
         .caret {
           position: absolute;
-          border-top-color: $tertiary-color!important;
-          border-bottom-color: $tertiary-color!important;
+          border-top-color: $text-color;
+          border-bottom-color: $text-color;
           bottom: 50%;
           right: 30px;
           margin-right: -4px;
@@ -127,7 +123,7 @@
       &:hover {
         > a {
           @media (min-width: $screen-md-min) {
-            color: $lighter-color;
+            color: $primary-color;
 
             &:after {
               visibility: visible;
@@ -136,8 +132,8 @@
           }
         }
         .caret {
-          border-top-color: $lighter-color !important;
-          border-bottom-color: $lighter-color !important;
+          border-top-color: $primary-color !important;
+          border-bottom-color: $primary-color !important;
         }
       }
     }
@@ -150,7 +146,7 @@
     padding: 0 0 0 5px;
 
     @media (min-width: $screen-md-min) {
-      border-top: 2px solid rgba($lighter-color, 0.9);
+      border-top: 2px solid rgba($primary-color, 0.9);
       position: absolute;
       visibility: hidden;
       opacity: 0;
@@ -160,24 +156,26 @@
     > li {
       > a {
         padding: 5px 20px;
-        color: $lighter-color;
+        color: lighten($secondary-color, 15%);
 
         &:hover {
+          color: $secondary-color;
           background: none;
           text-decoration: underline;
         }
         @media (min-width: $screen-md-min) {
-          background-color: darken($tertiary-color,15%);
+          background-color: $primary-color;
           padding: 9px 20px;
           font-weight: 700;
-          border-bottom: 1px solid darken($tertiary-color, 10%);
-          color: $lighter-color;
+          border-bottom: 1px solid darken($primary-color, 10%);
+          color: $default-color;
         }
 
       }
       @media (min-width: $screen-md-min) {
         &:hover > a {
-          background-color: darken($tertiary-color, 10%);
+          background-color: darken($primary-color, 10%);
+          color: $default-color;
           text-decoration: none;
         }
       }
@@ -186,7 +184,7 @@
 }
 
 .glyphicon-search--nav {
-  color:$lighter-color;
+  @extend %color-primary-color;
   font-size: 17px;
   line-height: 19px;
 }
@@ -194,7 +192,7 @@
 .input-group-addon {
   background-color: $default-color;
   border: 1px solid $light-color;
-} 
+}
 
 // Blog sidebar navigation
 .nav-blog {
@@ -204,6 +202,7 @@
   list-style: none;
 
   a {
+    @extend %color-primary-color;
 
     &:hover {
       text-decoration: underline;

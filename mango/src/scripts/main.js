@@ -25,7 +25,7 @@ require.config({
 				'jquery'
 			]
 		},
-		bootstrapAlert: {
+		bootstrapAlert: { 
 			deps: [
 				'jquery'
 			]
@@ -130,57 +130,6 @@ require(['jquery', 'AffixMenu', 'IsotopeShop', 'SimpleMap', 'AttachedNavbar', 'e
 			zoom: $('.js--where-we-are').data( 'zoom' ),
 			styles: [{featureType:"landscape",stylers:[{saturation:-100},{lightness:65},{visibility:"on"}]},{featureType:"poi",stylers:[{saturation:-100},{lightness:51},{visibility:"simplified"}]},{featureType:"road.highway",stylers:[{saturation:-100},{visibility:"simplified"}]},{featureType:"road.arterial",stylers:[{saturation:-100},{lightness:30},{visibility:"on"}]},{featureType:"road.local",stylers:[{saturation:-100},{lightness:40},{visibility:"on"}]},{featureType:"transit",stylers:[{saturation:-100},{visibility:"simplified"}]},{featureType:"administrative.province",stylers:[{visibility:"off"}]/**/},{featureType:"administrative.locality",stylers:[{visibility:"off"}]},{featureType:"administrative.neighborhood",stylers:[{visibility:"on"}]/**/},{featureType:"water",elementType:"labels",stylers:[{visibility:"on"},{lightness:-25},{saturation:-100}]},{featureType:"water",elementType:"geometry",stylers:[{hue:"#ffff00"},{lightness:-25},{saturation:-97}]}]
 		}).renderMap();
-	})();
-
-	/**
-	 * calculator
-	 */
-	(function () {
-		if ( $('#cal_productList').length < 1 ) {
-			return;
-		}
-
-		var $productList = $('#cal_productList');
-		var $productListItems = $('a',$productList);
-		var $productName = $('#cal_productName');
-		var $productPrice = $('#cal_productPrice');
-		var $action = $('#cal_action');
-		var $priceBan = $('#cal_priceBan');
-		var $productTins = $('#cal_tins');
-		var $cal_error = $('#cal_error');
-
-
-		var algorithm = function(current_unit_price,umber_of_tins_per_month){
-			return (current_unit_price*umber_of_tins_per_month*12)-(umber_of_tins_per_month*199*12+200);
-		}
-
-
-		//put product name and value 
-		$productListItems.on('click',function(e){
-			e.preventDefault();
-			var $thisItem = $(this);
-			var thisPrice = $thisItem.attr('data-price');
-			var thisName = $thisItem.text();
-			$productName.val(thisName);
-			$productPrice.val(thisPrice);
-		})
-
-		$priceBan.hide();	
-		$cal_error.hide();
-		
-		//click button action
-		$action.on('click',function(e){
-			e.preventDefault();
-			if ($productPrice.val()&&$productTins.val()){
-				$priceBan.find('b').text(algorithm($productPrice.val(),$productTins.val()));
-				$priceBan.show();
-				$cal_error.hide();				
-			} else {
-				$priceBan.hide();
-				$cal_error.show();
-			}
-		})
-
 	})();
 
 });

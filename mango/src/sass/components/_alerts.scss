@@ -8,10 +8,10 @@
   border-color: transparent;
 
   button.close {
-    margin-top: -1px; 
+    margin-top: -1px;
   }
 }
-//alert
+
 .alert-success {
   @extend %background-primary-color;
 }

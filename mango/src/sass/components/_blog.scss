@@ -47,6 +47,7 @@
 }
 
 .blog__date {
+  @extend %color-secondary-color;
   font-weight: 600;
 }
 
@@ -59,11 +60,12 @@
 
 .blog-title {
   a {
-    color: $tertiary-color;
+    color: $secondary-color;
   }
 }
 
 .blog-content__text {
+  @extend %color-secondary-color;
   line-height: 1.75;
 }
 

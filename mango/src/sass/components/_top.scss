@@ -1,17 +1,11 @@
 // Top
 .top {
-  
-  background: linear-gradient(to bottom, #EAC276, darken($tertiary-color,10%) 100%);
-  border-bottom:1px solid lighten($tertiary-color,20%);
-  font-size: 14px;
+  @extend %background-secondary-color;
+  font-size: 11px;
   font-weight: 600;
   position: relative;
   z-index: 1002;
-  text-shadow: -1px 0px 1px #9E721E;
-  
-  .glyphicon-heart {
-    color:lighten($tertiary-color,25%);
-  }
+
   .dropdown {
     &:hover {
       .dropdown-menu {
@@ -36,16 +30,16 @@
       }
 
       > a {
-        @extend %background-tertiary-color;
+        @extend %background-secondary-color;
         text-align: left;
         font-size: 11px;
         padding: 6px 10px;
         color: $dark-color;
         font-weight: 400;
-        border-bottom: 1px solid lighten($tertiary-color, 10%);
+        border-bottom: 1px solid lighten($secondary-color, 10%);
 
         &:hover {
-          background-color: lighten($tertiary-color, 10%);
+          background-color: lighten($secondary-color, 10%);
           color: $lighter-color;
         }
       }
@@ -54,7 +48,7 @@
 
   .nav {
     .caret {
-      border-top-color: $lighter-color;
+      border-top-color: $dark-color;
     }
 
     > li {
@@ -62,15 +56,15 @@
       float: none;
 
       > a {
-        color: $lighter-color;
+        color: $dark-color;
         padding: 0 5px;
         background: none;
       }
       &:hover {
         .caret,
         a {
-          color: $lighter-color;
-          border-top-color: $lighter-color;
+          color: $default-color;
+          border-top-color: $default-color;
         }
       }
     }
@@ -80,10 +74,7 @@
 .top__slogan,
 .top__menu {
   text-align: center;
-  color: $lighter-color;
-  a{
-    color:$lighter-color;
-  }
+  color: $dark-color;
 }
 
 // On non mobile screens

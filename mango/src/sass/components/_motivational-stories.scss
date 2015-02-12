@@ -3,7 +3,7 @@
   text-align: center;
 
   .motivational-stories__circle {
-    @extend %background-tertiary-color;
+    @extend %background-primary-color;
     display: inline-block;
     color: $lighter-color;
     border-radius: 50%;

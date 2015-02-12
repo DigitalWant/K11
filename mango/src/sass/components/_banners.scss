@@ -2,7 +2,7 @@
 %banners {
   border-radius: 3px;
   margin: 18px 0;
-  color: $lighter-color;
+  color: $default-color;
   font-weight: 600;
   font-size: 15px;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
@@ -10,37 +10,26 @@
 
 // Widget banners
 .banners {
-  background: $tertiary-color; 
+  background: $default-color;
 }
 
 .banners-box {
   padding: 25px;
   padding-right: 0;
   transition: all 0.2s linear;
-  color: $lighter-color;
+  color: $dark-color;
   line-height: 1.35;
-  font-size:18px;
 
-
-  a {
-    @extend %color-lighter-color; 
-  }
   &:hover {
-    @extend %background-lighter-color;
-    @extend %color-tertiary-color;
+    @extend %color-secondary-color;
     transition: all 0.1s linear;
-
-    a {
-         @extend %color-tertiary-color;
-    }
-
-  }  
+  }
 
   .glyphicon--banners {
     display: block;
     font-size: 30px;
     float: left;
-    margin: 10px 10px 0 0;
+    margin: 0 10px 0 0;
   }
 
   .banners__title {
@@ -51,14 +40,14 @@
 
 .banners--small {
   @extend %banners;
-  background: darken($tertiary-color,10%);
+  background: $default-color;
   padding: 19px;
   text-align: center;
   font-family: $secondary-font;
   text-transform: uppercase;
   font-size: 12px;
   text-shadow: none;
-  color: $lighter-color;
+  color: $dark-color;
 
   .banners--small--text {
     font-family: $primary-font;
@@ -71,7 +60,7 @@
 
   .social {
     transition: all .1s linear;
-    color: $lighter-color;
+    color: $dark-color;
 
     .zocial-pinterest,
     .zocial-twitter,
@@ -81,7 +70,7 @@
       padding: 9px 0 0 11px;
       width: 36px;
       height: 36px;
-      color: $lighter-color;
+      color: $dark-color;
       margin: 0 5px 0 0;
       display: inline-block;
       transition: all .1s linear;
@@ -89,14 +78,14 @@
     }
 
     &:hover {
-      color:darken($lighter-color,10%);
+      @extend %color-secondary-color;
       text-decoration: none;
 
       .zocial-pinterest,
       .zocial-twitter,
       .zocial-facebook,
       .zocial-email {
-        color:darken($lighter-color,10%);
+        @extend %color-secondary-color;
       }
     }
   }
@@ -104,7 +93,7 @@
 
 .banners--medium {
   @extend %banners;
-  background-color:darken($banner-primary-color, 15%);
+  @extend %background-secondary-color;
   background-image: image-url("pattern_dark.png");
   padding: 26px 52px 26px 26px;
   position: relative;
@@ -126,11 +115,11 @@
     border: 0;
   }
 }
- 
+
 .banners--big {
   @extend %banners;
   text-align: center;
-  background: image-url("noise_pattern.png"), linear-gradient(to right, darken($banner-primary-color, 15%) 0%, $banner-primary-color 50%, darken($banner-primary-color, 15%) 100%); 
+  background: image-url("noise_pattern.png"), linear-gradient(to right, darken($banner-primary-color, 15%) 0%, $banner-primary-color 50%, darken($banner-primary-color, 15%) 100%);
   padding: 24px;
 }
 

@@ -46,7 +46,7 @@
     <div class="row">
       <div class="col-xs-12  col-sm-6">
         <div class="top__slogan">
-          Made with <small><span class="glyphicon  glyphicon-heart lighter-color"></span></small> for a healthy lifestyle
+          Made with <small><span class="glyphicon  glyphicon-heart  tertiary-color"></span></small> for a healthy lifestyle
         </div>
       </div>
       <div class="col-xs-12  col-sm-6">
@@ -481,7 +481,7 @@
         <div class="row">
           <div class="col-xs-12  col-sm-3">
             <div class="footer-widgets__social">
-              <img class="push-down-10" alt="Footer Logo" src="images/logo-footer.png" width="243" height="35">
+              <img class="push-down-10" alt="Footer Logo" src="images/logo-footer.png" width="139" height="35">
               <p class="push-down-15">Adipiscing elit. Ut ullamcorper consectetur, non lacinia turpis suscipit non. Estibulum nu nc lacus, tincidunt non odio eu, scelerisque tristique quam.</p>
               <a class="social-container" href="https://www.facebook.com/ProteusNet"><span class="zocial-facebook"></span></a>
               <a class="social-container" href="https://twitter.com/ProteusNetCom"><span class="zocial-twitter"></span></a>

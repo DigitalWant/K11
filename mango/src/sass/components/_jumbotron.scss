@@ -1,10 +1,9 @@
 // Jumbotron
 
 .jumbotron {
-  background: image-url("dark_wood.jpg") repeat center center;
+  background: image-url("dark_wood.jpg") repeat center top;
   text-align: center;
   position: relative;
-  background-size:cover;
 
   &:after {
     position: absolute;
@@ -14,7 +13,7 @@
     left: 0;
     right: 0;
     transition: opacity 0.5s ease;
-    background: linear-gradient(to right, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.8) 100%);
+    background: linear-gradient(to right, rgba(38,35,31,0.8) 0%, rgba(65,60,53,0) 50%, rgba(38,35,31,0.8) 100%);
     opacity: 0;
   }
 
@@ -36,12 +35,11 @@
 
 .jumbotron__title {
   line-height: 1.3;
-  color: $tertiary-color!important;
+  color: $default-color;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 36px;
   margin: 0 0 3.5%;
-  background: linear-gradient(to right, rgba($default-color,0) 0%, rgba($default-color,0.8) 10%, rgba($default-color,0.8) 90%,rgba($default-color,0) 100%);
 
   @media (min-width: $screen-sm-min) {
     font-size: 60px;
@@ -50,11 +48,10 @@
 
 .jumbotron__subtitle {
   line-height: 1.5;
-  color: $tertiary-color;
+  color: $default-color;
   font-size: 14px;
   font-weight: normal;
   margin: 0 0 2.2%;
-  background: linear-gradient(to right, rgba($default-color,0) 0%, rgba($default-color,0.8) 10%, rgba($default-color,0.8) 90%,rgba($default-color,0) 100%);
 
   @media (min-width: $screen-sm-min) {
     font-size: 16px;
@@ -94,42 +91,16 @@
 .carousel-caption {
   text-shadow: none;
   top: 20px;
-  @media (max-width: $screen-sm-min) {
-    display:none;
-    }
+
   @media (min-width: $screen-sm-min) {
     top: -20px;
   }
 }
-.carousel-indicators {
-  li{
-      width:16px;
-      height:16px;
-      background-color:$lighter-color;
-      border: 1px solid $tertiary-color;
 
-      &.active{
-        width:16px;
-        height:16px;
-      background-color:$primary-color;
-      }
-  }
-}
 .carousel-control {
   width: 8%;
-  &.left {
-    background: linear-gradient(to left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 100%);
-    //@include gradient-horizontal($start-color: rgba(255,255,255,.5), $end-color: rgba(255,255,255,.0001));
-  }
-  &.right {
-    left: auto;
-    right: 0;
-    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 100%);
-    //@include gradient-horizontal($start-color: rgba(255,255,255,.0001), $end-color: rgba(255,255,255,.5));   
-  }
-
 }
- 
+
 .carousel {
   a:active {
     background-color: transparent;
@@ -137,5 +108,5 @@
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
- //mdai: max-width: none;
+  max-width: none;
 }

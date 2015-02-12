@@ -21,7 +21,7 @@
     "grunt-contrib-jshint": "~0.7.2",
     "grunt-contrib-requirejs": "~0.4.1",
     "grunt-usemin": "~2.0.2",
-    "grunt-concurrent": "~0.4.2",
+    "grunt-concurrent": "^1.0.0",
     "grunt-contrib-imagemin": "~0.4.0",
     "grunt-newer": "~0.6.0",
     "grunt-contrib-compass": "~0.7.0",

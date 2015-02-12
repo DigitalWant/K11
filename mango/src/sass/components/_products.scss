@@ -53,8 +53,8 @@
     transition-property: color, border-color;
 
     &:hover {
-      @extend %color-tertiary-color;
-      border-color: $tertiary-color;
+      @extend %color-secondary-color;
+      border-color: $secondary-color;
     }
   }
 }
@@ -171,12 +171,12 @@ html.no-touch {
   transition: color .1s linear;
 
   &:hover {
-    @extend %color-lighter-color;
+    @extend %color-secondary-color;
   }
 }
 
 .product-overlay__stock {
-  background-color:lighten($secondary-color,15%);
+  @extend %background-secondary-color;
   padding: 0px 18px 0 10px;
   color: $default-color;
   font-size: 11px;
@@ -191,6 +191,7 @@ html.no-touch {
   font-size: $font-size;
 
   a {
+    @extend %color-secondary-color;
 
     &:hover {
       text-decoration: none;
@@ -199,6 +200,7 @@ html.no-touch {
 }
 
 .products__price {
+  @extend %color-primary-color;
   float: right;
   padding-right: 3px;
   font-weight: bold;

@@ -14,7 +14,9 @@
     display: inline;
   }
 
-
+  .testimonials__text {
+    @extend %color-secondary-color;
+  }
 
   .testimonials__quotes--img {
     max-width: 100%;
@@ -32,8 +34,8 @@
     transition: all 0.1s linear;
 
     &:hover {
-      @extend %color-tertiary-color;
-      border-color: $tertiary-color;
+      @extend %color-secondary-color;
+      border-color: $secondary-color;
     }
   }
 }

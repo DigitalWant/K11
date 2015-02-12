@@ -1,20 +1,11 @@
 // Header
-
 .header {
-  background: linear-gradient(to bottom, $primary-color 0%,  $secondary-color 100%);
-
+  background: linear-gradient(to bottom, $lighter-color 0%, $default-color 100%);
   position: relative;
   z-index: 1001;
 
   .header-logo {
     padding: 5px 0;
-    @media (max-width: $screen-md-min) {
-      img { 
-        width:50%; 
-        height:50%;
-        padding-top:8%;
-      }
-    }
   }
 
   .navbar-toggle {

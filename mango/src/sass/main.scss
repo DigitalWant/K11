@@ -1,10 +1,10 @@
 /*------------------------------------*\
     Organique - HTML template
-\*------------------------------------*/ 
- 
-/**    
- * TABLE OF CONTENTS  
- * 
+\*------------------------------------*/
+
+/**
+ * TABLE OF CONTENTS
+ *
  * 01. Project variables..Imported variables
  * 02. Tags...............Like <body>, <h1> etc.
  * 03. Helpers............The general styles like .push-down-15 etc.
@@ -12,7 +12,7 @@
  * 05. Accessibility overrides, usually with help of JS.
  */
 /*------------------------------------*\
-    Project variables
+    Project variables 
 \*------------------------------------*/
 
 @import "vars";
@@ -23,12 +23,13 @@
 \*------------------------------------*/
 
 body {
-  position: relative;
+  position: relative;     
 }
 
 a {
   &:active {
-    color: darken($tertiary-color,10%);
+    @extend %background-tertiary-color;
+    color: $lighter-color;
   }
 
   &:hover {
@@ -121,14 +122,15 @@ pre {
 }
 
 .secondary-link {
-  @extend %color-tertiary-color;
+  @extend %color-primary-color;
 
   &:hover {
-    color:darken($tertiary-color,15%);
+    @extend %color-primary-color;
   }
 }
 
 .text {
+  @extend %color-secondary-color;
   text-align: left;
   line-height: 23px;
   font-weight: normal;
@@ -145,6 +147,7 @@ pre {
 }
 
 .text-dark {
+  @extend %color-secondary-color;
   font-weight: 700;
   font-size: 15px;
   line-height: 1.5;
@@ -174,12 +177,12 @@ pre {
 }
 
 .form-control {
-  //border: none;
-  //box-shadow: none !important;
+  border: none;
+  box-shadow: none !important;
   background: $default-color;
 
   &:focus {
-    background:darken($default-color,5%);
+    background: $lighter-color;
   }
 }
 
@@ -193,12 +196,11 @@ pre {
 .wp-post-image {
   width: 100%;
   height: auto;
-  transition: transform .1s linear; 
+  transition: transform .1s linear;
 }
 
-
 /*------------------------------------*\
-    Components   
+    Components
 \*------------------------------------*/
 
 // General parts
@@ -225,14 +227,12 @@ pre {
 @import "components/pagination";
 @import "components/social-icons";
 
-// Advanced elements 
+// Advanced elements
 @import "components/opening-time";
 @import "components/sidebar-menu-affix";
 @import "components/products";
 @import "components/testimonials";
-@import "components/forms";
-@import "components/savingForms";
-@import "components/contact-forms"; 
+@import "components/contact-forms";
 @import "components/team";
 @import "components/motivational-stories";
 @import "components/widgets";

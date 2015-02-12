@@ -118,14 +118,4 @@ define(['jquery', 'underscore', 'enquire'], function ($, _) {
 		$( '.js--add-gradient' ).addClass( 'jumbotron--gradient' );
 	})();
 
-
-	(function(){
-		$("[data-hide]").on("click", function(){
-	        $("." + $(this).attr("data-hide")).hide();
-	        // -or-, see below
-	        // $(this).closest("." + $(this).attr("data-hide")).hide();
-	    });
-
-	})()
-
 });
