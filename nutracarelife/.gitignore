@@ -1,1 +1,6 @@
 .sass-cache/*
+documentation
+extras
+lib
+node_modules
+src

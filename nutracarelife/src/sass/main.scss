@@ -1,5 +1,5 @@
 /*------------------------------------*\
-    Organique - HTML template
+    Mango-E studio 
 \*------------------------------------*/ 
  
 /**    
@@ -12,7 +12,7 @@
  * 05. Accessibility overrides, usually with help of JS.
  */
 /*------------------------------------*\
-    Project variables
+    Project variables 
 \*------------------------------------*/
 
 @import "vars";
@@ -196,6 +196,9 @@ pre {
   transition: transform .1s linear; 
 }
 
+.cloud-bg {
+    background: image-url("cloud.jpg"),transparent;
+}
 
 /*------------------------------------*\
     Components   
@@ -253,6 +256,8 @@ pre {
 // Plugins, like Isotope, jQuery UI ...
 @import "components/plugins";
 
+//
+@import "components/calculator";
 /*------------------------------------*\
     Accessibility overrides, usually with
     help of JS

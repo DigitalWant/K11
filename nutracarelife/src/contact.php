@@ -9,7 +9,7 @@
     <meta name="author" content="ProteusNet">
     <link rel="icon" type="image/ico" href="images/favicon.png">
 
-    <title>Organique - HTML Template For Organic Shop</title>
+    <title>Nutracare</title>
 
     <!-- Custom styles for this template -->
     <!-- build:css stylesheets/main.css -->
@@ -40,7 +40,7 @@
     </script>
 
   </head>
-  <body>
+  <body class="">
     <div class="top  js--fixed-header-offset">
   <div class="container">
     <div class="row">
@@ -136,7 +136,7 @@
     <div class="row">
       <div class="col-xs-10  col-md-3">
         <div class="header-logo">
-          <a href="index.html"><img alt="Logo" src="images/logo.png" width="200" height="90"></a>
+          <a href="index.html"><img alt="Logo" src="images/logo.png" width="168" height="135"></a>
         </div>
       </div>
       <div class="col-xs-2  visible-sm  visible-xs">
@@ -155,13 +155,14 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse  navbar-collapse" id="collapsible-navbar">
     <ul class="nav  navbar-nav">
-      <li class="dropdown">
+      <li class="dropdown active">
         <a href="index.html" class="dropdown-toggle">HOME<b class="caret"></b></a>
         <ul class="dropdown-menu">
           <li><a href="index.html">Home (Shop)</a></li>
           <li><a href="home-business.html">Home (Business)</a></li>
           <li><a href="home-slider.html">Home (Slider)</a></li>
           <li><a href="home-slider-sticky-navbar.html">Home with Sticky Navbar</a></li>
+          <li><a href="home-nutracare.html">Home Nutracare</a></li>
         </ul>
       </li>
       <li class="dropdown">
@@ -240,9 +241,10 @@
           <li><a href="elements.html#toggles">Toggles</a></li>
         </ul>
       </li>
+      <!--
       <li class="hidden-xs  hidden-sm">
         <a href="#" class="js--toggle-search-mode"><span class="glyphicon  glyphicon-search  glyphicon-search--nav"></span></a>
-      </li>
+      </li>-->
     </ul>
     <!-- search for mobile devices -->
     <form action="#" method="post" class="visible-xs  visible-sm  mobile-navbar-form" role="form">

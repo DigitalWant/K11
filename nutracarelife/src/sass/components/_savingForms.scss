@@ -1,6 +1,7 @@
 //amend of bootstrap default form layout 
 
 #savingForm {
+
 	@media (min-width: $screen-md-min) {
 		position:relative;
 		padding-top: 35px;
@@ -13,7 +14,7 @@
 			left: -22px;
   			top: -116px;
 			z-index:9;
-
+			display:none;
 
 		}
 	}

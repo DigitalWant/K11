@@ -2,8 +2,44 @@
 .light-paper-pattern {
   background-image: image-url("light_paper_pattern.jpg");
 }
+.white-wave {
+  background-image: image-url("white-wave.png");
+  /*background-size:contain;*/
+}
+.mum-baby {
+  position:relative;
+  text-align:center;
+  /*
+  background-image: image-url("mum-baby.png");
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position:center;
+  width:854px;
+ */
+
+  height:605px;
+  .carousel  {
+    width:854px;
+   margin:315px auto 0px;
+
+    .carousel-inner {
+
+    }
+  }
+
+  &:before{
+    content:" ";
+    background-image: image-url("mum-baby.png");
+    position:absolute;
+    width:854px;
+    height:720px;
+    left:50%;
+    margin-left:-427px;
+    top:-114px;
+  }
+}
 .testimonials {
-  padding: 50px 0;
+  padding: 0px 0;
   text-align: center;
 
   a:active {
@@ -15,10 +51,13 @@
   }
 
 
-
+  .testimonials__quotes,.testimonials__quotes--rotate {
+    margin-top: 298px;
+  }
   .testimonials__quotes--img {
     max-width: 100%;
     height: auto;
+
   }
 
   .testimonials__quotes--rotate {

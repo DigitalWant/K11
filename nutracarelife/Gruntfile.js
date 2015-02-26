@@ -22,23 +22,7 @@ module.exports = function(grunt) {
 			// Watch .hbs (html) files with database
 			assemble: {
 				files: ['src/assemble/{,*/}*.hbs{,php}', 'lib/*'],
-				//tasks: ['newer:assemble:dev', 'newer:assemble:devphp'],
-				tasks: [
-				'clean:beforebuild',
-				'newer:assemble:dev', 'newer:assemble:devphp',
-				'newer:assemble:build',
-				'newer:imagemin:build',
-				'compass:build',
-				//'autoprefixer:build',
-				'requirejs',
-				'useminPrepare',
-				'concat', // automatically configured by usemin
-				//'cssmin', // automatically configured by usemin
-				//'rev',
-				//'usemin',
-				'copy:build',
-				'clean:afterBuild'
-				],
+				tasks: ['newer:assemble:dev', 'newer:assemble:devphp'],
 			},
 
 			// autoprefix the files
@@ -52,27 +36,6 @@ module.exports = function(grunt) {
 				files: [
 					'src/scripts/{,*/}*.js'
 				]
-			},
-			compass:{
-				files:[
-					'src/sass/*.scss','src/sass/components/*.scss','src/bower_components/sass-bootstrap/lib/*.scss'
-				],
-				tasks:[
-					'clean:beforebuild',
-					'newer:assemble:build',
-					'newer:assemble:buildphp',
-					'newer:imagemin:build',
-					'compass:build',
-					//'autoprefixer:build',
-					'requirejs',
-					'useminPrepare',
-					'concat', // automatically configured by usemin
-					//'cssmin', // automatically configured by usemin
-					//'rev',
-					//'usemin',
-					'copy:build',
-					'clean:afterBuild'
-					]
 			}
 		},
 
@@ -295,8 +258,6 @@ module.exports = function(grunt) {
 		'autoprefixer:dev',
 		'concurrent:dev'
 	]);
-
-
 
 	// building
 	grunt.registerTask('build', [

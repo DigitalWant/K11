@@ -136,9 +136,7 @@ require(['jquery', 'AffixMenu', 'IsotopeShop', 'SimpleMap', 'AttachedNavbar', 'e
 	 * calculator
 	 */
 	(function () {
-		if ( $('#cal_productList').length < 1 ) {
-			return;
-		}
+
 
 		var $productList = $('#cal_productList');
 		var $productListItems = $('a',$productList);
@@ -151,7 +149,7 @@ require(['jquery', 'AffixMenu', 'IsotopeShop', 'SimpleMap', 'AttachedNavbar', 'e
 
 
 		var algorithm = function(current_unit_price,umber_of_tins_per_month){
-			return (current_unit_price*umber_of_tins_per_month*12)-(umber_of_tins_per_month*199*12+200);
+			return Math.abs((current_unit_price*umber_of_tins_per_month*12)-(umber_of_tins_per_month*199*12+200));
 		}
 
 
@@ -165,19 +163,20 @@ require(['jquery', 'AffixMenu', 'IsotopeShop', 'SimpleMap', 'AttachedNavbar', 'e
 			$productPrice.val(thisPrice);
 		})
 
-		$priceBan.hide();	
-		$cal_error.hide();
+		//$priceBan.hide();	
+		//$cal_error.hide();
 		
 		//click button action
 		$action.on('click',function(e){
 			e.preventDefault();
+			console.log('$productPrice.val()',$productPrice.val(),'$productTins.val()',$productTins.val());
 			if ($productPrice.val()&&$productTins.val()){
-				$priceBan.find('b').text(algorithm($productPrice.val(),$productTins.val()));
-				$priceBan.show();
-				$cal_error.hide();				
+				$priceBan.text("¥"+algorithm($productPrice.val(),$productTins.val()));
+				//$priceBan.show();
+				//$cal_error.hide();				
 			} else {
-				$priceBan.hide();
-				$cal_error.show();
+				//$priceBan.hide();
+				//$cal_error.show();
 			}
 		})
 
