@@ -134,6 +134,20 @@
   a:active {
     background-color: transparent;
   }
+  .carousel-control{
+    .glyphicon-chevron-left:before{
+      content:url(../images/arrow.png);
+
+    }
+    .glyphicon-chevron-right{
+      transform: rotate(180deg);
+      
+    }
+    .glyphicon-chevron-right:before{
+      content:url(../images/arrow.png);
+
+    }
+  }
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {

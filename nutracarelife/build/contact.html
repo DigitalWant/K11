@@ -12,7 +12,7 @@
     <title>Nutracare</title>
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="stylesheets/6d78f1b0.main.css"/>
+    <link rel="stylesheet" href="stylesheets/81fe50c1.main.css"/>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
