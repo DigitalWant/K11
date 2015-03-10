@@ -1,9 +1,10 @@
 // Breadcrumbs
 .breadcrumbs {
-  @extend %background-secondary-color;
-  background-image: image-url("pattern_dark.png");
+ // @extend %background-secondary-color;
+ // background-image: image-url("pattern_dark.png");
   width: 100%;
-  margin-bottom: 30px;
+  //margin-bottom: 30px;
+  margin-top:45px;
 }
 
 .no-margin {
@@ -12,29 +13,32 @@
 
 .breadcrumb {
   padding: 11px 0 10px 0;
-  color: $text-color;
+  color: $secondary-color;
+
   margin: 0;
   background: none;
   border-radius: 0;
 
+  li {
+        font-size: 20px;
+  }
   > li + li:before {
-    content: "\e080";
-    color: $dark-color;
-    font-family: "Glyphicons Halflings";
-    font-size: 8px;
+    content: ">";
+    color: $secondary-color;
+    font-weight:normal;
+    //font-family: "Glyphicons Halflings";
   }
 
   a {
-    color: $lighter-color;
-
+    color: $secondary-color;
+    font-size:20px;
     &:hover {
-      color: $default-color;
+      color:$secondary-color;
       text-decoration: none;
     }
   }
 
   .active {
-    color: $default-color;
-    font-weight: 600;
+    color: $secondary-color;
   }
 }

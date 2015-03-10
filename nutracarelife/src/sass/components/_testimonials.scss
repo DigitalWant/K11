@@ -16,11 +16,18 @@
   background-position:center;
   width:854px;
  */
+    @media (min-width: $screen-md-min) {
+        height:605px;
 
-  height:605px;
+      } 
+
+  height:315px;
   .carousel  {
-    width:854px;
-   margin:315px auto 0px;
+    @media (min-width: $screen-md-min) {
+         width:854px;
+
+      } 
+    margin:315px auto 0px;
 
     .carousel-inner {
 
@@ -30,12 +37,19 @@
   &:before{
     content:" ";
     background-image: image-url("mum-baby.png");
-    position:absolute;
-    width:854px;
-    height:720px;
+     position:absolute;
     left:50%;
     margin-left:-427px;
-    top:-114px;
+
+    top:-402px;
+    @media (min-width: $screen-md-min) {
+          top:-114px;
+
+
+      } 
+
+    width:854px;
+    height:720px;
   }
 }
 .testimonials {

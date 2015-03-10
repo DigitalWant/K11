@@ -10,7 +10,7 @@
 .table > thead > tr > th {
   @extend %color-lighter-color;
   border: 0;
-  background: $primary-color;
+  background: #e0b768;
 }
 
 .table-striped > tbody > tr:nth-child(odd) > td {
@@ -20,6 +20,7 @@
 
 .table-striped > tbody > tr:nth-child(odd).active > td {
   background: $lighter-color;
+  color:darken($tertiary-color,20%);
 }
 
 .table-theme > thead > tr > th {

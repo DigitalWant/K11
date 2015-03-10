@@ -23,7 +23,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Google fonts -->
+    <!-- Google fonts
     <script type="text/javascript">
       WebFontConfig = {
         google: { families: [ 'Arvo:700:latin', 'Open+Sans:400,600,700:latin' ] }
@@ -38,7 +38,7 @@
         s.parentNode.insertBefore(wf, s);
       })();
     </script>
-
+ -->
   </head>
   <body class="">
     <div class="top  js--fixed-header-offset">

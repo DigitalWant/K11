@@ -14,9 +14,253 @@
 /*------------------------------------*\
     Project variables 
 \*------------------------------------*/
+@font-face {
+    font-family: 'aaux_next_regularregular';
+    src: url('../bower_components/sass-bootstrap/fonts/AauxNext-Regular.eot');
+    src: url('../bower_components/sass-bootstrap/fonts/AauxNext-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../bower_components/sass-bootstrap/fonts/AauxNext-Regular.woff') format('woff'),
+         url('../bower_components/sass-bootstrap/fonts/AauxNext-Regular.ttf') format('truetype'),
+         url('../bower_components/sass-bootstrap/fonts/AauxNext-Regular.svg#aaux_next_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aaux_nextbold';
+    src: url('../bower_components/sass-bootstrap/fonts/AauxNext-Bold-webfont.eot');
+    src: url('../bower_components/sass-bootstrap/fonts/AauxNext-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../bower_components/sass-bootstrap/fonts/AauxNext-Bold-webfont.woff') format('woff'),
+         url('../bower_components/sass-bootstrap/fonts/AauxNext-Bold-webfont.ttf') format('truetype'),
+         url('../bower_components/sass-bootstrap/fonts/AauxNext-Bold-webfont.svg#aaux_nextbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'STEP';
+  src:url('../bower_components/sass-bootstrap/fonts/STEP.eot?dk5r62');
+  src:url('../bower_components/sass-bootstrap/fonts/STEP.eot?#iefixdk5r62') format('embedded-opentype'),
+    url('../bower_components/sass-bootstrap/fonts/STEP.woff?dk5r62') format('woff'),
+    url('../bower_components/sass-bootstrap/fonts/STEP.ttf?dk5r62') format('truetype'),
+    url('../bower_components/sass-bootstrap/fonts/STEP.svg?dk5r62#STEP') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'STEP';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-step1 .path1:before {
+  content: "\e600";
+  color: rgb(13, 102, 157);
+}
+.icon-step1 .path2:before {
+  content: "\e601";
+  margin-left: -0.8876953125em;
+  color: rgb(115, 169, 200);
+}
+.icon-step1 .path3:before {
+  content: "\e602";
+  margin-left: -0.8876953125em;
+  color: rgb(115, 169, 200);
+}
+.icon-step1 .path4:before {
+  content: "\e603";
+  margin-left: -0.8876953125em;
+  color: rgb(115, 169, 200);
+}
+.icon-step1 .path5:before {
+  content: "\e604";
+  margin-left: -0.8876953125em;
+  color: rgb(115, 169, 200);
+}
+.icon-step1 .path6:before {
+  content: "\e605";
+  margin-left: -0.8876953125em;
+  color: rgb(243, 246, 249);
+}
+
+.icon-step2 .path1:before {
+  content: "\e606";
+  color: rgb(20, 104, 157);
+}
+.icon-step2 .path2:before {
+  content: "\e607";
+  margin-left: -0.8876953125em;
+  color: rgb(20, 104, 157);
+}
+.icon-step2 .path3:before {
+  content: "\e608";
+  margin-left: -0.8876953125em;
+  color: rgb(248, 250, 252);
+}
+.icon-step2 .path4:before {
+  content: "\e609";
+  margin-left: -0.8876953125em;
+  color: rgb(248, 250, 252);
+}
+.icon-step2 .path5:before {
+  content: "\e60a";
+  margin-left: -0.8876953125em;
+  color: rgb(248, 250, 252);
+}
+.icon-step2 .path6:before {
+  content: "\e60b";
+  margin-left: -0.8876953125em;
+  color: rgb(248, 250, 252);
+}
+.icon-step2 .path7:before {
+  content: "\e60c";
+  margin-left: -0.8876953125em;
+  color: rgb(20, 104, 157);
+}
+
+.icon-step3 .path1:before {
+  content: "\e60d";
+  color: rgb(13, 102, 157);
+}
+.icon-step3 .path2:before {
+  content: "\e60e";
+  margin-left: -0.8876953125em;
+  color: rgb(13, 102, 157);
+}
+.icon-step3 .path3:before {
+  content: "\e60f";
+  margin-left: -0.8876953125em;
+  color: rgb(32, 110, 162);
+}
+.icon-step3 .path4:before {
+  content: "\e610";
+  margin-left: -0.8876953125em;
+  color: rgb(32, 110, 162);
+}
+.icon-step3 .path5:before {
+  content: "\e611";
+  margin-left: -0.8876953125em;
+  color: rgb(32, 110, 162);
+}
+.icon-step3 .path6:before {
+  content: "\e612";
+  margin-left: -0.8876953125em;
+  color: rgb(32, 110, 162);
+}
+.icon-step3 .path7:before {
+  content: "\e613";
+  margin-left: -0.8876953125em;
+  color: rgb(240, 245, 248);
+}
+.icon-step3 .path8:before {
+  content: "\e614";
+  margin-left: -0.8876953125em;
+  color: rgb(240, 245, 248);
+}
+
+.icon-step4 .path1:before {
+  content: "\e615";
+  color:#01649b;
+}
+.icon-step4 .path2:before {
+  content: "\e616";
+  margin-left: -0.8876953125em;
+  color:#01649b;
+}
+.icon-step4 .path3:before {
+  content: "\e617";
+  margin-left: -0.8876953125em;
+  color: transparent;
+}
+.icon-step4 .path4:before {
+  content: "\e618";
+  margin-left: -0.8876953125em;
+  color: transparent;
+}
+.icon-step4 .path5:before {
+  content: "\e619";
+  margin-left: -0.8876953125em;
+  color:#01649b;
+}
+
+.icon-step5:before {
+  content: "\e61a";
+}
+
+.icon-step6:before {
+  content: "\e61b";
+}
+
+.icon-step7:before {
+  content: "\e61c";
+}
+
+.icon-step8:before {
+  content: "\e61d";
+}
+
+@font-face {
+  font-family: 'benefit';
+  src:url('../bower_components/sass-bootstrap/fonts/benefit.eot?7ae16g');
+  src:url('../bower_components/sass-bootstrap/fonts/benefit.eot?#iefix7ae16g') format('embedded-opentype'),
+    url('../bower_components/sass-bootstrap/fonts/benefit.woff?7ae16g') format('woff'),
+    url('../bower_components/sass-bootstrap/fonts/benefit.ttf?7ae16g') format('truetype'),
+    url('../bower_components/sass-bootstrap/fonts/benefit.svg?7ae16g#benefit') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="benefit-"], [class*=" benefit-"] {
+  font-family: 'benefit';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.benefit-a:before {
+  content: "\e61e";
+}
+
+.benefit-b:before {
+  content: "\e61f";
+}
+
+.benefit-c:before {
+  content: "\e620";
+}
+
+.benefit-d:before {
+  content: "\e621";
+}
+
+.benefit-e:before {
+  content: "\e622";
+}
+
+.benefit-f:before {
+  content: "\e623";
+}
 
 @import "vars";
 @import "sass-bootstrap/lib/variables";
+
 
 /*------------------------------------*\
     Tags
@@ -258,6 +502,9 @@ pre {
 
 //
 @import "components/calculator";
+@import "components/stepsIntro";
+@import "components/joinClub";
+
 /*------------------------------------*\
     Accessibility overrides, usually with
     help of JS
