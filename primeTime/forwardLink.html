@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <title>盛时表行</title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+        <meta http-equiv="cleartype" content="on">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <script type="text/javascript">
+            window.addEventListener('touchmove', function(e) {
+              e.preventDefault();
+            }, false);
+
+            window.addEventListener('touchstart', function(e) {
+                media.audio_init();
+                media.audio_play();
+            }, false);
+
+        </script>
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/vendor/jquery-2.1.1.min.js"></script>
+         <script src="js/vendor/d3.v3.min.js"></script>
+        <script src="js/vendor/jquery.imgpreload.min.js"></script>
+        <script src="js/vendor/loader.js"></script>
+    </head>
+    <body >
+    
+  <!-- 声音控件 
+  <div class='u-audio ' data-src='music.mp3'>
+    <p class="btn_audio">
+      <strong class='txt_audio z-hide'>关闭</strong>
+      <span class='audio_open'></span>
+    </p>
+  </div>-->
+  <!-- 声音控件 end-->
+<div id="audio" style="position:fixed;z-index:99999;width:300px;height:140px;right:0px;top:0px; left:auto; background:#000;" data-src="music.mp3">
+</div>
+<i class="icon-point-up"></i>
+</body>
+</html>
