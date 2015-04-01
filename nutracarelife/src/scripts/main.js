@@ -87,6 +87,7 @@ require.config({
 require(['jquery', 'AffixMenu', 'IsotopeShop', /* mike: removed 'SimpleMap',*/ 'AttachedNavbar', 'enquire', 'utils', 'bootstrapTransition', 'bootstrapCollapse', 'bootstrapAlert', 'bootstrapTab', 'bootstrapDropdown', 'bootstrapCarousel', 'bootstrapModal' ], function ($, AffixMenu, IsotopeShop, SimpleMap) {
 	'use strict';
 
+
 	/**
 	 * Affix menu
 	 */
@@ -194,6 +195,8 @@ $('.input-number').change(function() {
     
     
 });
+
+
 $(".input-number").keydown(function (e) {
         // Allow: backspace, delete, tab, escape, enter and .
         if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
@@ -211,50 +214,142 @@ $(".input-number").keydown(function (e) {
     });
 
 
-		var $productList = $('#cal_productList');
-		var $productListItems = $('a',$productList);
-		var $productName = $('#cal_productName');
-		var $productPrice = $('#cal_productPrice');
-		var $action = $('#cal_action');
-		var $priceBan = $('#cal_priceBan');
-		var $productTins = $('#cal_tins');
-		//var $cal_error = $('#cal_error'); 
-
+		
 
 		var algorithm = function(current_unit_price,umber_of_tins_per_month){
+
 			var valueA= current_unit_price;
 			var valueB =umber_of_tins_per_month;
-
-			return Math.abs((valueA*valueB*12)-(valueB*199*12+200));
+			return (valueA*valueB*12)-(valueB*199*12+200);
 		}
 
+		var $productPrice = $('#cal_productPrice');
+		var $productPrice_xs = $('#xs_cal_productPrice');
 
-		//put product name and value 
-		$productListItems.on('click',function(e){
-			e.preventDefault();
-			var $thisItem = $(this);
-			var thisPrice = $thisItem.attr('data-price');
-			var thisName = $thisItem.text();
-			$productName.val(thisName);
-			$productPrice.val(thisPrice);
+		var $action = $('#cal_action');
+		var $action_xs = $('#xs_cal_action');
+
+
+		var $productTins = $('#cal_tins');
+		var $productTins_xs = $('#xs_cal_tins');
+
+		var $priceBan = $('#cal_priceBan');
+		var $priceBan_xs = $('#xs_cal_priceBan');
+
+		var restrictRule1 = function(evt){
+			var charCode = (evt.which) ? evt.which : event.keyCode
+
+	         if (charCode > 31 && (charCode < 48 || charCode > 57)){
+
+	         	alert('please enter digital');
+
+ 				evt.target.value = evt.target.value.substr(0,evt.target.value.length-1);
+
+	            return false;
+
+	         }
+
+	         return true;
+
+		}
+		var restrictRule12 = function(evt){
+
+
+		 	if(evt.target.value >9999 || evt.target.value<0){
+
+
+	         	alert('please enter number within 4 digital');
+
+ 				evt.target.value = evt.target.value.substr(0,evt.target.value.length-1);
+
+	         	return false;
+	        }
+
+	        return true;
+
+		}
+
+		$productPrice_xs.on('keydown',function(evt){
+
+			restrictRule1(evt);
 		})
+
+
+		$productPrice.on('keydown',function(evt){
+
+			restrictRule1(evt);
+
+
+	     })
+
+
+		$productPrice.on('keyup',function(evt){
+
+			
+			restrictRule12(evt);
+		})
+		$productPrice_xs.on('keyup',function(evt){
+
+			restrictRule12(evt);
+
+
+		})
+
+
 
 		//$priceBan.hide();	
 		//$cal_error.hide();
+		$action_xs.on('click',function(e){
+			e.preventDefault();
+
+			if ($productPrice_xs.val()&&$productTins_xs.val()){
+
+
+				$('#equal_zero,#over_zero').hide();
+
+
+				var calculatorValue=algorithm($productPrice_xs.val(),$productTins_xs.val());
+
+
+				$priceBan_xs.text("¥"+calculatorValue);
+
 		
+			} 
+		});
+
 		//click button action
 		$action.on('click',function(e){
 			e.preventDefault();
-			console.log('$productPrice.val()',$productPrice.val(),'$productTins.val()',$productTins.val());
+			//console.log('$productPrice.val()',$productPrice.val(),'$productTins.val()',$productTins.val());
 			
+
 			if ($productPrice.val()&&$productTins.val()){
-				$priceBan.text("¥"+algorithm($productPrice.val(),$productTins.val()));
-				//$priceBan.show();
-				//$cal_error.hide();				
-			} else {
-				//$priceBan.hide();
-				//$cal_error.show();
-			}
+
+				$('.promoText').show();
+				$('#equal_zero,#over_zero').hide();
+
+
+				var calculatorValue=algorithm($productPrice.val(),$productTins.val());
+
+
+
+				if (calculatorValue ==0){
+
+					$('#equal_zero').show();
+
+				}
+
+				if(calculatorValue >0){
+
+					$('#over_zero').show();
+
+				}
+
+
+				$priceBan.text("¥"+calculatorValue);
+
+		
+			} 
 		})
 
 
@@ -281,6 +376,48 @@ $(".input-number").keydown(function (e) {
          });
 
 	})();
+
+
+	/***
+	Digital count 
+	***/
+	(function(){
+
+		if ( $('.counter').length < 1 ) {
+			return;
+		}
+		function digitalPlay(){
+		  var digitalCounter = $(".counter");
+		  var digitalCounterNumber = $('.flip',digitalCounter);
+		  
+		  $("body").removeClass("play");  
+		  
+		  digitalCounterNumber.each(function(i){
+		    var thisDigitalShallPlayNumber = $(this).attr("data-digital");
+		    var aa=$(this).find(".active");
+
+		      if (aa.html() == undefined) {
+		        aa = $(this).find("li").eq(thisDigitalShallPlayNumber-1);
+		        aa.addClass("before")
+		            .removeClass("active")
+		            .next("li")
+		            .addClass("active")
+		            .closest("body")
+		            .addClass("play");
+		    	}
+		  });
+		};
+
+		setTimeout(function(){
+
+			digitalPlay();
+
+		},1000);
+
+
+
+	})();
+
 
 
 });

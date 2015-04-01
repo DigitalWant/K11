@@ -1,6 +1,6 @@
 //amend of bootstrap default form layout 
 
-#savingForm {
+#savingForm,#savingForm2 {
 
 	@media (min-width: $screen-md-min) {
 		position:relative;
@@ -31,5 +31,70 @@
 			}
 		}
 		
-	}	
+	}
+
+	.promoText {
+
+		.long-box{
+			width:78%;
+			padding:0px 10px;
+			text-align:center;
+
+			h1{
+				color:$secondary-color;
+					margin: 10px 0px
+			}
+
+		}
+
+		.short-box {
+			width: 22%;
+			padding:0px;
+
+			p {
+				display:none;
+				background:#CD2626;
+				margin-bottom:0px;
+				padding:10px 0px;
+			}
+			.btn{
+				width:100%;
+			}
+		}
+
+
+	}
+
  }
+.promoText-home {
+
+	.long-box{
+		width: 100%;
+		padding:0px 10px;
+		text-align:center;
+
+		h1{
+			color:$secondary-color;
+				margin: 10px 0px
+		}
+
+	}
+
+	.short-box {
+		width: 22%;
+		padding:0px;
+		margin:0px auto;
+
+		p {
+			display:none;
+			background:#CD2626;
+			margin-bottom:0px;
+			padding:10px 0px;
+		}
+
+	}
+
+	.btn{
+		width:100%;
+	}
+}

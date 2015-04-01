@@ -45,8 +45,15 @@
     @media (min-width: $screen-md-min) {
           top:-114px;
 
-
       } 
+    @media (max-width: $screen-md-max) {
+
+      width:100%;
+    margin-left:0px;
+    left:0%;
+    background-position: center;
+
+    }
 
     width:854px;
     height:720px;

@@ -156,16 +156,16 @@
   <div class="collapse  navbar-collapse" id="collapsible-navbar">
     <ul class="nav  navbar-nav">
       <li class="dropdown active">
-        <a href="index.html" class="dropdown-toggle">HOME<b class="caret"></b></a>
-        <ul class="dropdown-menu">
+        <a href="home-nutracare.html" class="dropdown-toggle">HOME<b class="caret"></b></a>
+        <!--<ul class="dropdown-menu">
           <li><a href="index.html">Home (Shop)</a></li>
           <li><a href="home-business.html">Home (Business)</a></li>
           <li><a href="home-slider.html">Home (Slider)</a></li>
           <li><a href="home-slider-sticky-navbar.html">Home with Sticky Navbar</a></li>
           <li><a href="home-nutracare.html">Home Nutracare</a></li>
-        </ul>
+        </ul>-->
       </li>
-      <li class="dropdown">
+      <li class="dropdown hasRed">
         <a href="shop.html" class="dropdown-toggle">SHOP<b class="caret"></b></a>
         <ul class="dropdown-menu">
           <li><a href="shop.html">Shop (Grid view)</a></li>
@@ -182,7 +182,7 @@
           <li><a href="blog-right-sidebar.html">Blog (Right sidebar)</a></li>
           <li><a href="blog-left-sidebar.html">Blog (Left sidebar)</a></li>
           <li><a href="blog.html">Blog (Alternative)</a></li>
-          <li><a href="single-post.html">Single Blogpost</a></li>
+          <li><a href="single-post.html">Single Blogpost</a></li> 
         </ul>
       </li>
       <li class="dropdown">

@@ -151,5 +151,9 @@
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
+  @media (max-width:$screen-sm-min){
+    margin-left:-25%;
+    max-width:150%;
+  }
  //mdai: max-width: none;
 }
