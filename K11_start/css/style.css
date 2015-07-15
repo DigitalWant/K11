@@ -1,0 +1,371 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #e3cfb9;
+}
+
+.wrapper {
+    width: 640px;
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -320px;
+    overflow: hidden;
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.motion {
+    width: 640px;
+    height: 1136px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.music_btn {
+    width: 66px;
+    height: 66px;
+    position: absolute;
+    z-index: 55;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.listBrand .music_btn {
+    display: none;
+}
+
+#canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.androidStart {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 999;
+    width: 410px;
+    height: 540px;
+    margin-left: -205px;
+    margin-top: -270px;
+}
+
+.p1 {
+    width: 640px;
+    height: 1136px;
+    margin: 0 auto;
+    padding: 0px;
+    position: relative;
+}
+
+.p2 {
+    width: 640px;
+    height: 1136px;
+    margin: 0 auto;
+    position: relative;
+    display: none;
+}
+
+.p3 {
+    width: 640px;
+    height: 1136px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.p4 {
+    width: 640px;
+    height: 1136px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.loading {
+    width: 124px;
+    height: 124px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -62px;
+    margin-top: -62px;
+    z-index: 666
+}
+
+.intro {
+    width: 640px;
+    height: 1136px;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 333;
+    display: none;
+    left: 0;
+    top: 0;
+}
+
+.share_tips {
+    width: 640px;
+    height: 1136px;
+    position: absolute;
+    z-index: 88;
+    left: 50%;
+    margin-left: -320px;
+    display: none;
+}
+
+.share_btn {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    z-index: 333;
+    left: 260px;
+    top: 500px;
+    background: #f7d28e;
+    opacity: 0
+}
+
+.skip {
+    width: 151px;
+    height: 48px;
+    position: absolute;
+    z-index: 332;
+    left: 50%;
+    margin-left: -75px;
+    top: 0;
+    cursor: pointer;
+}
+
+.next,
+.prev {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    z-index: 332;
+    left: auto;
+    right: 0px;
+    top: 50%;
+    cursor: pointer;
+}
+
+.prev {
+    right: auto;
+    left: 0px;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+}
+
+.start .next,
+.start .prev {
+    display: none;
+}
+
+.progress {
+    background-color: transparent;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -25px;
+    margin-top: -15px;
+    font-size: 1.5em;
+    z-index: 888;
+    color: #999;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+}
+
+.arrow {
+    width: 50px;
+    height: 59px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -20px;
+}
+
+.form-group input {
+    font-size: 24px;
+    line-height: 28px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+/* list watch */
+
+.box {
+    background: url(../images/fm.jpg) no-repeat;
+    width: 630px;
+    height: 1136px;
+    padding: 0 0 0 10px;
+}
+
+.box>div {
+    width: 206px;
+    height: 356px;
+    float: left;
+    position: relative;
+    position: relative;
+    margin: 0 auto;
+    top: 50px;
+    -webkit-perspective: 800px;
+    /*3d场景*/
+    
+    -moz-perspective: 800px;
+}
+
+.brand {
+    display: block;
+    width: 100%;
+    background: transparent;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    line-height: 60px;
+    border-radius: 5px;
+    position: fixed;
+    left: 0px;
+    top: 40px;
+    z-index: 99;
+}
+
+.brand a {
+    color: #fff;
+}
+
+.close {
+    opacity: 1;
+}
+
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:hover {
+    border: none;
+    background-color: #f7d28e;
+    color: #fff;
+    font-size: 24px;
+    border-color: #f7d28e;
+}
+
+.dian1 {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 47px;
+    right: 16px;
+    z-index: 80;
+}
+
+.kkl {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 10;
+}
+
+.pic_1,
+.pic_2,
+.pic_3,
+.pic_4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nm_1 {
+    width: 100%;
+    height: 78px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.nm_2 {
+    width: 100%;
+    height: 78px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.nm_3 {
+    width: 100%;
+    height: 78px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.nm_4 {
+    width: 100%;
+    height: 78px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.nm_1 img,
+.nm_2 img,
+.nm_3 img,
+.nm_4 img {
+    padding-top: 10px;
+}
+
+.a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 206px;
+    height: 356px;
+    -webkit-transition: 3s ease-in-out;
+    -moz-transition: 3s ease-in-out;
+    -ms-transition: 3s ease-in-out;
+    -o-transition: 3s ease-in-out;
+    transition: 3s ease-in-out;
+    font-family: verdana, arial, sans-serif;
+    /*background: -moz-linear-gradient(-45deg, #fff, #fff 50%, #fff 100%);  
+background: -webkit-gradient(linear, 0 0, 100% 100%, from(#fff), color-stop(50%, #fff), color-stop(100%, #fff));
+-moz-transform-style: preserve-3d;*/
+    
+    -moz-backface-visibility: hidden;
+    /*抖动*/
+    
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+}
+
+.num {
+    -moz-transform: rotateY(0);
+    -webkit-transform: rotateY(0) !important;
+}

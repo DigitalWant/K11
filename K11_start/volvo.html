@@ -1,0 +1,434 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=640,target-densitydpi=device-dpi,user-scalable=no" />
+<title>沃尔沃全新XC90</title>
+
+<script src="http://code.createjs.com/easeljs-0.6.0.min.js"></script>
+<script src="http://code.createjs.com/tweenjs-0.4.0.min.js"></script>
+<script src="http://code.createjs.com/movieclip-0.6.0.min.js"></script>
+<script src="http://code.createjs.com/preloadjs-0.3.0.min.js"></script>
+<script src="js/volvo.js"></script>
+<script src="ga.js"></script>
+<script src="btn.js"></script>
+<script src="js/WeixinApi.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+
+<style>
+	body, html{margin:0; padding:0; overflow:hidden; width:100%; height:100%;}
+	.wrapper{width:640px; height:100%; margin:0 auto; position:absolute; left:50%; top:0; margin-left:-320px; overflow:hidden;}
+	.motion{width:640px; height:1136px; margin:0 auto; position:relative;}
+	.music_btn{width:66px; height:66px; position:absolute; z-index:55; right:20px; bottom:20px; cursor:pointer;}
+	
+	#canvas{position:absolute; left:0; top:0;}
+	
+	.p1{width:640px; height:1136px; margin:0 auto; position:relative; background:#FFF;}
+	.p2{width:640px; height:1136px; margin:0 auto; position:relative; }
+	.p3{width:640px; height:1136px; margin:0 auto; position:relative; }
+	.p4{width:640px; height:1136px; margin:0 auto; position:relative; }
+	
+	.loading{width:124px; height:124px; position:absolute; left:50%; top:50%; margin-left:-62px; margin-top:-62px; z-index:666}
+	.intro{width:640px; height:1136px; margin:0 auto; position:absolute; z-index:333; display:none; left:0; top:0;}
+	.share_tips{width:640px; height:1136px; position:absolute; z-index:88; left:50%; margin-left:-320px; display:none;}
+	.share_btn{width:120px; height:120px; position:absolute; z-index:333; left:260px; top:500px; background:#000; opacity:0}
+	.skip{width:58px; height:30px; position:absolute; z-index:332; right:100px; margin-left:-29px; top:0; cursor:pointer;}
+	.progress{position:absolute; left:50%; top:50%; margin-left:-25px; margin-top:-15px; font-size:1.5em; z-index:888; color:#999; width:50px; height:30px; text-align:center;}
+	.arrow{width:50px; height:59px; position:absolute; left:50%; top:0; margin-left:-20px;}
+	#canvas2{position:absolute; left:50%; top:600px; z-index:55; width:251px; height:58px; margin-left:-125px;}
+	#canvas3{position:absolute; left:50%; top:400px; z-index:55; width:251px; height:58px; margin-left:-115px;}
+</style>
+
+<script>
+
+var isMobile = {
+	Android: function() {
+		return navigator.userAgent.match(/Android/i) ? true : false;
+	},
+	BlackBerry: function() {
+		return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+	},
+	iOS: function() {
+		return navigator.userAgent.match(/iPhone|iPod/i) ? true : false;
+	},
+	Windows: function() {
+		return navigator.userAgent.match(/IEMobile/i) ? true : false;
+	},
+	Windows2: function() {
+		return navigator.userAgent.match(/Windows Phone/i) ? true : false;
+	},
+	
+	any: function() {
+		return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows() || isMobile.Windows2());
+	}
+};
+
+
+var playEnd = false;
+var pageIndex = 1;
+var pageHeight;
+var audioFlag = true;
+var timeout;
+var myAudio=new Audio();
+myAudio.setAttribute('src','bgMusic.mp3');                
+myAudio.volume=1;
+myAudio.autoplay = true;
+//myAudio.loop = true;
+
+
+var canvas, stage, exportRoot;
+
+function init() {
+	canvas = document.getElementById("canvas");
+	images = images||{};
+
+	var manifest = [
+		{src:"images/main/Bitmap1.png", id:"Bitmap1"},
+		{src:"images/main/Bitmap3.png", id:"Bitmap3"},
+		{src:"images/main/Bitmap4.png", id:"Bitmap4"},
+		{src:"images/main/Bitmap5.png", id:"Bitmap5"},
+		{src:"images/main/Bitmap6.png", id:"Bitmap6"},
+		{src:"images/main/Bitmap7.png", id:"Bitmap7"},
+		{src:"images/main/Bitmap8.png", id:"Bitmap8"},
+		{src:"images/main/lib_img_000002.jpg", id:"lib_img_000002"},
+		{src:"images/main/lib_img_000003.jpg", id:"lib_img_000003"},
+		{src:"images/main/lib_img_000018.jpg", id:"lib_img_000018"}
+	];
+
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("progress", handleProgress);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(manifest);
+}
+
+function handleProgress(event) {
+	var loaded = Math.floor(event.loaded * 100);
+	$(".progress").html(loaded);
+}
+
+function handleFileLoad(evt) {
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete() {
+	exportRoot = new lib_start.start();
+	exportRoot.addEventListener("completed", completed)
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+
+	createjs.Ticker.setFPS(40);
+	createjs.Ticker.addEventListener("tick", stage);
+	
+	
+	$(".loading").fadeOut();
+	$(".progress").fadeOut();
+	myAudio.play();
+	
+	if(!isMobile.iOS()){
+		var s = 1000 * 81;
+		timeout = setTimeout(function(){
+			completed();
+		}, s)
+	}
+	
+	
+}
+
+function completed(){
+	
+	$(".intro").fadeIn();
+	setTimeout(function(){
+		window.location.href = "http://115.29.36.127/weixin/allnewxc90/zong.html";
+	}, 5000)
+	
+	
+	
+	
+	
+	return;
+	playEnd = true;
+	$(".intro").fadeIn();
+	if(timeout) clearInterval(timeout);
+}
+
+
+	
+$(document).ready(function(e) {
+	init();
+	var btn = new Btn(document.getElementById("canvas2"));
+	//btn.init();
+	
+	var btn2 = new Btn(document.getElementById("canvas3"));
+	//btn2.init();
+	
+	
+	
+	
+	pageHeight = window.innerHeight;
+	var t = (pageHeight - 1136) * 0.5;
+	$(".wrapper").height(1136 * 4);
+	$("#canvas").css({"top":t+"px"});
+	$(".skip").css({"top":(pageHeight - 70)+"px"});
+	
+	$(".p4 img").css({"top":t+"px"});
+	$(".intro").css({"top":(pageHeight - 1136)+"px"});
+	$(".p4 .share_btn").css({"top":(t + 760)+"px"});
+	
+	pageIndex = 1;
+	update();
+	weixinShare();
+	
+	
+	
+	
+	$(".music_btn").click(function(){		
+		if(audioFlag){
+			myAudio.pause();
+			$(".music_btn").attr("src", "images/bo.png");
+		}
+		else if(!audioFlag){
+			myAudio.play();
+			$(".music_btn").attr("src", "images/ting.png");
+		}
+		
+		audioFlag = !audioFlag;
+	})
+	
+	$(".share_btn").click(function(){
+		$(".share_tips").fadeIn();
+	});
+	
+	
+	$(".share_tips").click(function(){
+		$(this).fadeOut();
+	});
+	
+	
+	$(".skip").click(function(){
+		completed();
+	});
+	
+	$(".skip")[0].addEventListener('touchstart', function(event){
+		completed();
+	}, false);
+	
+	/*
+	$(".share_btn")[0].addEventListener('touchstart', function(event){
+		$(".share_tips").fadeIn();
+	}, false);
+	*/
+	
+	$("#canvas2")[0].addEventListener('touchstart', function(event){
+		window.location.href = "http://115.29.36.127/weixin/allnewxc90/exterior.html";
+	}, false);
+	
+	
+	$("#canvas3")[0].addEventListener('touchstart', function(event){
+		window.location.href = "http://115.29.36.127/weixin/allnewxc90/exterior.html";
+	}, false);
+	
+	$(".wrapper")[0].addEventListener('touchstart', touchstart, false);
+	$(".wrapper")[0].addEventListener('touchmove', touchmove, false);
+	$(".wrapper")[0].addEventListener('touchend', touchend, false);
+});
+
+
+var startY, endY;
+function touchstart(event){
+	event.preventDefault();
+	var touch = event.touches[0];
+	endY = startY = touch.pageY;
+}
+
+function touchmove(event){
+	event.preventDefault();
+	var touch = event.touches[0];
+	endY = touch.pageY;
+}
+
+function touchend(event){
+	var distance = startY - endY;
+	if(distance > 30){
+		if(playEnd){
+			if(pageIndex < 4) {
+				pageIndex ++;
+				update(pageIndex);
+			}
+		}
+	}
+	else if(distance < -30){
+		
+		if($(".intro").css("display") == "block"){
+			if(pageIndex == 1) {
+				$(".intro").fadeOut();
+				init();
+			}	
+		}
+		
+		if(pageIndex > 1) {
+			pageIndex --;	
+			update(pageIndex);
+		}
+			
+	}
+}
+
+
+function update(){
+	$(".wrapper").animate({"top":(-1136 * (pageIndex - 1)) + "px"});
+}
+</script>
+</head>
+
+<body style="background-color:#D4D4D4">
+	 <img src="images/ting.png" class="music_btn" />
+	 <img src="images/loading.gif" class="loading" />
+	 <img src="images/share.png" class="share_tips" />
+     <div class="progress">0%</div>
+    
+	<div class="wrapper">
+        <div class="p1">
+        	<img src="images/skip.png" class="skip" />
+            <div class="intro">
+            	<img src="images/p8.jpg"/>
+                <!--<canvas id="canvas2" width="251" height="58" style="background-color:none"></canvas>-->
+            </div>
+        	<canvas id="canvas" width="640" height="1136" style="background-color:none"></canvas>
+        </div>
+        <div class="p2"><img src="images/p9.jpg" /></div>
+        <div class="p3"><img src="images/p10.jpg" /></div>
+        <div class="p4">
+            <img src="images/lib_img_000026.jpg" style="position:absolute; left:0; top:0;" />
+            <canvas id="canvas3" width="251" height="58" style="background-color:none"></canvas>
+            <!-- <a href="#" class="share_btn"></a> -->
+        </div>
+    </div>
+    
+</body>
+
+
+
+
+<script>
+var Btn = function(canvas){
+	this.canvas = canvas;
+	this.images = images || {};
+}
+Btn.prototype = {	
+	init:function(){
+		createjs.MotionGuidePlugin.install();
+		var manifest = [
+			{src:"images/btn1.png", id:"btn1"},
+			{src:"images/img30.png", id:"图层30"}
+		];
+	
+		var loader = new createjs.LoadQueue(false);
+		loader._self = this;
+		loader.addEventListener("fileload", this.handleFileLoad);
+		loader.addEventListener("complete", this.handleComplete);
+		loader.loadManifest(manifest);
+		
+	},
+	
+	handleFileLoad:function(evt){
+		if (evt.item.type == "image") { this.images[evt.item.id] = evt.result; }
+	},
+	
+	handleComplete:function(e){
+		var loader = e.target;
+		var _self = loader._self;
+		
+		var exportRoot = new lib.btn();
+		
+		var stage = new createjs.Stage(_self.canvas);
+		stage.addChild(exportRoot);
+		stage.update();
+	
+		createjs.Ticker.setFPS(24);
+		createjs.Ticker.addEventListener("tick", stage);
+	}
+}
+</script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fd706f3d48d5e7338e0437c2e514f6dc9' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+
+<script>
+//微信分享
+	function weixinShare(){
+		WeixinApi.ready(function(Api) {
+				// 微信分享的数据
+				var wxData = {
+					"appId": "", // 服务号可以填写appId
+					"imgUrl" :"http://115.29.36.127/weixin/allnewxc90/images/share_icon.jpg",
+					"link" :"http://115.29.36.127/weixin/allnewxc90/",
+					"desc" : "沃尔沃全新XC90现已曜世驾临，带来源自瑞典的自然奢雅。它是沃尔沃史上最奢华，最震撼的车款，现已闪耀于眼前。",
+					"title" : "沃尔沃全新XC90 耀世登场"
+				};
+		
+				// 分享的回调
+				var wxCallbacks = {
+					// 分享操作开始之前
+					ready : function() {
+						// 你可以在这里对分享的数据进行重组
+						
+					},
+					// 分享被用户自动取消
+					cancel : function(resp) {
+						// 你可以在你的页面上给用户一个小Tip，为什么要取消呢？
+						//alert("分享被取消");
+					  
+					},
+					// 分享失败了
+					fail : function(resp) {
+						// 分享失败了，是不是可以告诉用户：不要紧，可能是网络问题，一会儿再试试？
+						//alert("分享失败");
+					   
+					},
+					// 分享成功
+					confirm : function(resp) {
+						// 分享成功了，我们是不是可以做一些分享统计呢？
+						//alert("分享成功")
+						share_back()
+					   
+					},
+					// 整个分享过程结束
+					all : function(resp) {
+						// 如果你做的是一个鼓励用户进行分享的产品，在这里是不是可以给用户一些反馈了？
+					  //  alert("分享结束");
+					  hideShareTips()
+					}
+				};
+				Api.showOptionMenu();
+				// 用户点开右上角popup菜单后，点击分享给好友，会执行下面这个代码
+			
+				Api.shareToFriend(wxData, wxCallbacks);
+		
+				// 点击分享到朋友圈，会执行下面这个代码
+				Api.shareToTimeline(wxData, wxCallbacks);
+		
+				// 点击分享到腾讯微博，会执行下面这个代码
+				Api.shareToWeibo(wxData, wxCallbacks);
+		
+		 
+	
+			});
+	}
+	
+</script>
+
+</html>
