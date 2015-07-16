@@ -88,7 +88,7 @@ function handleComplete() {
 
     $(".loading").fadeOut();
     $(".progress").fadeOut();
-    myAudio.play();
+    //myAudio.play();
 
     if (curName == "start") {
         $("body").addClass("start");
