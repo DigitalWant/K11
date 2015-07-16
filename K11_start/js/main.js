@@ -238,7 +238,7 @@ $(document).ready(function(e) {
     $(".prev").on('click touchstart',function(){
 
      
-    });*/
+    });
     $(window).on('hashchange', function() {
         //.. work ..
         if (location.hash == "") {
@@ -248,7 +248,7 @@ $(document).ready(function(e) {
             listBrand();
         }
 
-    });
+    });*/
 
 
 
