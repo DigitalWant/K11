@@ -1528,7 +1528,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{"op
 	}
 	this.frame_1 = function() {
 		this.dispatchEvent("opened");
-		//$(".skip").hide();
+		$(".skip").hide();
 	}
 	this.frame_43 = function() {
 		this.movieClip_2.addEventListener("click", onPlayButton_clickHanlder.bind(this));
@@ -1713,14 +1713,8 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
-	// screen9
-	this.instance = new lib.MC_screen9();
-	this.instance.setTransform(313,556.8,1,1,0,0,0,313,556.8);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(381.1,846,601.6,590.8);
+p.nominalBounds = null;
 
 })(lib_startup = lib_startup||{}, images = images||{}, createjs = createjs||{});
 var lib_startup, images, createjs;
