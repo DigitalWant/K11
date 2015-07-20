@@ -11,6 +11,7 @@
     <script src="http://code.createjs.com/movieclip-0.7.1.min.js"></script>
     <script src="http://code.createjs.com/preloadjs-0.4.1.min.js"></script>
     <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/startup.js"></script>
     <script src="js/main.js"></script>
 </head>
 
@@ -52,7 +53,7 @@
         $('.androidStart').show();
         $('.androidStart').on('click touchstart', function() {
 
-            loadLib(0);
+            init();
             $(this).hide();
             if (audioFlag) {
                 myAudio.pause();
@@ -67,7 +68,7 @@
 
     } else {
 
-        loadLib(0);
+        init();
 
     }
     </script>

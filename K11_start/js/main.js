@@ -66,7 +66,7 @@ function init() {
     loader.addEventListener("complete", handleComplete);
     loader.addEventListener("progress", handleProgress);
 
-    loader.loadManifest(window[curLibName].properties.manifest);
+    loader.loadManifest(lib_startup.properties.manifest);
 }
 
 
@@ -77,13 +77,13 @@ function handleFileLoad(evt) {
 }
 
 function handleComplete() {
-    exportRoot = new window[curLibName][curName]();
+    exportRoot = new lib_startup.startup();
 
     stage = new createjs.Stage(canvas);
     stage.addChild(exportRoot);
     stage.update();
 
-    createjs.Ticker.setFPS(window[curLibName].properties.fps);
+    createjs.Ticker.setFPS(lib_startup.properties.fps);
     createjs.Ticker.addEventListener("tick", stage);
 
     $(".loading").fadeOut();
@@ -101,7 +101,7 @@ function handleComplete() {
 
 function handleProgress(event) {
     var loaded = Math.floor(event.loaded * 100);
-    $(".progress").html(loaded);
+    $(".progress").text(loaded+"%");
     //console.log(loaded);
 
 }
@@ -194,8 +194,6 @@ function touchend(event) {
 }
 
 $(document).ready(function(e) {
-
-
 
    // $(".wrapper")[0].addEventListener('touchstart', touchstart, false);
     $(".wrapper")[0].addEventListener('touchmove', touchmove, false);
