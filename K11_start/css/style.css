@@ -117,26 +117,7 @@ body {
     top: 0;
 }
 
-.share_tips {
-    width: 640px;
-    height: 1136px;
-    position: absolute;
-    z-index: 88;
-    left: 50%;
-    margin-left: -320px;
-    display: none;
-}
 
-.share_btn {
-    width: 120px;
-    height: 120px;
-    position: absolute;
-    z-index: 333;
-    left: 260px;
-    top: 500px;
-    background: #f7d28e;
-    opacity: 0
-}
 
 .skip {
     width: 151px;
@@ -200,38 +181,6 @@ body {
     margin-left: -20px;
 }
 
-.form-group input {
-    font-size: 24px;
-    line-height: 28px;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 5px;
-}
-/* list watch */
-
-.box {
-    background: url(../images/fm.jpg) no-repeat;
-    width: 630px;
-    height: 1136px;
-    padding: 0 0 0 10px;
-}
-
-.box>div {
-    width: 206px;
-    height: 356px;
-    float: left;
-    position: relative;
-    position: relative;
-    margin: 0 auto;
-    top: 50px;
-    -webkit-perspective: 800px;
-    /*3d场景*/
-    
-    -moz-perspective: 800px;
-}
 
 .brand {
     display: block;
@@ -282,90 +231,4 @@ body {
     width: 100%;
     height: 40px;
     z-index: 10;
-}
-
-.pic_1,
-.pic_2,
-.pic_3,
-.pic_4 {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.nm_1 {
-    width: 100%;
-    height: 78px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-.nm_2 {
-    width: 100%;
-    height: 78px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-.nm_3 {
-    width: 100%;
-    height: 78px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-.nm_4 {
-    width: 100%;
-    height: 78px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-.nm_1 img,
-.nm_2 img,
-.nm_3 img,
-.nm_4 img {
-    padding-top: 10px;
-}
-
-.a {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 206px;
-    height: 356px;
-    -webkit-transition: 3s ease-in-out;
-    -moz-transition: 3s ease-in-out;
-    -ms-transition: 3s ease-in-out;
-    -o-transition: 3s ease-in-out;
-    transition: 3s ease-in-out;
-    font-family: verdana, arial, sans-serif;
-    /*background: -moz-linear-gradient(-45deg, #fff, #fff 50%, #fff 100%);  
-background: -webkit-gradient(linear, 0 0, 100% 100%, from(#fff), color-stop(50%, #fff), color-stop(100%, #fff));
--moz-transform-style: preserve-3d;*/
-    
-    -moz-backface-visibility: hidden;
-    /*抖动*/
-    
-    -webkit-transform-style: preserve-3d;
-    -webkit-backface-visibility: hidden;
-    -moz-transform: rotateY(-180deg);
-    -webkit-transform: rotateY(-180deg);
-}
-
-.num {
-    -moz-transform: rotateY(0);
-    -webkit-transform: rotateY(0) !important;
 }
