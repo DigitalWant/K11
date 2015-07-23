@@ -135,7 +135,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,224,84);
 (lib.text_last = function() {
 	this.initialize(img.text_last);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,396,74);
+p.nominalBounds = new cjs.Rectangle(0,0,396,112);
 
 
 (lib.text_tips = function() {
@@ -189,7 +189,7 @@ p.nominalBounds = new cjs.Rectangle(-258,-29,477,24);
 
 	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
-p.nominalBounds = new cjs.Rectangle(-237.5,-36,396,74);
+p.nominalBounds = new cjs.Rectangle(-237.5,-36,396,112);
 
 
 (lib.Tween52 = function() {
@@ -201,7 +201,7 @@ p.nominalBounds = new cjs.Rectangle(-237.5,-36,396,74);
 
 	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
-p.nominalBounds = new cjs.Rectangle(-237.5,-36,396,74);
+p.nominalBounds = new cjs.Rectangle(-237.5,-36,396,112);
 
 
 (lib.Tween51 = function() {
@@ -929,7 +929,7 @@ p.nominalBounds = new cjs.Rectangle(-136,-77.5,272,155);
 
 
 (lib.MC_screen8 = function(mode,startPosition,loop) {
-if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{opened:1,closed:69});
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{opened:1,closed:69,last:81});
 
 	// timeline functions:
 	this.frame_0 = function() {
@@ -1008,7 +1008,7 @@ p.nominalBounds = null;
 
 
 (lib.MC_screen7 = function(mode,startPosition,loop) {
-if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{"opened":1,"closed":43});
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{"opened":1,"closed":43,"last":81});
 
 	// timeline functions:
 	this.frame_0 = function() {
@@ -1127,7 +1127,7 @@ p.nominalBounds = new cjs.Rectangle(61.1,449.8,530.2,300.4);
 
 
 (lib.MC_screen6 = function(mode,startPosition,loop) {
-if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{"opened":1,"closed":13});
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{"opened":1,"closed":13,"last":52});
 
 	// timeline functions:
 	this.frame_0 = function() {
@@ -1185,7 +1185,7 @@ p.nominalBounds = new cjs.Rectangle(50.2,266.4,551,500);
 
 
 (lib.MC_screen5 = function(mode,startPosition,loop) {
-if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{"opened":1,"closed":34});
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{"opened":1,"closed":34,"last":52});
 
 	// timeline functions:
 	this.frame_0 = function() {
@@ -1213,7 +1213,7 @@ p.nominalBounds = new cjs.Rectangle(62,270.4,528,479);
 
 
 (lib.MC_screen4 = function(mode,startPosition,loop) {
-if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{"opened":1,"closed":47});
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{"opened":1,"closed":47,"last":79});
 
 	// timeline functions:
 	this.frame_0 = function() {
@@ -1319,7 +1319,7 @@ p.nominalBounds = new cjs.Rectangle(-75.1,106.1,617.1,749.4);
 
 
 (lib.MC_screen3 = function(mode,startPosition,loop) {
-if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{"opened":1,"closed":125});
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{"opened":1,"closed":125,"last":125});
 
 	// timeline functions:
 	this.frame_0 = function() {
@@ -1413,7 +1413,7 @@ p.nominalBounds = new cjs.Rectangle(227.4,278.8,224,188);
 
 
 (lib.MC_screen2 = function(mode,startPosition,loop) {
-if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{"opened":1,"closed":128});
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{"opened":1,"closed":128,"last":139});
 
 	// timeline functions:
 	this.frame_0 = function() {
@@ -1452,7 +1452,7 @@ p.nominalBounds = new cjs.Rectangle(211.5,225,231,294.9);
 
 
 (lib.MC_screen1 = function(mode,startPosition,loop) {
-if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{"opened":1,"closed":132});
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{"opened":1,"closed":132,"last":406});
 
 	// timeline functions:
 	this.frame_0 = function() {
@@ -1500,7 +1500,9 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{"op
 		this.movieClip_2.addEventListener('touchstart', onPlayButton_clickHanlder.bind(this));
 		
 		function onPlayButton_clickHanlder(){
-			alert('part2');
+			//alert('part2');
+			$('.p1').hide();
+			$('.p2').show();
 		}
 	}
 	this.frame_122 = function() {
@@ -1524,15 +1526,15 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{"op
 
 	// lastHeading
 	this.instance_2 = new lib.Tween52("synched",0);
-	this.instance_2.setTransform(366.5,207.9);
+	this.instance_2.setTransform(366.5,197.9);
 	this.instance_2.alpha = 0;
 	this.instance_2._off = true;
 
 	this.instance_3 = new lib.Tween53("synched",0);
-	this.instance_3.setTransform(366.5,223.7);
+	this.instance_3.setTransform(366.5,209.7);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_2}]},18).to({state:[{t:this.instance_3}]},27).wait(78));
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(18).to({_off:false},0).to({_off:true,y:223.7,alpha:1},27).wait(78));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(18).to({_off:false},0).to({_off:true,y:209.7,alpha:1},27).wait(78));
 
 	// chocolate
 	this.instance_4 = new lib.Tween21("synched",0);
@@ -1603,8 +1605,43 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{"op
 	this.timeline.addTween(cjs.Tween.get(this.instance_11).to({_off:true,y:623.3,alpha:1},30).wait(93));
 	this.timeline.addTween(cjs.Tween.get(this.instance_12).to({_off:false},30).to({y:606.3},62).to({y:592.3},30).wait(1));
 
+	// a
+	this.instance_13 = new lib.Tween38("synched",0);
+	this.instance_13.setTransform(310,692);
+
+	this.instance_13.mask = mask;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_13).wait(123));
+
+	// b
+	this.instance_14 = new lib.Tween40("synched",0);
+	this.instance_14.setTransform(447,586);
+
+	this.instance_14.mask = mask;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_14).wait(123));
+
+	// c
+	this.instance_15 = new lib.Tween42("synched",0);
+	this.instance_15.setTransform(236,563.1);
+
+	this.instance_15.mask = mask;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_15).wait(123));
+
+	// Layer 1
+	this.instance_16 = new lib.Tween30("synched",0);
+	this.instance_16.setTransform(325.7,516.4);
+	this.instance_16.alpha = 0;
+
+	this.instance_17 = new lib.Tween31("synched",0);
+	this.instance_17.setTransform(325.7,516.4);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_16}]}).to({state:[{t:this.instance_17}]},10).wait(113));
+	this.timeline.addTween(cjs.Tween.get(this.instance_16).to({_off:true,alpha:1},10).wait(113));
+
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(154.5,436.8,508.3,347.3);
+p.nominalBounds = new cjs.Rectangle(50.2,266.4,612.5,517.7);
 
 
 // stage content:
@@ -1642,8 +1679,19 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 			playInstance.gotoAndPlay("opened");
 		
 			//console.log(playIndex);
-		
+			return root.playInstance;
 		}
+		
+		$('.skip').on('click',function(){
+			playInstance.gotoAndPlay("last");
+			playIndex=playList.length-1;
+			stage.clear();
+			//playInstance = null;
+			//stage.addChild(exportRoot);
+			//exportRoot = {};
+			
+			playClip();	
+		});
 		
 		var playNextMC = function () {
 			playIndex++;
@@ -1655,7 +1703,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 				playClip();
 			} else if (playIndex >= playList.length) {
 		
-				alert('end');
+				//alert('end');
 			}
 		
 		

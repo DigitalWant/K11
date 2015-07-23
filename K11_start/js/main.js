@@ -14,7 +14,6 @@ var isMobile = {
     Windows2: function() {
         return navigator.userAgent.match(/Windows Phone/i) ? true : false;
     },
-
     any: function() {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows() || isMobile.Windows2());
     }
@@ -58,15 +57,19 @@ function loadLib(id) {
 }
 
 function init() {
-    canvas = document.getElementById("canvas");
+    if ($(".p1").size() > 0) {
 
-    images = images || {};
-    var loader = new createjs.LoadQueue(false);
-    loader.addEventListener("fileload", handleFileLoad);
-    loader.addEventListener("complete", handleComplete);
-    loader.addEventListener("progress", handleProgress);
 
-    loader.loadManifest(lib_startup.properties.manifest);
+        canvas = document.getElementById("canvas");
+
+        images = images || {};
+        var loader = new createjs.LoadQueue(false);
+        loader.addEventListener("fileload", handleFileLoad);
+        loader.addEventListener("complete", handleComplete);
+        loader.addEventListener("progress", handleProgress);
+
+        loader.loadManifest(lib_startup.properties.manifest);
+    }
 }
 
 
@@ -101,57 +104,9 @@ function handleComplete() {
 
 function handleProgress(event) {
     var loaded = Math.floor(event.loaded * 100);
-    $(".progress").text(loaded+"%");
+    $(".progress").text(loaded + "%");
     //console.log(loaded);
 
-}
-
-function listBrandE() {
-    $(".p1").hide();
-    $(".p2").show();
-    setTimeout(function() {
-        listBrand();
-    }, 3000)
-}
-
-function listBrand() {
-    $(".p1").hide();
-    $(".p2").hide();
-    $(".box").show();
-    $("body").addClass("listBrand");
-    $("body").removeClass("start");
-
-    setTimeout(function() {
-        $(".a2,.a4,.a6,.a8").addClass("num");
-    }, 700);
-    setTimeout(function() {
-        $(".a5").addClass("num");
-    }, 100);
-
-    setTimeout(function() {
-        $(".a1,.a3,.a7,.a9").addClass("num");
-    }, 1400);
-    var sh = $(window).height();
-    var sw = $(window).width();
-    var sl = sh / 1136;
-    $(".box").css({
-        "-webkit-transform": "scale(" + sl + "," + sl + ")",
-        "-webkit-transform-origin": "center top"
-    });
-
-    location.hash = "";
-    $('.next').unbind("click touchstart");
-    $('.prev').unbind("click touchstart");
-
-    exportRoot = {};
-}
-
-function hideBrand() {
-    $("body").removeClass("listBrand");
-
-    $(".box .num").removeClass('num');
-    $(".p1").show();
-    $(".box").hide();
 }
 
 
@@ -194,10 +149,11 @@ function touchend(event) {
 }
 
 $(document).ready(function(e) {
+    var steps = $(".step");
 
-   // $(".wrapper")[0].addEventListener('touchstart', touchstart, false);
+    //$(".wrapper")[0].addEventListener('touchstart', touchstart, false);
     $(".wrapper")[0].addEventListener('touchmove', touchmove, false);
-    //$(".wrapper")[0].addEventListener('touchend', touchend, false);
+    $(".wrapper")[0].addEventListener('touchend', touchend, false);
 
     $(".music_btn").click(function() {
         if (audioFlag) {
@@ -211,43 +167,35 @@ $(document).ready(function(e) {
         audioFlag = !audioFlag;
     });
 
-    $(".box>div").each(function(i) {
-        $(this).on("click touchstart", function() {
-            loadLib(i + 1);
-            location.hash = "clip" + (i + 1);
+
+    /**/
+    $(".share").on("click", function() {
+            //alert('share');
+            $(".p1,.p2,.p3,.p4,.p5,.p6,.p7,.brand").hide();
 
         })
-    });
+        /*
+        $(".btnNext").on("click", function() {
+            $(this).parent().hide().next().show();
+        });*/
 
-    $(".skip").on('click touchstart', function() {
-
-        stage.removeChild(exportRoot);
-        exportRoot = {};
-        listBrand();
-
-    });
-
-    /*
-    $(".next").on('click touchstart',function(){
-         console.log(exportRoot);
+    if ($(".p3").size() > 0) {
 
 
-    });
-    $(".prev").on('click touchstart',function(){
-
-     
-    });
-    $(window).on('hashchange', function() {
-        //.. work ..
-        if (location.hash == "") {
-            //alert("listPage");
-            stage.removeChild(exportRoot);
-            exportRoot = {};
-            listBrand();
-        }
-
-    });*/
-
-
+        var galleryTop = new Swiper('.gallery-top', {
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 10,
+        });
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 10,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            touchRatio: 0.2,
+            slideToClickedSlide: true
+        });
+        galleryTop.params.control = galleryThumbs;
+        galleryThumbs.params.control = galleryTop;
+    }
 
 })
