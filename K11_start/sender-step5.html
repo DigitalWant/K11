@@ -6,21 +6,28 @@
     <meta name="viewport" content="width=640,target-densitydpi=device-dpi,user-scalable=no" />
     <title>K11</title>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="http://code.createjs.com/easeljs-0.7.1.min.js"></script>
+    <script src="http://code.createjs.com/tweenjs-0.5.1.min.js"></script>
+    <script src="http://code.createjs.com/movieclip-0.7.1.min.js"></script>
+    <script src="http://code.createjs.com/preloadjs-0.4.1.min.js"></script>
     <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/step5.js"></script>
     <script src="js/main.js"></script>
 
 </head>
 
 <body>
-    <!--<img src="images/ting.png" class="music_btn" />-->
+    <img src="images/loading.gif" class="loading" />
+    <div class="progress">0%</div>
     <span class="brand">
               <img src="images/brand.png" />
             </span>
     <div class="wrapper">
         <div class="step p5">
+            <canvas id="canvas" width="640" height="1136" style="z-index:999;"></canvas>
             <img src="images/content/step4.jpg" class="stepBg" />
-            <img src="images/content/btn-next.png" class="btnNext" />
-            <img src="images/share.png" class="share" />
+            <img src="images/content/btn-next.png" class="btnNext" style="z-index:9999;"/>
+            <img src="images/share.png" class="share" style="z-index:9999;"/>
         </div>
         <div class="tips">
             <img src="images/content/shareTips.jpg" class="stepBg" />

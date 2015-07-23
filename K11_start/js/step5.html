@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>startup</title>
+<title>step5</title>
 
 <script src="http://code.createjs.com/easeljs-0.7.1.min.js"></script>
 <script src="http://code.createjs.com/tweenjs-0.5.1.min.js"></script>
 <script src="http://code.createjs.com/movieclip-0.7.1.min.js"></script>
 <script src="http://code.createjs.com/preloadjs-0.4.1.min.js"></script>
-<script src="startup.js"></script>
+<script src="step5.js"></script>
 
 <script>
 var canvas, stage, exportRoot;
@@ -20,7 +20,7 @@ function init() {
 	var loader = new createjs.LoadQueue(false);
 	loader.addEventListener("fileload", handleFileLoad);
 	loader.addEventListener("complete", handleComplete);
-	loader.loadManifest(lib_startup.properties.manifest);
+	loader.loadManifest(lib_step5.properties.manifest);
 }
 
 function handleFileLoad(evt) {
@@ -28,13 +28,13 @@ function handleFileLoad(evt) {
 }
 
 function handleComplete() {
-	exportRoot = new lib_startup.startup();
+	exportRoot = new lib_step5.step5();
 
 	stage = new createjs.Stage(canvas);
 	stage.addChild(exportRoot);
 	stage.update();
 
-	createjs.Ticker.setFPS(lib_startup.properties.fps);
+	createjs.Ticker.setFPS(lib_step5.properties.fps);
 	createjs.Ticker.addEventListener("tick", stage);
 }
 </script>

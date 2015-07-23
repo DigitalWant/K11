@@ -232,24 +232,14 @@ body {
     height: 40px;
     z-index: 10;
 }
-.p7 .btnCustom {
-    width:203px;
-    height: 87px;
-      margin-top: -124px;
-  margin-left: -250px;
-}
-.p7 .share.big{
-    width:242px;height:98px;
-    margin-top: -130px;
-  margin-left: 50px;
-}
 
 .swiper-container {
     width: 100%;
     height: 300px;
     margin-left: auto;
     margin-right: auto;
-    overflow:visible;
+    /*overflow:visible;*/
+
 }
 .swiper-container {
 
@@ -260,11 +250,9 @@ body {
 }
 .gallery-top {
     height: 43%;
-    width: 80%;
+    width: 70%;
 }
-.p3 .gallery-top { 
-    padding-top: 215px;
-}
+
 .gallery-thumbs {
     height: 14%;
     box-sizing: border-box;
@@ -278,18 +266,41 @@ body {
 .gallery-thumbs .swiper-slide-active {
     opacity: 1;
 }
+/* p3 */
+.p3 {
+    background-image: url(../images/content/step2.png);
+    background-position: 0px 130px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.p3 .gallery-top { 
+    padding-top: 300px;
+}
 .p3 .swiper-button-next, .p3 .swiper-button-prev {
- margin-top: 130px;
  height: 132px;
  width:75px;
  background-size: cover;
 }
 .p3 .swiper-button-next {
-    right: -40px;
+    right:10px;
 }
 .p3 .swiper-button-prev {
-    left: -40px;
+    left: 10px;
 }
+
+/* p7 */
+.p7 .btnCustom {
+    width:203px;
+    height: 87px;
+      margin-top: -124px;
+  margin-left: -250px;
+}
+.p7 .share.big{
+    width:242px;height:98px;
+    margin-top: -130px;
+  margin-left: 50px;
+}
+
 /*iphone 4 screen
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) and (orientation:portrait)
  */
@@ -329,6 +340,15 @@ body {
         -o-transform: scale(1, 1);
         -ms-transform: scale(1, 1);
     }
- 
+     .gallery-top {
+        height: 33%;
+        width: 50%;
+    }
+
+    .gallery-thumbs {
+        height: 14%;
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
 }
 

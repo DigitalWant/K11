@@ -57,7 +57,7 @@ function loadLib(id) {
 }
 
 function init() {
-    if ($(".p1").size() > 0) {
+    if ($(".p1,.p5").size() > 0) {
 
 
         canvas = document.getElementById("canvas");
@@ -68,8 +68,16 @@ function init() {
         loader.addEventListener("complete", handleComplete);
         loader.addEventListener("progress", handleProgress);
 
-        loader.loadManifest(lib_startup.properties.manifest);
+        if ($(".p1").size() > 0) {
+            loader.loadManifest(lib_startup.properties.manifest);
+
+        }
+        if ($(".p5").size() > 0) {
+            loader.loadManifest(lib_step5.properties.manifest);
+        }
+
     }
+
 }
 
 
@@ -80,13 +88,24 @@ function handleFileLoad(evt) {
 }
 
 function handleComplete() {
-    exportRoot = new lib_startup.startup();
+    if ($(".p1").size() > 0) {
+        exportRoot = new lib_startup.startup();
+
+    }
+    if ($(".p5").size() > 0) {
+        exportRoot = new lib_step5.step5();
+    }
 
     stage = new createjs.Stage(canvas);
     stage.addChild(exportRoot);
     stage.update();
+    if ($(".p1").size() > 0) {
+        createjs.Ticker.setFPS(lib_startup.properties.fps);        
+    }
+    if ($(".p5").size() > 0) {
+        createjs.Ticker.setFPS(lib_step5.properties.fps);        
+    }
 
-    createjs.Ticker.setFPS(lib_startup.properties.fps);
     createjs.Ticker.addEventListener("tick", stage);
 
     $(".loading").fadeOut();
@@ -123,29 +142,29 @@ function touchmove(event) {
 }
 
 function touchend(event) {
-    var distance = startY - endY;
-    if (distance > 30) {
-        if (playEnd) {
-            if (pageIndex < 4) {
-                pageIndex++;
-                update(pageIndex);
-            }
-        }
-    } else if (distance < -30) {
+    // var distance = startY - endY;
+    // if (distance > 30) {
+    //     if (playEnd) {
+    //         if (pageIndex < 4) {
+    //             pageIndex++;
+    //             update(pageIndex);
+    //         }
+    //     }
+    // } else if (distance < -30) {
 
-        if ($(".intro").css("display") == "block") {
-            if (pageIndex == 1) {
-                //$(".intro").fadeOut();
-                //init();
-            }
-        }
+    //     if ($(".intro").css("display") == "block") {
+    //         if (pageIndex == 1) {
+    //             //$(".intro").fadeOut();
+    //             //init();
+    //         }
+    //     }
 
-        if (pageIndex > 1) {
-            pageIndex--;
-            //update(pageIndex);
-        }
+    //     if (pageIndex > 1) {
+    //         pageIndex--;
+    //         //update(pageIndex);
+    //     }
 
-    }
+    // }
 }
 
 $(document).ready(function(e) {
