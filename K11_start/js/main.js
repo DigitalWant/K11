@@ -34,16 +34,18 @@ var curLibindex = 0;
 var curName;
 var curLibName;
 var curLibRoot;
+var $canvasContainer;
 /*past and future */
 var canvas, stage, exportRoot;
 var startY, endY;
 
 
-function loadLib(id) {
+function loadLib(id,canvasContainerClassName) {
     curLibindex = id;
     curName = libNameArr[id];
     curLibName = "lib_" + curName;
     curLibRoot = "js/" + libNameArr[id] + ".js";
+    $canvasContainer = $(canvasContainerClassName);
 
     var loaderLib = new createjs.LoadQueue();
 
@@ -53,8 +55,8 @@ function loadLib(id) {
 
     $(".loading").fadeIn();
     $(".progress").fadeIn();
-
 }
+/* init lib mode */
 
 function init() {
 
@@ -69,31 +71,7 @@ function init() {
     loader.loadManifest(lib_startup.properties.manifest);
 }
 
-function handleJsComplete() {
-    canvas = document.getElementById("canvas2");
 
-    images = images || {};
-    var loader = new createjs.LoadQueue(false);
-    loader.addEventListener("fileload", handleFileLoad);
-    loader.addEventListener("complete", handleJsLibComplete);
-    loader.addEventListener("progress", handleProgress);
-
-    // if ($(".p1").size() > 0) {
-    loader.loadManifest(window[curLibName].properties.manifest);
-}
-function handleJsLibComplete(){
-    exportRoot = new window[curLibName][curName]();
-
-    stage = new createjs.Stage(canvas);
-    stage.addChild(exportRoot);
-    stage.update();
-
-    createjs.Ticker.setFPS(window[curLibName].properties.fps);
-    createjs.Ticker.addEventListener("tick", stage);
-
-    $(".loading").fadeOut();
-    $(".progress").fadeOut();
-}
 
 function handleFileLoad(evt) {
     if (evt.item.type == "image") {
@@ -119,10 +97,34 @@ function handleComplete() {
 function handleProgress(event) {
     var loaded = Math.floor(event.loaded * 100);
     $(".progress").text(loaded + "%");
-    //console.log(loaded);
 
 }
 
+/* load lib mode */
+function handleJsComplete() {
+    canvas = $canvasContainer.find('canvas')[0];
+
+    images = images || {};
+    var loader = new createjs.LoadQueue(false);
+    loader.addEventListener("fileload", handleFileLoad);
+    loader.addEventListener("complete", handleJsLibComplete);
+    loader.addEventListener("progress", handleProgress);
+
+    loader.loadManifest(window[curLibName].properties.manifest);
+}
+function handleJsLibComplete(){
+    exportRoot = new window[curLibName][curName]();
+
+    stage = new createjs.Stage(canvas);
+    stage.addChild(exportRoot);
+    stage.update();
+
+    createjs.Ticker.setFPS(window[curLibName].properties.fps);
+    createjs.Ticker.addEventListener("tick", stage);
+
+    $(".loading").fadeOut();
+    $(".progress").fadeOut();
+}
 
 function touchstart(event) {
     event.preventDefault();
@@ -137,37 +139,13 @@ function touchmove(event) {
 }
 
 function touchend(event) {
-    // var distance = startY - endY;
-    // if (distance > 30) {
-    //     if (playEnd) {
-    //         if (pageIndex < 4) {
-    //             pageIndex++;
-    //             update(pageIndex);
-    //         }
-    //     }
-    // } else if (distance < -30) {
 
-    //     if ($(".intro").css("display") == "block") {
-    //         if (pageIndex == 1) {
-    //             //$(".intro").fadeOut();
-    //             //init();
-    //         }
-    //     }
-
-    //     if (pageIndex > 1) {
-    //         pageIndex--;
-    //         //update(pageIndex);
-    //     }
-
-    // }
 }
 
 function switchSceen(elem, className, playAnimId) {
     $(className).show();
     $(elem).parents('.step').hide();
-    //console.log($(elem).parents('.step'));
-    playAnimId && loadLib(playAnimId);
-    console.log(playAnimId)
+    playAnimId && loadLib(playAnimId,'.p5');
 
 }
 $(document).ready(function(e) {

@@ -24,7 +24,7 @@
             </span>
     <div class="wrapper">
         <div class="step p5">
-            <canvas id="canvas" width="640" height="1136" style="z-index:999;"></canvas>
+            <canvas id="canvas2" width="640" height="1136" style="z-index:999;"></canvas>
             <img src="images/content/step4.jpg" class="stepBg" />
             <img src="images/content/btn-next.png" class="btnNext" style="z-index:9999;"/>
             <img src="images/share.png" class="share" style="z-index:9999;"/>
@@ -53,7 +53,7 @@
         $('.androidStart').show();
         $('.androidStart').on('click touchstart', function() {
 
-            init();
+            loadLib(1,'.p5');
             $(this).hide();
             if (audioFlag) {
                 myAudio.pause();
@@ -68,7 +68,7 @@
 
     } else {
 
-        init();
+            loadLib(1,'.p5');
 
     }
     </script>
