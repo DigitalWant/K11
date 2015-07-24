@@ -28,7 +28,7 @@ var timeout;
 // myAudio.volume = 1;
 // myAudio.autoplay = true;
 // myAudio.loop = true;
-var libNameArr = ["startup"];
+var libNameArr = ["startup", "step5"];
 var libAll = {};
 var curLibindex = 0;
 var curName;
@@ -47,39 +47,53 @@ function loadLib(id) {
 
     var loaderLib = new createjs.LoadQueue();
 
-    loaderLib.addEventListener("fileload", init);
+    loaderLib.addEventListener("fileload", handleJsComplete);
     loaderLib.addEventListener("progress", handleProgress);
     loaderLib.loadFile(curLibRoot);
-    hideBrand();
+
     $(".loading").fadeIn();
     $(".progress").fadeIn();
 
 }
 
 function init() {
-    if ($(".p1,.p5").size() > 0) {
 
+    canvas = document.getElementById("canvas");
 
-        canvas = document.getElementById("canvas");
+    images = images || {};
+    var loader = new createjs.LoadQueue(false);
+    loader.addEventListener("fileload", handleFileLoad);
+    loader.addEventListener("complete", handleComplete);
+    loader.addEventListener("progress", handleProgress);
 
-        images = images || {};
-        var loader = new createjs.LoadQueue(false);
-        loader.addEventListener("fileload", handleFileLoad);
-        loader.addEventListener("complete", handleComplete);
-        loader.addEventListener("progress", handleProgress);
-
-        if ($(".p1").size() > 0) {
-            loader.loadManifest(lib_startup.properties.manifest);
-
-        }
-        if ($(".p5").size() > 0) {
-            loader.loadManifest(lib_step5.properties.manifest);
-        }
-
-    }
-
+    loader.loadManifest(lib_startup.properties.manifest);
 }
 
+function handleJsComplete() {
+    canvas = document.getElementById("canvas2");
+
+    images = images || {};
+    var loader = new createjs.LoadQueue(false);
+    loader.addEventListener("fileload", handleFileLoad);
+    loader.addEventListener("complete", handleJsLibComplete);
+    loader.addEventListener("progress", handleProgress);
+
+    // if ($(".p1").size() > 0) {
+    loader.loadManifest(window[curLibName].properties.manifest);
+}
+function handleJsLibComplete(){
+    exportRoot = new window[curLibName][curName]();
+
+    stage = new createjs.Stage(canvas);
+    stage.addChild(exportRoot);
+    stage.update();
+
+    createjs.Ticker.setFPS(window[curLibName].properties.fps);
+    createjs.Ticker.addEventListener("tick", stage);
+
+    $(".loading").fadeOut();
+    $(".progress").fadeOut();
+}
 
 function handleFileLoad(evt) {
     if (evt.item.type == "image") {
@@ -88,36 +102,17 @@ function handleFileLoad(evt) {
 }
 
 function handleComplete() {
-    if ($(".p1").size() > 0) {
-        exportRoot = new lib_startup.startup();
-
-    }
-    if ($(".p5").size() > 0) {
-        exportRoot = new lib_step5.step5();
-    }
+    exportRoot = new lib_startup.startup();
 
     stage = new createjs.Stage(canvas);
     stage.addChild(exportRoot);
     stage.update();
-    if ($(".p1").size() > 0) {
-        createjs.Ticker.setFPS(lib_startup.properties.fps);        
-    }
-    if ($(".p5").size() > 0) {
-        createjs.Ticker.setFPS(lib_step5.properties.fps);        
-    }
 
+    createjs.Ticker.setFPS(lib_startup.properties.fps);
     createjs.Ticker.addEventListener("tick", stage);
 
     $(".loading").fadeOut();
     $(".progress").fadeOut();
-    //myAudio.play();
-
-    if (curName == "start") {
-        $("body").addClass("start");
-    } else {
-        $("body").removeClass("start");
-
-    }
 
 }
 
@@ -166,10 +161,13 @@ function touchend(event) {
 
     // }
 }
-function switchSceen(elem,className){
+
+function switchSceen(elem, className, playAnimId) {
     $(className).show();
     $(elem).parents('.step').hide();
-    console.log($(elem).parents('.step'));
+    //console.log($(elem).parents('.step'));
+    playAnimId && loadLib(playAnimId);
+    console.log(playAnimId)
 
 }
 $(document).ready(function(e) {
@@ -194,18 +192,12 @@ $(document).ready(function(e) {
 
     /**/
     $(".share").on("click", function() {
-            //alert('share');
-            $(".p1,.p2,.p3,.p4,.p5,.p6,.p7,.brand").hide();
-
-        });
-        /*
-        $(".btnNext").on("click", function() {
-            $(this).parent().hide().next().show();
-        });*/
-    $(".btnCode").on("clcik",function(){
-
+        //alert('share');
+        $(".p1,.p2,.p3,.p4,.p5,.p6,.p7,.brand").hide();
 
     });
+
+
     if ($(".p3").size() > 0) {
 
 

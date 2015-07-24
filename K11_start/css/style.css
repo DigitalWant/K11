@@ -48,6 +48,7 @@ body {
 }
 
 #canvas,
+#canvas2,
 .stepBg {
     position: absolute;
     left: 0;
