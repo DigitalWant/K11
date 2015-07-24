@@ -229,6 +229,14 @@ p.nominalBounds = new cjs.Rectangle(389.5,721.5,199,197);
 (lib.step5 = function(mode,startPosition,loop) {
 if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
+	// timeline functions:
+	this.frame_88 = function() {
+		$(".p5 .btnNext").fadeIn();
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(88).call(this.frame_88).wait(1));
+
 	// p
 	this.instance = new lib.kissChocolate_1();
 	this.instance.setTransform(586.1,542.2,1,1,0,0,0,498.5,820);
