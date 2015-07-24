@@ -166,7 +166,12 @@ function touchend(event) {
 
     // }
 }
+function switchSceen(elem,className){
+    $(className).show();
+    $(elem).parents('.step').hide();
+    console.log($(elem).parents('.step'));
 
+}
 $(document).ready(function(e) {
     var steps = $(".step");
 
@@ -192,12 +197,15 @@ $(document).ready(function(e) {
             //alert('share');
             $(".p1,.p2,.p3,.p4,.p5,.p6,.p7,.brand").hide();
 
-        })
+        });
         /*
         $(".btnNext").on("click", function() {
             $(this).parent().hide().next().show();
         });*/
+    $(".btnCode").on("clcik",function(){
 
+
+    });
     if ($(".p3").size() > 0) {
 
 
