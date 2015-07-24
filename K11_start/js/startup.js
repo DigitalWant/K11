@@ -13,7 +13,7 @@ lib.properties = {
 		{src:"images/startup/btn.png", id:"btn"},
 		{src:"images/startup/chocolate.png", id:"chocolate"},
 		{src:"images/startup/chocolateB.png", id:"chocolateB"},
-		{src:"images/startup/chocolateWithHeart.png", id:"chocolateWithHeart"},
+		{src:"images/startup/chocolateWithHeart1.png", id:"chocolateWithHeart1"},
 		{src:"images/startup/cloudB.png", id:"cloudB"},
 		{src:"images/startup/girl.png", id:"girl"},
 		{src:"images/startup/heart.png", id:"heart"},
@@ -60,10 +60,10 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,251);
 p.nominalBounds = new cjs.Rectangle(0,0,286,291);
 
 
-(lib.chocolateWithHeart = function() {
-	this.initialize(img.chocolateWithHeart);
+(lib.chocolateWithHeart1 = function() {
+	this.initialize(img.chocolateWithHeart1);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,528,479);
+p.nominalBounds = new cjs.Rectangle(0,0,528,480);
 
 
 (lib.cloudB = function() {
@@ -496,12 +496,12 @@ p.nominalBounds = new cjs.Rectangle(-275.5,-250,551,500);
 	this.initialize();
 
 	// Layer 1
-	this.instance = new lib.chocolateWithHeart();
-	this.instance.setTransform(-264,-239.5);
+	this.instance = new lib.chocolateWithHeart1();
+	this.instance.setTransform(-131.9,-123.8);
 
 	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
-p.nominalBounds = new cjs.Rectangle(-264,-239.5,528,479);
+p.nominalBounds = new cjs.Rectangle(-131.9,-123.8,528,480);
 
 
 (lib.Tween28 = function() {
@@ -1203,13 +1203,13 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{"op
 
 	// Layer 1
 	this.instance = new lib.Tween29("synched",0);
-	this.instance.setTransform(326,509.9);
+	this.instance.setTransform(195.5,404.5);
 	this.instance.alpha = 0;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).to({alpha:1},18).to({startPosition:0},20).to({alpha:0},14).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(62,270.4,528,479);
+p.nominalBounds = new cjs.Rectangle(63.5,280.7,528,480);
 
 
 (lib.MC_screen4 = function(mode,startPosition,loop) {
