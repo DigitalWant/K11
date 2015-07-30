@@ -125,6 +125,6 @@ terrain.drawFrom = function( starttt, yOff )
 	}
 	ctx.lineTo(1425,1000);
 	ctx.lineTo(0-terrain.drawFarBack,1000);
-	ctx.fill();
+	//ctx.fill();
 	ctx.stroke();
 }

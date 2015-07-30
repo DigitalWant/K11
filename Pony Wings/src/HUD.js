@@ -1,5 +1,7 @@
 var HUD = {};
 HUD.timerImage = new Image(100,100);
+HUD.timerImageUp = new Image(100,100);
+HUD.timerImageDown = new Image(100,200);
 
 HUD.init = function(){
 	HUD.awesome = 0;
@@ -15,33 +17,48 @@ HUD.init = function(){
 HUD.draw = function(){
 	
 	hudCTX.clearRect(0, 0, 960, 640); // Clear the canvas
+			//console.log(HUD.timer);
 	
 	// Draw Night
-	if(HUD.timer<0.2){
+	/**/
+	if(HUD.timer<1){
 		hudCTX.save();
-		hudCTX.fillStyle = "#003";
+		//hudCTX.fillStyle = "#003";
 		if(HUD.timer>0){
-			hudCTX.globalAlpha = 0.8*(0.2-HUD.timer)/0.2;
+			//hudCTX.globalAlpha = 0.8*(0.2-HUD.timer)/0.2;
+			hudCTX.drawImage( HUD.timerImageUp, -40, 150-150*HUD.timer, 100, 100 );
+			console.log(PWG.gScale);
+
 		}else{
-			hudCTX.globalAlpha = 0.8;
+			//hudCTX.globalAlpha = 0.8;
 		}
-		hudCTX.fillRect(0,0,480,300);
+		//hudCTX.fillRect(0,0,480,300);
 		hudCTX.restore();
 	}
-	
 			
 	// Draw Outer Circle
 	hudCTX.fillStyle = "#333";
 	hudCTX.beginPath();
-	hudCTX.arc(0,300,60,0,Math.PI*2,false);
+	//hudCTX.arc(0,300,60,0,Math.PI*2,false);
 	hudCTX.fill();
 		
 	// Draw Sun & Moon
 	hudCTX.save();
-	hudCTX.translate(0,300);
-	hudCTX.rotate((1-HUD.timer)*0.5*Math.PI);
-	hudCTX.drawImage( HUD.timerImage, -50, -50, 100, 100 );
+	//hudCTX.translate(0,300);
+	//hudCTX.rotate((1-HUD.timer)*0.5*Math.PI);
+	//hudCTX.rotate((1-HUD.timer)*0.5*Math.PI);
+
+	//hudCTX.drawImage( HUD.timerImage, 0, 0, 100, 100 );
+	//hudCTX.drawImage( HUD.timerImageUp, -70, 0, 100, 100 );
+	hudCTX.drawImage( HUD.timerImageDown, -40, 270+(1+1*PWG.gScale), 100, 100 );
+
 	hudCTX.restore();
+	
+
+
+
+
+	// Draw Mouth
 		
 	// Draw Arc
 	if(HUD.awesome>=0){
@@ -52,6 +69,9 @@ HUD.draw = function(){
 	    hudCTX.stroke();
     }
 	
+
+
+
 }
 
 HUD.enterFrame = function(){

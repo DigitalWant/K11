@@ -164,8 +164,7 @@
         hudCTX = hudCanvas.getContext('2d');
         //function alert(){} // Mutes alerts.
 
-        PWG.loadArtAssets();
-        PWG.init();
+
 
         var viewportWidth = window.innerWidth;
         var viewportHeight = window.innerHeight;
@@ -182,6 +181,24 @@
 							"-ms-transform: rotate(0deg) scale("+ratioW+","+ratioH+") skew(0deg) translate("+xPosition+"px,"+0+"px);";
 
         document.getElementById('content').setAttribute('style',translateValue);
+
+
+        function chkOrientation(loadLib){
+
+	         if(window.innerHeight > window.innerWidth){
+			    alert("Please use Landscape!");
+			} else {
+			    
+			    if (loadLib==true){
+					PWG.loadArtAssets();
+			    }
+		        PWG.init();			
+			}       	
+        }
+
+        
+		chkOrientation(true);
+
 
         </script>
     </div>
