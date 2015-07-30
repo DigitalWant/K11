@@ -31,7 +31,7 @@
 </head>
 
 <body onkeydown="if(gameIsLoaded){ kCont.keyDownHandler(event); }" onkeyup="if(gameIsLoaded){ kCont.keyUpHandler(event); }" onblur="if(gameIsLoaded){ kCont.down=false; menu.pause(); }" onmousedown="if(gameIsLoaded){ if(event.pageX<360||event.pageY>45){ kCont.down = true; } }" onmouseup="if(gameIsLoaded){ kCont.down = false; }" ontouchstart="if(gameIsLoaded){ if(event.touches[0].pageX<360||event.touches[0].pageY>45){ kCont.down = true; } } BlockMove(event);" ontouchend="if(gameIsLoaded){ kCont.down = false; }" ontouchcancel="if(gameIsLoaded){ kCont.down = false; }">
-    <div>
+    <div id="content">
         <!-- CANVAS DOM -->
         <div id="background">
             <div id='loading'></div>
@@ -167,15 +167,22 @@
         PWG.loadArtAssets();
         PWG.init();
 
+        var viewportWidth = window.innerWidth;
+        var viewportHeight = window.innerHeight;
+        var ratioW = (1+(1 - 480/viewportWidth)+0.04).toFixed(2);
+        var ratioH = (1+(1 - 300/viewportHeight)+0.02).toFixed(2);
+        console.log(ratioW,',',ratioH);
+        var xPosition = (viewportWidth-480)/2;
+        var yPostiion = (viewportHeight-300)/2-10;
 
-        function touchmove(event) {
-            event.preventDefault();
-            var touch = event.touches[0];
-            endY = touch.pageY;
-        }
-        var $bodyEl = document.getElementsByTagName('body')[0];
+		var translateValue = "transform: rotate(0deg) scale("+ratioW+","+ratioH+") skew(0deg) translate("+xPosition+"px,"+yPostiion+"px);"+
+							"-webkit-transform: rotate(0deg) scale("+ratioW+","+ratioH+") skew(0deg) translate("+xPosition+"px,"+yPostiion+"px);"+
+							"-moz-transform: rotate(0deg) scale("+ratioW+","+ratioH+") skew(0deg) translate("+xPosition+"px,"+yPostiion+"px);"+
+							"-o-transform: rotate(0deg) scale("+ratioW+","+ratioH+") skew(0deg) translate("+xPosition+"px,"+yPostiion+"px);"+
+							"-ms-transform: rotate(0deg) scale("+ratioW+","+ratioH+") skew(0deg) translate("+xPosition+"px,"+yPostiion+"px);";
 
-        $bodyEl.addEventListener('touchmove', touchmove, false);
+        document.getElementById('content').setAttribute('style',translateValue);
+
         </script>
     </div>
 </body>
