@@ -169,17 +169,17 @@
 
         var viewportWidth = window.innerWidth;
         var viewportHeight = window.innerHeight;
-        var ratioW = (1+(1 - 480/viewportWidth)+0.04).toFixed(2);
-        var ratioH = (1+(1 - 300/viewportHeight)+0.02).toFixed(2);
-        console.log(ratioW,',',ratioH);
+        var ratioW = (1+(1 - 480/viewportWidth)+0.08).toFixed(2);
+        var ratioH = (1+(1 - 300/viewportHeight)+0.04).toFixed(2);
+        //console.log(ratioW,',',ratioH);
         var xPosition = (viewportWidth-480)/2;
-        var yPostiion = (viewportHeight-300)/2-10;
+        //var yPostiion = (viewportHeight-300)/2-10;
 
-		var translateValue = "transform: rotate(0deg) scale("+ratioW+","+ratioH+") skew(0deg) translate("+xPosition+"px,"+yPostiion+"px);"+
-							"-webkit-transform: rotate(0deg) scale("+ratioW+","+ratioH+") skew(0deg) translate("+xPosition+"px,"+yPostiion+"px);"+
-							"-moz-transform: rotate(0deg) scale("+ratioW+","+ratioH+") skew(0deg) translate("+xPosition+"px,"+yPostiion+"px);"+
-							"-o-transform: rotate(0deg) scale("+ratioW+","+ratioH+") skew(0deg) translate("+xPosition+"px,"+yPostiion+"px);"+
-							"-ms-transform: rotate(0deg) scale("+ratioW+","+ratioH+") skew(0deg) translate("+xPosition+"px,"+yPostiion+"px);";
+		var translateValue = "transform: rotate(0deg) scale("+ratioW+","+ratioH+") skew(0deg) translate("+xPosition+"px,"+0+"px);"+
+							"-webkit-transform: rotate(0deg) scale("+ratioW+","+ratioH+") skew(0deg) translate("+xPosition+"px,"+0+"px);"+
+							"-moz-transform: rotate(0deg) scale("+ratioW+","+ratioH+") skew(0deg) translate("+xPosition+"px,"+0+"px);"+
+							"-o-transform: rotate(0deg) scale("+ratioW+","+ratioH+") skew(0deg) translate("+xPosition+"px,"+0+"px);"+
+							"-ms-transform: rotate(0deg) scale("+ratioW+","+ratioH+") skew(0deg) translate("+xPosition+"px,"+0+"px);";
 
         document.getElementById('content').setAttribute('style',translateValue);
 
