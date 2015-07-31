@@ -96,8 +96,8 @@ PWG.loadArtAssets = function(){
 	pony.image.src = "art/Scootaloo.png";
 	prop.image.parasprite.src = "art/Parasprite.png";
 	HUD.timerImage.src = "art/Timer.png";
-	HUD.timerImageUp.src = "art/TimerUp.png";
-	HUD.timerImageDown.src = "art/TimerDown.png";
+	HUD.timerImageUp.src = "art/timerUp.png";
+	HUD.timerImageDown.src = "art/timerDown.png";
 		
 	if(!gameIsMobile){
 		background.cloud.src = "art/Cloud.png";
