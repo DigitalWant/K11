@@ -189,10 +189,8 @@
 			    alert("Please use Landscape!");
 			} else {
 			    
-			    if (loadLib==true){
-					PWG.loadArtAssets();
-			    }
-		        PWG.init();			
+				PWG.loadArtAssets();
+			    PWG.init();			
 			}       	
         }
 
@@ -201,6 +199,7 @@
         window.onresize = function(event) {
                 chkOrientation();
         };
+
 
         </script>
     </div>
