@@ -198,7 +198,9 @@
 
         
 		chkOrientation(true);
-
+        window.onresize = function(event) {
+                chkOrientation();
+        };
 
         </script>
     </div>
