@@ -17,22 +17,17 @@ HUD.init = function(){
 HUD.draw = function(){
 	
 	hudCTX.clearRect(0, 0, 960, 640); // Clear the canvas
-			//console.log(HUD.timer);
 	
 	// Draw Night
-	/**/
-	if(HUD.timer<1){
+	if(HUD.timer<0.2){
 		hudCTX.save();
-		//hudCTX.fillStyle = "#003";
+		hudCTX.fillStyle = "#003";
 		if(HUD.timer>0){
-			//hudCTX.globalAlpha = 0.8*(0.2-HUD.timer)/0.2;
-			hudCTX.drawImage( HUD.timerImageUp, -40, 150-150*HUD.timer, 100, 100 );
-			console.log(PWG.gScale);
-
+			hudCTX.globalAlpha = 0.8*(0.2-HUD.timer)/0.2;
 		}else{
-			//hudCTX.globalAlpha = 0.8;
+			hudCTX.globalAlpha = 0.8;
 		}
-		//hudCTX.fillRect(0,0,480,300);
+		hudCTX.fillRect(0,0,480,300);
 		hudCTX.restore();
 	}
 			
@@ -49,8 +44,8 @@ HUD.draw = function(){
 	//hudCTX.rotate((1-HUD.timer)*0.5*Math.PI);
 
 	//hudCTX.drawImage( HUD.timerImage, 0, 0, 100, 100 );
-	//hudCTX.drawImage( HUD.timerImageUp, -70, 0, 100, 100 );
-	hudCTX.drawImage( HUD.timerImageDown, -40, 270+(1+1*PWG.gScale), 100, 100 );
+	hudCTX.drawImage( HUD.timerImageUp, -70, 0, 100, 100 );
+	hudCTX.drawImage( HUD.timerImageDown, -70, 230, 100, 100 );
 
 	hudCTX.restore();
 	
