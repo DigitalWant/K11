@@ -138,15 +138,18 @@ body {
     margin-top: -100px;
 }
 
-.btnNext.buy,.btnCode {
+.btnNext.buy,
+.btnCode {
     width: 203px;
     height: 87px;
     margin-top: -155px;
 }
-.btnCode{
-    top:60%;
+
+.btnCode {
+    top: 60%;
     margin-left: -101px;
 }
+
 .next,
 .prev {
     width: 70px;
@@ -324,12 +327,13 @@ body {
     background-size: cover;
     background-position: center top;
 }
+
 .passcode .code {
     position: absolute;
     left: 50%;
-    top:30%;
+    top: 30%;
     background-color: #ffffff;
-    width:442px;
+    width: 442px;
     height: 84px;
     margin-left: -221px;
     border: 5px solid #b09d60;
@@ -345,6 +349,7 @@ body {
     /*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/
     padding: 10px;
 }
+
 .passcode .code input {
     background-color: transparent;
     padding: 0px;
@@ -354,6 +359,7 @@ body {
     font-size: 30px;
     text-align: center;
 }
+
 
 /* p7 */
 
@@ -369,6 +375,21 @@ body {
     height: 98px;
     margin-top: -130px;
     margin-left: 50px;
+}
+
+.p7 .listen {
+    position: absolute;
+    right: 0px;
+    top: 20%;
+}
+
+.p7 .name {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background:#000;
+    right: 301px;
+    top: 27%;
 }
 
 

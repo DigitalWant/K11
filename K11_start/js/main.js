@@ -62,6 +62,8 @@ function init() {
 
     canvas = document.getElementById("canvas");
 
+    if (canvas){
+
     images = images || {};
     var loader = new createjs.LoadQueue(false);
     loader.addEventListener("fileload", handleFileLoad);
@@ -69,6 +71,8 @@ function init() {
     loader.addEventListener("progress", handleProgress);
 
     loader.loadManifest(lib_startup.properties.manifest);
+    
+    }
 }
 
 
