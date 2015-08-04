@@ -359,8 +359,20 @@ body {
     font-size: 30px;
     text-align: center;
 }
-
-
+/* p2 */
+.p2 .record {
+    position: absolute;
+    width: 230px;
+    height: auto;
+    /*background:#000;*/
+    right: 156px;
+    top: 460px;
+}
+.p2 .again {
+    position: absolute;
+    right: 23px;
+    top: 571px;
+}
 /* p7 */
 
 .p7 .btnCustom {
@@ -387,7 +399,7 @@ body {
     position: absolute;
     width: 200px;
     height: 50px;
-    background:#000;
+    /*background:#000;*/
     right: 301px;
     top: 27%;
 }
