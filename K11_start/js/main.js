@@ -62,15 +62,15 @@ function init() {
 
     canvas = document.getElementById("canvas");
 
-    if (canvas){
+    if (canvas!=undefined){
 
-    images = images || {};
-    var loader = new createjs.LoadQueue(false);
-    loader.addEventListener("fileload", handleFileLoad);
-    loader.addEventListener("complete", handleComplete);
-    loader.addEventListener("progress", handleProgress);
+        images = images || {};
+        var loader = new createjs.LoadQueue(false);
+        loader.addEventListener("fileload", handleFileLoad);
+        loader.addEventListener("complete", handleComplete);
+        loader.addEventListener("progress", handleProgress);
 
-    loader.loadManifest(lib_startup.properties.manifest);
+        loader.loadManifest(lib_startup.properties.manifest);
     
     }
 }
@@ -187,16 +187,32 @@ $(document).ready(function(e) {
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev',
             spaceBetween: 10,
+            onInit:function(swiper){
+                //console.log(swiper.activeIndex);
+                $('.gallery-thumbs .swiper-slide').removeClass('swiper-slide-active').eq(swiper.activeIndex).addClass('swiper-slide-active');
+            },
+            onSlideChangeStart:function(swiper){
+                //console.log(swiper.activeIndex);
+                $('.gallery-thumbs .swiper-slide').removeClass('swiper-slide-active').eq(swiper.activeIndex).addClass('swiper-slide-active');
+
+            }  
         });
-        var galleryThumbs = new Swiper('.gallery-thumbs', {
-            spaceBetween: 10,
-            centeredSlides: true,
-            slidesPerView: 'auto',
-            touchRatio: 0.2,
-            slideToClickedSlide: true
-        });
-        galleryTop.params.control = galleryThumbs;
-        galleryThumbs.params.control = galleryTop;
+        // var galleryThumbs = new Swiper('.gallery-thumbs', {
+        //     spaceBetween: 10,
+        //     centeredSlides: true,
+        //     slidesPerView: 'auto',
+        //     touchRatio: 0.2,
+        //     slideToClickedSlide: true
+        // });
+        // galleryTop.params.control = galleryThumbs;
+        // galleryThumbs.params.control = galleryTop;
+
+
+        $('.gallery-thumbs .swiper-slide').on('click touchstart',function(){
+
+            galleryTop.slideTo($('.gallery-thumbs .swiper-slide').index(this));
+        })
+
     }
 
 })

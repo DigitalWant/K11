@@ -262,7 +262,6 @@ body {
     /*overflow:visible;*/
 }
 
-.swiper-container {}
 
 .swiper-slide {
     background-size: cover;
@@ -278,9 +277,12 @@ body {
     height: 12%;
     box-sizing: border-box;
 }
-
+.gallery-thumbs .swiper-wrapper{
+    width: 60%;
+        margin: 0px auto;
+}
 .gallery-thumbs .swiper-slide {
-    width: 18%;
+    width: 33%;
     height: 80%;
     opacity: 0.4;
 }
