@@ -153,6 +153,16 @@ function switchSceen(elem, className, playAnimId) {
 
 }
 $(document).ready(function(e) {
+    pageHeight = window.innerHeight;
+
+    $(".skip,.share,.btnNext,.btnCustom").css({
+        "top": (pageHeight - 70) + "px"
+    });
+
+    var t = (pageHeight - 1136) * 0.5;
+
+
+    
     var steps = $(".step");
 
     //$(".wrapper")[0].addEventListener('touchstart', touchstart, false);
