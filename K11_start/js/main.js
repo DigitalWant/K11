@@ -164,8 +164,8 @@ $(document).ready(function(e) {
     var steps = $(".step");
 
     //$(".wrapper")[0].addEventListener('touchstart', touchstart, false);
-    //$(".wrapper")[0].addEventListener('touchmove', touchmove, false);
-    //$(".wrapper")[0].addEventListener('touchend', touchend, false);
+    $(".wrapper")[0].addEventListener('touchmove', touchmove, false);
+    $(".wrapper")[0].addEventListener('touchend', touchend, false);
 
     $(".music_btn").click(function() {
         if (audioFlag) {
