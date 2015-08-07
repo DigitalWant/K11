@@ -1496,8 +1496,8 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{"op
 		$(".skip").hide();
 	}
 	this.frame_43 = function() {
-		this.movieClip_2.addEventListener("click", onPlayButton_clickHanlder.bind(this));
-		//this.movieClip_2.addEventListener('touchstart', onPlayButton_clickHanlder.bind(this));
+		//this.movieClip_2.addEventListener("click", onPlayButton_clickHanlder.bind(this));
+		this.movieClip_2.addEventListener('touchstart', onPlayButton_clickHanlder.bind(this));
 		
 		function onPlayButton_clickHanlder(){
 			//alert('part2');
