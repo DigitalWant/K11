@@ -40,7 +40,7 @@ var canvas, stage, exportRoot;
 var startY, endY;
 
 
-function loadLib(id,canvasContainerClassName) {
+function loadLib(id, canvasContainerClassName) {
     curLibindex = id;
     curName = libNameArr[id];
     curLibName = "lib_" + curName;
@@ -62,7 +62,7 @@ function init() {
 
     canvas = document.getElementById("canvas");
 
-    if (canvas!=undefined){
+    if (canvas != undefined) {
 
         images = images || {};
         var loader = new createjs.LoadQueue(false);
@@ -71,7 +71,7 @@ function init() {
         loader.addEventListener("progress", handleProgress);
 
         loader.loadManifest(lib_startup.properties.manifest);
-    
+
     }
 }
 
@@ -116,7 +116,8 @@ function handleJsComplete() {
 
     loader.loadManifest(window[curLibName].properties.manifest);
 }
-function handleJsLibComplete(){
+
+function handleJsLibComplete() {
     exportRoot = new window[curLibName][curName]();
 
     stage = new createjs.Stage(canvas);
@@ -149,7 +150,7 @@ function touchend(event) {
 function switchSceen(elem, className, playAnimId) {
     $(className).show();
     $(elem).parents('.step').hide();
-    playAnimId && loadLib(playAnimId,'.p5');
+    playAnimId && loadLib(playAnimId, '.p5');
 
 }
 $(document).ready(function(e) {
@@ -159,10 +160,7 @@ $(document).ready(function(e) {
         "top": (pageHeight - 70) + "px"
     });
 
-    var t = (pageHeight - 1136) * 0.5;
 
-
-    
     var steps = $(".step");
 
     //$(".wrapper")[0].addEventListener('touchstart', touchstart, false);
@@ -197,15 +195,15 @@ $(document).ready(function(e) {
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev',
             spaceBetween: 10,
-            onInit:function(swiper){
+            onInit: function(swiper) {
                 //console.log(swiper.activeIndex);
                 $('.gallery-thumbs .swiper-slide').removeClass('swiper-slide-active').eq(swiper.activeIndex).addClass('swiper-slide-active');
             },
-            onSlideChangeStart:function(swiper){
+            onSlideChangeStart: function(swiper) {
                 //console.log(swiper.activeIndex);
                 $('.gallery-thumbs .swiper-slide').removeClass('swiper-slide-active').eq(swiper.activeIndex).addClass('swiper-slide-active');
 
-            }  
+            }
         });
         // var galleryThumbs = new Swiper('.gallery-thumbs', {
         //     spaceBetween: 10,
@@ -218,7 +216,7 @@ $(document).ready(function(e) {
         // galleryThumbs.params.control = galleryTop;
 
 
-        $('.gallery-thumbs .swiper-slide').on('click touchstart',function(){
+        $('.gallery-thumbs .swiper-slide').on('click touchstart', function() {
 
             galleryTop.slideTo($('.gallery-thumbs .swiper-slide').index(this));
         })

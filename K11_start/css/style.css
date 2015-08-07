@@ -17,7 +17,7 @@ body {
     margin: 0 auto;
     position: absolute;
     left: 50%;
-    top: 0;
+    top: 0px;
     margin-left: -320px;
     overflow: hidden;
     background-image: url('../images/bg.jpg');
@@ -367,13 +367,23 @@ body {
     width: 230px;
     height: auto;
     /*background:#000;*/
-    right: 156px;
-    top: 460px;
+    right: 110px;
+    top: 450px;
+    z-index: 9998;
 }
 .p2 .again {
     position: absolute;
     right: 23px;
     top: 571px;
+    z-index: 9999;
+
+}
+.p2 .repeat {
+    position: absolute;
+    top:600px;
+    right:300px;
+    z-index: 9999;
+
 }
 /* p7 */
 
