@@ -503,7 +503,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c88797', end
         -moz-transform: scale(1, 1);
         -o-transform: scale(1, 1);
         -ms-transform: scale(1, 1);
-    }
+    } 
     .gallery-top {
         height: 33%;
         width: 50%;
