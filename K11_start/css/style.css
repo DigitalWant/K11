@@ -362,7 +362,7 @@ body {
     text-align: center;
 }
 /* p2 */
-.p2 .record {
+.p2 .record{
     position: absolute;
     width: 230px;
     height: auto;
@@ -370,6 +370,41 @@ body {
     right: 110px;
     top: 450px;
     z-index: 9998;
+}
+.p2 .popup{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-left: -192px;
+    margin-top: -192px;
+    width: 385px;
+    height: 385px;
+    display: block;
+    z-index: 9999;
+    text-align: center;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c88797+0,a36774+100 */
+background: rgb(200,135,151); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(200,135,151,0.8) 0%, rgba(163,103,116,0.8) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(200,135,151,0.8)), color-stop(100%,rgba(163,103,116,0.8))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(200,135,151,0.8) 0%,rgba(163,103,116,0.8) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(200,135,151,0.8) 0%,rgba(163,103,116,0.8) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(200,135,151,0.8) 0%,rgba(163,103,116,0.8) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(200,135,151,0.8) 0%,rgba(163,103,116,0.8) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c88797', endColorstr='#a36774',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+.p2 .popup:before{
+    content: url(../images/content/recording.png);
+    width: 149px;
+    height: 168px;
+    margin-left: -74px;
+    position: absolute;
+    left: 50%;
+    top: 64px;
+}
+.p2 .finish {
+    margin: 0px auto;
+    padding-top: 250px;
 }
 .p2 .again {
     position: absolute;
