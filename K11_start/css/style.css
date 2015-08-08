@@ -113,7 +113,8 @@ body {
 .share,
 .btnNext,
 .btnCustom,
-.btnCode {
+.btnCode,
+.btnStart {
     width: 140px;
     height: 40px;
     position: absolute;
@@ -123,7 +124,13 @@ body {
     cursor: pointer;
     margin-left: -75px;
 }
-
+.btnStart {
+    width: 272px;
+    height: 155px;
+    margin-left: -136px;
+    margin-top: -155px;
+    display: none;
+}
 .share.big {
     width: 203px;
     height: 87px;
@@ -290,7 +297,6 @@ body {
 .gallery-thumbs .swiper-slide-active {
     opacity: 1;
 }
-
 
 /* p3 */
 
@@ -469,6 +475,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c88797', end
         -moz-transform: scale(0.8, 0.8);
         -o-transform: scale(0.8, 0.8);
         -ms-transform: scale(0.8, 0.8);
+    }
+    .btnStart {
+        margin-top: -79px;
     }
     .p2 .share,
     .p3 .share,

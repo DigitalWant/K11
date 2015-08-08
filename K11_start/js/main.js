@@ -156,7 +156,7 @@ function switchSceen(elem, className, playAnimId) {
 $(document).ready(function(e) {
     pageHeight = window.innerHeight;
 
-    $(".skip,.share,.btnNext,.btnCustom").css({
+    $(".skip,.share,.btnNext,.btnCustom,.btnStart").css({
         "top": (pageHeight - 70) + "px"
     });
 
@@ -187,6 +187,11 @@ $(document).ready(function(e) {
 
     });
 
+    $('.btnStart').on("click", function() {
+        $('.p1').hide();
+        $('.p2').show();
+        alert("test");
+    });
 
     if ($(".p3").size() > 0) {
 
