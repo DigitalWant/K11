@@ -34,7 +34,18 @@
     </div>
     <!---->
     <script type="text/javascript">
+    pageHeight = window.innerHeight;
 
+
+    var t = (pageHeight - 1260 ) * 0.5;
+        
+        alert(navigator.userAgent);
+
+        if(isMobile.Android()){
+
+              $("#canvas").css({"top":t+"px"});
+
+        } 
         init();
     </script>
 </body>
