@@ -432,8 +432,8 @@ body {
 }
 .blink .dash+.dash+.dash+.dash+.dash{
     width: 20%;
-        -webkit-animation-name: blinker;
-        animation-name: blinker;
+        -webkit-animation-name: blinkeri;
+        animation-name: blinkeri;
 
 
 }
