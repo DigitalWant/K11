@@ -414,84 +414,77 @@ body {
 }
 .blink .dash+.dash{
     width: 80%;
-    animation-name: blinker;
+        -webkit-animation-name: blinkeriiii;
+        animation-name: blinkeriiii;
 
 }
 .blink .dash+.dash+.dash{
     width: 60%;
-    animation-name: blinker2;
+        -webkit-animation-name: blinkeriii;
+        animation-name: blinkeriii;
 
 }
 .blink .dash+.dash+.dash+.dash{
     width: 40%;
-        animation-name: blinker3;
+        -webkit-animation-name: blinkerii;
+        animation-name: blinkerii;
 
 }
 .blink .dash+.dash+.dash+.dash+.dash{
     width: 20%;
-        animation-name: blinker4;
+        -webkit-animation-name: blinker;
+        animation-name: blinker;
 
 
 }
-/*@-moz-keyframes blinker {  
-    0% { opacity: 1.0; }
-    50% { opacity: 0.0; }
-    100% { opacity: 1.0; }
-}
-
-@-webkit-keyframes blinker {  
-    0% { opacity: 1.0; }
-    50% { opacity: 0.0; }
-    100% { opacity: 1.0; }
-}*/
 
 @keyframes blinker {  
     0% { opacity: 1.0; }
     90% { opacity: 0.0; }
     100% { opacity: 1.0; }
 }
-@keyframes blinker1 {  
+@keyframes blinkeri {  
     0% { opacity: 1.0; }
     80% { opacity: 0.0; }
     100% { opacity: 1.0; }
 }
-@keyframes blinker2 {  
+@keyframes blinkerii {  
     0% { opacity: 1.0; }
     60% { opacity: 0.0; }
     100% { opacity: 1.0; }
 }
-@keyframes blinker3 {  
+@keyframes blinkeriii {  
     0% { opacity: 1.0; }
     40% { opacity: 0.0; }
     100% { opacity: 1.0; }
 }
-@keyframes blinker4 {  
+@keyframes blinkeriiii {  
     0% { opacity: 1.0; }
     20% { opacity: 0.0; }
     100% { opacity: 1.0; }
 }
 
-@-webkit-keyframes blinker {  
+@-webkit-keyframes blinker{  
     0% { opacity: 1.0; }
     90% { opacity: 0.0; }
     100% { opacity: 1.0; }
 }
-@-webkit-keyframes blinker1 {  
+@-webkit-keyframes blinkeri {  
     0% { opacity: 1.0; }
     80% { opacity: 0.0; }
     100% { opacity: 1.0; }
 }
-@-webkit-keyframes blinker2 {  
+@-webkit-keyframes blinkerii {  
     0% { opacity: 1.0; }
     60% { opacity: 0.0; }
     100% { opacity: 1.0; }
 }
-@-webkit-keyframes blinker3 {  
+@-webkit-keyframes blinkeriii {  
     0% { opacity: 1.0; }
     40% { opacity: 0.0; }
     100% { opacity: 1.0; }
 }
-@-webkit-keyframes blinker4 {  
+@-webkit-keyframes blinkeriiii {  
     0% { opacity: 1.0; }
     20% { opacity: 0.0; }
     100% { opacity: 1.0; }
