@@ -402,20 +402,20 @@ body {
     height: 10px;
     margin-bottom: 10px;
     background: #fff;
-    -webkit-animation-name: blinker;
+    -webkit-animation-name: blinkeri;
     -webkit-animation-duration: 1s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     
-    animation-name: blinker;
+    animation-name: blinkeri;
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 .blink .dash+.dash{
     width: 80%;
-        -webkit-animation-name: blinkeriiii;
-        animation-name: blinkeriiii;
+        -webkit-animation-name: blinkerii;
+        animation-name: blinkerii;
 
 }
 .blink .dash+.dash+.dash{
@@ -426,14 +426,14 @@ body {
 }
 .blink .dash+.dash+.dash+.dash{
     width: 40%;
-        -webkit-animation-name: blinkerii;
-        animation-name: blinkerii;
+        -webkit-animation-name: blinkeriiii;
+        animation-name: blinkeriiii;
 
 }
 .blink .dash+.dash+.dash+.dash+.dash{
     width: 20%;
-        -webkit-animation-name: blinkeri;
-        animation-name: blinkeri;
+        -webkit-animation-name: blinkeriiiii;
+        animation-name: blinkeriiiii;
 
 
 }
