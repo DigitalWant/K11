@@ -385,6 +385,92 @@ body {
     z-index: 9998;
 }
 
+.blink {
+    display: block;
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    left: 60%;
+    top: 65px;
+    /*      animation: blink 1s steps(5, start) infinite;
+      -webkit-animation: blink 1s steps(5, start) infinite;*/
+}
+
+.blink .dash {
+    display: block;
+    width: 100%;
+    height: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.blink .dash+.dash{
+    width: 80%;
+    animation-name: blinker;
+
+}
+.blink .dash+.dash+.dash{
+    width: 60%;
+    animation-name: blinker2;
+
+}
+.blink .dash+.dash+.dash+.dash{
+    width: 40%;
+        animation-name: blinker3;
+
+}
+.blink .dash+.dash+.dash+.dash+.dash{
+    width: 20%;
+        animation-name: blinker4;
+
+
+}
+/*@-moz-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}*/
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    90% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+@keyframes blinker1 {  
+    0% { opacity: 1.0; }
+    80% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+@keyframes blinker2 {  
+    0% { opacity: 1.0; }
+    60% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+@keyframes blinker3 {  
+    0% { opacity: 1.0; }
+    40% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+@keyframes blinker4 {  
+    0% { opacity: 1.0; }
+    20% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
 .p2 .popup {
     position: absolute;
     left: 50%;
@@ -419,7 +505,7 @@ body {
     content: url(../images/content/recording.png);
     width: 149px;
     height: 168px;
-    margin-left: -74px;
+    margin-left: -81px;
     position: absolute;
     left: 50%;
     top: 64px;
@@ -476,6 +562,15 @@ body {
     top: 27%;
     color: #a09d68;
     font-size: 48px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 
