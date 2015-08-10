@@ -440,7 +440,6 @@ body {
 
 @keyframes blinker {  
     0% { opacity: 1.0; }
-    90% { opacity: 0.0; }
     100% { opacity: 1.0; }
 }
 @keyframes blinkeri {  
@@ -466,7 +465,6 @@ body {
 
 @-webkit-keyframes blinker{  
     0% { opacity: 1.0; }
-    90% { opacity: 0.0; }
     100% { opacity: 1.0; }
 }
 @-webkit-keyframes blinkeri {  
