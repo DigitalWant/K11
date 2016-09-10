@@ -190,7 +190,10 @@ $(document).ready(function(e) {
     $('.btnStart').on("click", function() {
         $('.p1').hide();
         $('.p2').show();
+        
         alert("test");
+        location.href = 'http://iamike.github.io/K11_start/sender-step2.html';
+        
     });
 
     if ($(".p3").size() > 0) {
