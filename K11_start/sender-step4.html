@@ -28,42 +28,15 @@
     </div>
     <!---->
     <script type="text/javascript">
-    /* hack of some android device position*/
-
-    // pageHeight = window.innerHeight;
-
-    // $(".skip,.share,.btnNext,.btnCustom").css({
-    //     "top": (pageHeight - 70) + "px"
-    // });
-
-    // var t = (pageHeight - 1136) * 0.5;
-
-    // if (isMobile.Android()) {
-
-    //     $("#canvas").css({
-    //         "top": t + "px"
-    //     });
-    //     $('.androidStart').show();
-    //     $('.androidStart').on('click touchstart', function() {
-
-    //         init();
-    //         $(this).hide();
-    //         if (audioFlag) {
-    //             myAudio.pause();
-    //             $(".music_btn").attr("src", "images/bo.png");
-    //         } else if (!audioFlag) {
-    //             myAudio.play();
-    //             $(".music_btn").attr("src", "images/ting.png");
-    //         }
-
-    //         audioFlag = !audioFlag;
-    //     });
-
-    // } else {
+   
 
         init();
+        
+        $('.btnNext').on("click", function() {
 
-    // }
+            location.href = '/K11_start/sender-step5.html';
+            
+        });
     </script>
 </body>
 
