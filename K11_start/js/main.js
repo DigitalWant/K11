@@ -192,7 +192,7 @@ $(document).ready(function(e) {
         $('.p2').show();
         
         alert("test");
-        location.href = '/K11_start/sender-step2.html';
+        location.href = '/oldProject/K11_start/sender-step2.html';
         
     });
 
